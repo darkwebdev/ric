@@ -40,9 +40,9 @@ export const Menu = ({ storyData, onOperationSelect }) => {
             <ul className="story-types" aria-label="Story types">
                 {Object.keys(storyTypeIds).map(id =>
                     <li key={id} className={id === storyType ? 'active' : undefined}>
-                        <button onClick={() => updateStoryType(id)}>
-                            <img src={StoryTypeIcons[id]} alt="" role="presentation" />
-                            <span>{StoryTypeNames[id]}</span>
+                        <button className="story-type-button" onClick={() => updateStoryType(id)}>
+                            <img className="story-type-icon" src={StoryTypeIcons[id]} alt="" role="presentation" />
+                            <span className="story-type-name">{StoryTypeNames[id]}</span>
                         </button>
                     </li>
                 )}
