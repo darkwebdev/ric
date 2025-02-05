@@ -1,0 +1,30 @@
+.main-header {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    height: 80px;
+    /*border-bottom: 1px solid #0004;*/
+    justify-content: center;
+
+    svg {
+        height: calc(100% - 21px);
+        margin-top: 20px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(to right, transparent, #0006, transparent);
+    }
+}
+
+.logo-title {
+    font-family: 'trajanpro', Arial, serif;
+    font-size: 60px;
+    font-weight: normal;
+    letter-spacing: -7.7px;
+    text-transform: lowercase;
+}

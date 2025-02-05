@@ -1,0 +1,61 @@
+.dialog {
+    position: relative;
+    border: 1px dashed #999;
+}
+
+.dialog-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-dark {
+    background-color: #000;
+}
+
+.dialog-image {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.dialog-char {
+    img {
+        position: absolute;
+    }
+}
+
+.dialog-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    min-height: 20%;
+    display: flex;
+    gap: 3em;
+    padding: 2em 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+
+    p {
+        margin-top: 0;
+    }
+
+    code {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.dialog-name {
+    color: #ccc;
+    text-align: right;
+    width: 20%;
+}
+
+.dialog-blocker {
+    width: 100%;
+    min-height: 10em;
+}
