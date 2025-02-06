@@ -1,4 +1,16 @@
-console.log('dust.js is running');
+const smokeParticleCount = 300;
+const dustParticleCount = 50;
+const smokeSpreadFactor = -2;
+const smokeAngleFactor = 1;
+const smokeOpacityFactor = 0.05;
+const smokeSpeedFactor = 1;
+const smokeSizeFactor = 1.5;
+const smokeSizeChangeFactor = 1.001;
+const smokeFadeFactor = 0.08;
+const dustMinSpeed = 1;
+const dustMaxSpeed = 5;
+const dustMinSize = 1;
+const dustMaxSize = 3;
 
 const canvas = document.getElementById('dustCanvas');
 const ctx = canvas.getContext('2d');
@@ -6,24 +18,47 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const particlesArray = [];
-const numberOfParticles = 100;
-const minSpeed = 1; // Minimum speed of the particles
-const maxSpeed = 5; // Maximum speed of the particles
-const minSize = 1; // Minimum size of the particles
-const maxSize = 3; // Maximum size of the particles
+const smokeParticles = [];
+const dustParticles = [];
 
-class Particle {
+class SmokeParticle {
     constructor() {
-        this.x = Math.random() * canvas.width;
+        this.x = canvas.width + 100;
+        this.y = canvas.height - 50;
+        this.size = (Math.random() * 20 + 10) * smokeSizeFactor;
+        const angle = (Math.random() * smokeAngleFactor) - smokeAngleFactor / 2;
+        const randomSpeedFactor = Math.random() * 0.5 + 0.75;
+        this.speedY = Math.sin(angle) * smokeSpreadFactor * smokeSpeedFactor * randomSpeedFactor;
+        this.speedX = Math.cos(angle) * smokeSpreadFactor * smokeSpeedFactor * randomSpeedFactor;
+        this.opacity = (Math.random() * 0.5 + 0.5) * smokeOpacityFactor;
+    }
+
+    update() {
+        this.y += this.speedY;
+        this.x += this.speedX;
+        this.size *= smokeSizeChangeFactor;
+        this.opacity -= 0.01 * smokeOpacityFactor * smokeFadeFactor;
+    }
+
+    draw() {
+        ctx.fillStyle = `rgba(150, 150, 150, ${this.opacity})`;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+    }
+}
+
+class DustParticle {
+    constructor() {
+        this.x = Math.random() * canvas.width + canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * (maxSize - minSize) + minSize; // Random size between minSize and maxSize
-        const speedFactor = this.size / maxSize; // Speed factor based on size
-        this.speedX = -Math.abs((Math.random() * (maxSpeed - minSpeed) + minSpeed) * speedFactor); // Ensure negative speedX
-        this.speedY = Math.random() < 0.8 ? -Math.abs((Math.random() * (maxSpeed - minSpeed) + minSpeed) * speedFactor) : 0; // Increase probability for diagonal movement
+        this.size = Math.random() * (dustMaxSize - dustMinSize) + dustMinSize;
+        const speedFactor = this.size / dustMaxSize;
+        this.speedX = -Math.abs((Math.random() * (dustMaxSpeed - dustMinSpeed) + dustMinSpeed) * speedFactor);
+        this.speedY = Math.random() < 0.8 ? -Math.abs((Math.random() * (dustMaxSpeed - dustMinSpeed) + dustMinSpeed) * speedFactor) : 0;
         const greyShade = Math.floor(Math.random() * 256);
         this.color = `rgba(${greyShade}, ${greyShade}, ${greyShade}, 0.8)`;
-        this.shape = Math.floor(Math.random() * 3); // Random shape: 0 - square, 1 - pentagon, 2 - hexagon
+        this.shape = Math.floor(Math.random() * 3);
         this.width = this.size * (Math.random() * 0.5 + 0.75);
         this.height = this.size * (Math.random() * 0.5 + 0.75);
         this.polygonSides = this.shape === 1 ? 5 : this.shape === 2 ? 6 : 0;
@@ -53,8 +88,6 @@ class Particle {
     update() {
         this.x += this.speedX;
         this.y += this.speedY;
-
-        // Reset position if particle moves off the left edge
         if (this.x + this.size < 0) {
             this.x = canvas.width + this.size;
             this.y = Math.random() * canvas.height;
@@ -74,16 +107,29 @@ class Particle {
 }
 
 function init() {
-    for (let i = 0; i < numberOfParticles; i++) {
-        particlesArray.push(new Particle());
+    for (let i = 0; i < smokeParticleCount; i++) {
+        smokeParticles.push(new SmokeParticle());
+    }
+    for (let i = 0; i < dustParticleCount; i++) {
+        dustParticles.push(new DustParticle());
     }
 }
 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let i = 0; i < particlesArray.length; i++) {
-        particlesArray[i].update();
-        particlesArray[i].draw();
+    smokeParticles.forEach((particle, index) => {
+        particle.update();
+        particle.draw();
+        if (particle.size < 0.5 || particle.opacity < 0) {
+            smokeParticles.splice(index, 1);
+        }
+    });
+    dustParticles.forEach(particle => {
+        particle.update();
+        particle.draw();
+    });
+    for (let i = 0; i < 2; i++) {
+        smokeParticles.push(new SmokeParticle());
     }
     requestAnimationFrame(animate);
 }
