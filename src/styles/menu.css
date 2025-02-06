@@ -75,10 +75,10 @@ ul {
     &::before {
         content: '';
         position: absolute;
-        top: 6px;
-        left: 87px;
-        width: 18px;
-        height: 18px;
+        top: 0;
+        left: 70px;
+        width: 20px;
+        height: 20px;
         background: #aaa;
     }
     &::after {
@@ -86,25 +86,26 @@ ul {
         position: absolute;
         top: 20px;
         bottom: 20px;
-        left: 94px;
-        width: 3px;
+        left: 78px;
+        width: 4px;
         background: #aaa;
         z-index: -1;
     }
 
     li {
         position: relative;
-        line-height: 6rem;
-        margin-left: 90px;
+        margin-left: 74px;
+        margin-bottom: 38px;
+        line-height: 100px;
 
         &::before {
             content: '';
             position: absolute;
             top: calc(50% - 8px);
             left: 0;
-            width: 11px;
-            height: 11px;
-            border: 3px solid #000;
+            width: 13px;
+            height: 13px;
+            border: 4px solid #000;
             background: #ccc;
         }
 
@@ -112,9 +113,9 @@ ul {
             content: '';
             position: absolute;
             top: calc(50% - 4px);
-            left: 10px;
-            height: 3px;
-            width: 100%;
+            left: 13px;
+            height: 4px;
+            width: 50px;
             background: linear-gradient(to right, #000, transparent 30px);
         }
 
@@ -123,17 +124,26 @@ ul {
             transition: font-size 0.2s;
 
             &::before {
-                border-width: 12px;
+                border-width: 13px;
                 border-radius: 50%;
-                width: 30px;
-                height: 30px;
-                left: -10px;
-                top: calc(50% - 17px);
+                width: 35px;
+                height: 35px;
+                left: -12px;
+                top: calc(50% - 20px);
             }
+
+            &::after{
+                width: 0;
+                animation: grow-right 0.3s 0.3s normal forwards;
+            }
+        }
+
+        &:active {
+            opacity: 0.5;
         }
     }
     .story-button {
-        margin-left: 30px;
+        margin-left: 40px;
     }
 }
 
@@ -143,4 +153,13 @@ ul {
 
 .op-code {
     font-family: 'novecento', Arial, serif;
+}
+
+@keyframes grow-right {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50px;
+    }
 }

@@ -27,8 +27,8 @@
 }
 
 :root {
-    --font-medium: 1rem;
-    --font-large: 1.5rem;
+    --font-medium: 27px;
+    --font-large: 38px;
 }
 
 body {
