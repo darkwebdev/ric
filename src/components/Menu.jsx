@@ -50,9 +50,13 @@ export const Menu = ({ storyData, onOperationSelect }) => {
 
             {storyType && <div className="story-menu">
                 <ul className="stories" aria-label="Stories">
-                    {storyTypeIds[storyType].map(id => <li key={id} className={id === storyId ? 'active' : undefined}>
-                        <button onClick={() => setStoryId(id)}>{storyNameById(storyData, id)}</button>
-                    </li>)}
+                    {storyTypeIds[storyType].map(id =>
+                        <li key={id} className={id === storyId ? 'active' : undefined}>
+                            <button className="story-button" onClick={() => setStoryId(id)}>
+                                {storyNameById(storyData, id)}
+                            </button>
+                        </li>
+                    )}
                 </ul>
                 {storyId && <ul className="operations">
                     {operationsByStoryId(storyData, storyId).map(op =>

@@ -12,7 +12,7 @@ ul {
 
 .story-types {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .story-type-button {
@@ -68,15 +68,72 @@ ul {
 }
 
 .stories {
+    position: relative;
     flex-basis: 600px;
     font-size: var(--font-medium);
 
-    li {
-        line-height: 6rem;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 87px;
+        width: 18px;
+        height: 18px;
+        background: #aaa;
     }
-    li.active {
-        font-size: var(--font-large);
-        transition: font-size 0.2s;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 94px;
+        width: 3px;
+        background: #aaa;
+        z-index: -1;
+    }
+
+    li {
+        position: relative;
+        line-height: 6rem;
+        margin-left: 90px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: calc(50% - 8px);
+            left: 0;
+            width: 11px;
+            height: 11px;
+            border: 3px solid #000;
+            background: #ccc;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: calc(50% - 4px);
+            left: 10px;
+            height: 3px;
+            width: 100%;
+            background: linear-gradient(to right, #000, transparent 30px);
+        }
+
+        &.active {
+            font-size: var(--font-large);
+            transition: font-size 0.2s;
+
+            &::before {
+                border-width: 12px;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                left: -10px;
+                top: calc(50% - 17px);
+            }
+        }
+    }
+    .story-button {
+        margin-left: 30px;
     }
 }
 
