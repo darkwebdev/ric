@@ -1,11 +1,11 @@
 export const StoryTypeNames = {
-    record: 'Operator Record',
     main: 'Main Theme',
-    side: 'Side Story',
     intermezzi: 'Intermezzi',
+    side: 'Side Story',
     mini: 'Special Operations',
-    module: 'Operator Module',
     rogue: 'Integrated Strategies',
+    record: 'Operator Record',
+    module: 'Operator Module',
 };
 
 export const IntermezziIds = [

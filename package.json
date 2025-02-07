@@ -13,6 +13,7 @@
     "vitest": "^3.0.5"
   },
   "scripts": {
+    "dev": "vite",
     "test": "vitest"
   }
 }

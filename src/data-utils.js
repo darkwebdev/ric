@@ -1,15 +1,7 @@
-import { IntermezziIds } from './const.js';
+import { IntermezziIds, StoryTypeNames } from './const.js';
 
 export function categorizeStories({ storyReview, storyReviewMeta, moduleStory, storyTable }) {
-    const storyTypes = {
-        record: [],
-        main: [],
-        side: [],
-        intermezzi: [],
-        mini: [],
-        module: [],
-        rogue: [],
-    };
+    const storyTypes = Object.fromEntries(Object.keys(StoryTypeNames).map(key => [key, []]));
 
     Object.values(storyReview).forEach(x => {
         const components = storyReviewMeta?.actArchiveData?.components;
@@ -29,11 +21,11 @@ export function categorizeStories({ storyReview, storyReviewMeta, moduleStory, s
                 });
         }
         if (x.id.startsWith('main_')) {
-            const storytxt = x.infoUnlockDatas[0].storyTxt.replace(/[^\/]+$/, `${x.id}_zone_enter`);
+            const storytxt = x.infoUnlockDatas[0].storyTxt.replace(/[^/]+$/, `${x.id}_zone_enter`);
             if (storyTable[storytxt]) {
                 x.infoUnlockDatas.unshift({
                     storyGroup: x.id,
-                    storyInfo: x.infoUnlockDatas[0].storyInfo.replace(/[^\/]+$/, `${x.id}_zone_enter`),
+                    storyInfo: x.infoUnlockDatas[0].storyInfo.replace(/[^/]+$/, `${x.id}_zone_enter`),
                     storyTxt: storytxt,
                     storyCode: 'Introduction',
                     storyName: 'Introduction',
