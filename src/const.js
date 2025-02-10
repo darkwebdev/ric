@@ -32,4 +32,4 @@ export const AssetSrc = {
 
 export const DataSrcEn = DataSrcYostar + 'en_US';
 
-export const BlockingFns = [/*'Blocker',*/ 'Text'];
+export const BlockingFns = ['Blocker', 'Text', 'Delay', ];

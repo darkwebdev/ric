@@ -19,7 +19,7 @@ figure, blockquote, dl, dd {
     margin: 0;
 }
 
-ul, ol {
+ul {
     margin: 0;
     list-style: none;
 }

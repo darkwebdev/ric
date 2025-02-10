@@ -1,5 +1,5 @@
 import React from 'react';
-import { parseContent } from '../parse.js';
+import { parseContent } from '../../parse.js';
 
 export const Text = ({ line }) => {
     const { name, text } = line;

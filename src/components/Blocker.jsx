@@ -5,7 +5,7 @@ export const Blocker = ({ line }) => {
     const { block, a=0, r=0, g=0, b=0, fadetime } = line;
     const style = {
         backgroundColor: `rgba(${r},${g},${b},${a})`,
-        // animation: `blocker ${fadetime}s linear`,
+        animationDuration: `${fadetime}s`,
     };
     return <div className="dialog-blocker" style={style}>
         <code>{JSON.stringify(line)}</code>
