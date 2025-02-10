@@ -3,3 +3,52 @@ code {
     color: #aaa;
     font-size: 0.7rem;
 }
+
+.dialog-debug {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.dialog-debug-delay {
+    margin-left: 40px;
+    line-height: 2;
+    span {
+        color: #1ea7fd;
+    }
+}
+
+.dialog-timeline {
+    margin: 0;
+    height: 100%;
+    overflow: scroll;
+
+    button {
+        display: block;
+        background: none;
+        border: none;
+        line-height: 0.5;
+        color: inherit;
+        cursor: pointer;
+    }
+}
+
+.dialog-timeline-scene {
+    background: #6666;
+    border-bottom: 1px solid #666f;
+
+    &:hover {
+        background: #6669;
+    }
+    &.active {
+        background: #666f;
+
+        button {
+            cursor: default;
+        }
+    }
+}

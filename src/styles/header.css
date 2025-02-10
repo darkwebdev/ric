@@ -1,9 +1,12 @@
 .main-header {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: baseline;
     height: 80px;
+    width: 100%;
     justify-content: center;
+    background: #ccc;
+    z-index: 2;
 
     svg {
         height: calc(100% - 21px);
