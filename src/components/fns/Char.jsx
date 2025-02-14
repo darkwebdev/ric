@@ -1,5 +1,5 @@
 import React from 'react';
-import { charImageSrc } from '../fetch.js';
+import { charImageSrc } from '../../fetch.js';
 
 export const Char = ({ line }) => {
     // eslint-disable-next-line no-unused-vars

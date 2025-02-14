@@ -1,5 +1,5 @@
 import React from 'react';
-import { imageSrc } from '../fetch.js';
+import { imageSrc } from '../../fetch.js';
 
 export const Image = ({ line }) => {
     const { image } = line;

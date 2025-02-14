@@ -21,6 +21,7 @@ figure, blockquote, dl, dd {
 
 ul {
     margin: 0;
+    padding-left: 0;
     list-style: none;
 }
 
@@ -60,6 +61,14 @@ input, button,
 textarea, select {
     font-family: inherit;
     font-size: inherit;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */

@@ -1,5 +1,5 @@
 import React from 'react';
-import { bgImageSrc } from '../fetch.js';
+import { bgImageSrc } from '../../fetch.js';
 
 export const BgImage = ({ line }) => {
     const { image } = line;

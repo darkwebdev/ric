@@ -1,9 +1,9 @@
 import React from 'react';
-import { Blocker } from '../Blocker';
-import { Image } from '../Image';
-import { BgImage } from '../BgImage';
-import { Char } from '../Char';
-import { Text } from '../Text';
+import { Blocker } from '../fns/Blocker.jsx';
+import { Image } from '../fns/Image.jsx';
+import { BgImage } from '../fns/BgImage.jsx';
+import { Char } from '../fns/Char.jsx';
+import { Text } from '../fns/Text';
 
 export const DialogScreen = ({
     scene = [],

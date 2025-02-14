@@ -8,9 +8,11 @@
     width: 100%;
     top: 0;
     display: flex;
+    z-index: 3;
 }
 
 .dialog-button {
+    padding: 10px;
     color: #fff;
     border: 1px dashed #fff;
 }
@@ -24,7 +26,6 @@
     background: rgba(0, 0, 0, 1);
     z-index: 3;
 }
-
 
 .dialog-dark {
     background-color: #000;

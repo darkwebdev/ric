@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'wouter';
 import { StoryTypeNames } from '../const.js';
 import { categorizeStories, operationById, operationsByStoryId, storyNameById } from '../data-utils.js';
 import iconMainTheme from '../img/icon_maintheme.png';
@@ -7,6 +8,7 @@ import iconIntermezzi from '../img/icon_intermezzi.png';
 import iconIntStrat from '../img/icon_is.png';
 import iconSpecOps from '../img/icon_specops.png';
 import iconActivity from '../img/icon_activity.png';
+import { loadStoryData } from '../fetch.js';
 
 const StoryTypeIcons = {
     record: iconActivity,
@@ -18,15 +20,26 @@ const StoryTypeIcons = {
     rogue: iconIntStrat,
 }
 
-export const Menu = ({ storyData, onOperationSelect }) => {
+export const Menu = () => {
+    const [storyData, setStoryData] = useState();
     const [storyType, setStoryType] = useState();
     const [storyTypeIds, setStoryTypeIds] = useState();
     const [storyId, setStoryId] = useState();
 
     useEffect(() => {
-        const categorized = categorizeStories(storyData);
-        if (categorized) {
-            setStoryTypeIds(categorized);
+        console.log('Loading metadata...');
+        (async () => {
+            setStoryData(await loadStoryData());
+            console.log('Metadata loaded.');
+        })()
+    }, []);
+
+    useEffect(() => {
+        if (storyData) {
+            const categorized = categorizeStories(storyData);
+            if (categorized) {
+                setStoryTypeIds(categorized);
+            }
         }
     }, [storyData]);
 
@@ -61,9 +74,9 @@ export const Menu = ({ storyData, onOperationSelect }) => {
                 {storyId !== undefined && <ul className="operations">
                     {operationsByStoryId(storyData, storyId).map(op =>
                         <li key={op.storyId}>
-                            <button onClick={() => onOperationSelect(operationById(storyData, storyId, op.storyId))}>
+                            <Link to={`story/${operationById(storyData, storyId, op.storyId).storyTxt}`}>
                                 <span className="op-code">{op.storyCode}</span> {op.storyName} [{op.avgTag}]
-                            </button>
+                            </Link>
                         </li>
                     )}
                 </ul>}
