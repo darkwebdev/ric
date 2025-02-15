@@ -7,10 +7,20 @@
     justify-content: space-around;
     background: linear-gradient(to bottom, #cccf, #cccc 60%, #ccc0 100%);
     z-index: 2;
+    animation: slide-down 2s ease-out;
 
     li {
         flex: 1 1 0;
         text-align: center;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
