@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import { Link } from 'wouter';
+
 import { StoryTypeNames } from '../const.js';
 import { categorizeStories, operationById, operationsByStoryId, storyNameById } from '../data-utils.js';
 import iconMainTheme from '../img/icon_maintheme.png';
@@ -29,39 +31,41 @@ export const Menu = () => {
     useEffect(() => {
         console.log('Loading metadata...');
         (async () => {
-            setStoryData(await loadStoryData());
-            console.log('Metadata loaded.');
+            const data = await loadStoryData()
+            if (data) {
+                console.log('Metadata loaded.');
+                setStoryData(data);
+                const categorized = categorizeStories(data);
+                if (categorized) {
+                    setStoryTypeIds(categorized);
+                }
+            }
         })()
     }, []);
-
-    useEffect(() => {
-        if (storyData) {
-            const categorized = categorizeStories(storyData);
-            if (categorized) {
-                setStoryTypeIds(categorized);
-            }
-        }
-    }, [storyData]);
 
     const updateStoryType = type => {
         setStoryType(type);
         setStoryId(undefined);
     }
 
-    return (
-        storyTypeIds && <>
-            <ul className="story-types" aria-label="Story types">
-                {Object.keys(storyTypeIds).map(id =>
-                    <li key={id} className={id === storyType ? 'active' : undefined}>
-                        <button className="story-type-button" onClick={() => updateStoryType(id)}>
-                            <img className="story-type-icon" src={StoryTypeIcons[id]} alt="" role="presentation" />
-                            <span className="story-type-name">{StoryTypeNames[id]}</span>
-                        </button>
-                    </li>
-                )}
-            </ul>
+    return storyData && storyTypeIds && <>
+        <ul className="story-types" aria-label="Story types">
+            {Object.keys(storyTypeIds).map(id =>
+                <li key={id} className={id === storyType ? 'active' : undefined}>
+                    <button className="story-type-button" onClick={() => updateStoryType(id)}>
+                        <img className="story-type-icon" src={StoryTypeIcons[id]} alt="" role="presentation" />
+                        <span className="story-type-name">{StoryTypeNames[id]}</span>
+                    </button>
+                </li>
+            )}
+        </ul>
 
-            {storyType && storyTypeIds[storyType].length > 0 && <div className="story-menu">
+        {storyType && storyTypeIds[storyType].length > 0 && <ReactCSSTransitionReplace
+            transitionName="cross-fade"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={500}
+        >
+            <div className="story-menu" key={storyType}>
                 <ul className="stories" aria-label="Stories">
                     {storyTypeIds[storyType].map(id =>
                         <li key={id} className={id === storyId ? 'active' : undefined}>
@@ -80,7 +84,7 @@ export const Menu = () => {
                         </li>
                     )}
                 </ul>}
-            </div>}
-        </>
-    );
+            </div>
+        </ReactCSSTransitionReplace>}
+    </>;
 };

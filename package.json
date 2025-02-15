@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "react": "^19.0.0",
+    "react-css-transition-replace": "^5.0.1",
     "react-dom": "^19.0.0",
     "wouter": "^3.5.1"
   },
