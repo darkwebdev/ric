@@ -1,8 +1,8 @@
 import React from 'react';
 import { Blocker } from '../fns/Blocker.jsx';
 import { Image } from '../fns/Image.jsx';
-import { BgImage } from '../fns/BgImage.jsx';
-import { Char } from '../fns/Char.jsx';
+import { Background } from '../fns/Background.jsx';
+import { Character } from '../fns/Character.jsx';
 import { Text } from '../fns/Text';
 
 export const DialogScreen = ({
@@ -33,9 +33,9 @@ export const DialogScreen = ({
 
 const DialogFns = {
     Text: Text,
-    Character: Char,
+    Character: Character,
     Image: Image,
-    Background: BgImage,
+    Background: Background,
     Blocker: Blocker,
     Delay: () => null,
 };

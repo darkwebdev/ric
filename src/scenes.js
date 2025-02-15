@@ -8,7 +8,7 @@ export function scenesFromText(text) {
 const ImageFns = [
     'Background',
     'Image',
-    // 'Character',
+    'Character',
 ];
 
 export function scenesFromDialogs(dialogs) {
@@ -17,11 +17,14 @@ export function scenesFromDialogs(dialogs) {
     let currentScene = [];
     dialogs.forEach(({ content }) => {
         parseDialog(content).forEach(line => {
-            currentScene.push(line);
+            // currentScene.push(line);
+            addLineToScene(currentScene, line);
             if (isBlocking(line.fn)) {
                 scenes.push(currentScene);
-                const prevScene = scenes[scenes.length - 1];
-                const images = prevScene.filter(line => ImageFns.includes(line.fn));
+                // const prevScene = scenes[scenes.length - 1];
+                // const prevBg = currentScene.find(line => line.fn === 'Background');
+                // const prevImage = currentScene.find(line => line.fn === 'Image');
+                const images = currentScene.filter(line => ImageFns.includes(line.fn));
                 currentScene = [...images];
             }
         });
@@ -32,4 +35,18 @@ export function scenesFromDialogs(dialogs) {
     }
 
     return scenes;
+}
+
+function addLineToScene(scene, line) {
+    const isImageLine = ImageFns.includes(line.fn);
+
+    if (isImageLine) {
+        const imageLineIndex = scene.findIndex(l => l.fn === line.fn);
+        if (imageLineIndex >= 0) {
+            scene[imageLineIndex] = line;
+            return;
+        }
+    }
+
+    scene.push(line);
 }

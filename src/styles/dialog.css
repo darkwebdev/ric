@@ -40,11 +40,31 @@
     z-index: -1;
 }
 
-.dialog-char {
-    img {
-        position: absolute;
-    }
+.dialog-background {
+    z-index: -2;
 }
+
+.dialog-char-img {
+    margin: 3% auto 0;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.dialog-char-img-shade {
+    filter: brightness(0.5);
+    z-index: 0;
+}
+
+.dialog-char-img-1 {
+    position: absolute;
+    left: 0;
+}
+
+.dialog-char-img-2 {
+    position: absolute;
+    right: 0;
+}
+
 
 .dialog-text {
     position: absolute;
@@ -52,12 +72,14 @@
     bottom: 0;
     display: flex;
     gap: 4em;
-    padding: 2em 0 6em;
+    padding: 2em 0 4em;
     color: #fff;
-    background: linear-gradient(to top, #000 40%, transparent);
+    background: linear-gradient(to top, #000 50%, transparent);
+    z-index: 2;
 
     p {
         margin-top: 0;
+        width: 55vw;
         font-size: 40px;
     }
 

@@ -1,14 +1,14 @@
 import React from 'react';
-import { bgImageSrc } from '../../fetch.js';
+import { backgroundSrc } from '../../fetch.js';
 
-export const BgImage = ({ line }) => {
+export const Background = ({ line }) => {
     const { image } = line;
 
     return <>
         <code>{JSON.stringify(line)}</code>
         {image && <img
-            className="dialog-image"
-            src={bgImageSrc(image)}
+            className="dialog-image dialog-background"
+            src={backgroundSrc(image)}
             role="presentation"
             alt=""
         />}

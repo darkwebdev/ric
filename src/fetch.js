@@ -53,7 +53,7 @@ export function imageSrc(imageName, source) {
     }
 }
 
-export function bgImageSrc(imageName, source) {
+export function backgroundSrc(imageName, source) {
     switch (source) {
         case AssetSrc.aceship:
             return `${source}avg/backgrounds/${imageName}.png`;
