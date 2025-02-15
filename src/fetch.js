@@ -40,6 +40,41 @@ async function fetchData(url) {
     return res.json();
 }
 
+export function preloadImages(images) {
+    return Promise
+        .all(images.map(cacheImage))
+        .then(() => {
+            console.log('Images preloaded successfully.');
+        })
+        .catch(e => {
+            console.error('Failed to preload images', e);
+        });
+}
+
+// function preloadImage(src) {
+//     return new Promise((resolve, reject) => {
+//         const image = new Image();
+//         image.onload = resolve;
+//         image.onerror = reject;
+//         image.src = src;
+//     });
+// }
+
+async function cacheImage(src) {
+    const cache = await caches.open('images');
+
+    const isImageCached = await cache.match(src);
+
+    if (isImageCached) {
+        console.log('Image already cached', src);
+        return;
+    }
+
+    const response = await fetch(src);
+
+    await cache.put(src, response);
+}
+
 export function imageSrc(imageName, source) {
     switch (source) {
         case AssetSrc.aceship:
@@ -94,6 +129,7 @@ export function charImageSrc(imageName, source) {
 }
 
 function destructure(name) {
+    // eslint-disable-next-line no-unused-vars
     const [_, id, face='1', body='1'] = name.match(/^([^#^$]+)(?:#(\d+))?(?:\$(\d+))?$/);
     return {
         id,

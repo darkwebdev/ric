@@ -4,6 +4,7 @@ import { DataSrcEn } from '../const.js';
 import { scenesFromText } from '../scenes.js';
 import { DialogScreen } from './DialogScreen/index.jsx';
 import { useCountdown } from '../hooks/useCountdown.js';
+import { backgroundSrc, charImageSrc, imageSrc, preloadImages } from '../fetch.js';
 
 export const Story = () => {
     const [match, params] = useRoute("/story/*");
@@ -25,6 +26,20 @@ export const Story = () => {
                     const allScenes = scenesFromText(text);
                     console.log('Scenes:', allScenes);
                     setScenes(allScenes);
+                    const allLinks = allScenes.flatMap(scene => scene.flatMap(line => {
+                        switch (line.fn) {
+                            case 'Character':
+                                return line.name && [charImageSrc(line.name), line.name2 && charImageSrc(line.name2)];
+                            case 'Image':
+                                return line.image && imageSrc(line.image);
+                            case 'Background':
+                                return line.image && backgroundSrc(line.image);
+                        }
+                    })).filter(Boolean);
+                    const uniqLinks = Array.from(new Set(allLinks));
+                    console.log('Preloading images...', uniqLinks);
+                    await preloadImages(uniqLinks);
+                    console.log('Images preloaded.');
                 }
             })();
         }
