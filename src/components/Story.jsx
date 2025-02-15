@@ -113,7 +113,8 @@ function debugLine(line) {
         case 'Blocker':
             return `Blocker: ${line.fadetime}s`;
         case 'Text':
-            return `Text: ${line.text.slice(0, 20)}`;
+            return `Text: [${line.name}] ${line.text.slice(0, 20)}`;
+        case 'delay':
         case 'Delay':
             return `Delay: ${line.time}s`;
         case 'Character':

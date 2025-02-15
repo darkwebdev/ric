@@ -16,7 +16,7 @@ export function parseContent(content = '') {
 
 export function dialogsFromText(text) {
     // eslint-disable-next-line no-unused-vars
-    const [header, ...dialogs] = text.split(/\[Dialog/);
+    const [header, ...dialogs] = text.split(/\[[Dd]ialog/);
     // console.log(dialogs);
     return dialogs.map(lines => lines.split('\n').reduce((acc, line) => {
         if (line.startsWith('(')) {

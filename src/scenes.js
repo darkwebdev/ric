@@ -17,13 +17,9 @@ export function scenesFromDialogs(dialogs) {
     let currentScene = [];
     dialogs.forEach(({ content }) => {
         parseDialog(content).forEach(line => {
-            // currentScene.push(line);
             addLineToScene(currentScene, line);
             if (isBlocking(line.fn)) {
                 scenes.push(currentScene);
-                // const prevScene = scenes[scenes.length - 1];
-                // const prevBg = currentScene.find(line => line.fn === 'Background');
-                // const prevImage = currentScene.find(line => line.fn === 'Image');
                 const images = currentScene.filter(line => ImageFns.includes(line.fn));
                 currentScene = [...images];
             }
