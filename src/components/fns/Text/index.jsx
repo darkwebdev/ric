@@ -7,6 +7,6 @@ export const Text = ({ line }) => {
     return <div className="dialog-text">
         <code>{JSON.stringify(line)}</code>
         <div className="dialog-name">{name}</div>
-        <p>{parseContent(text)}</p>
+        <p dangerouslySetInnerHTML={{ __html: parseContent(text) }}></p>
     </div>;
 }
