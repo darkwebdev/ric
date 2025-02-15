@@ -22,9 +22,9 @@
         position: absolute;
         bottom: 0;
         height: 1px;
-        width: 100%;
+        width: 0;
         background: linear-gradient(to right, transparent, #0006, transparent);
-        animation: widen 1.5s ease-in;
+        animation: widen 1.5s ease-out 0.5s forwards;
     }
 }
 
@@ -36,13 +36,8 @@
     text-transform: lowercase;
     mask: linear-gradient(to right, #fff, #fff, #0000) no-repeat;
     mask-size: 200%;
+    mask-clip: no-clip;
     animation: left-to-right-fade-in 2s ease-out;
-    /*-webkit-mask-size: 0%;*/
-    /*mask-image: linear-gradient(*/
-    /*        to right,*/
-    /*        rgba(0, 0, 0, 1) 70%,*/
-    /*        rgba(0, 0, 0, 0) 100%*/
-    /*);*/
 }
 
 @keyframes widen {
@@ -56,12 +51,9 @@
 
 @keyframes left-to-right-fade-in {
     0% {
-        mask-size: 0%;
-        /*mask-position: left;*/
+        mask-size: 0;
     }
     100% {
         mask-size: 200%;
-        /*mask-image: linear-gradient(to right, #000f 0%, #0000 100%);*/
-        /*mask-position: right;*/
     }
 }
