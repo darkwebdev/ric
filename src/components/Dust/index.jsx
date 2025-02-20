@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { useResize } from '../hooks/useResize.js';
+import { useResize } from '../../hooks/useResize.js';
+import './style.css';
 
 const smokeParticleCount = 300;
 const dustParticleCount = 50;
