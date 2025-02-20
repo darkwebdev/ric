@@ -2,15 +2,16 @@ import React, { useEffect, useState } from 'react';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import { Link } from 'wouter';
 
-import { StoryTypeNames } from '../const.js';
-import { categorizeStories, operationById, operationsByStoryId, storyNameById } from '../data-utils.js';
-import iconMainTheme from '../img/icon_maintheme.png';
-import iconSideStory from '../img/icon_sidestory.png';
-import iconIntermezzi from '../img/icon_intermezzi.png';
-import iconIntStrat from '../img/icon_is.png';
-import iconSpecOps from '../img/icon_specops.png';
-import iconActivity from '../img/icon_activity.png';
-import { loadStoryData } from '../fetch.js';
+import { categorizeStories, operationById, operationsByStoryId, storyNameById } from '../../data-utils.js';
+import { loadStoryData } from '../../network.js';
+import { StoryTypeNames } from '../../const.js';
+import iconMainTheme from '../../img/icon_maintheme.png';
+import iconSideStory from '../../img/icon_sidestory.png';
+import iconIntermezzi from '../../img/icon_intermezzi.png';
+import iconIntStrat from '../../img/icon_is.png';
+import iconSpecOps from '../../img/icon_specops.png';
+import iconActivity from '../../img/icon_activity.png';
+import './style.css';
 
 const StoryTypeIcons = {
     record: iconActivity,
