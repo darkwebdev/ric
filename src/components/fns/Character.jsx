@@ -1,5 +1,5 @@
 import React from 'react';
-import { charImageSrc } from '../../fetch.js';
+import { charImageSrc } from '../../network.js';
 
 export const Character = ({ line }) => {
     const { name, name2, focus } = line;
@@ -7,7 +7,6 @@ export const Character = ({ line }) => {
     const img2class = `dialog-char-img dialog-char-img-2${focus === '1' ? ' dialog-char-img-shade' : ''}`;
 
     return <div className="dialog-char">
-        <code>{JSON.stringify(line)}</code>
         {name &&
             <img
                 src={charImageSrc(name)}
@@ -24,5 +23,3 @@ export const Character = ({ line }) => {
         }
     </div>;
 }
-//https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/avg_npc_003%231%241.png
-

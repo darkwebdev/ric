@@ -2,7 +2,9 @@ import { isBlocking } from './ui.js';
 import { dialogsFromText, parseDialog } from './parse.js';
 
 export function scenesFromText(text) {
-    return scenesFromDialogs(dialogsFromText(text));
+    const scenes = scenesFromDialogs(dialogsFromText(text));
+    console.log('Scenes:', scenes);
+    return scenes;
 }
 
 const ImageFns = [
@@ -37,9 +39,24 @@ function addLineToScene(scene, line) {
     const isImageLine = ImageFns.includes(line.fn);
 
     if (isImageLine) {
-        const imageLineIndex = scene.findIndex(l => l.fn === line.fn);
-        if (imageLineIndex >= 0) {
-            scene[imageLineIndex] = line;
+        const imageIndex = scene.findIndex(l => l.fn === line.fn);
+        if (imageIndex >= 0) {
+            // if not enough args remove image from scene
+            switch (line.fn) {
+                case 'Background':
+                case 'Image':
+                    if (!line.image) {
+                        scene.splice(imageIndex, 1);
+                    }
+                    return;
+                case 'Character':
+                    if (!line.name) {
+                        scene.splice(imageIndex, 1);
+                        return;
+                    }
+            }
+            // replace image with new one
+            scene[imageIndex] = line;
             return;
         }
     }

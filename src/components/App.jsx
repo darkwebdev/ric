@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Switch } from 'wouter';
-import { Menu } from './Menu.jsx';
-import { Header } from './Header.jsx';
+import { Menu } from './Menu';
+import { Header } from './Header';
 import { Story } from './Story.jsx';
-import { Dust } from './Dust.jsx';
+import { Dust } from './Dust';
 
 export const App = () => {
     return <Switch>

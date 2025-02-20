@@ -17,7 +17,7 @@ export function parseContent(content = '') {
 export function dialogsFromText(text) {
     // eslint-disable-next-line no-unused-vars
     const [header, ...dialogs] = text.split(/\[[Dd]ialog/);
-    // console.log(dialogs);
+
     return dialogs.map(lines => lines.split('\n').reduce((acc, line) => {
         if (line.startsWith('(')) {
             const matches = [...line.matchAll(/(\w+)=("[^"]*"|\d+)/g)];
@@ -43,7 +43,7 @@ export function parseDialog(lines) {
             const fnMatch = line.match(/\[(\w+)(.*)/);
             if (fnMatch) {
                 const [_, fn, fnArgs] = fnMatch;
-                return { fn, ...objectFromKvString(fnArgs) };
+                return { fn: capitalize(fn), ...objectFromKvString(fnArgs) };
             }
             console.log('Unknown command:', line);
         } else {
@@ -56,4 +56,8 @@ export function objectFromKvString(line) {
     const matches = [...line.matchAll(/(\w+)=("([^"]*)"|[^,^)]+)/g)];
     return Object.fromEntries(matches.map(([_, key, value]) => [key, value.replace(/^"|"$/g, '')]));
 
+}
+
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }
