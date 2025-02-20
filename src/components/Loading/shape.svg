@@ -1,0 +1,32 @@
+<svg width="300"
+	 height="300"
+	 viewBox="0 0 1500 1500"
+	 xmlns="http://www.w3.org/2000/svg">
+	<polygon points="750,562.5 937.5,750 750,937.5 562.5,750"
+			 fill="none"
+			 stroke="#fff"
+			 stroke-width="7.5"
+			 vector-effect="non-scaling-stroke"/>
+	<polygon points="750,562.5 937.5,750 750,937.5 562.5,750"
+			 fill="none"
+			 stroke="#fff"
+			 stroke-width="7.5"
+			 vector-effect="non-scaling-stroke"
+			 style="transform-origin: center;">
+		<animateTransform
+				attributeName="transform"
+				type="scale"
+				values="1;0.9;3"
+				dur="0.8s"
+				repeatCount="indefinite"
+				keyTimes="0;0.3;1"/>
+		<animate
+				attributeName="opacity"
+				values="1;0"
+				dur="0.8s"
+				repeatCount="indefinite"
+				keyTimes="0;1"
+				keySplines="0.42 0 1 1"
+				calcMode="spline"/>
+	</polygon>
+</svg>
