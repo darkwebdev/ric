@@ -4,6 +4,7 @@ import { Image } from '../fns/Image.jsx';
 import { Background } from '../fns/Background.jsx';
 import { Character } from '../fns/Character.jsx';
 import { Text } from '../fns/Text';
+import './style.css';
 
 export const DialogScreen = ({
     scene = [],
@@ -12,21 +13,24 @@ export const DialogScreen = ({
 }) => {
     console.log('<DialogScreen>', scene);
     return <div className="dialog-screen" onClick={onClick}>
-        {scene.map(line => {
-            const Fn = DialogFns[line.fn];
-            if (Fn) {
-                const {fn, ...rest} = line;
-                console.log('Fn', fn, rest);
+        {scene.map((line, i) => {
+            const {fn, ...rest} = line;
+            console.log('Fn', fn, rest);
+
+            if (['Delay', 'Blocker'].includes(fn)) {
                 if (line.fn === 'Delay') {
                     onDelay(line.time * 1000);
                 } else if (line.fn === 'Blocker') {
                     onDelay(line.fadetime * 1000);
                 }
-                return <Fn line={line}/>;
+                console.log('Nothing to render for fn', fn);
+                return null;
             }
 
-            console.log('Unknown fn', line.fn);
-            return <code>ignore:&nbsp;{JSON.stringify(line)}</code>;
+            const Fn = DialogFns[fn];
+            if (Fn) {
+                return <Fn line={line} key={`$fn}-${i}`}/>;
+            }
         })}
     </div>;
 }
@@ -37,5 +41,4 @@ const DialogFns = {
     Image: Image,
     Background: Background,
     Blocker: Blocker,
-    Delay: () => null,
 };
