@@ -1,31 +1,33 @@
 .main-header {
     position: fixed;
-    display: flex;
-    align-items: baseline;
     height: 80px;
     width: 100%;
-    justify-content: center;
     background: #ccc;
-    cursor: default;
     z-index: 3;
-    /*filter: blur(0);*/
-    /*transform: scaleX(1);*/
 
+    > a {
+        display: flex;
+        height: 100%;
+        align-items: baseline;
+        justify-content: center;
+        text-decoration: none;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            width: 0;
+            background: linear-gradient(to right, transparent, #0006, transparent);
+            animation: widen 1.5s ease-out 0.5s forwards;
+        }
+    }
 
     svg {
         height: calc(100% - 21px);
         margin-top: 20px;
     }
 
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        height: 1px;
-        width: 0;
-        background: linear-gradient(to right, transparent, #0006, transparent);
-        animation: widen 1.5s ease-out 0.5s forwards;
-    }
 }
 
 .logo-title {

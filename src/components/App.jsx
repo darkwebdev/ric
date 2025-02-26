@@ -1,18 +1,25 @@
-import React from 'react';
+import { useState } from 'react';
 import { Route, Switch } from 'wouter';
 import { Menu } from './Menu';
 import { Header } from './Header';
 import { Story } from './Story.jsx';
 import { Dust } from './Dust';
+import { Assistant, AssistantUI, AssistantProvider } from './Assistant';
 
 export const App = () => {
+    const [ menuOpened, setMenuOpened ] = useState(false);
+
     return <Switch>
         <Route path="/story/*" component={Story} />
 
         <Route>
-            <Header />
-            <Menu />
-            <Dust />
+            <AssistantProvider>
+                <Assistant />
+                <Header />
+                <Menu onOpen={() => setMenuOpened(true)} />
+                {!menuOpened && <AssistantUI />}
+                <Dust />
+            </AssistantProvider>
         </Route>
     </Switch>;
 }

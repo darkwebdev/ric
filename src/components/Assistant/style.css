@@ -1,0 +1,47 @@
+.assistant {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    z-index: 4;
+}
+
+.assistant-edit {
+    height: 100%;
+}
+
+.assistant-art {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+.assistant-text {
+    margin: 1em;
+    padding: 1.5em 1em;
+    width: 25em;
+    color: #fff;
+    background: #0008;
+}
+
+.assistant-controls {
+    margin: .5em 1em;
+}
+
+.icon-button {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 5vw;
+    height: 5vw;
+    background: #000;
+    border: 2px solid #999;
+    border-radius: 50%;
+}

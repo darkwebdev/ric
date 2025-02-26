@@ -23,7 +23,7 @@ const StoryTypeIcons = {
     rogue: iconIntStrat,
 }
 
-export const Menu = () => {
+export const Menu = ({ onOpen = () => {} }) => {
     const [storyData, setStoryData] = useState();
     const [storyType, setStoryType] = useState();
     const [storyTypeIds, setStoryTypeIds] = useState();
@@ -45,6 +45,7 @@ export const Menu = () => {
     }, []);
 
     const updateStoryType = type => {
+        onOpen();
         setStoryType(type);
         setStoryId(undefined);
     }
@@ -61,31 +62,33 @@ export const Menu = () => {
             )}
         </ul>
 
-        {storyType && storyTypeIds[storyType].length > 0 && <ReactCSSTransitionReplace
-            transitionName="cross-fade"
-            transitionEnterTimeout={500}
-            transitionLeaveTimeout={500}
-        >
-            <div className="story-menu" key={storyType}>
-                <ul className="stories" aria-label="Stories">
-                    {storyTypeIds[storyType].map(id =>
-                        <li key={id} className={id === storyId ? 'active' : undefined}>
-                            <button className="story-button" onClick={() => setStoryId(id)}>
-                                {storyNameById(storyData, id)}
-                            </button>
-                        </li>
-                    )}
-                </ul>
-                {storyId !== undefined && <ul className="operations">
-                    {operationsByStoryId(storyData, storyId).map(op =>
-                        <li key={op.storyId}>
-                            <Link to={`story/${operationById(storyData, storyId, op.storyId).storyTxt}`}>
-                                <span className="op-code">{op.storyCode}</span> {op.storyName} [{op.avgTag}]
-                            </Link>
-                        </li>
-                    )}
-                </ul>}
-            </div>
-        </ReactCSSTransitionReplace>}
+        {storyType && storyTypeIds[storyType].length > 0 &&
+            <ReactCSSTransitionReplace
+                transitionName="cross-fade"
+                transitionEnterTimeout={500}
+                transitionLeaveTimeout={500}
+            >
+                <div className="story-menu" key={storyType}>
+                    <ul className="stories" aria-label="Stories">
+                        {storyTypeIds[storyType].map(id =>
+                            <li key={id} className={id === storyId ? 'active' : undefined}>
+                                <button className="story-button" onClick={() => setStoryId(id)}>
+                                    {storyNameById(storyData, id)}
+                                </button>
+                            </li>
+                        )}
+                    </ul>
+                    {storyId !== undefined && <ul className="operations">
+                        {operationsByStoryId(storyData, storyId).map(op =>
+                            <li key={op.storyId}>
+                                <Link to={`story/${operationById(storyData, storyId, op.storyId).storyTxt}`}>
+                                    <span className="op-code">{op.storyCode}</span> {op.storyName} [{op.avgTag}]
+                                </Link>
+                            </li>
+                        )}
+                    </ul>}
+                </div>
+            </ReactCSSTransitionReplace>
+        }
     </>;
 };

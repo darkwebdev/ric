@@ -1,4 +1,4 @@
-import { charImageSrc } from '../src/fetch.js';
+import { charImageSrc } from '../src/network.js';
 import { AssetSrc } from '../src/const.js';
 
 describe('fetch functions', () => {
