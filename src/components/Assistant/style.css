@@ -31,11 +31,16 @@
 }
 
 .assistant-text {
-    margin: 1em;
-    padding: 1.5em 1em;
-    width: 25em;
+    padding: 1em;
+    width: 100%;
     color: #fff;
     background: #0008;
+
+    @media screen and (min-width: 1024px) {
+        margin: 1em;
+        padding: 1.5em 1em;
+        width: 25em;
+    }
 }
 
 .assistant-controls {
@@ -48,9 +53,13 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    width: 5vw;
-    height: 5vw;
+    width: 10vw;
+    height: 10vw;
     background: #000;
     border: 2px solid #999;
     border-radius: 50%;
+    @media screen and (min-width: 1024px) {
+        width: 5vw;
+        height: 5vw;
+    }
 }
