@@ -23,7 +23,7 @@ const StoryTypeIcons = {
     rogue: iconIntStrat,
 }
 
-export const Menu = ({ onOpen = () => {} }) => {
+export const Menu = ({ opened, onOpen = () => {} }) => {
     const [storyData, setStoryData] = useState();
     const [storyType, setStoryType] = useState();
     const [storyTypeIds, setStoryTypeIds] = useState();
@@ -53,7 +53,7 @@ export const Menu = ({ onOpen = () => {} }) => {
     return storyData && storyTypeIds && <>
         <ul className="story-types" aria-label="Story types">
             {Object.keys(storyTypeIds).map(id =>
-                <li key={id} className={id === storyType ? 'active' : undefined}>
+                <li key={id} className={opened && id === storyType ? 'active' : undefined}>
                     <button className="story-type-button" onClick={() => updateStoryType(id)}>
                         <img className="story-type-icon" src={StoryTypeIcons[id]} alt="" role="presentation" />
                         <span className="story-type-name">{StoryTypeNames[id]}</span>
@@ -62,7 +62,7 @@ export const Menu = ({ onOpen = () => {} }) => {
             )}
         </ul>
 
-        {storyType && storyTypeIds[storyType].length > 0 &&
+        {opened && storyType && storyTypeIds[storyType].length > 0 &&
             <ReactCSSTransitionReplace
                 transitionName="cross-fade"
                 transitionEnterTimeout={500}

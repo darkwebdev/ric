@@ -15,8 +15,8 @@ export const App = () => {
         <Route>
             <AssistantProvider>
                 <Assistant />
-                <Header />
-                <Menu onOpen={() => setMenuOpened(true)} />
+                <Header onClick={() => setMenuOpened(false)} />
+                <Menu opened={menuOpened} onOpen={() => setMenuOpened(true)} />
                 {!menuOpened && <AssistantUI />}
                 <Dust />
             </AssistantProvider>
