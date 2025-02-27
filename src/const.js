@@ -18,6 +18,22 @@ export const IntermezziIds = [
     'act37side'
 ];
 
+export const Appellations = {
+    Zima: "Зима",
+    "Mr. Nothing": "Mr.Nothing",
+    Rosa: "Роса",
+    Istina: "Истина",
+};
+
+export const Rarities = [
+    'TIER_1',
+    'TIER_2',
+    'TIER_3',
+    'TIER_4',
+    'TIER_5',
+    'TIER_6',
+];
+
 // eslint-disable-next-line no-unused-vars
 const DataSrc =
     'https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/';
