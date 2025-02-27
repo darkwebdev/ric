@@ -1,0 +1,42 @@
+.carousel .carousel-status {
+    font-size: 16px;
+}
+.carousel .control-dots {
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    margin: 0;
+    list-style: decimal;
+    text-align: left;
+    max-width: 25vw;
+    width: auto;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #fff;
+    z-index: 3;
+
+    li {
+        border-bottom: 1px solid #666f;
+
+        &:hover {
+            background: #6666;
+        }
+        &.active {
+            background: #6669;
+
+            button {
+                cursor: default;
+            }
+        }
+    }
+
+    a {
+        display: block;
+        padding: 10px;
+        background: none;
+        color: inherit;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+}

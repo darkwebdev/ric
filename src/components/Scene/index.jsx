@@ -6,13 +6,13 @@ import { Character } from '../fns/Character.jsx';
 import { Text } from '../fns/Text';
 import './style.css';
 
-export const DialogScreen = ({
+export const Scene = ({
     scene = [],
     onClick = () => {},
     onDelay = () => {},
 }) => {
-    console.log('<DialogScreen>', scene);
-    return <div className="dialog-screen" onClick={onClick}>
+    console.log('<Scene>', scene);
+    return <div className="scene-screen" onClick={onClick}>
         {scene.map((line, i) => {
             const {fn, ...rest} = line;
             console.log('Fn', fn, rest);

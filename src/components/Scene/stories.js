@@ -1,9 +1,9 @@
 import { fn } from '@storybook/test';
-import { DialogScreen } from './index';
+import { Scene } from './index';
 
 export default {
-    title: 'DialogScreen',
-    component: DialogScreen,
+    title: 'Scene',
+    component: Scene,
     args: { onClick: fn(), onPrevClick: fn(), onReturnClick: fn() },
 };
 

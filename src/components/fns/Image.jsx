@@ -1,16 +1,14 @@
 import React from 'react';
-import { imageSrc } from '../../fetch.js';
+import { imageSrc } from '../../network.js';
 
 export const Image = ({ line }) => {
     const { image } = line;
 
-    return <>
-        <code>{JSON.stringify(line)}</code>
-        {image && <img
-            className="dialog-image"
-            src={imageSrc(image)}
-            role="presentation"
-            alt=""
-        />}
-    </>;
-}
+
+    return image && <img
+        className="dialog-image"
+        src={imageSrc(image)}
+        role="presentation"
+        alt=""
+    />;
+};

@@ -1,4 +1,4 @@
-.dialog {
+.scene {
     position: relative;
     border: 1px dashed #999;
 }
@@ -17,7 +17,7 @@
     border: 1px dashed #fff;
 }
 
-.dialog-screen {
+.scene-screen {
     position: relative;
     /*top: 0;*/
     /*left: 0;*/
@@ -25,6 +25,13 @@
     height: 100vh;
     background: rgba(0, 0, 0, 1);
     z-index: 3;
+
+    /* Carousel fix */
+
+    .carousel .slide & img {
+        display: block;
+        width: auto;
+    }
 }
 
 .dialog-dark {
@@ -109,14 +116,6 @@
     opacity: 1;
     animation: fade-out 0s;
     z-index: 1;
-}
-
-.slick-next {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 @keyframes fade-out {
