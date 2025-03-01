@@ -30,7 +30,7 @@
 
     .carousel .slide & img {
         display: block;
-        width: auto;
+        /*width: auto;*/
     }
 }
 
@@ -70,12 +70,14 @@
 
 .dialog-char-img-1 {
     position: absolute;
-    left: 0;
+    left: 25%;
+    transform: translateX(-50%);
 }
 
 .dialog-char-img-2 {
     position: absolute;
-    right: 0;
+    right: 25%;
+    transform: translateX(50%);
 }
 
 

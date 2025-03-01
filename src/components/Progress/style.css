@@ -1,0 +1,28 @@
+.progress {
+    display: flex;
+    justify-content: space-between;
+    gap: .5em;
+}
+
+.progress-bar {
+    position: relative;
+    height: 5px;
+    width: 100%;
+    border: 1px solid #fff6;
+    background-color: #fff6;
+}
+.progress-bar::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    height: 100%;
+    width: var(--progress-width, 0%);
+    background-color: #fff;
+    transition: width 0.5s;
+}
+
+.progress-text {
+    font-size: 16px;
+    line-height: 1;
+    white-space: nowrap;
+}

@@ -14,14 +14,17 @@
 }
 
 .carousel .carousel-status {
-    padding: 0.7em;
-    width: 25vw;
-    font-size: 16px;
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    width: 100vw;
 }
 
 .carousel .control-dots {
-    top: 50px;
-    bottom: 0;
+    top: 0;
+    bottom: 50px;
     right: 0;
     overflow-y: scroll;
     margin: 0;

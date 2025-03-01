@@ -1,6 +1,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'wouter';
-import { Scene } from '../Scene/index.jsx';
+import { Scene } from '../Scene';
+import { Progress } from '../Progress';
 
 import 'react-responsive-carousel/lib/styles/carousel.css';
 import './style.css';
@@ -26,7 +27,7 @@ export const StorySlider = ({
             selectedItem={sceneIndex}
             onClickItem={onClick}
             onChange={(i) => {console.log('Carousel onChange', i); onChange(i);}}
-            statusFormatter={(current, total) => `${current} / ${total}, Delay: ${delayCountdown}`}
+            statusFormatter={(current, total) => <Progress value={current} max={total} text={delayCountdown && `delay: ${delayCountdown}`} />}
             renderIndicator={renderIndicator(scenes)}
         >
             {scenes.map((scene, i) => <Scene scene={scene} key={`scene-${i}`}/>)}
