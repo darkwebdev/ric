@@ -1,4 +1,4 @@
-import {  Carousel } from 'react-responsive-carousel';
+import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'wouter';
 import { Scene } from '../Scene/index.jsx';
 
@@ -10,9 +10,9 @@ export const StorySlider = ({
     sceneIndex,
     delayCountdown,
     onClick = () => {},
-    onDelay = () => {},
     onChange = () => {}
 }) => {
+
     return scenes &&
         <Carousel
             autoFocus={true}
@@ -24,29 +24,23 @@ export const StorySlider = ({
             transitionTime={1000}
             animationHandler='fade'
             selectedItem={sceneIndex}
-            onClickItem={(i) => {console.log('Carousel onClickItem', i);}}
-            onClickThumb={(i) => {console.log('Carousel onClickThumb', i);}}
+            onClickItem={onClick}
             onChange={(i) => {console.log('Carousel onChange', i); onChange(i);}}
             statusFormatter={(current, total) => `${current} / ${total}, Delay: ${delayCountdown}`}
-            renderIndicator={(onClickHandler, isSelected, index, label) => {
-                return (
-                    <li value={index} key={index} className={isSelected && 'active'}>
-                        <Link to={`?scene=${index}`} onClick={onClickHandler}>
-                            {scenes[index].map((line, li) => <DebugLine line={line} key={`${index}-${line.fn}-${li}`} />)}
-                        </Link>
-                    </li>
-                );
-            }}
+            renderIndicator={renderIndicator(scenes)}
         >
-            {scenes.map((scene, i) => {
-                return <Scene
-                    onClick={() => {console.log('Scene click'); onClick(); }}
-                    onDelay={console.log}
-                    scene={scene}
-                    key={`scene-${i}`}
-                />;
-            })}
+            {scenes.map((scene, i) => <Scene scene={scene} key={`scene-${i}`}/>)}
         </Carousel>;
+}
+
+function renderIndicator(scenes) {
+    return (onClickHandler, isSelected, index) => (
+        <li value={index} key={index} className={isSelected ? 'active' : ''}>
+            <Link to={`?scene=${index}`} onClick={onClickHandler}>
+                {scenes[index].map((line, li) => <DebugLine line={line} key={`${index}-${line.fn}-${li}`}/>)}
+            </Link>
+        </li>
+    );
 }
 
 function DebugLine({ line }) {

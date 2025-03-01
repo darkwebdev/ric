@@ -20,27 +20,34 @@ export const Story = () => {
                 const { 0: path } = params;
                 const text = await storyLoader(path);
                 if (text) {
-                    const allScenes = scenesFromText(text);
-                    setScenes(allScenes);
-                    // await preloadImages(imagesFromScenes(allScenes));
+                    setScenes(scenesFromText(text));
                 }
             })();
         }
     }, []);
 
     useEffect(() => {
-        console.log(`DELAY: ${delay} sceneIndex: ${sceneIndex}`);
-        if (!cancelDelay && delay) {
+        const sceneDelay = scenes?.[sceneIndex]?.reduce((result, line) => ({
+            Delay: line.time * 1000,
+            Blocker: line.fadetime * 1000,
+        }[line.fn]) || result, undefined);
+
+        console.log(`DELAY: ${sceneDelay} sceneIndex: ${sceneIndex}`);
+
+        if (!cancelDelay && sceneDelay) {
             const timeout = setTimeout(() => {
                 setDelay(undefined);
                 gotoNextScene();
-            }, delay);
+            }, sceneDelay);
+
+            setDelay(sceneDelay);
+
             return () => {
                 clearTimeout(timeout);
                 setDelay(undefined);
             }
         }
-    }, [delay, cancelDelay]);
+    }, [scenes, sceneIndex, cancelDelay]);
 
     const gotoNextScene = e => {
         console.log(`gotoNextScene: ${sceneIndex} -> ${sceneIndex + 1}`, e);
@@ -62,7 +69,6 @@ export const Story = () => {
             sceneIndex={sceneIndex}
             delayCountdown={delayCountdown}
             onClick={gotoNextScene}
-            onDelay={setDelay}
             onChange={gotoScene}
         />
 

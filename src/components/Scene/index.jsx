@@ -1,4 +1,3 @@
-import React from 'react';
 import { Blocker } from '../fns/Blocker.jsx';
 import { Image } from '../fns/Image.jsx';
 import { Background } from '../fns/Background.jsx';
@@ -6,39 +5,20 @@ import { Character } from '../fns/Character.jsx';
 import { Text } from '../fns/Text';
 import './style.css';
 
-export const Scene = ({
-    scene = [],
-    onClick = () => {},
-    onDelay = () => {},
-}) => {
-    console.log('<Scene>', scene);
-    return <div className="scene-screen" onClick={onClick}>
+export const Scene = ({ scene = [], }) =>
+    <div className="scene-screen">
         {scene.map((line, i) => {
-            const {fn, ...rest} = line;
-            console.log('Fn', fn, rest);
-
-            if (['Delay', 'Blocker'].includes(fn)) {
-                if (line.fn === 'Delay') {
-                    onDelay(line.time * 1000);
-                } else if (line.fn === 'Blocker') {
-                    onDelay(line.fadetime * 1000);
-                }
-                console.log('Nothing to render for fn', fn);
-                return null;
-            }
-
-            const Fn = DialogFns[fn];
+            const Fn = DialogFns[line.fn];
             if (Fn) {
                 return <Fn line={line} key={`$fn}-${i}`}/>;
             }
         })}
-    </div>;
-}
+    </div>
 
 const DialogFns = {
-    Text: Text,
-    Character: Character,
-    Image: Image,
-    Background: Background,
-    Blocker: Blocker,
+    Text,
+    Character,
+    Image,
+    Background,
+    Blocker,
 };

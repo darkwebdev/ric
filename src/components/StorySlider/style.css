@@ -1,6 +1,24 @@
+.carousel .slide.selected {
+    z-index: 0 !important;
+}
+
+.carousel.carousel-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: -2;
+}
+
 .carousel .carousel-status {
+    padding: 0.7em;
+    width: 25vw;
     font-size: 16px;
 }
+
 .carousel .control-dots {
     top: 50px;
     bottom: 0;
