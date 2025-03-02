@@ -96,7 +96,8 @@ export const AssistantUI = () => {
     const onOpChange = e => {
         const newOpId = e.target.value;
         setOpId(newOpId);
-        setSkin(operator.skins[0].portraitId);
+        const newOp = operators.find(({ charId }) => charId === newOpId);
+        setSkin(newOp.skins[0].portraitId);
     };
     const EditControls = () => <>
         {operators && <>
@@ -107,7 +108,7 @@ export const AssistantUI = () => {
             >
                 {operators.map(op => (
                     <option key={op.charId} value={op.charId}>
-                        [{Rarities.indexOf(op.rarity)+1}] {op.name}
+                        {Rarities.indexOf(op.rarity)+1}* {op.name}
                     </option>
                 ))}
             </select>

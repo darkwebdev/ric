@@ -95,7 +95,13 @@ function withDisplayNumber([charId, op]) {
 }
 
 function byRarity([charId1, op1], [charId2, op2]) {
-    return Rarities.indexOf(op2.rarity) - Rarities.indexOf(op1.rarity);
+    const rarity1 = Rarities.indexOf(op1.rarity);
+    const rarity2 = Rarities.indexOf(op2.rarity);
+    if (rarity1 === rarity2) {
+        return op1.name.localeCompare(op2.name);
+    }
+    return rarity2 - rarity1;
+
 }
 
 async function parseJson(res) {
