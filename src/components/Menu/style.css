@@ -145,7 +145,7 @@
     position: relative;
     padding-top: 15vw;
     font-size: 1.3vw;
-    background: #fff6;
+    background: linear-gradient(to right, #fff 60%, #fff0);
 
     @media screen and (min-width: 2000px) {
         font-size: 27px;
@@ -238,7 +238,8 @@
 
 .operations {
     flex-basis: auto;
-    padding-top: 15vw;
+    padding: 15vw 0 0 7em;
+    background: linear-gradient(to left, #fff 70%, #fff0);
 }
 
 .op-code {
