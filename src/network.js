@@ -1,4 +1,4 @@
-import { AssetSrc, DataSrcEn, Rarities } from './const.js';
+import { AssetSrc, DataSrcCn, DataSrcEn, Rarities } from './const.js';
 
 export async function storyLoader(path) {
     console.log('Loading story text...', path);
@@ -33,7 +33,7 @@ export async function loadStoryData() {
     }
 }
 
-export async function fetchOperators() {
+export async function fetchOperators({ source = DataSrcEn } = {}) {
     // patch characters added and renamed (only guardmiya for now)
     // converts internal profession names to in-game ones
 
@@ -42,10 +42,11 @@ export async function fetchOperators() {
         // meta_data = parseJson(await fetch(`${DataSrcEn}/gamedata/excel/display_meta_table_json`)),
         // audio_data = parseJson(await fetch(`${DataSrcEn}/gamedata/excel/audio_data.json`)),
         // const storyVariables = await fetchData(`${DATA_BASE[serverString]}/gamedata/story/story_variables.json`);
-        const [json, patch, skins, quotes] = await Promise.all([
-            parseJson(await fetch(`${DataSrcEn}/gamedata/excel/character_table.json`)),
-            parseJson(await fetch(`${DataSrcEn}/gamedata/excel/char_patch_table.json`)),
+        const [json, patch, skinsEn, skinsFull, quotes] = await Promise.all([
+            parseJson(await fetch(`${source}/gamedata/excel/character_table.json`)),
+            parseJson(await fetch(`${source}/gamedata/excel/char_patch_table.json`)),
             parseJson(await fetch(`${DataSrcEn}/gamedata/excel/skin_table.json`)),
+            parseJson(await fetch(`${DataSrcCn}/gamedata/excel/skin_table.json`)),
             parseJson(await fetch(`${DataSrcEn}/gamedata/excel/charword_table.json`)),
         ]);
 
@@ -72,18 +73,32 @@ export async function fetchOperators() {
         // }
 
 
-        const sortedOps = Object.entries(json)
+        console.log('Operators loaded:', json, skinsFull.charSkins, skinsEn.charSkins, quotes.charWords);
+
+        const opSkins = charId => {
+            return Object.values(skinsFull.charSkins)
+                .filter(skin => skin.charId === charId)
+                .map(skin => {
+                    const { displaySkin } = Object.values(skinsEn.charSkins).find(({ skinId }) => skinId === skin.skinId) || {};
+                    return ({
+                        ...skin,
+                        displaySkin: displaySkin || skin.displaySkin,
+                    });
+                });
+        };
+
+        return Object.entries(json)
             .filter(withDisplayNumber)
-            .sort(byRarity);
-
-        console.log('Operators loaded:', json, skins.charSkins, quotes, sortedOps);
-
-        return sortedOps.map(([charId, op]) => ({
-            ...op,
-            charId,
-            skins: Object.values(skins.charSkins).filter(skin => skin.charId === charId),
-            quotes: Object.values(quotes.charWords).filter(quote => quote.charId === charId),
-        }));
+            .map(([charId, op]) => {
+                return ({
+                    ...op,
+                    name: op.appellation === ' ' ? op.name : op.appellation,
+                    charId,
+                    skins: opSkins(charId),
+                    quotes: Object.values(quotes.charWords).filter(quote => quote.charId === charId),
+                });
+            })
+            .sort(byRarityAndName);
     } catch (e) {
         console.error('Failed to load story data', e);
     }
@@ -94,7 +109,7 @@ function withDisplayNumber([charId, op]) {
     return op.displayNumber !== null;
 }
 
-function byRarity([charId1, op1], [charId2, op2]) {
+function byRarityAndName(op1, op2) {
     const rarity1 = Rarities.indexOf(op1.rarity);
     const rarity2 = Rarities.indexOf(op2.rarity);
     if (rarity1 === rarity2) {
@@ -106,6 +121,7 @@ function byRarity([charId1, op1], [charId2, op2]) {
 
 async function parseJson(res) {
     const parseWithoutTrailingComma = txt => JSON.parse(txt.replace(/,(\W+}\W*$)/, "$1"));
+
     return res.clone().json().catch(_ => res.text().then(parseWithoutTrailingComma));
 }
 

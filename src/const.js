@@ -46,6 +46,7 @@ export const AssetSrc = {
     fexli: "https://raw.githubusercontent.com/fexli/ArknightsResource/main",
 };
 
+export const DataSrcCn = DataSrc + 'zh_CN';
 export const DataSrcEn = DataSrcYostar + 'en_US';
 
 export const BlockingFns = ['Blocker', 'Text', 'Delay', ];

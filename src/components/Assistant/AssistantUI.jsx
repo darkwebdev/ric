@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { AssistantContext } from './AssistantContext.js';
 import { fetchOperators } from '../../network.js';
-import { Rarities } from '../../const.js';
+import { DataSrcCn, Rarities } from '../../const.js';
 
 import iconChange from '../../img/icon_rechange.png';
 import iconConfirm from '../../img/icon_confirm.png';
@@ -25,7 +25,7 @@ export const AssistantUI = () => {
 
     useEffect(() => {
         (async () => {
-            const opData = await fetchOperators();
+            const opData = await fetchOperators({ source: DataSrcCn });
             if (opData) {
                 setOperators(opData);
             }
@@ -144,7 +144,7 @@ export const AssistantUI = () => {
             </div>
             {!isEditMode && operator && (
                 <p className="assistant-text" onMouseDown={e => e.stopPropagation()}>
-                    {operator.quotes.find(({ voiceTitle }) => voiceTitle === 'Greeting').voiceText}
+                    {operator.quotes.find(({ voiceTitle }) => voiceTitle === 'Greeting')?.voiceText || 'Good day, Doctah.'}
                 </p>
             )}
         </div>
