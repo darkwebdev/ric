@@ -1,4 +1,4 @@
-import { AssetSrc, DataSrcCn, DataSrcEn, Rarities } from './const.js';
+import { AssetSrc, DataSrcCn, DataSrcEn, DefaultSkinTranslation, Rarities } from './const.js';
 
 export async function storyLoader(path) {
     console.log('Loading story text...', path);
@@ -33,7 +33,7 @@ export async function loadStoryData() {
     }
 }
 
-export async function fetchOperators({ source = DataSrcEn } = {}) {
+export async function fetchOperators({ source = DataSrcCn } = {}) {
     // patch characters added and renamed (only guardmiya for now)
     // converts internal profession names to in-game ones
 
@@ -42,6 +42,7 @@ export async function fetchOperators({ source = DataSrcEn } = {}) {
         // meta_data = parseJson(await fetch(`${DataSrcEn}/gamedata/excel/display_meta_table_json`)),
         // audio_data = parseJson(await fetch(`${DataSrcEn}/gamedata/excel/audio_data.json`)),
         // const storyVariables = await fetchData(`${DATA_BASE[serverString]}/gamedata/story/story_variables.json`);
+        // eslint-disable-next-line no-unused-vars
         const [json, patch, skinsEn, skinsFull, quotes] = await Promise.all([
             parseJson(await fetch(`${source}/gamedata/excel/character_table.json`)),
             parseJson(await fetch(`${source}/gamedata/excel/char_patch_table.json`)),
@@ -75,17 +76,21 @@ export async function fetchOperators({ source = DataSrcEn } = {}) {
 
         console.log('Operators loaded:', json, skinsFull.charSkins, skinsEn.charSkins, quotes.charWords);
 
-        const opSkins = charId => {
-            return Object.values(skinsFull.charSkins)
+        const mergedSkins = charId =>
+            Object.values(skinsFull.charSkins)
                 .filter(skin => skin.charId === charId)
                 .map(skin => {
                     const { displaySkin } = Object.values(skinsEn.charSkins).find(({ skinId }) => skinId === skin.skinId) || {};
                     return ({
                         ...skin,
-                        displaySkin: displaySkin || skin.displaySkin,
+                        displaySkin: displaySkin || translatedSkin(skin.displaySkin),
                     });
                 });
-        };
+
+        const translatedSkin = displaySkin => ({
+            ...displaySkin,
+            skinGroupName: displaySkin.skinGroupName.replace(DefaultSkinTranslation.cn, DefaultSkinTranslation.en),
+        });
 
         return Object.entries(json)
             .filter(withDisplayNumber)
@@ -94,7 +99,7 @@ export async function fetchOperators({ source = DataSrcEn } = {}) {
                     ...op,
                     name: op.appellation === ' ' ? op.name : op.appellation,
                     charId,
-                    skins: opSkins(charId),
+                    skins: mergedSkins(charId),
                     quotes: Object.values(quotes.charWords).filter(quote => quote.charId === charId),
                 });
             })
@@ -105,6 +110,7 @@ export async function fetchOperators({ source = DataSrcEn } = {}) {
 }
 
 
+// eslint-disable-next-line no-unused-vars
 function withDisplayNumber([charId, op]) {
     return op.displayNumber !== null;
 }
@@ -268,10 +274,10 @@ export function charImageSrc(imageName, source) {
 
 export function charArtSrc(imageName, source) {
     switch (source) {
-        case AssetSrc.aceship:
-            return `${source}avg/characters/${id}${faceAndBody}.png`;
-        case AssetSrc.arkwaifu:
-            return source.replace(/REPLACEME/, `${id}${faceAndBody}`);
+        // case AssetSrc.aceship:
+        //     return `${source}avg/characters/${id}${faceAndBody}.png`;
+        // case AssetSrc.arkwaifu:
+        //     return source.replace(/REPLACEME/, `${id}${faceAndBody}`);
         case AssetSrc.fexli:
         default:
             return `${AssetSrc.fexli}/charpack/${imageName.replace('#', '_')}.png`;

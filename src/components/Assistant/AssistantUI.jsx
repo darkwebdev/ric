@@ -1,7 +1,8 @@
 import { useContext, useEffect, useState } from 'react';
-import { AssistantContext } from './AssistantContext.js';
 import { fetchOperators } from '../../network.js';
-import { DataSrcCn, Rarities } from '../../const.js';
+import { AssistantContext } from './AssistantContext.js';
+import { AssistantSelect } from './AssistantSelect.jsx';
+import { AssistantTalk } from './AssistantTalk.jsx';
 
 import iconChange from '../../img/icon_rechange.png';
 import iconConfirm from '../../img/icon_confirm.png';
@@ -25,7 +26,7 @@ export const AssistantUI = () => {
 
     useEffect(() => {
         (async () => {
-            const opData = await fetchOperators({ source: DataSrcCn });
+            const opData = await fetchOperators();
             if (opData) {
                 setOperators(opData);
             }
@@ -89,43 +90,21 @@ export const AssistantUI = () => {
 
     const operator = opId ? operators?.find(({ charId }) => charId === opId) : undefined;
 
-    const skinName = (skin, i) => {
-        return skin.skinGroupName === 'Default Outfit' ? `Elite ${i+1}` : skin.skinGroupName;
-    }
-
     const onOpChange = e => {
         const newOpId = e.target.value;
         setOpId(newOpId);
         const newOp = operators.find(({ charId }) => charId === newOpId);
         setSkin(newOp.skins[0].portraitId);
     };
+
     const EditControls = () => <>
-        {operators && <>
-            <select
-                className="assistant-select"
-                defaultValue={opId}
-                onChange={onOpChange}
-            >
-                {operators.map(op => (
-                    <option key={op.charId} value={op.charId}>
-                        {Rarities.indexOf(op.rarity)+1}* {op.name}
-                    </option>
-                ))}
-            </select>
-            {operator &&
-                <select
-                    className="assistant-skin-select"
-                    defaultValue={skin}
-                    onChange={e => setSkin(e.target.value)}
-                >
-                    {operator.skins.map(({ skinId, portraitId, displaySkin }, i) => (
-                        <option key={skinId} value={portraitId}>
-                            {skinName(displaySkin, i)}
-                        </option>
-                    ))}
-                </select>
-            }
-        </>}
+        <AssistantSelect
+            operators={operators}
+            operator={operator}
+            skin={skin}
+            onSkinChange={e => setSkin(e.target.value)}
+            onOpChange={onOpChange}
+        />
         <input type="range" min="100" max="500" value={scale} onChange={(e) => setScale(e.target.value)} />
         {saveButton}
         {cancelButton}
@@ -143,14 +122,9 @@ export const AssistantUI = () => {
                 {isEditMode ? <EditControls /> : editButton}
             </div>
             {!isEditMode && operator && (
-                <p className="assistant-text" onMouseDown={e => e.stopPropagation()}>
-                    {operator.quotes.find(({ voiceTitle }) => voiceTitle === 'Greeting')?.voiceText || 'Good day, Doctah.'}
-                </p>
+                <AssistantTalk quotes={operator.quotes} />
             )}
         </div>
     );
 };
-// Idle
-// Talk 1
-// Talk 2
-// Talk 3
+

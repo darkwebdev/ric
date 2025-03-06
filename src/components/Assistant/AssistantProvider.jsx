@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
-import useLocalStorage from '../../hooks/useLocalStorage.js';
+import { useLocalStorage } from '../../hooks/useLocalStorage.js';
 import { AssistantContext } from './AssistantContext.js';
+import { useAssistantTalk } from './useAssistantTalk.js';
 
 export const AssistantProvider = ({ children }) => {
     const imgRef = useRef(null);
@@ -9,6 +10,7 @@ export const AssistantProvider = ({ children }) => {
     const [scale, setScale] = useState(100);
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [assistant, saveAssistant] = useLocalStorage('assistant');
+    const { talkTitle, nextTalkTitle } = useAssistantTalk();
 
     return <AssistantContext.Provider value={{
         opId, setOpId,
@@ -16,6 +18,7 @@ export const AssistantProvider = ({ children }) => {
         scale, setScale,
         position, setPosition,
         assistant, saveAssistant,
+        talkTitle, nextTalkTitle,
         imgRef,
     }}>
         {children}
