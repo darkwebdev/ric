@@ -33,6 +33,7 @@
     height: 100vh;
     z-index: 3;
 
+    /* todo: IS IT STILL NEEDED? */
     /* Carousel fix */
 
     .carousel .slide & img {
@@ -64,9 +65,13 @@
 }
 
 .dialog-char-img {
-    margin: 3% auto 0;
-    transform: scale(1.2);
+    margin: 40% auto 0;
     z-index: 1;
+
+    @media (min-width: 1024px) or (orientation: landscape) {
+        margin-top: 3%;
+        transform: scale(1.2);
+    }
 }
 
 .dialog-char-img-shade {
@@ -91,31 +96,40 @@
     position: absolute;
     width: 100%;
     bottom: 0;
-    display: flex;
-    gap: 4em;
-    padding: 2em 0 4em;
+    padding: 2em 2em 4em;
     color: #fff;
     background: linear-gradient(to top, #000 50%, transparent);
     z-index: 2;
 
+    @media (min-width: 1024px) or (orientation: landscape) {
+        display: flex;
+        gap: 4em;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     p {
         text-align: left;
         margin-top: 0;
-        width: 55vw;
-        font-size: 1.8vw;
+        font-size: 4vw;
+
+        @media (min-width: 1024px) or (orientation: landscape) {
+            width: 55vw;
+            font-size: 1.8vw;
+        }
     }
 
-    code {
-        position: absolute;
-        bottom: 0;
-    }
-}
+    .dialog-name {
+        font-size: 4vw;
+        color: #888;
+        text-align: left;
 
-.dialog-name {
-    width: 25.7vw;
-    font-size: 1.8vw;
-    color: #888;
-    text-align: right;
+        @media (min-width: 1024px) or (orientation: landscape) {
+            width: 25.7vw;
+            font-size: 1.8vw;
+            text-align: right;
+        }
+    }
 }
 
 .dialog-blocker {

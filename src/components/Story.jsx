@@ -13,7 +13,7 @@ export const Story = () => {
     const [cancelDelay, setCancelDelay] = useState();
     const delayCountdown = useCountdown({ countStart: delay, interval: 100 });
     const sceneIndex = parseInt(searchParams.get('scene')) || 0;
-    const isDebug = searchParams.get('debug') !== null;
+    const isDebug = searchParams.get('debug');
 
     useEffect(() => {
         if (match) {
@@ -61,7 +61,7 @@ export const Story = () => {
 
     const gotoScene = sceneIndex => {
         isDebug && console.log(`gotoScene: ${sceneIndex}`);
-        setSearchParams({ scene: sceneIndex });
+        setSearchParams({ scene: sceneIndex, isDebug });
     }
 
     return scenes && <>

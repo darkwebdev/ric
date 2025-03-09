@@ -14,8 +14,9 @@ export const StorySlider = ({
     onChange = () => {},
     isDebug = false,
 }) => {
+    console.log('SLIDER', isDebug)
     const statusFormatter = (current, total) =>
-        <Progress value={current} max={total} text={delayCountdown && `delay: ${delayCountdown}`} />;
+        <Progress value={current} max={total} text={isDebug && delayCountdown && `delay: ${delayCountdown}`} />;
 
     return scenes && <>
         <div className="scene-background">
@@ -44,7 +45,7 @@ export const StorySlider = ({
 function renderIndicator(scenes) {
     return (onClickHandler, isSelected, index) => (
         <li value={index} key={index} className={isSelected ? 'active' : ''}>
-            <Link to={`?scene=${index}`} onClick={onClickHandler}>
+            <Link to={`?scene=${index}&debug=1`} onClick={onClickHandler}>
                 {scenes[index].map((line, li) => <DebugLine line={line} key={`${index}-${line.fn}-${li}`}/>)}
             </Link>
         </li>
