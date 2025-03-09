@@ -6,7 +6,7 @@ export const Character = ({ line }) => {
     const img1class = `dialog-char-img${name2 ? ' dialog-char-img-1' : ''}${focus === '2' ? ' dialog-char-img-shade' : ''}`;
     const img2class = `dialog-char-img dialog-char-img-2${focus === '1' ? ' dialog-char-img-shade' : ''}`;
 
-    return <div className="dialog-char">
+    return name && <div className="dialog-char">
         {name &&
             <img
                 src={charImageSrc(name)}

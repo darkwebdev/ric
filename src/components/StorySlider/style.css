@@ -2,17 +2,6 @@
     z-index: 0 !important;
 }
 
-.carousel.carousel-slider::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    z-index: -2;
-}
-
 .carousel .carousel-status {
     position: fixed;
     padding: 0;
@@ -28,6 +17,7 @@
     right: 0;
     overflow-y: scroll;
     margin: 0;
+    padding-left: 2em;
     list-style: decimal;
     text-align: left;
     max-width: 25vw;

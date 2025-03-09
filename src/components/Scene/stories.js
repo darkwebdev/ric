@@ -1,9 +1,9 @@
 import { fn } from '@storybook/test';
-import { Scene } from './index';
+import { SceneForeground } from './index';
 
 export default {
     title: 'Scene',
-    component: Scene,
+    component: SceneForeground,
     args: { onClick: fn(), onPrevClick: fn(), onReturnClick: fn() },
 };
 
