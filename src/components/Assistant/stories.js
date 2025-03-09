@@ -1,5 +1,4 @@
-// import { fn } from '@storybook/test';
-import { Assistant } from './index.jsx';
+import { Assistant } from './index.js';
 
 export default {
     title: 'Assistant',

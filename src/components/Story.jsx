@@ -13,6 +13,7 @@ export const Story = () => {
     const [cancelDelay, setCancelDelay] = useState();
     const delayCountdown = useCountdown({ countStart: delay, interval: 100 });
     const sceneIndex = parseInt(searchParams.get('scene')) || 0;
+    const isDebug = searchParams.get('debug') !== null;
 
     useEffect(() => {
         if (match) {
@@ -32,7 +33,7 @@ export const Story = () => {
             Blocker: line.fadetime * 1000,
         }[line.fn]) || result, undefined);
 
-        console.log(`DELAY: ${sceneDelay} sceneIndex: ${sceneIndex}`);
+        isDebug && console.log(`DELAY: ${sceneDelay} sceneIndex: ${sceneIndex}`);
 
         if (!cancelDelay && sceneDelay) {
             const timeout = setTimeout(() => {
@@ -50,7 +51,7 @@ export const Story = () => {
     }, [scenes, sceneIndex, cancelDelay]);
 
     const gotoNextScene = e => {
-        console.log(`gotoNextScene: ${sceneIndex} -> ${sceneIndex + 1}`, e);
+        isDebug && console.log(`gotoNextScene: ${sceneIndex} -> ${sceneIndex + 1}`, e);
         gotoScene(Math.min(scenes.length - 1, sceneIndex + 1));
     }
 
@@ -59,7 +60,7 @@ export const Story = () => {
     }
 
     const gotoScene = sceneIndex => {
-        console.log(`gotoScene: ${sceneIndex}`);
+        isDebug && console.log(`gotoScene: ${sceneIndex}`);
         setSearchParams({ scene: sceneIndex });
     }
 
@@ -70,12 +71,13 @@ export const Story = () => {
             delayCountdown={delayCountdown}
             onClick={gotoNextScene}
             onChange={gotoScene}
+            isDebug={isDebug}
         />
 
         <section className="dialog-buttons">
             <Link to="/" className="dialog-button">Return</Link>
             <button className="dialog-button" onClick={gotoPrevScene}>Previous</button>
-            <button className="dialog-button" onClick={() => setCancelDelay(true)}>Pause delay</button>
+            {isDebug && <button className="dialog-button" onClick={() => setCancelDelay(true)}>Pause delay</button>}
         </section>
     </>;
 }
