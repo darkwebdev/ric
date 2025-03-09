@@ -246,7 +246,7 @@
         display: flex;
     }
     .after-op {
-        margin-top: -2em;
+        margin-top: -2.1em;
         margin-bottom: 1em;
     }
     a {
@@ -257,9 +257,9 @@
     }
     .op-tag {
         margin-right: 1em;
-        font-size: 0.5em;
+        font-size: 0.6em;
         vertical-align: top;
-        line-height: 2.6;
+        line-height: 2.4;
         text-transform: uppercase;
     }
     .op-name {
