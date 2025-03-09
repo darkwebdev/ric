@@ -13,7 +13,7 @@ export const Assistant = () => {
                 draggable="false"
                 style={{ transform: `scale(${scale / 100}) translateX(${position.x}px) translateY(${position.y}px)` }}
                 alt="Your Assistant"
-                onClick={() => { console.log('click');nextTalkTitle();}}
+                onClick={nextTalkTitle}
             />
         </div>
 };

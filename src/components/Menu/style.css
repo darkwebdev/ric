@@ -145,7 +145,7 @@
     position: relative;
     padding-top: 15vw;
     font-size: 1.3vw;
-    background: linear-gradient(to right, #fff 60%, #fff0);
+    background: linear-gradient(to right, #ccc 60%, #ccc0);
 
     @media screen and (min-width: 2000px) {
         font-size: 27px;
@@ -237,13 +237,36 @@
 }
 
 .operations {
+    position: relative;
     flex-basis: auto;
-    padding: 15vw 0 0 7em;
-    background: linear-gradient(to left, #fff 70%, #fff0);
-}
+    padding: 15vw 1em 0 7em;
+    background: linear-gradient(to left, #ccc 70%, #ccc0);
 
-.op-code {
-    font-family: 'novecento', Arial, serif;
+    .op {
+        display: flex;
+    }
+    .after-op {
+        margin-top: -2em;
+        margin-bottom: 1em;
+    }
+    a {
+        text-decoration: none;
+    }
+    .op-code {
+        font-family: 'novecento', Arial, serif;
+    }
+    .op-tag {
+        margin-right: 1em;
+        font-size: 0.5em;
+        vertical-align: top;
+        line-height: 2.6;
+        text-transform: uppercase;
+    }
+    .op-name {
+        display: block;
+        margin-bottom: 1em;
+        line-height: 1;
+    }
 }
 
 @keyframes grow-right {

@@ -78,15 +78,26 @@ export const Menu = ({ opened, onOpen = () => {} }) => {
                             </li>
                         )}
                     </ul>
-                    {storyId !== undefined && <ul className="operations">
-                        {operationsByStoryId(storyData, storyId).map(op =>
-                            <li key={op.storyId}>
-                                <Link to={`story/${operationById(storyData, storyId, op.storyId).storyTxt}`}>
-                                    <span className="op-code">{op.storyCode}</span> {op.storyName} [{op.avgTag}]
-                                </Link>
-                            </li>
-                        )}
-                    </ul>}
+                    {storyId !== undefined &&
+                        <ul className="operations">
+                            {operationsByStoryId(storyData, storyId).map((op, i, ops) => {
+                                const isAfterStory = op.storyCode === ops[i - 1]?.storyCode;
+                                return (
+                                    <li key={op.storyId} className={`op${isAfterStory ? ' after-op' : ''}`}>
+                                        <Link to={`story/${operationById(storyData, storyId, op.storyId).storyTxt}`}>
+                                            <span className="op-tag">▶ {op.avgTag.replace(' Operation', '')}</span>
+                                        </Link>
+                                        {!isAfterStory &&
+                                            <div className="op-title">
+                                                <span className="op-code">{op.storyCode}</span>
+                                                <span className="op-name">{op.storyName}</span>
+                                            </div>
+                                        }
+                                    </li>
+                                )}
+                            )}
+                        </ul>
+                    }
                 </div>
             </ReactCSSTransitionReplace>
         }
