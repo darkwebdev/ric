@@ -1,9 +1,7 @@
 import { Rarities } from '../../const.js';
 
-const skinName = (skin, i) =>
-    skin.skinGroupName === 'Default Outfit' ? `Elite ${i + 1}` : skin.skinGroupName;
-
 export const AssistantSelect = ({ operators, operator, skin, onSkinChange, onOpChange }) => {
+    console.log('AssistantSelect', operators, operator, skin);
     return operators && <>
         <select
             className="assistant-select"
@@ -31,3 +29,6 @@ export const AssistantSelect = ({ operators, operator, skin, onSkinChange, onOpC
         }
     </>
 }
+
+const skinName = (skin, i) =>
+    skin.skinGroupName === 'Default Outfit' ? `Elite ${i + 1}` : skin.skinGroupName;

@@ -1,12 +1,9 @@
 import { useContext, useEffect, useState } from 'react';
 import { fetchOperators } from '../../network.js';
 import { AssistantContext } from './AssistantContext.js';
-import { AssistantSelect } from './AssistantSelect.jsx';
+import { AssistantEdit } from './AssistantEdit.jsx';
 import { AssistantTalk } from './AssistantTalk.jsx';
-
-import iconChange from '../../img/icon_rechange.png';
-import iconConfirm from '../../img/icon_confirm.png';
-import iconCancel from '../../img/icon_cancel.png';
+import { EditButton } from '../UI/EditButton.jsx';
 import './style.css';
 
 export const AssistantUI = () => {
@@ -49,9 +46,9 @@ export const AssistantUI = () => {
         setDragging(false);
     };
 
-    const onScroll = (e) => {
+    const onScroll = e => {
         e.preventDefault();
-        setScale((prevScale) => Math.min(500, Math.max(50, prevScale - e.deltaY * 0.1)));
+        setScale(prevScale => Math.min(500, Math.max(50, prevScale - e.deltaY * 0.1)));
     }
 
     const onSaveEdit = () => {
@@ -78,16 +75,6 @@ export const AssistantUI = () => {
         });
     };
 
-    const onEdit = () => {
-        setEditMode(true);
-    };
-
-    const editButton = <button className="icon-button" onClick={onEdit}>
-        <img src={iconChange} role="presentation" style={{ filter: 'invert(1)', width: '90%' }} alt="" />
-    </button>;
-    const saveButton = <button onClick={onSaveEdit}><img src={iconConfirm} role="presentation" alt="" />Confirm Changes</button>;
-    const cancelButton = <button onClick={onCancelEdit}><img src={iconCancel} role="presentation" alt="" />Revert Changes</button>;
-
     const operator = opId ? operators?.find(({ charId }) => charId === opId) : undefined;
 
     const onOpChange = e => {
@@ -96,19 +83,6 @@ export const AssistantUI = () => {
         const newOp = operators.find(({ charId }) => charId === newOpId);
         setSkin(newOp.skins[0].portraitId);
     };
-
-    const EditControls = () => <>
-        <AssistantSelect
-            operators={operators}
-            operator={operator}
-            skin={skin}
-            onSkinChange={e => setSkin(e.target.value)}
-            onOpChange={onOpChange}
-        />
-        <input type="range" min="100" max="500" value={scale} onChange={(e) => setScale(e.target.value)} />
-        {saveButton}
-        {cancelButton}
-    </>;
 
     return (
         <div
@@ -119,7 +93,19 @@ export const AssistantUI = () => {
             onWheel={isEditMode ? onScroll : undefined}
         >
             <div className="assistant-controls" onMouseDown={e => e.stopPropagation()}>
-                {isEditMode ? <EditControls /> : editButton}
+                {!isEditMode ? <EditButton onClick={() => setEditMode(true)} /> :
+                    <AssistantEdit
+                        operators={operators}
+                        operator={operator}
+                        skin={skin}
+                        onSkinChange={setSkin}
+                        scale={scale}
+                        setScale={setScale}
+                        onSave={onSaveEdit}
+                        onCancel={onCancelEdit}
+                        onOpChange={onOpChange}
+                    />
+                }
             </div>
             {!isEditMode && operator && (
                 <AssistantTalk quotes={operator.quotes} />
@@ -127,4 +113,3 @@ export const AssistantUI = () => {
         </div>
     );
 };
-
