@@ -25,7 +25,7 @@ export const StorySlider = ({
         <Carousel
             autoFocus={true}
             useKeyboardArrows={true}
-            showArrows={true}
+            showArrows={false}
             showStatus={true}
             showIndicators={true}
             showThumbs={false}
