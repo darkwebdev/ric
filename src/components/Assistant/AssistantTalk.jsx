@@ -12,7 +12,3 @@ export const AssistantTalk = ({ quotes = [] }) => {
         </p>
     );
 };
-// Idle
-// Talk 1
-// Talk 2
-// Talk 3

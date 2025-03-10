@@ -1,5 +1,6 @@
 import { action } from '@storybook/addon-actions';
-import { Assistant, AssistantContext } from './index.js';
+import { Assistant } from './index.js';
+import { AssistantContext } from './AssistantContext.js';
 
 export default {
     title: 'Assistant',
