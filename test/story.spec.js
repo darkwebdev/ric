@@ -42,6 +42,7 @@ describe('categorizeStories()', () => {
         const result = categorizeStories({ storyReview, storyReviewMeta, moduleStory, storyTable });
 
         expect(result).toEqual({
+            intermezzi: [],
             record: ['story_1'],
             main: ['main_1'],
             side: ['side_1', 'side_2', 'unknown',],

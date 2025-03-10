@@ -70,7 +70,7 @@ describe('Parsing story dialogs', () => {
                 { fn: 'Text', name: 'Bounty Hunter', text: 'So, the wench still won\'t speak up?' },
                 { fn: 'Text', text: 'There is no end to war. And there is no end to our fight.' },
                 { fn: 'Text', text: 'It is as if war is the tool that we have always relied on for survival.' },
-                { fn: 'charslot', name: 'avg_npc_1490_1#1$1', slot: 'm' },
+                { fn: 'Charslot', name: 'avg_npc_1490_1#1$1', slot: 'm' },
             ];
             expect(parseDialog(lines)).toEqual(expected);
         });

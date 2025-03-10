@@ -43,9 +43,9 @@ export async function fetchOperators({ source = DataSrcCn } = {}) {
         // audio_data = parseJson(await fetch(`${DataSrcEn}/gamedata/excel/audio_data.json`)),
         // const storyVariables = await fetchData(`${DATA_BASE[serverString]}/gamedata/story/story_variables.json`);
         // eslint-disable-next-line no-unused-vars
-        const [json, patch, skinsEn, skinsFull, quotes] = await Promise.all([
+        const [json, /*patch,*/ skinsEn, skinsFull, quotes] = await Promise.all([
             parseJson(await fetch(`${source}/gamedata/excel/character_table.json`)),
-            parseJson(await fetch(`${source}/gamedata/excel/char_patch_table.json`)),
+            // parseJson(await fetch(`${source}/gamedata/excel/char_patch_table.json`)),
             parseJson(await fetch(`${DataSrcEn}/gamedata/excel/skin_table.json`)),
             parseJson(await fetch(`${DataSrcCn}/gamedata/excel/skin_table.json`)),
             parseJson(await fetch(`${DataSrcEn}/gamedata/excel/charword_table.json`)),
