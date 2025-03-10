@@ -70,3 +70,4 @@ jspm_packages/
 *.iml
 
 *storybook.log
+dist/
