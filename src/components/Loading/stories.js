@@ -4,13 +4,6 @@ import { Loading } from './index.jsx';
 export default {
     title: 'Loading',
     component: Loading,
-    parameters: {
-    },
-    tags: ['autodocs'],
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-    args: { onClick: fn() },
 };
 
 export const Default = {
