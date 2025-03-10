@@ -5,7 +5,7 @@ export const AssistantSelect = ({ operators, operator, skin, onSkinChange, onOpC
     return operators && <>
         <select
             className="assistant-select"
-            defaultValue={operator.charId}
+            defaultValue={operator?.charId}
             onChange={onOpChange}
         >
             {operators.map(op => (
