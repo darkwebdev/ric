@@ -2,7 +2,7 @@
     position: fixed;
     display: flex;
     width: 100%;
-    top: 40px;
+    top: 60px;
     height: 15vw;
     justify-content: space-around;
     background: linear-gradient(to bottom, #cccf, #cccc 60%, #ccc0 100%);
@@ -143,8 +143,8 @@
 
 .stories {
     position: relative;
-    padding-top: 15vw;
-    font-size: 1.3vw;
+    padding-top: calc(60px + 15vw);
+    font-size: 4vw;
     background: linear-gradient(to right, #ccc 60%, #ccc0);
 
     @media screen and (min-width: 2000px) {
@@ -154,7 +154,6 @@
     &::before {
         content: '';
         position: absolute;
-        top: 14vw;
         left: 5vw;
         width: 20px;
         height: 20px;
@@ -164,9 +163,9 @@
     &::after {
         content: '';
         position: absolute;
-        top: 14vw;
+        top: 22vw;
         bottom: 4vw;
-        left: 5.5vw;
+        left: 5.7vw;
         width: 4px;
         background: #aaa;
     }
@@ -175,7 +174,7 @@
         position: relative;
         margin-left: 5.2vw;
         margin-bottom: 1.85vw;
-        line-height: 4.9vw;
+        line-height: 9vw;
         z-index: 1;
 
         @media screen and (min-width: 2000px) {
@@ -239,8 +238,12 @@
 .operations {
     position: relative;
     flex-basis: auto;
-    padding: 15vw 1em 0 7em;
+    padding: 15vw .5em 0;
     background: linear-gradient(to left, #ccc 70%, #ccc0);
+
+    @media (min-width: 1024px) {
+        padding-left: 7em;
+    }
 
     .op {
         display: flex;
@@ -254,18 +257,32 @@
     }
     .op-code {
         font-family: 'novecento', Arial, serif;
+        font-size: 4vw;
+
+        @media (min-width: 1024px) {
+            font-size: 20px;
+        }
     }
     .op-tag {
         margin-right: 1em;
-        font-size: 0.6em;
+        font-size: 1em;
         vertical-align: top;
         line-height: 2.4;
         text-transform: uppercase;
+
+        @media (min-width: 1024px) {
+            font-size: 0.6em;
+        }
     }
     .op-name {
         display: block;
         margin-bottom: 1em;
         line-height: 1;
+        font-size: 3vw;
+
+        @media (min-width: 1024px) {
+            font-size: 20px;
+        }
     }
 }
 

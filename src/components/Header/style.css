@@ -1,6 +1,6 @@
 .main-header {
     position: fixed;
-    height: 40px;
+    height: 60px;
     width: 100%;
     background: #ccc;
     z-index: 3;
@@ -30,7 +30,7 @@
     svg {
         height: calc(100% - 11px);
         margin-top: 10px;
-        width: 35px;
+        width: 70px;
 
         @media screen and (min-width: 1024px) {
             height: calc(100% - 21px);
@@ -43,7 +43,7 @@
 
 .logo-title {
     font-family: 'trajanpro', Arial, serif;
-    font-size: 25px;
+    font-size: 45px;
     font-weight: normal;
     letter-spacing: -3px;
     text-transform: lowercase;
