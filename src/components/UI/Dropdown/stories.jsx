@@ -2,6 +2,7 @@ import { action } from '@storybook/addon-actions';
 import { Dropdown } from './index';
 import { useState } from 'react';
 import { Rarity } from '../Rarity.jsx';
+import { AssistantAvatar } from '../../Assistant/AssistantAvatar.jsx';
 
 export default {
     title: 'Dropdown',
@@ -46,24 +47,17 @@ export const WithImages = args => {
 };
 
 export const WithImagesAndText = args => {
-    const url = 'https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/charavatars/';
     const [value, setValue] = useState();
 
     return <Dropdown {...args} value={value} onChange={v => {setValue(v);action('onChange')(v);}}>
         <Dropdown.Item value="char_301_cutter">
-            <img src={`${url}char_301_cutter.png`} />
-            <Rarity rarity="TIER_4" />
-            <p>Cutter</p>
+            <AssistantAvatar rarity="TIER_4" avatarId="char_301_cutter" name="Cutter" />
         </Dropdown.Item>
         <Dropdown.Item value="char_4177_brigid">
-            <img src={`${url}char_4177_brigid.png`} />
-            <Rarity rarity="TIER_5" />
-            <p>Brigid</p>
+            <AssistantAvatar rarity="TIER_5" avatarId="char_4177_brigid" name="Brigid" />
         </Dropdown.Item>
         <Dropdown.Item value="char_4010_etlchi">
-            <img src={`${url}char_4010_etlchi.png`} />
-            <Rarity rarity="TIER_6" />
-            <p>Entelechia</p>
+            <AssistantAvatar rarity="TIER_6" avatarId="char_4010_etlchi" name="Entelechia" />
         </Dropdown.Item>
     </Dropdown>;
 };
