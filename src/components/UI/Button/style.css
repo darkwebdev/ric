@@ -1,0 +1,34 @@
+.button {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    padding: .5em 4em;
+    font-size: 25px;
+    color: #fff;
+    background: rgb(44, 44, 44);
+    box-shadow: 0 .5em .5em #999;
+
+    &:active {
+        filter: brightness(0.8);
+    }
+
+    &.button-primary {
+        background: rgb(0, 150, 220);
+    }
+
+    &.button-icon {
+        justify-content: center;
+        align-items: center;
+        padding: 0.3em;
+        width: 2.5em;
+        height: 2.5em;
+        background: #000a;
+        border: 2px solid rgb(150, 150, 150);
+        border-radius: 50%;
+        box-shadow: 0 0 0.3em #333;
+    }
+
+    span {
+        margin-top: .2em;
+    }
+}

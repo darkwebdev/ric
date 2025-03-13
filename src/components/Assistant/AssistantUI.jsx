@@ -3,7 +3,7 @@ import { fetchOperators } from '../../network.js';
 import { AssistantContext } from './AssistantContext.js';
 import { AssistantEdit } from './AssistantEdit.jsx';
 import { AssistantTalk } from './AssistantTalk.jsx';
-import { EditButton } from '../UI/EditButton.jsx';
+import { Button, ButtonTypes, IconTypes } from '../UI/Button';
 import './style.css';
 
 export const AssistantUI = () => {
@@ -93,7 +93,8 @@ export const AssistantUI = () => {
             onWheel={isEditMode ? onScroll : undefined}
         >
             <div className="assistant-controls" onMouseDown={e => e.stopPropagation()}>
-                {!isEditMode ? <EditButton onClick={() => setEditMode(true)} /> :
+                {!isEditMode ?
+                    <Button type={ButtonTypes.Icon} icon={IconTypes.Change} onClick={() => setEditMode(true)} /> :
                     <AssistantEdit
                         operators={operators}
                         operator={operator}

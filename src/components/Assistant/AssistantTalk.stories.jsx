@@ -3,7 +3,7 @@ import { AssistantTalk } from './AssistantTalk.jsx';
 import { TalkTitles } from '../../const.js';
 
 export default {
-    title: 'AssistantTalk',
+    title: 'Assistant/Talk',
     component: AssistantTalk,
     argTypes: {
         talkTitle: {

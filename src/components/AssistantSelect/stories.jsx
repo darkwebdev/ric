@@ -1,8 +1,8 @@
 import { action } from '@storybook/addon-actions';
-import { AssistantSelect } from './AssistantSelect.jsx';
+import { AssistantSelect } from './index.jsx';
 
 export default {
-    title: 'AssistantSelect',
+    title: 'Assistant/Select',
     component: AssistantSelect,
     argTypes: {},
 };

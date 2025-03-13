@@ -1,7 +1,6 @@
-import { AssistantSelect } from './AssistantSelect.jsx';
-import { SaveButton } from '../UI/SaveButton.jsx';
-import { CancelButton } from '../UI/CancelButton.jsx';
-import { Slider } from '../UI/Slider.jsx';
+import { AssistantSelect } from '../AssistantSelect';
+import { Slider } from '../UI/Slider';
+import { Button, ButtonTypes, IconTypes } from '../UI/Button';
 
 export const AssistantEdit = ({
     operators,
@@ -19,11 +18,23 @@ export const AssistantEdit = ({
             operators={operators}
             operator={operator}
             skin={skin}
-            onSkinChange={e => onSkinChange(e.target?.value)}
+            onSkinChange={onSkinChange}
             onOpChange={onOpChange}
         />
         <Slider value={scale} onChange={setScale} />
-        <SaveButton onClick={onSave} />
-        <CancelButton onClick={onCancel} />
+        <div className="assistant-edit-buttons">
+            <Button
+                type={ButtonTypes.Primary}
+                icon={IconTypes.Confirm}
+                text="Confirm"
+                onClick={onSave}
+            />
+            <Button
+                type={ButtonTypes.Secondary}
+                icon={IconTypes.Cancel}
+                text="Cancel"
+                onClick={onCancel}
+            />
+        </div>
     </>;
 };

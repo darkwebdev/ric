@@ -1,11 +1,10 @@
 import { action } from '@storybook/addon-actions';
 import { Dropdown } from './index';
 import { useState } from 'react';
-import { Rarity } from '../Rarity.jsx';
 import { AssistantAvatar } from '../../Assistant/AssistantAvatar.jsx';
 
 export default {
-    title: 'Dropdown',
+    title: 'UI/Dropdown',
     component: Dropdown,
     argTypes: {
         selectText: { control: 'text' },

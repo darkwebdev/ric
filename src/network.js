@@ -51,7 +51,6 @@ export async function fetchOperators({ source = DataSrcCn } = {}) {
             parseJson(await fetch(`${DataSrcEn}/gamedata/excel/charword_table.json`)),
         ]);
 
-    // let json = await parseJson(await fetch(`${DataSrcEn}/gamedata/excel/character_table.json`));
     // let patch = await parseJson(await fetch(`${DataSrcEn}/gamedata/excel/char_patch_table.json`));
     //     updateJSON(json, patch.patchChars);
 

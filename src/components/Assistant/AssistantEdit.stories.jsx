@@ -1,7 +1,7 @@
 import { AssistantEdit } from './AssistantEdit.jsx';
 
 export default {
-    title: 'AssistantEdit',
+    title: 'Assistant/Edit',
     component: AssistantEdit,
     argTypes: {
     },

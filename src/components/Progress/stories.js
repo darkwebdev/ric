@@ -1,7 +1,7 @@
 import { Progress } from './index.jsx';
 
 export default {
-    title: 'Progress',
+    title: 'Story/Progress',
     component: Progress,
     parameters: {
     },

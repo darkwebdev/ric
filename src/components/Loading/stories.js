@@ -1,8 +1,7 @@
-import { fn } from '@storybook/test';
 import { Loading } from './index.jsx';
 
 export default {
-    title: 'Loading',
+    title: 'UI/Loading',
     component: Loading,
 };
 

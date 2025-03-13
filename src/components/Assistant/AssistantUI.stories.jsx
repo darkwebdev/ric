@@ -3,7 +3,7 @@ import { AssistantUI } from './index.js';
 import { AssistantContext } from './AssistantContext.js';
 
 export default {
-    title: 'AssistantUI',
+    title: 'Assistant/UI',
     component: AssistantUI,
     argTypes: {
         opId: { control: 'text' },

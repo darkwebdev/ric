@@ -1,7 +1,7 @@
 import { AssistantAvatar } from './AssistantAvatar.jsx';
 
 export default {
-    title: 'AssistantAvatar',
+    title: 'Assistant/Avatar',
     component: AssistantAvatar,
     argTypes: {
     },
