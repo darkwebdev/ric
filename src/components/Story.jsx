@@ -6,19 +6,19 @@ import { useCountdown } from '../hooks/useCountdown.js';
 import { StorySlider } from './StorySlider';
 
 export const Story = () => {
-    const [match, params] = useRoute("/story/*");
+    const [match, params] = useRoute("*/story/*");
     const [searchParams, setSearchParams] = useSearchParams();
     const [scenes, setScenes] = useState();
     const [delay, setDelay] = useState();
     const [cancelDelay, setCancelDelay] = useState();
     const delayCountdown = useCountdown({ countStart: delay, interval: 100 });
     const sceneIndex = parseInt(searchParams.get('scene')) || 0;
-    const isDebug = searchParams.get('debug');
+    const isDebug = searchParams.get('debug') !== null;
 
     useEffect(() => {
         if (match) {
             (async () => {
-                const { 0: path } = params;
+                const { 1: path } = params;
                 const text = await storyLoader(path);
                 if (text) {
                     setScenes(scenesFromText(text));
@@ -61,7 +61,7 @@ export const Story = () => {
 
     const gotoScene = sceneIndex => {
         isDebug && console.log(`gotoScene: ${sceneIndex}`);
-        setSearchParams({ scene: sceneIndex, isDebug });
+        setSearchParams({ scene: sceneIndex, ...(isDebug ? { debug: '' } : {}) });
     }
 
     return scenes && <>
@@ -75,7 +75,7 @@ export const Story = () => {
         />
 
         <section className="dialog-buttons">
-            <Link to="/" className="dialog-button">Return</Link>
+            <Link to="/ric/" className="dialog-button">Return</Link>
             <button className="dialog-button" onClick={gotoPrevScene}>Previous</button>
             {isDebug && <button className="dialog-button" onClick={() => setCancelDelay(true)}>Pause delay</button>}
         </section>

@@ -5,7 +5,7 @@ import './style.css';
 
 export const Header = ({ onClick = () => {} }) =>
     <header className="main-header" onClick={onClick}>
-        <Link to="/">
+        <Link to="/ric/">
             <Logo/>
             <h1 className="logo-title">Rhodes Island Chronicles</h1>
         </Link>

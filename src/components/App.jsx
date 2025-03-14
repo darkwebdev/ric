@@ -10,7 +10,7 @@ export const App = () => {
     const [ menuOpened, setMenuOpened ] = useState(false);
 
     return <Switch>
-        <Route path="/story/*" component={Story} />
+        <Route path="*/story/*" component={Story} />
 
         <Route>
             <AssistantProvider>

@@ -1,11 +1,11 @@
 .story-types {
-    position: fixed;
+    position: relative;
     display: flex;
     width: 100%;
-    top: 60px;
+    /*top: 60px;*/
     height: 15vw;
     justify-content: space-around;
-    background: linear-gradient(to bottom, #cccf, #cccc 60%, #ccc0 100%);
+    /*background: linear-gradient(to bottom, #cccf, #cccc 60%, #ccc0 100%);*/
     z-index: 2;
     transform: translateY(-100%);
     animation: slide-down 1s ease-out 1.5s forwards;
@@ -48,17 +48,22 @@
     }
 
     .active &::before {
+        --marker-border-top: 3vw;
+        --marker-border-side: calc(var(--marker-border-top) / 5 * 3);
+        --marker-border-top--md: 25vw;
+        --marker-border-side--md: calc(var(--marker-border-top--md) / 5 * 3);
         content: '';
         position: absolute;
         width: 0;
         height: 0;
         top: 0;
         border-style: solid;
-        border-width: 1.3vw .8vw 0 .8vw;
+        border-color: #fff transparent transparent;
+        border-width: var(--marker-border-top) var(--marker-border-side) 0;
+
         @media screen and (min-width: 2000px) {
-            border-width: 25px 15px 0 15px;
+            border-width: var(--marker-border-top--md) var(--marker-border-side--md) 0;
         }
-        border-color: #fff transparent transparent transparent;
     }
 }
 
@@ -95,7 +100,7 @@
 
     .active & {
         position: fixed;
-        bottom: 0;
+        bottom: -5vw;
         left: 0;
         right: 0;
         text-align: center;
@@ -204,7 +209,7 @@
         }
 
         &.active {
-            font-size: 1.9vw;
+            font-size: 5vw;
             @media screen and (min-width: 2000px) {
                 font-size: 38px;
             }

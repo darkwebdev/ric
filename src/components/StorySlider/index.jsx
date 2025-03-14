@@ -14,7 +14,6 @@ export const StorySlider = ({
     onChange = () => {},
     isDebug = false,
 }) => {
-    console.log('SLIDER', isDebug)
     const statusFormatter = (current, total) =>
         <Progress value={current} max={total} text={isDebug && delayCountdown && `delay: ${delayCountdown}`} />;
 
@@ -31,13 +30,16 @@ export const StorySlider = ({
             showThumbs={false}
             transitionTime={1000}
             animationHandler='fade'
+            swipeable={false}
             selectedItem={sceneIndex}
-            onClickItem={onClick}
+            onClickItem={e => {console.log('CLICK'); onClick(e);}}
             onChange={onChange}
             statusFormatter={statusFormatter}
             renderIndicator={isDebug && renderIndicator(scenes)}
         >
-            {scenes.map((scene, i) => <SceneForeground scene={scene} key={`scene-${i}`}/>)}
+            {scenes.map((scene, index) =>
+                <SceneForeground scene={scene} index={index} key={index} />
+            )}
         </Carousel>
     </>;
 }
@@ -45,8 +47,10 @@ export const StorySlider = ({
 function renderIndicator(scenes) {
     return (onClickHandler, isSelected, index) => (
         <li value={index} key={index} className={isSelected ? 'active' : ''}>
-            <Link to={`?scene=${index}&debug=1`} onClick={onClickHandler}>
-                {scenes[index].map((line, li) => <DebugLine line={line} key={`${index}-${line.fn}-${li}`}/>)}
+            <Link to={`?scene=${index}&debug`} onClick={onClickHandler}>
+                {scenes[index].map((line, li) =>
+                    <DebugLine line={line} key={`${index}-${line.fn}-${li}`} />
+                )}
             </Link>
         </li>
     );

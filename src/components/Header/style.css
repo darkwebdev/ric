@@ -1,16 +1,19 @@
 .main-header {
-    position: fixed;
-    height: 60px;
+    --header-bottom-spacing: 40px;
+    --header-bottom-spacing--md: 20px;
+    position: relative;
+    height: calc(110px + var(--header-bottom-spacing));
     width: 100%;
-    background: #ccc;
+    background: linear-gradient(to bottom, #cccf, #cccf 110px, #ccc0 100%);
     z-index: 3;
 
     @media screen and (min-width: 1024px) {
-        height: 80px;
+        height: calc(80px + var(--header-bottom-spacing--md));
     }
 
     > a {
         display: flex;
+        padding-bottom: var(--header-bottom-spacing);
         height: 100%;
         align-items: baseline;
         justify-content: center;
@@ -19,7 +22,7 @@
         &::after {
             content: '';
             position: absolute;
-            bottom: 0;
+            bottom: var(--header-bottom-spacing);
             height: 1px;
             width: 0;
             background: linear-gradient(to right, transparent, #0006, transparent);
@@ -27,14 +30,16 @@
         }
     }
 
+    --logo-margin-top: 50px;
+    --logo-margin-top--md: 20px;
     svg {
-        height: calc(100% - 11px);
-        margin-top: 10px;
+        height: calc(100% - 1px - var(--logo-margin-top));
+        margin-top: var(--logo-margin-top);
         width: 70px;
 
         @media screen and (min-width: 1024px) {
-            height: calc(100% - 21px);
-            margin-top: 20px;
+            height: calc(100% - 1px - var(--logo-margin-top--md));
+            margin-top: var(--logo-margin-top--md);
             width: auto;
         }
     }

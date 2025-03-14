@@ -5,25 +5,21 @@ import { Character } from '../fns/Character.jsx';
 import { Text } from '../fns/Text';
 import './style.css';
 
-export const SceneForeground = ({ scene = [], }) =>
-    <div className="scene-screen">
+export const SceneForeground = ({ scene = [], index }) =>
+    <div className={`scene-screen scene-${index}`}>
         {scene.map((line, i) => {
             const Fn = SceneFgFns[line.fn];
-            if (Fn) {
-                return <Fn line={line} key={`$fn}-${i}`}/>;
-            }
+            return Fn ? <Fn line={line} key={`$fn}-${i}`}/> : null;
         })}
     </div>
 
 export const SceneBackground = ({ scene = [], }) =>
-    <div className="scene-screen">
-        {scene.map((line, i) => {
-            const Fn = SceneBgFns[line.fn];
-            if (Fn) {
-                return <Fn line={line} key={`$fn}-${i}`}/>;
-            }
-        })}
-    </div>
+    scene.map((line, i) => {
+        const Fn = SceneBgFns[line.fn];
+        if (Fn) {
+            return <Fn line={line} key={`$fn}-${i}`}/>;
+        }
+    })
 
 const SceneFgFns = {
     Text,

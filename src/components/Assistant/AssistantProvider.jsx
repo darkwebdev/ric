@@ -12,8 +12,6 @@ export const AssistantProvider = ({ children }) => {
     const [assistant, saveAssistant] = useLocalStorage('assistant');
     const { talkTitle, nextTalkTitle } = useAssistantTalk();
 
-    console.log('AssistantProvider', { opId, skin, scale, position, assistant, talkTitle, nextTalkTitle, imgRef });
-
     return <AssistantContext.Provider value={{
         opId, setOpId,
         skin, setSkin,
