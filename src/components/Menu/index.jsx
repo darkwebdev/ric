@@ -23,7 +23,7 @@ const StoryTypeIcons = {
     rogue: iconIntStrat,
 }
 
-export const Menu = ({ opened, onOpen = () => {} }) => {
+export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
     const [storyData, setStoryData] = useState();
     const [storyType, setStoryType] = useState();
     const [storyTypeIds, setStoryTypeIds] = useState();
@@ -41,6 +41,7 @@ export const Menu = ({ opened, onOpen = () => {} }) => {
                     setStoryTypeIds(categorized);
                 }
             }
+            onLoad();
         })()
     }, []);
 
