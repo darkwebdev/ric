@@ -36,6 +36,28 @@ describe('Parsing story dialogs', () => {
                 }
             ]);
         });
+
+        it('should create dialogs from newer text', () => {
+            const text = loadTextFile('./mocks/level_act28side_01_beg.txt');
+            const dialogs = dialogsFromText(text);
+
+            expect(dialogs[0]).toEqual({
+                content: [
+                    '[warp(name="chiyu01")]',
+                    '[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]',
+                    '[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]',
+                    '[charslot]',
+                    '[Background(image="bg_iceforest_2",screenadapt="coverall")]',
+                    '[PlaySound(key="$d_avg_snowstormflp", volume=1, loop=true, channel="a")]',
+                    '[charslot(slot = "m", name = "avg_1034_jesca2_1#3$1")]',
+                    '[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]',
+                    '[Delay(time=1)]',
+                    '[charslot(slot = "m", name = "avg_1034_jesca2_1#3$1", focus="n")]',
+                    'In a panic, Jessica reaches for the handgun at her waist. But fear keeps her fingers saddled atop the holster, unable to bend.',
+                    'She smells something vaguely rank upon the wind.',
+                ],
+            });
+        });
     });
 
     describe('parseDialog()', () => {
@@ -55,6 +77,11 @@ describe('Parsing story dialogs', () => {
                 'There is no end to war. And there is no end to our fight.',
                 'It is as if war is the tool that we have always relied on for survival.',
                 '[charslot(slot="m",name="avg_npc_1490_1#1$1")]',
+                '[charslot(slot = "m", name = "avg_1034_jesca2_1#3$1", focus="n")]',
+                '[charslot]',
+                '[warp(name="chiyu01")]',
+
+
             ];
             const expected = [
                 { fn: 'UnknownCommand' },
@@ -71,6 +98,9 @@ describe('Parsing story dialogs', () => {
                 { fn: 'Text', text: 'There is no end to war. And there is no end to our fight.' },
                 { fn: 'Text', text: 'It is as if war is the tool that we have always relied on for survival.' },
                 { fn: 'Charslot', name: 'avg_npc_1490_1#1$1', slot: 'm' },
+                { fn: 'Charslot', name: 'avg_1034_jesca2_1#3$1', slot: 'm', focus: 'n' },
+                { fn: 'Charslot' },
+                { fn: 'Warp', name: 'chiyu01' },
             ];
             expect(parseDialog(lines)).toEqual(expected);
         });

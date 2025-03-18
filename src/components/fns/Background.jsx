@@ -1,4 +1,3 @@
-import React from 'react';
 import { backgroundSrc } from '../../network.js';
 
 export const Background = ({ line }) => {

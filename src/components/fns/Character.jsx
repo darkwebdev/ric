@@ -1,4 +1,3 @@
-import React from 'react';
 import { charImageSrc } from '../../network.js';
 
 export const Character = ({ line }) => {

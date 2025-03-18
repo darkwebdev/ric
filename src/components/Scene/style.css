@@ -65,12 +65,13 @@
 }
 
 .dialog-char-img {
+    position: relative;
     margin: 40% auto 0;
     z-index: 1;
 
     @media (min-width: 1024px) or (orientation: landscape) {
         margin-top: 3%;
-        transform: scale(1.2);
+        /*transform: scale(1.2);*/
     }
 }
 
@@ -79,13 +80,15 @@
     z-index: 0;
 }
 
-.dialog-char-img-1 {
+.dialog-char-img-1,
+.dialog-char-img-left {
     position: absolute;
     left: 25%;
     transform: translateX(-50%);
 }
 
-.dialog-char-img-2 {
+.dialog-char-img-2,
+.dialog-char-img-right {
     position: absolute;
     right: 25%;
     transform: translateX(50%);
@@ -130,6 +133,25 @@
             text-align: right;
         }
     }
+}
+
+.dialog-subtitle {
+    display: flex;
+    padding: 0 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.dialog-sticker {
+    display: flex;
+    padding: 0 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #000;
 }
 
 .dialog-blocker {

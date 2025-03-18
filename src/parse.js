@@ -20,7 +20,7 @@ export function dialogsFromText(text) {
 
     return dialogs.map(lines => lines.split('\n').reduce((acc, line) => {
         if (line.startsWith('(')) {
-            const matches = [...line.matchAll(/(\w+)=("[^"]*"|\d+)/g)];
+            const matches = [...line.matchAll(/(\w+) ?= ?("[^"]*"|\d+)/g)];
             matches.forEach(([_, key, value]) => {
                 acc[key] = value;
             });
@@ -35,10 +35,10 @@ export function dialogsFromText(text) {
 export function parseDialog(lines) {
     return lines.map(line => {
         if (line.startsWith('[')) {
-            const nameMatch = line.match(/\[name="([^"]+)"]\s+(.*)/);
+            const nameMatch = line.match(/\[name="([^"]+)"]\s?(.*)/);
             if (nameMatch) {
                 const [_, name, text] = nameMatch;
-                return { fn: 'Text', name, text };
+                return { fn: 'Text', name, text: text.trim() };
             }
             const fnMatch = line.match(/\[(\w+)(.*)/);
             if (fnMatch) {
@@ -53,7 +53,7 @@ export function parseDialog(lines) {
 }
 
 export function objectFromKvString(line) {
-    const matches = [...line.matchAll(/(\w+)=("([^"]*)"|[^,^)]+)/g)];
+    const matches = [...line.matchAll(/(\w+) ?= ?("([^"]*)"|[^,^)]+)/g)];
     return Object.fromEntries(matches.map(([_, key, value]) => [key, value.replace(/^"|"$/g, '')]));
 
 }

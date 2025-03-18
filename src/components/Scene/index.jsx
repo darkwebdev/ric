@@ -1,8 +1,11 @@
-import { Blocker } from '../fns/Blocker.jsx';
-import { Image } from '../fns/Image.jsx';
-import { Background } from '../fns/Background.jsx';
-import { Character } from '../fns/Character.jsx';
+import { Blocker } from '../fns/Blocker';
+import { Image } from '../fns/Image';
+import { Background } from '../fns/Background';
+import { Character } from '../fns/Character';
+import { Charslot } from '../fns/Charslot.jsx';
 import { Text } from '../fns/Text';
+import { Subtitle } from '../fns/Subtitle';
+import { Sticker } from '../fns/Sticker';
 import './style.css';
 
 export const SceneForeground = ({ scene = [], index }) =>
@@ -23,7 +26,10 @@ export const SceneBackground = ({ scene = [], }) =>
 
 const SceneFgFns = {
     Text,
+    Subtitle,
+    Sticker,
     Character,
+    Charslot,
     Blocker,
 };
 

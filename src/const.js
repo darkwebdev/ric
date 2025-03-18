@@ -58,4 +58,4 @@ export const AssetSrc = {
     fexli: "https://raw.githubusercontent.com/fexli/ArknightsResource/main",
 };
 
-export const BlockingFns = ['Blocker', 'Text', 'Delay', ];
+export const BlockingFns = ['Blocker', 'Text', 'Subtitle', 'Delay', ];

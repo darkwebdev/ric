@@ -1,4 +1,3 @@
-import React from 'react';
 import { imageSrc } from '../../network.js';
 
 export const Image = ({ line }) => {
