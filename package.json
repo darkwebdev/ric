@@ -25,10 +25,12 @@
     "globals": "^16.0.0",
     "storybook": "^8.6.12",
     "vite": "^6.0.11",
+    "vite-plugin-static-copy": "^3.0.2",
     "vite-plugin-svgr": "^4.3.0",
     "vitest": "^3.0.5"
   },
   "scripts": {
+    "clean": "rm -rf dist",
     "dev": "vite",
     "test": "vitest",
     "lint": "eslint src",
