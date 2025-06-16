@@ -1,3 +1,7 @@
+:root {
+    --mobile-font-size: 4vw;
+}
+
 .scene {
     position: relative;
     border: 1px dashed #999;
@@ -66,7 +70,7 @@
 
 .dialog-char-img {
     position: relative;
-    margin: 40% auto 0;
+    margin: 35vh auto 0;
     z-index: 1;
 
     @media (min-width: 1024px) or (orientation: landscape) {
@@ -102,7 +106,7 @@
     min-height: 30%;
     bottom: 0;
     color: #fff;
-    background: linear-gradient(to top, #000 50%, transparent);
+    background: linear-gradient(to top, #000 85%, transparent);
     z-index: 2;
 
     @media (min-width: 1024px) or (orientation: landscape) {
@@ -115,7 +119,7 @@
     p {
         text-align: left;
         margin-top: 0;
-        font-size: 4vw;
+        font-size: var(--mobile-font-size);
 
         @media (min-width: 1024px) or (orientation: landscape) {
             width: 55vw;
@@ -143,6 +147,7 @@
     justify-content: center;
     align-items: center;
     color: #fff;
+    font-size: var(--mobile-font-size);
 }
 
 .dialog-sticker {
