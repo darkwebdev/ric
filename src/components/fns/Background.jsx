@@ -1,4 +1,4 @@
-import { backgroundSrc } from '../../network.js';
+import { backgroundSrc } from '../../img-sources';
 
 export const Background = ({ line }) => {
     const { image } = line;

@@ -1,4 +1,4 @@
-import { imageSrc } from '../../network.js';
+import { imageSrc } from '../../img-sources';
 
 export const Image = ({ line }) => {
     const { image } = line;

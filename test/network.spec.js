@@ -1,5 +1,6 @@
-import { charImageSrc, fetchOperators } from '../src/network.js';
-import { AssetSrc } from '../src/const.js';
+import { charImageSrc } from '../src/img-sources';
+import { fetchOperators } from '../src/network';
+import { AssetSrc } from '../src/const';
 import charTableEn from './mocks/character_table-en_US.json';
 import charTableCn from './mocks/character_table-zh_CN.json';
 import skinTable from './mocks/skin_table-en_US.json';

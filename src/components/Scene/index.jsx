@@ -8,7 +8,7 @@ import { Subtitle } from '../fns/Subtitle';
 import { Sticker } from '../fns/Sticker';
 import './style.css';
 
-export const SceneForeground = ({ scene = [], index }) =>
+export const SceneForeground = ({ scene = [], index = 0 }) =>
     <div className={`scene-screen scene-${index}`}>
         {scene.map((line, i) => {
             const Fn = SceneFgFns[line.fn];

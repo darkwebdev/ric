@@ -97,9 +97,10 @@
 
 .dialog-text {
     position: absolute;
-    width: 100%;
-    bottom: 0;
     padding: 2em 2em 4em;
+    width: 100%;
+    min-height: 30%;
+    bottom: 0;
     color: #fff;
     background: linear-gradient(to top, #000 50%, transparent);
     z-index: 2;

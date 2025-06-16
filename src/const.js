@@ -25,11 +25,6 @@ export const Appellations = {
     Istina: "Истина",
 };
 
-export const DefaultSkinTranslation = {
-    en: 'Default Outfit',
-    cn: '默认服装',
-};
-
 export const Rarities = [
     'TIER_1',
     'TIER_2',
@@ -46,16 +41,17 @@ export const TalkTitles = [
     'Talk 3',
 ];
 
-const DataSrc = 'https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/';
-const DataSrcYostar = 'https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main/';
-export const DataSrcCn = DataSrc + 'zh_CN';
-export const DataSrcEn = DataSrcYostar + 'en_US';
+const DataSrc = 'https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master';
+const DataSrcYostar = 'https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main';
+export const DataSrcCn = `${DataSrc}/zh_CN`;
+export const DataSrcEn = `${DataSrcYostar}/en_US`;
 
 export const AssetSrc = {
-    akgcc: 'https://raw.githubusercontent.com/akgcc/arkdata/main/assets/',
-    aceship: 'https://raw.githubusercontent.com/Aceship/Arknight-Images/main/',
+    akgcc: 'https://raw.githubusercontent.com/akgcc/arkdata/main/assets',
+    aceship: 'https://raw.githubusercontent.com/Aceship/Arknight-Images/main',
     arkwaifu: 'https://arkwaifu.cc/api/v1/arts/REPLACEME/variants/origin/content',
-    fexli: "https://raw.githubusercontent.com/fexli/ArknightsResource/main",
+    fexli: 'https://raw.githubusercontent.com/fexli/ArknightsResource/main',
+    akassets: 'https://raw.githubusercontent.com/ArknightsAssets/ArknightsAssets/cn/assets',
 };
 
 export const BlockingFns = ['Blocker', 'Text', 'Subtitle', 'Delay', ];

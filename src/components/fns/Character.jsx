@@ -1,4 +1,4 @@
-import { charImageSrc } from '../../network.js';
+import { charImageSrc } from '../../img-sources';
 
 export const Character = ({ line }) => {
     const { name, name2, focus } = line;

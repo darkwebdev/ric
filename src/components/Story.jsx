@@ -55,6 +55,11 @@ export const Story = () => {
         gotoScene(Math.min(scenes.length - 1, sceneIndex + 1));
     }
 
+    const gotoNext10Scene = e => {
+        isDebug && console.log(`gotoNext10Scene: ${sceneIndex} -> ${sceneIndex + 1}`, e);
+        gotoScene(Math.min(scenes.length - 1, sceneIndex + 10));
+    }
+
     const gotoPrevScene = () => {
         gotoScene(Math.max(0, sceneIndex - 1));
     }
@@ -77,6 +82,7 @@ export const Story = () => {
         <section className="dialog-buttons">
             <Link to="/ric/" className="dialog-button">Return</Link>
             <button className="dialog-button" onClick={gotoPrevScene}>Previous</button>
+            <button className="dialog-button" onClick={gotoNext10Scene}>+10</button>
             {isDebug && <button className="dialog-button" onClick={() => setCancelDelay(true)}>Pause delay</button>}
         </section>
     </>;

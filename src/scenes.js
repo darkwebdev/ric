@@ -17,7 +17,7 @@ export function scenesFromDialogs(dialogs) {
     const scenes = [];
 
     let currentScene = [];
-    dialogs.forEach(({ content }) => {
+    dialogs.forEach(({ content = [] }) => {
         parseDialog(content).forEach(line => {
             addLineToScene(currentScene, line);
             if (isBlocking(line.fn)) {
