@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useResize } from '../../hooks/useResize.js';
 import './style.css';
 
@@ -154,5 +154,3 @@ export const Dust = () => {
 
     return <canvas ref={canvasRef} id="dustCanvas" />;
 };
-
-export default Dust;

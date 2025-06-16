@@ -1,5 +1,6 @@
 import { useContext } from 'react';
-import { AssistantContext } from './AssistantContext.js';
+import { AssistantContext } from '../Assistant';
+import './style.css';
 
 export const AssistantTalk = ({ quotes = [] }) => {
     const { talkTitle } = useContext(AssistantContext);

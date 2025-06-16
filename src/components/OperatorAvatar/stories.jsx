@@ -1,8 +1,9 @@
-import { AssistantAvatar } from './AssistantAvatar.jsx';
+import { OperatorAvatar } from './index';
+import { Rarities } from '../../const';
 
 export default {
-    title: 'Assistant/Avatar',
-    component: AssistantAvatar,
+    title: 'Assistant/OperatorAvatar',
+    component: OperatorAvatar,
     argTypes: {
     },
     parameters: {
@@ -33,3 +34,14 @@ export const _6star = {
         name: 'Entelechia',
     },
 }
+
+export const BigFont = args => (
+  <div style={{ fontSize: '25px', width: '180px' }}>
+    <OperatorAvatar
+      {...args}
+      rarity={Rarities[5]}
+      avatarId="char_1012_skadi2"
+      name="Skadi the Corrupting Heart"
+    />
+  </div>
+)

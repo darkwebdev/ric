@@ -1,9 +1,9 @@
-import { useContext } from 'react';
-import { AssistantContext } from './AssistantContext.js';
-import { charArtSrc } from '../../network.js';
+import { use } from 'react';
+import { AssistantContext } from './AssistantContext';
+import { charArtSrc } from '../../img-sources';
 
 export const Assistant = () => {
-    const { imgRef, skin, scale, position, nextTalkTitle } = useContext(AssistantContext);
+    const { imgRef, skin, scale, position, nextTalkTitle } = use(AssistantContext);
 
     return skin &&
         <div className="assistant-art">

@@ -1,6 +1,6 @@
-import { AssistantContext } from './AssistantContext.js';
-import { AssistantTalk } from './AssistantTalk.jsx';
+import { AssistantContext } from '../Assistant';
 import { TalkTitles } from '../../const.js';
+import { AssistantTalk } from './index';
 
 export default {
     title: 'Assistant/Talk',

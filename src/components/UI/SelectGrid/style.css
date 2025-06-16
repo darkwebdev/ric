@@ -1,0 +1,27 @@
+.select-grid {
+    min-width: 10em;
+    width: 100%;
+
+    ul {
+        display: grid;
+        gap: .5em;
+        grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+        padding: .5em 0;
+        list-style: none;
+    }
+
+    .grid-item {
+        background: #0003;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #0006;
+        }
+    }
+
+    .select-grid-footer {
+        position: sticky;
+        bottom: 0
+    }
+}

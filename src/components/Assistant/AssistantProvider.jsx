@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { useLocalStorage } from '../../hooks/useLocalStorage.js';
 import { AssistantContext } from './AssistantContext.js';
-import { useAssistantTalk } from './useAssistantTalk.js';
+import { useAssistantTalk } from '../AssistantTalk/useAssistantTalk.js';
 
 export const AssistantProvider = ({ children }) => {
     const imgRef = useRef(null);

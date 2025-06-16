@@ -1,10 +1,9 @@
 import { action } from '@storybook/addon-actions';
-import { AssistantUI } from './index.js';
-import { AssistantContext } from './AssistantContext.js';
+import { Assistant, AssistantContext } from './index';
 
 export default {
-    title: 'Assistant/UI',
-    component: AssistantUI,
+    title: 'Assistant/Art',
+    component: Assistant,
     argTypes: {
         opId: { control: 'text' },
         skin: { control: 'text' },
@@ -13,7 +12,7 @@ export default {
     },
 };
 
-export const Default = args =>
+export const TheresaElite1 = args =>
     <AssistantContext.Provider value={{
         opId: 'char_4134_cetsyr',
         skin: 'char_4134_cetsyr_1',
@@ -22,17 +21,17 @@ export const Default = args =>
         nextTalkTitle: action('onClick'),
         ...args
     }}>
-        <AssistantUI />
+        <Assistant />
     </AssistantContext.Provider>
 
-export const EditMode = args =>
+export const TheresaElite2 = args =>
     <AssistantContext.Provider value={{
         opId: 'char_4134_cetsyr',
-        skin: 'char_4134_cetsyr_1',
+        skin: 'char_4134_cetsyr_2',
         position: { x: 0, y: 0 },
         scale: 50,
         nextTalkTitle: action('onClick'),
         ...args
     }}>
-        <AssistantUI />
+        <Assistant />
     </AssistantContext.Provider>

@@ -14,9 +14,18 @@
     height: 100%;
 }
 
+.assistant-edit-mode {
+    height: 100%;
+}
+
 .assistant-edit-buttons {
     display: flex;
     gap: 1em;
+}
+
+.assistant-select-mode {
+    align-items: end;
+    height: 100%;
 }
 
 .assistant-art {

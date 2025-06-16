@@ -6,7 +6,7 @@ export const Item = ({
 }) => (
     <li
         {...rest}
-        className={`dropdown-item ${className} ${selected ? 'selected' : ''}`}
+        className={`grid-item ${className} ${selected ? 'selected' : ''}`}
     >
         {children}
     </li>

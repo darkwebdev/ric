@@ -1,0 +1,15 @@
+.assistant-text {
+    padding: 1em;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: .2px;
+    color: #fff;
+    background: #0008;
+
+    @media (min-width: 1024px) or (orientation: landscape) {
+        margin: 1em;
+        padding: 1.5em 1em;
+        width: 25em;
+        font-size: 1em;
+    }
+}

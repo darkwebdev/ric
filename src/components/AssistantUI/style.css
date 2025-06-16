@@ -1,0 +1,7 @@
+.assistant-controls {
+    margin: .5em 1em;
+
+    .assistant-skin-selector {
+        width: 35vw;
+    }
+}

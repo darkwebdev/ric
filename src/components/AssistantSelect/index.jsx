@@ -1,60 +1,76 @@
-import { charArtSrc } from '../../network.js';
-import { Dropdown } from '../UI/Dropdown';
-import { AssistantAvatar } from '../Assistant/AssistantAvatar.jsx';
+import { useState } from 'react';
+import { OperatorAvatar } from '../OperatorAvatar';
+import { OperatorSkins } from '../OperatorSkins';
+import { SelectGrid } from '../UI/SelectGrid';
 import './style.css';
 
-export const AssistantSelect = ({ operators, operator, skin, onSkinChange, onOpChange }) => {
-    console.log('AssistantSelect', operators, operator, skin);
+export const AssistantSelect = ({
+  operators,
+  operator,
+  skin,
+  onSkinChange = () => {},
+  onAssistantChange = () => {},
+}) => {
+  const [savedAssistant, setSavedAssistant] = useState(operator?.charId);
+  const [assistant, setAssistant] = useState(savedAssistant);
+  const [skinSelectorShown, setSkinSelectorShown] = useState(false);
 
-    const operatorItems = operators?.map(op => ({
-        value: op.charId,
-        label: op.name,
-        data: op
-    })) || [];
+  console.log('AssistantSelect', operators, operator, assistant, savedAssistant, skin);
 
-    const skinOptions = operator?.skins.map((skinData, i) => ({
-        value: skinData.portraitId,
-        label: skinName(skinData.displaySkin, i),
-        data: skinData
-    })) || [];
+  const operatorItems = operators?.map(op => ({
+    value: op.charId,
+    label: op.name,
+    rarity: op.rarity,
+  })) || [];
 
-    return operators && (
-        <div className="assistant-skin-selector">
-            <Dropdown
-                className="assistant-select"
-                value={operator?.charId}
-                onChange={onOpChange}
-            >
-                {operatorItems.map(item =>
-                    <Dropdown.Item value={item.value} key={item.value}>
-                        <AssistantAvatar avatarId={item.value} rarity={item.data.rarity} name={item.label} />
-                    </Dropdown.Item>
-                )}
-            </Dropdown>
+  const onOpChange = op => {
+    console.log('onOpChange', op);
+    setAssistant(op);
+    onAssistantChange(op);
+  };
 
-            {operator && (
-                <Dropdown
-                    className="skin-select"
-                    value={skin}
-                    onChange={onSkinChange}
-                >
-                    {skinOptions.map(item =>
-                        <Dropdown.Item value={item.value} key={item.value}>
-                            <div className="skin-option">
-                                <img
-                                    src={charArtSrc(item.data.skinId)}
-                                    alt={item.label}
-                                    className="skin-image"
-                                />
-                                <span>{item.label}</span>
-                            </div>
-                        </Dropdown.Item>
-                    )}
-                </Dropdown>
-            )}
-        </div>
-    );
+  const onCancel = () => {
+    setAssistant(savedAssistant);
+  };
+
+  const onConfirm = () => {
+    setSavedAssistant(assistant);
+    setSkinSelectorShown(true);
+  };
+
+  return operators && (
+    <div className={`assistant-skin-selector ${skinSelectorShown ? 'skin-selector-mode' : 'op-selector-mode'}`}>
+      {!skinSelectorShown ? (
+        <SelectGrid
+          className="assistant-select"
+          value={assistant}
+          onChange={onOpChange}
+          onCancel={onCancel}
+          onConfirm={onConfirm}
+        >
+          {operatorItems.map(item =>
+            <SelectGrid.Item value={item.value} key={item.value} className="assistant-item">
+              <OperatorAvatar avatarId={item.value} rarity={item.rarity} name={item.label}/>
+            </SelectGrid.Item>
+          )}
+        </SelectGrid>
+        ) : (
+          <OperatorSkins
+            operator={opById(operators, assistant)}
+            onChange={onSkinChange}
+            onConfirm={onConfirm}
+            onCancel={() => {
+              setSkinSelectorShown(false);
+              setAssistant(savedAssistant);
+            }}
+          />
+      )}
+    </div>
+  );
 };
 
-const skinName = (skin, i) =>
-    skin.skinGroupName === 'Default Outfit' ? `Elite ${i + 1}` : skin.skinGroupName;
+const opNameById = (ops, id) =>
+  ops.find(op => op.charId === id)?.name || 'Unknown Operator';
+
+const opById = (ops, id) =>
+  ops.find(op => op.charId === id);
