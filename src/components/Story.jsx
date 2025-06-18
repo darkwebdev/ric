@@ -28,7 +28,7 @@ export const Story = () => {
     useEffect(() => {
         if (storyId) {
             (async () => {
-                console.log('Story loaded', storyName, storyOp.storyName, path);
+                console.log('Story loaded', storyName, storyOp?.storyName, path);
                 const text = await storyLoader(path);
                 if (text) {
                     setScenes(scenesFromText(text));
@@ -36,10 +36,6 @@ export const Story = () => {
             })();
         }
     }, [storyOp]);
-
-    // useEffect(() => {
-    //     console.log('Story params changed', params);
-    // }, [params]);
 
     useEffect(() => {
         const sceneDelay = scenes?.[sceneIndex]?.reduce((result, line) => ({
@@ -91,7 +87,7 @@ export const Story = () => {
     return scenes && <>
         <h1 className="story-title">
             {storyName}
-            <span className="story-op-title">{storyOp.storyName}</span>
+            {storyOp && <span className="story-op-title">{storyOp.storyName}</span>}
         </h1>
 
         <StorySlider
