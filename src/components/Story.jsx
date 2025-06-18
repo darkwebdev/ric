@@ -1,13 +1,17 @@
 import { useEffect, useState } from 'react';
-import { Link, useRoute, useSearchParams } from 'wouter';
+import { Link, useRoute, useSearchParams, useLocation } from 'wouter';
 import { scenesFromText } from '../scenes.js';
 import { storyLoader } from '../network.js';
 import { useCountdown } from '../hooks/useCountdown.js';
 import { StorySlider } from './StorySlider';
+import { nextOperationByPath, operationByPath, storyNameById } from '../data-utils';
+import { useLocalStorage } from '../hooks/useLocalStorage';
 
 export const Story = () => {
     const [match, params] = useRoute("*/story/*");
     const [searchParams, setSearchParams] = useSearchParams();
+    const [location, setLocation] = useLocation();
+    const [storyData] = useLocalStorage('storyData');
     const [scenes, setScenes] = useState();
     const [delay, setDelay] = useState();
     const [cancelDelay, setCancelDelay] = useState();
@@ -15,17 +19,27 @@ export const Story = () => {
     const sceneIndex = parseInt(searchParams.get('scene')) || 0;
     const isDebug = searchParams.get('debug') !== null;
 
+    const { 1: path } = params || [];
+    const { 1: storyId } = path.split('/') || [];
+    const storyName = storyData && storyNameById(storyData, storyId);
+    const storyOp = storyData && operationByPath(storyData, storyId, path);
+    const nextOp = storyData && nextOperationByPath(storyData, storyId, path);
+
     useEffect(() => {
-        if (match) {
+        if (storyId) {
             (async () => {
-                const { 1: path } = params;
+                console.log('Story loaded', storyName, storyOp.storyName, path);
                 const text = await storyLoader(path);
                 if (text) {
                     setScenes(scenesFromText(text));
                 }
             })();
         }
-    }, []);
+    }, [storyOp]);
+
+    // useEffect(() => {
+    //     console.log('Story params changed', params);
+    // }, [params]);
 
     useEffect(() => {
         const sceneDelay = scenes?.[sceneIndex]?.reduce((result, line) => ({
@@ -69,7 +83,17 @@ export const Story = () => {
         setSearchParams({ scene: sceneIndex, ...(isDebug ? { debug: '' } : {}) });
     }
 
+    const gotoNextOp = () => {
+        isDebug && console.log(`gotoNextOp`);
+        setLocation(`/ric/story/${nextOp.storyTxt}${isDebug ? '?debug' : ''}`);
+    }
+
     return scenes && <>
+        <h1 className="story-title">
+            {storyName}
+            <span className="story-op-title">{storyOp.storyName}</span>
+        </h1>
+
         <StorySlider
             scenes={scenes}
             sceneIndex={sceneIndex}
@@ -83,6 +107,7 @@ export const Story = () => {
             <Link to="/ric/" className="dialog-button">Return</Link>
             <button className="dialog-button" onClick={gotoPrevScene}>Previous</button>
             <button className="dialog-button" onClick={gotoNext10Scene}>+10</button>
+            <button className="dialog-button" onClick={gotoNextOp}>Next Operation</button>
             {isDebug && <button className="dialog-button" onClick={() => setCancelDelay(true)}>Pause delay</button>}
         </section>
     </>;

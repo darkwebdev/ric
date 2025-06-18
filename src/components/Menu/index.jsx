@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { categorizeStories, operationById, operationsByStoryId, storyNameById } from '../../data-utils.js';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { loadStoryData } from '../../network.js';
 import { StoryTypeEntry } from './StoryTypeEntry.jsx';
 import { StoryEntry } from './StoryEntry.jsx';
@@ -11,13 +12,18 @@ export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
     const [storyType, setStoryType] = useState();
     const [storyTypeIds, setStoryTypeIds] = useState();
     const [storyId, setStoryId] = useState();
+    const [storedStoryData, storeStoryData] = useLocalStorage('storyData');
 
     useEffect(() => {
         (async () => {
-            const data = await loadStoryData()
+            const data = storedStoryData || await loadStoryData();
             if (data) {
-                console.log('Metadata loaded.');
+                console.log('Metadata loaded ', storedStoryData ? 'from local storage.' : 'from network.');
                 setStoryData(data);
+                if (!storedStoryData) {
+                    console.log('Storing story data in local storage...');
+                    storeStoryData(data);
+                }
                 const categorized = categorizeStories(data);
                 if (categorized) {
                     setStoryTypeIds(categorized);

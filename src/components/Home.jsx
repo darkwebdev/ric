@@ -25,7 +25,6 @@ export const Home = () => {
       onOpen={() => setMode(Modes.Menu)}
       onLoad={() => setLoading(false)}
     />
-    <Loading enabled={isLoading} />
     {mode !== Modes.Menu &&
       <AssistantUI
         mode={mode}
@@ -34,5 +33,6 @@ export const Home = () => {
       />
     }
     <Dust />
+    <Loading enabled={isLoading} />
   </AssistantProvider>
 }
