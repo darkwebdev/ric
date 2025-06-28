@@ -52,7 +52,6 @@ describe('Parsing story dialogs', () => {
                     '[charslot(slot = "m", name = "avg_1034_jesca2_1#3$1")]',
                     '[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]',
                     '[Delay(time=1)]',
-                    '[Background(image="24_g13_mountpath_s",screenadapt="coverall")]',
                     '[charslot(slot = "m", name = "avg_1034_jesca2_1#3$1", focus="n")]',
                     'In a panic, Jessica reaches for the handgun at her waist. But fear keeps her fingers saddled atop the holster, unable to bend.',
                     'She smells something vaguely rank upon the wind.',
