@@ -71,19 +71,14 @@ export function operationById(storyData, storyId, operationId) {
     return storyData.storyReview[storyId].infoUnlockDatas.find(op => op.storyId === operationId);
 }
 
-export function operationByPath(storyData, storyId, operationPath) {
-    return storyData.storyReview[storyId].infoUnlockDatas.find(op => op.storyTxt === operationPath) ||
-      storyData.storyReview[storyId].infoUnlockDatas[0];
-}
-
-export function nextOperationByPath(storyData, storyId, operationPath) {
-    const datas = storyData.storyReview[storyId].infoUnlockDatas;
-    const index = datas.findIndex(op => op.storyTxt === operationPath);
-    return index >= 0 ? datas[index + 1] : undefined;
-}
-
 export function storyNameById(storyData, storyId) {
     return storyData.storyReview[storyId].name;
+}
+
+export function storyByPath(storyData, operationPath) {
+    return Object.values(storyData.storyReview).find(({ infoUnlockDatas }) =>
+      infoUnlockDatas.some(({ storyTxt }) => storyTxt === operationPath)
+    )
 }
 
 export function operationsByStoryId(storyData, storyId) {

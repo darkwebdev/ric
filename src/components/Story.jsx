@@ -4,7 +4,7 @@ import { scenesFromText } from '../scenes.js';
 import { storyLoader } from '../network.js';
 import { useCountdown } from '../hooks/useCountdown.js';
 import { StorySlider } from './StorySlider';
-import { nextOperationByPath, operationByPath, storyNameById } from '../data-utils';
+import { storyByPath } from '../data-utils';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 
 export const Story = () => {
@@ -20,10 +20,14 @@ export const Story = () => {
     const isDebug = searchParams.get('debug') !== null;
 
     const { 1: path } = params || [];
-    const { 1: storyId } = path.split('/') || [];
-    const storyName = storyData && storyNameById(storyData, storyId);
-    const storyOp = storyData && operationByPath(storyData, storyId, path);
-    const nextOp = storyData && nextOperationByPath(storyData, storyId, path);
+    const story = storyData && storyByPath(storyData, path);
+    const storyId = story?.id;
+    const storyName = story?.name;
+    const datas = story?.infoUnlockDatas;
+    const storyOp = datas?.find(op => op.storyTxt === path) || datas?.[0];
+    const storyTag = storyOp.avgTag.replace(' Operation', '');
+    const index = datas?.findIndex(op => op.storyTxt === path);
+    const nextOp = index >= 0 ? datas[index + 1] : undefined
 
     useEffect(() => {
         if (storyId) {
@@ -87,7 +91,7 @@ export const Story = () => {
     return scenes && <>
         <h1 className="story-title">
             {storyName}
-            {storyOp && <span className="story-op-title">{storyOp.storyName}</span>}
+            {storyOp && <span className="story-op-title">{storyOp.storyName}{storyTag ? `: ${storyTag}` : ''}</span>}
         </h1>
 
         <StorySlider
