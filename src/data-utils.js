@@ -3,15 +3,15 @@ import { IntermezziIds, StoryTypeNames } from './const.js';
 export function categorizeStories({ storyReview, storyReviewMeta, moduleStory, storyTable }) {
     const storyTypes = Object.fromEntries(Object.keys(StoryTypeNames).map(key => [key, []]));
 
-    Object.values(storyReview).forEach(x => {
+    Object.values(storyReview).forEach(story => {
         const components = storyReviewMeta?.actArchiveData?.components;
-        if (components && x.id in components) {
-            Object.values(components[x.id]?.avg?.avgs || {})
+        if (components && story.id in components) {
+            Object.values(components[story.id]?.avg?.avgs || {})
                 .sort((a, b) => (a?.avgSortId || 0) - (b?.avgSortId || 0))
                 .map(x => x?.avgId)
                 .forEach(avgid => {
-                    x.infoUnlockDatas.push({
-                        storyGroup: x.id,
+                    story.infoUnlockDatas.push({
+                        storyGroup: story.id,
                         storyInfo: storyReviewMeta?.actArchiveResData?.avgs[avgid]?.breifPath,
                         storyTxt: storyReviewMeta?.actArchiveResData?.avgs[avgid]?.contentPath,
                         storyCode: storyReviewMeta?.actArchiveResData?.avgs[avgid]?.desc,
@@ -20,12 +20,12 @@ export function categorizeStories({ storyReview, storyReviewMeta, moduleStory, s
                     });
                 });
         }
-        if (x.id.startsWith('main_')) {
-            const storytxt = x.infoUnlockDatas[0].storyTxt.replace(/[^/]+$/, `${x.id}_zone_enter`);
+        if (story.id.startsWith('main_')) {
+            const storytxt = story.infoUnlockDatas[0].storyTxt.replace(/[^/]+$/, `${story.id}_zone_enter`);
             if (storyTable[storytxt]) {
-                x.infoUnlockDatas.unshift({
-                    storyGroup: x.id,
-                    storyInfo: x.infoUnlockDatas[0].storyInfo.replace(/[^/]+$/, `${x.id}_zone_enter`),
+                story.infoUnlockDatas.unshift({
+                    storyGroup: story.id,
+                    storyInfo: story.infoUnlockDatas[0].storyInfo.replace(/[^/]+$/, `${story.id}_zone_enter`),
                     storyTxt: storytxt,
                     storyCode: 'Introduction',
                     storyName: 'Introduction',
@@ -33,26 +33,35 @@ export function categorizeStories({ storyReview, storyReviewMeta, moduleStory, s
                 });
             }
         }
-        if (x.id.startsWith('main_')) {
-            storyTypes.main.push(x.id);
-        } else if (x.id.startsWith('story_')) {
-            storyTypes.record.push(x.id);
-        } else if (x.entryType.startsWith('MINI_')) {
-            storyTypes.mini.push(x.id);
-        } else if (IntermezziIds.includes(x.id)) {
-            storyTypes.intermezzi.push(x.id);
+        if (story.id.startsWith('main_')) {
+            storyTypes.main.push(story.id);
+        } else if (story.id.startsWith('story_')) {
+            storyTypes.record.push(story.id);
+        } else if (story.entryType.startsWith('MINI_')) {
+            storyTypes.mini.push(story.id);
+        } else if (IntermezziIds.includes(story.id)) {
+            storyTypes.intermezzi.push(story.id);
         } else {
-            storyTypes.side.push(x.id);
+            storyTypes.side.push(story.id);
         }
     });
 
-    // storyTypes.module = [].concat(...Object.values(moduleStory.charEquip).map(x => x.slice(1)))
-    //     .filter(x => operatorData[moduleStory.equipDict[x].charId]);
-    storyTypes.module.forEach(x => {
-        storyReview[x] = {
-            infoUnlockDatas: [{ storyName: moduleStory.equipDict[x].uniEquipName, storyTxt: x }],
+    Object.values(moduleStory.charEquip)
+        .flatMap(story => story.slice(1))
+        // .filter(story => operatorData[moduleStory.equipDict[story].charId])
+        .forEach(story => {
+            storyTypes.module.push(story);
+        })
+    storyTypes.module.forEach(story => {
+        storyReview[story] = {
+            name: moduleStory.equipDict[story].uniEquipName,
+            infoUnlockDatas: [{
+                storyName: moduleStory.equipDict[story].uniEquipName,
+                storyTxt: story
+            }],
         };
     });
+    // todo: group modules by operators
 
     return storyTypes;
 }

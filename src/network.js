@@ -14,6 +14,25 @@ export async function storyLoader(path) {
   });
 }
 
+function minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview }) {
+  return {
+    moduleStory: {
+      charEquip: moduleStory.charEquip,
+      equipDict: Object.fromEntries(Object.values(moduleStory.equipDict).map(({ uniEquipId, uniEquipName }) =>
+        ([ uniEquipId, { uniEquipId, uniEquipName } ]))
+      ),
+    },
+    storyTable: Object.keys(storyTable),
+    storyReviewMeta: {
+      actArchiveResData: storyReviewMeta.actArchiveResData,
+      actArchiveData: storyReviewMeta.actArchiveData,
+    },
+    storyReview: Object.fromEntries(Object.values(storyReview).map(({ id, name, entryType, infoUnlockDatas }) =>
+      ([ id, { id, name, entryType, infoUnlockDatas, } ]))
+    )
+  };
+}
+
 export async function loadStoryData() {
   console.log('Loading stories metadata...');
   try {
@@ -25,7 +44,7 @@ export async function loadStoryData() {
       fetchData(`${DataSrcEn}/gamedata/excel/story_review_table.json`),
     ]);
 
-    const storyData = { moduleStory, storyTable, storyReviewMeta, storyReview };
+    const storyData = minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview });
     console.log('Story data loaded', storyData);
 
     return storyData;

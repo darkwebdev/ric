@@ -32,7 +32,7 @@ export const StorySlider = ({
             animationHandler='fade'
             swipeable={false}
             selectedItem={sceneIndex}
-            onClickItem={e => {console.log('CLICK'); onClick(e);}}
+            onClickItem={onClick}
             onChange={onChange}
             statusFormatter={statusFormatter}
             renderIndicator={isDebug && renderIndicator(scenes)}

@@ -18,7 +18,7 @@ export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
         (async () => {
             const data = storedStoryData || await loadStoryData();
             if (data) {
-                console.log('Metadata loaded ', storedStoryData ? 'from local storage.' : 'from network.');
+                console.log('Metadata loaded', storedStoryData ? 'from local storage.' : 'from network.');
                 setStoryData(data);
                 if (!storedStoryData) {
                     console.log('Storing story data in local storage...');
@@ -64,7 +64,7 @@ export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
                     <ul className="operations">
                         {operationsByStoryId(storyData, storyId).map((op, i, ops) =>
                             <OperationEntry key={op.storyId} op={op}
-                                isAfterStory={op.storyCode === ops[i - 1]?.storyCode}
+                                isAfterStory={op.storyCode && op.storyCode === ops[i - 1]?.storyCode}
                                 storyPath={operationById(storyData, storyId, op.storyId).storyTxt}
                             />
                         )}
