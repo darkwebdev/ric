@@ -18,21 +18,40 @@
 }
 
 .story-title {
-    margin: 1rem;
+    padding: 1rem;
+    line-height: 1.5;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: calc(var(--mobile-font-size) + 1vw);
+    background: #0006;
+
+    @media (min-width: 1024px) or (orientation: landscape) {
+        font-size: 1.5rem;
+    }
 }
 .story-op-title {
     display: block;
-    font-size: 1rem;
+    font-size: var(--mobile-font-size);
+
+    @media (min-width: 1024px) or (orientation: landscape) {
+        font-size: 1rem;
+    }
 }
 
 .dialog-buttons {
     position: absolute;
-    width: 100%;
-    top: 8.5%;
     display: flex;
+    top: 10%;
+    left: 0;
+    font-size: var(--mobile-font-size);
+    transform: translateX(0);
     z-index: 3;
+
+    @media (min-width: 1024px) or (orientation: landscape) {
+        top: 1em;
+        left: 50%;
+        font-size: 1rem;
+        transform: translateX(-50%);
+    }
 }
 
 .dialog-button {
@@ -66,6 +85,11 @@
     top: 15%;
     object-fit: cover;
     z-index: -1;
+
+    @media (min-width: 1024px) or (orientation: landscape) {
+        height: 100%;
+        top: 0;
+    }
 }
 
 .dialog-background {
