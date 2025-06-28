@@ -32,8 +32,26 @@ describe('categorizeStories()', () => {
         };
         const moduleStory = {
             equipDict: {
-                module_1: { uniEquipName: 'Module 1' },
+                "uniequip_001_mgllan": {
+                    "uniEquipId": "uniequip_001_mgllan",
+                    "uniEquipName": "Magallan's Badge"
+                },
+                uniequip_002_mgllan: {
+                    "uniEquipId": "uniequip_002_mgllan",
+                    uniEquipName: 'Drone Control Module.P'
+                },
+                "uniequip_003_mgllan": {
+                    "uniEquipId": "uniequip_003_mgllan",
+                    "uniEquipName": "Instructional Soaring Dragon Drone"
+                }
             },
+            charEquip: {
+                "char_248_mgllan": [
+                    "uniequip_001_mgllan",
+                    "uniequip_002_mgllan",
+                    "uniequip_003_mgllan"
+                ],
+            }
         };
         const storyTable = {
             'content1_zone_enter': true,
@@ -47,7 +65,7 @@ describe('categorizeStories()', () => {
             main: ['main_1'],
             side: ['side_1', 'side_2', 'unknown',],
             mini: ['mini_1'],
-            module: [],
+            module: ['uniequip_002_mgllan', 'uniequip_003_mgllan'],
             rogue: [],
         });
     });
