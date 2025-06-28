@@ -21,7 +21,6 @@ export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
                 console.log('Metadata loaded', storedStoryData ? 'from local storage.' : 'from network.');
                 setStoryData(data);
                 if (!storedStoryData) {
-                    console.log('Storing story data in local storage...');
                     storeStoryData(data);
                 }
                 const categorized = categorizeStories(data);
