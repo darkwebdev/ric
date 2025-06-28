@@ -47,13 +47,18 @@ function addLineToScene(scene, line) {
                 case 'Image':
                     if (!line.image) {
                         scene.splice(imageIndex, 1);
+                        return;
                     }
-                    return;
+                    break;
                 case 'Character':
                     if (!line.name) {
                         scene.splice(imageIndex, 1);
                         return;
                     }
+                    break;
+                default:
+                    console.warn('Unknown image function:', line.fn);
+                    return;
             }
             // replace image with new one
             scene[imageIndex] = line;
