@@ -1,4 +1,4 @@
-import { avatarImageSrc } from '../../img-sources';
+import { avatarImageSrc } from '../../asset-sources';
 import { Rarity } from '../UI/Rarity';
 import './style.css';
 

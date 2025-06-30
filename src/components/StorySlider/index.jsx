@@ -13,6 +13,7 @@ export const StorySlider = ({
     onClick = () => {},
     onChange = () => {},
     isDebug = false,
+    storyVariables = {}
 }) => {
     const statusFormatter = (current, total) =>
         <Progress value={current} max={total} text={isDebug && delayCountdown && `delay: ${delayCountdown}`} />;
@@ -38,7 +39,7 @@ export const StorySlider = ({
             renderIndicator={isDebug && renderIndicator(scenes)}
         >
             {scenes.map((scene, index) =>
-                <SceneForeground scene={scene} index={index} key={index} />
+                <SceneForeground scene={scene} index={index} key={index} storyVariables={storyVariables}/>
             )}
         </Carousel>
     </>;

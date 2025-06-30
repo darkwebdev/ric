@@ -5,6 +5,7 @@
     "react-css-transition-replace": "^5.0.1",
     "react-dom": "^19.0.0",
     "react-responsive-carousel": "^3.2.23",
+    "react-use-audio-player": "^4.0.2",
     "wouter": "^3.5.1"
   },
   "devDependencies": {

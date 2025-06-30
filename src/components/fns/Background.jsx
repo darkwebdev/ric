@@ -1,4 +1,4 @@
-import { backgroundSrc } from '../../img-sources';
+import { backgroundSrc } from '../../asset-sources';
 
 export const Background = ({ line }) => {
     const { image } = line;

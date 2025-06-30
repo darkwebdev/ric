@@ -1,4 +1,4 @@
-import { charImageSrc } from '../src/img-sources';
+import { charImageSrc } from '../src/asset-sources';
 import { fetchOperators } from '../src/network';
 import { AssetSrc } from '../src/const';
 import charTableEn from './mocks/character_table-en_US.json';

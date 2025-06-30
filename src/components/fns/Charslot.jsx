@@ -1,4 +1,4 @@
-import { charImageSrc } from '../../img-sources';
+import { charImageSrc } from '../../asset-sources';
 
 export const Charslot = ({ line }) => {
     const { slot, name, focus, posfrom, posto, bstart, bend, duration, isblock } = line;

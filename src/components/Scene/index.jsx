@@ -6,13 +6,14 @@ import { Charslot } from '../fns/Charslot.jsx';
 import { Text } from '../fns/Text';
 import { Subtitle } from '../fns/Subtitle';
 import { Sticker } from '../fns/Sticker';
+import { PlayMusic } from '../fns/PlayMusic';
 import './style.css';
 
-export const SceneForeground = ({ scene = [], index = 0 }) =>
+export const SceneForeground = ({ scene = [], index = 0, storyVariables }) =>
     <div className={`scene-screen scene-${index}`}>
         {scene.map((line, i) => {
             const Fn = SceneFgFns[line.fn];
-            return Fn ? <Fn line={line} key={`$fn}-${i}`}/> : null;
+            return Fn ? <Fn line={line} key={`$fn}-${i}`} storyVariables={storyVariables}/> : null;
         })}
     </div>
 
@@ -31,6 +32,7 @@ const SceneFgFns = {
     Character,
     Charslot,
     Blocker,
+    PlayMusic
 };
 
 const SceneBgFns = {

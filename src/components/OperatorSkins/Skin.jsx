@@ -1,4 +1,4 @@
-import { charSkinPortraitSrc, skinLogoSrc } from '../../img-sources';
+import { charSkinPortraitSrc, skinLogoSrc } from '../../asset-sources';
 
 export const Skin = ({
   portraitId,

@@ -1,6 +1,6 @@
 import { use } from 'react';
 import { AssistantContext } from './AssistantContext';
-import { charArtSrc } from '../../img-sources';
+import { charArtSrc } from '../../asset-sources';
 
 export const Assistant = () => {
     const { imgRef, skin, scale, position, nextTalkTitle } = use(AssistantContext);

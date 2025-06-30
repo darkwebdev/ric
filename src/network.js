@@ -1,5 +1,5 @@
 import { DataSrcCn, DataSrcEn, Rarities } from './const.js';
-import { backgroundSrc, charImageSrc, imageSrc } from './img-sources';
+import { backgroundSrc, charImageSrc, imageSrc } from './asset-sources';
 
 export async function storyLoader(path) {
   console.log('Loading story text...', path);
@@ -14,7 +14,7 @@ export async function storyLoader(path) {
   });
 }
 
-function minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview }) {
+function minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables }) {
   return {
     moduleStory: {
       charEquip: moduleStory.charEquip,
@@ -29,22 +29,23 @@ function minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyRevie
     },
     storyReview: Object.fromEntries(Object.values(storyReview).map(({ id, name, entryType, infoUnlockDatas }) =>
       ([ id, { id, name, entryType, infoUnlockDatas, } ]))
-    )
+    ),
+    storyVariables
   };
 }
 
 export async function loadStoryData() {
   console.log('Loading stories metadata...');
   try {
-    // const storyVariables = await fetchData(`${DATA_BASE[serverString]}/gamedata/story/story_variables.json`);
-    const [moduleStory, storyTable, storyReviewMeta, storyReview] = await Promise.all([
+    const [moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables] = await Promise.all([
       fetchData(`${DataSrcEn}/gamedata/excel/uniequip_table.json`),
       fetchData(`${DataSrcEn}/gamedata/excel/story_table.json`),
       fetchData(`${DataSrcEn}/gamedata/excel/story_review_meta_table.json`),
       fetchData(`${DataSrcEn}/gamedata/excel/story_review_table.json`),
+      fetchData(`${DataSrcEn}/gamedata/story/story_variables.json`),
     ]);
 
-    const storyData = minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview });
+    const storyData = minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables });
     console.log('Story data loaded', storyData);
 
     return storyData;

@@ -93,6 +93,14 @@ export function skinLogoSrc(imageName, source) {
   }
 }
 
+export function musicSrc(path, source) {
+  switch (source) {
+    case AssetSrc.akgcc:
+    default:
+      return `${AssetSrc.akgcc}/torappu/dynamicassets/audio/${path.toLowerCase()}.mp3`;
+  }
+}
+
 function destructure(name) {
   // eslint-disable-next-line no-unused-vars
   const [_, id, face='1', body='1'] = name.match(/^([^#^$]+)(?:#(\d+))?(?:\$(\d+))?$/);

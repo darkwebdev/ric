@@ -1,4 +1,4 @@
-import { charImageSrc } from '../../img-sources';
+import { charImageSrc } from '../../asset-sources';
 
 export const Character = ({ line }) => {
     const { name, name2, focus } = line;

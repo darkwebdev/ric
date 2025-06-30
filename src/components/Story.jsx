@@ -1,17 +1,21 @@
 import { useEffect, useState } from 'react';
-import { Link, useRoute, useSearchParams, useLocation } from 'wouter';
+import { Link, useLocation, useRoute, useSearchParams } from 'wouter';
+import { useAudioPlayerContext } from 'react-use-audio-player';
+
+import { useLocalStorage } from '../hooks/useLocalStorage';
+import { useCountdown } from '../hooks/useCountdown.js';
 import { scenesFromText } from '../scenes.js';
 import { storyLoader } from '../network.js';
-import { useCountdown } from '../hooks/useCountdown.js';
-import { StorySlider } from './StorySlider';
 import { storyByPath } from '../data-utils';
-import { useLocalStorage } from '../hooks/useLocalStorage';
+import { StorySlider } from './StorySlider';
+import { musicSrc } from '../asset-sources';
 
 export const Story = () => {
     const [match, params] = useRoute("*/story/*");
     const [searchParams, setSearchParams] = useSearchParams();
     const [location, setLocation] = useLocation();
     const [storyData] = useLocalStorage('storyData');
+    const { load, isMuted, toggleMute, stop } = useAudioPlayerContext();
     const [scenes, setScenes] = useState();
     const [delay, setDelay] = useState();
     const [cancelDelay, setCancelDelay] = useState();
@@ -64,6 +68,33 @@ export const Story = () => {
         }
     }, [scenes, sceneIndex, cancelDelay]);
 
+    useEffect(() => {
+        const musicLine = scenes?.[sceneIndex]?.find(line => line.fn === 'PlayMusic')
+        if (musicLine) {
+            const { intro, key, volume=1, crossfade } = musicLine;
+            console.log('Playing music for scene', sceneIndex, intro, key, storyData?.storyVariables);
+            const introPath = storyData?.storyVariables[intro.replace('$', '')];
+            if (introPath) {
+                console.log('Playing music', introPath);
+                load(musicSrc(introPath), {
+                    autoplay: true,
+                    onend: () => {
+                        const keyPath = storyData?.storyVariables[key.replace('$', '')];
+                        if (keyPath) {
+                            console.log('Playing music', keyPath);
+                            load(musicSrc(keyPath), {
+                                autoplay: true,
+                                loop: true,
+                            });
+                        }
+                    }
+                });
+            }
+        } else if (scenes?.[sceneIndex]?.some(line => line.fn === 'stopmusic')) {
+            stop();
+        }
+    }, [scenes, sceneIndex, storyData])
+
     const gotoNextScene = e => {
         isDebug && console.log(`gotoNextScene: ${sceneIndex} -> ${sceneIndex + 1}`, e);
         gotoScene(Math.min(scenes.length - 1, sceneIndex + 1));
@@ -96,6 +127,7 @@ export const Story = () => {
 
         <StorySlider
             scenes={scenes}
+            storyVariables={storyData?.storyVariables}
             sceneIndex={sceneIndex}
             delayCountdown={delayCountdown}
             onClick={gotoNextScene}
@@ -108,6 +140,7 @@ export const Story = () => {
             <button className="dialog-button" onClick={gotoPrevScene}>Previous</button>
             <button className="dialog-button" onClick={gotoNext10Scene}>+10</button>
             <button className="dialog-button" onClick={gotoNextOp}>Next Operation</button>
+            <button className="dialog-button" onClick={toggleMute}>{isMuted ? 'Unmute' : 'Mute'}</button>
             {isDebug && <button className="dialog-button" onClick={() => setCancelDelay(true)}>Pause delay</button>}
         </section>
     </>;
