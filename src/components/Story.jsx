@@ -122,7 +122,7 @@ export const Story = () => {
     const clearCache = () => {
         console.log('Clearing story cache');
         setStoryData(undefined);
-        window.location.reload();
+        setLocation('/ric/');
     }
 
     return scenes && <>
