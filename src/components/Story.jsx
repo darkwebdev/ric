@@ -29,7 +29,7 @@ export const Story = () => {
     const storyName = story?.name;
     const datas = story?.infoUnlockDatas;
     const storyOp = datas?.find(op => op.storyTxt === path) || datas?.[0];
-    const storyTag = storyOp.avgTag.replace(' Operation', '');
+    const storyTag = storyOp?.avgTag?.replace(' Operation', '');
     const index = datas?.findIndex(op => op.storyTxt === path);
     const nextOp = index >= 0 ? datas[index + 1] : undefined
 
