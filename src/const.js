@@ -54,4 +54,4 @@ export const AssetSrc = {
     akassets: 'https://raw.githubusercontent.com/ArknightsAssets/ArknightsAssets/cn/assets',
 };
 
-export const BlockingFns = ['Blocker', 'Text', 'Subtitle', 'Delay', ];
+export const BlockingFns = ['Blocker', 'Text', 'Subtitle', 'Decision', 'Delay', ];

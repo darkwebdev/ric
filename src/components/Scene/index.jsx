@@ -3,6 +3,7 @@ import { Image } from '../fns/Image';
 import { Background } from '../fns/Background';
 import { Character } from '../fns/Character';
 import { Charslot } from '../fns/Charslot.jsx';
+import { Decision } from '../fns/Decision';
 import { Text } from '../fns/Text';
 import { Subtitle } from '../fns/Subtitle';
 import { Sticker } from '../fns/Sticker';
@@ -31,6 +32,7 @@ const SceneFgFns = {
     Sticker,
     Character,
     Charslot,
+    Decision,
     Blocker,
     PlayMusic
 };
