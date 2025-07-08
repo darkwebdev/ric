@@ -256,3 +256,15 @@ export const CharOnBgWithText = args => <>
         { fn: 'Text', name: 'Butler', text: 'Young Master, are you asleep?' }
     ]} {...args} />
 </>;
+
+export const CharOnBgWithSubtitle = args => <>
+    <SceneBackground scene={[{ fn: 'Background', image: 'bg_motorway' }]} {...args} />
+    <SceneForeground scene={[
+        { fn: 'Blocker', a: '0', },
+        { fn: 'Character', name: 'avg_npc_029' },
+        {
+            fn: 'Subtitle',
+            text: 'They say there\'s gonna be another attack in about half an hour. You want some water?',
+        }
+    ]} {...args} />
+</>;

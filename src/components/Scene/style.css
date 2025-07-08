@@ -176,6 +176,7 @@
 }
 
 .dialog-subtitle {
+    position: relative;
     display: flex;
     padding: 0 20%;
     height: 100%;
@@ -183,6 +184,7 @@
     align-items: center;
     color: #fff;
     font-size: var(--mobile-font-size);
+    z-index: 1;
 }
 
 .dialog-sticker {
