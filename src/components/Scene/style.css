@@ -64,7 +64,19 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     z-index: 3;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 26%;
+        background: #000;
+        z-index: 1;
+    }
 
     /* todo: IS IT STILL NEEDED? */
     /* Carousel fix */
