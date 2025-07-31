@@ -1,11 +1,18 @@
 import { useEffect, useState } from 'react';
-import { categorizeStories, operationById, operationsByStoryId, storyNameById } from '../../data-utils.js';
+import {
+    categorizeStories,
+    operationById,
+    operationsByStoryId,
+    operatorByVignette,
+    storyNameById
+} from '../../data-utils.js';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { loadStoryData } from '../../network.js';
 import { StoryTypeEntry } from './StoryTypeEntry.jsx';
 import { StoryEntry } from './StoryEntry.jsx';
 import { OperationEntry } from './OperationEntry.jsx';
 import './style.css';
+import { StoryTypeKeys } from '../../const';
 
 export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
     const [storyData, setStoryData] = useState();
@@ -52,8 +59,11 @@ export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
             <div className="story-menu" key={storyType}>
                 <ul className="stories" aria-label="Stories">
                     {storyTypeIds[storyType].map(id =>
-                        <StoryEntry key={id}
-                            name={storyNameById(storyData, id)}
+                        <StoryEntry
+                            key={id}
+                            id={id}
+                            storyType={storyType}
+                            storyData={storyData}
                             isActive={id === storyId}
                             onClick={() => setStoryId(id)}
                         />
@@ -62,7 +72,9 @@ export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
                 {storyId !== undefined &&
                     <ul className="operations">
                         {operationsByStoryId(storyData, storyId).map((op, i, ops) =>
-                            <OperationEntry key={op.storyId} op={op}
+                            <OperationEntry
+                                key={op.storyId}
+                                op={op}
                                 isAfterStory={op.storyCode && op.storyCode === ops[i - 1]?.storyCode}
                                 storyPath={operationById(storyData, storyId, op.storyId).storyTxt}
                             />

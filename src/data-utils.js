@@ -84,3 +84,9 @@ export function storyByPath(storyData, operationPath) {
 export function operationsByStoryId(storyData, storyId) {
     return storyData.storyReview[storyId].infoUnlockDatas;
 }
+
+export function operatorByVignette(storyData, storyId) {
+    const miniActTrialDataMap = storyData?.storyReviewMeta?.miniActTrialData?.miniActTrialDataMap || {};
+    const rewardList = miniActTrialDataMap[storyId]?.rewardList || [];
+    return rewardList.find(({ item }) => item.type === 'CHAR')?.item?.id;
+}

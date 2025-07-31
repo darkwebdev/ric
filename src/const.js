@@ -1,11 +1,21 @@
+export const StoryTypeKeys = {
+    Main: 'main',
+    Intermezzi: 'intermezzi',
+    Side: 'side',
+    Vignette: 'mini',
+    IS: 'rogue',
+    Record: 'record',
+    Module: 'module',
+}
+
 export const StoryTypeNames = {
-    main: 'Main Theme',
-    intermezzi: 'Intermezzi',
-    side: 'Side Story',
-    mini: 'Special Operations',
-    rogue: 'Integrated Strategies',
-    record: 'Operator Record',
-    module: 'Operator Module',
+    [StoryTypeKeys.Main]: 'Main Theme',
+    [StoryTypeKeys.Intermezzi]: 'Intermezzi',
+    [StoryTypeKeys.Side]: 'Side Story',
+    [StoryTypeKeys.Vignette]: 'Special Operations',
+    [StoryTypeKeys.IS]: 'Integrated Strategies',
+    [StoryTypeKeys.Record]: 'Operator Record',
+    [StoryTypeKeys.Module]: 'Operator Module',
 };
 
 export const IntermezziIds = [

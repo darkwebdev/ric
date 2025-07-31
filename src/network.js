@@ -26,6 +26,7 @@ function minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyRevie
     storyReviewMeta: {
       actArchiveResData: storyReviewMeta.actArchiveResData,
       actArchiveData: storyReviewMeta.actArchiveData,
+      miniActTrialData: storyReviewMeta.miniActTrialData,
     },
     storyReview: Object.fromEntries(Object.values(storyReview).map(({ id, name, entryType, infoUnlockDatas }) =>
       ([ id, { id, name, entryType, infoUnlockDatas, } ]))
