@@ -103,7 +103,7 @@ export function musicSrc(path, source) {
 
 function destructure(name) {
   // eslint-disable-next-line no-unused-vars
-  const [_, id, face='1', body='1'] = name.match(/^([^#^$]+)(?:#(\d+))?(?:\$(\d+))?$/);
+  const [_, id, face = '1', body = '1'] = name.match(/^([^#^$]+)(?:#(\d+))?\s?(?:\$(\d+))?\s?$/);
   return {
     id,
     face: face.replace(/^0+/, ''),
