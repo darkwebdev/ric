@@ -15,7 +15,7 @@ export const Story = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const [location, setLocation] = useLocation();
     const [storyData, setStoryData] = useLocalStorage('storyData');
-    const { load, isMuted, toggleMute, stop } = useAudioPlayerContext();
+    const { load, stop, isPlaying, togglePlayPause } = useAudioPlayerContext();
     const [scenes, setScenes] = useState();
     const [delay, setDelay] = useState();
     const [cancelDelay, setCancelDelay] = useState();
@@ -146,7 +146,7 @@ export const Story = () => {
             <button className="dialog-button" onClick={gotoPrevScene}>Previous</button>
             <button className="dialog-button" onClick={gotoNext10Scene}>+10</button>
             <button className="dialog-button" onClick={gotoNextOp}>Next Operation</button>
-            <button className="dialog-button" onClick={toggleMute}>{isMuted ? 'Unmute' : 'Mute'}</button>
+            <button className="dialog-button" onClick={togglePlayPause}>{isPlaying ? 'Mute' : 'Unmute'}</button>
             <button className="dialog-button" onClick={clearCache}>Clear cache</button>
             {isDebug && <button className="dialog-button" onClick={() => setCancelDelay(true)}>Pause delay</button>}
         </section>
