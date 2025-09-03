@@ -111,6 +111,12 @@ describe('Parsing story dialogs', () => {
 
             expect(parseContent(content)).toEqual(expected);
         });
+        it('should transform colors', () => {
+            const content = '<color=#000000><i>...Italic black text...♪</i></color>';
+            const expected = '<span style="color:#000000"><i>...Italic black text...♪</i></span>';
+
+            expect(parseContent(content)).toEqual(expected);
+        });
         it('should transform special characters', () => {
             const content = 'This is a\nline break.\nAnd another one.';
             const expected = 'This is a<br/>line break.<br/>And another one.';
