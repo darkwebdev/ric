@@ -73,7 +73,7 @@ export const Story = () => {
         if (musicLine) {
             const { intro, key, volume=1, crossfade } = musicLine;
             console.log('Playing music for scene', sceneIndex, intro, key, storyData?.storyVariables);
-            const introPath = storyData?.storyVariables[intro.replace('$', '')];
+            const introPath = storyData?.storyVariables[intro?.replace('$', '')];
             if (introPath) {
                 console.log('Playing music', introPath);
                 load(musicSrc(introPath), {
