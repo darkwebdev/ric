@@ -80,8 +80,6 @@ describe('Parsing story dialogs', () => {
                 '[charslot(slot = "m", name = "avg_1034_jesca2_1#3$1", focus="n")]',
                 '[charslot]',
                 '[warp(name="chiyu01")]',
-
-
             ];
             const expected = [
                 { fn: 'UnknownCommand' },
@@ -110,6 +108,12 @@ describe('Parsing story dialogs', () => {
         it('should transform colors', () => {
             const content = 'This is a <color=#ff0000>red</color> text.';
             const expected = 'This is a <span style="color:#ff0000">red</span> text.';
+
+            expect(parseContent(content)).toEqual(expected);
+        });
+        it('should transform special characters', () => {
+            const content = 'This is a\nline break.\nAnd another one.';
+            const expected = 'This is a<br/>line break.<br/>And another one.';
 
             expect(parseContent(content)).toEqual(expected);
         });

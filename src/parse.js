@@ -6,6 +6,7 @@ export function parseContent(content = '') {
 
     // content = content.replaceAll("{@nickname}", this.doctor);
     // content = content.replace(/(?:\r\n|\r|\n|\\n|\\r)/g, "<br>");
+    content = content.replace(/\n/g, '<br/>');
     content = content.replace(color_re, color_sub);
     // content = content.replace("#000000","white");
     // content = content.replace(nbsp_sub_before, "&nbsp;$2");
