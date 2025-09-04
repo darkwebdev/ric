@@ -197,6 +197,7 @@
     align-items: center;
     color: #fff;
     font-size: var(--mobile-font-size);
+    background: #0009;
     z-index: 1;
 }
 
