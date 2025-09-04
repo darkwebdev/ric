@@ -15,7 +15,7 @@ export const Story = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const [location, setLocation] = useLocation();
     const [storyData, setStoryData] = useLocalStorage('storyData');
-    const { load, stop, isPlaying, togglePlayPause } = useAudioPlayerContext();
+    const { src, load, stop, fade, isLoading, isPlaying, togglePlayPause, volume: playerVolume, setVolume: setPlayerVolume } = useAudioPlayerContext();
     const [scenes, setScenes] = useState();
     const [delay, setDelay] = useState();
     const [cancelDelay, setCancelDelay] = useState();
@@ -69,29 +69,57 @@ export const Story = () => {
     }, [scenes, sceneIndex, cancelDelay]);
 
     useEffect(() => {
-        const musicLine = scenes?.[sceneIndex]?.find(line => line.fn === 'PlayMusic')
-        if (musicLine) {
-            const { intro, key, volume=1, crossfade } = musicLine;
+        const currentScene = scenes?.[sceneIndex] || [];
+        const playMusicLine = currentScene.find(line => line.fn.toLowerCase() === 'playmusic');
+        const stopMusicLine = currentScene.find(line => line.fn.toLowerCase() === 'stopmusic');
+        const setMusicVolumeLine = currentScene.find(line => line.fn.toLowerCase() === 'musicvolume');
+
+        console.log('useEffect: play music', playMusicLine);
+        if (playMusicLine) {
+            const { intro, key, volume=1, crossfade } = playMusicLine;
             console.log('Playing music for scene', sceneIndex, intro, key, storyData?.storyVariables);
             const introPath = storyData?.storyVariables[intro?.replace('$', '')];
+            const keyPath = storyData?.storyVariables[key?.replace('$', '')];
+            const keyOptions = {
+                autoplay: true,
+                loop: true,
+                onplay: () => {
+                    console.log('Key playing:', keyPath, volume);
+                    setPlayerVolume(volume);
+                },
+            };
             if (introPath) {
-                console.log('Playing music', introPath);
+                console.log('Loading intro', introPath, playerVolume);
                 load(musicSrc(introPath), {
                     autoplay: true,
+                    onplay: () => {
+                        console.log('Intro playing:', introPath, volume);
+                        setPlayerVolume(volume);
+                    },
                     onend: () => {
-                        const keyPath = storyData?.storyVariables[key.replace('$', '')];
+                        console.log('Intro ended:', introPath);
                         if (keyPath) {
-                            console.log('Playing music', keyPath);
-                            load(musicSrc(keyPath), {
-                                autoplay: true,
-                                loop: true,
-                            });
+                            console.log('Loading key', keyPath, playerVolume);
+                            load(musicSrc(keyPath), keyOptions);
                         }
                     }
                 });
+            } else if (keyPath) {
+                console.log('Loading key', keyPath, playerVolume);
+                load(musicSrc(keyPath), keyOptions);
             }
-        } else if (scenes?.[sceneIndex]?.some(line => line.fn === 'stopmusic')) {
-            stop();
+        } else if (stopMusicLine) {
+            const { fadetime=0 } = stopMusicLine;
+            console.log('Stopping music with fade', fadetime);
+            fade(playerVolume, 0, fadetime*1000);
+            setTimeout(() => {
+                console.log('Stop music.');
+                stop();
+            }, fadetime*1000);
+        } else if (setMusicVolumeLine) {
+            const { volume = playerVolume, fadetime = 0 } = setMusicVolumeLine;
+            console.log('Setting music volume', volume, fadetime);
+            fade(playerVolume, volume, fadetime*1000);
         }
     }, [scenes, sceneIndex, storyData])
 
@@ -146,7 +174,8 @@ export const Story = () => {
             <button className="dialog-button" onClick={gotoPrevScene}>Previous</button>
             <button className="dialog-button" onClick={gotoNext10Scene}>+10</button>
             <button className="dialog-button" onClick={gotoNextOp}>Next Operation</button>
-            <button className="dialog-button" onClick={togglePlayPause}>{isPlaying ? 'Mute' : 'Unmute'}</button>
+            <button className="dialog-button" onClick={() => {togglePlayPause(); console.log('Unmuting', src)}}>{isPlaying ? 'Mute' : isLoading ? '...' : 'Unmute'}</button>
+            <button className="dialog-button" onClick={() => setPlayerVolume(1)}>{`Vol: ${playerVolume}`}</button>
             <button className="dialog-button" onClick={clearCache}>Clear cache</button>
             {isDebug && <button className="dialog-button" onClick={() => setCancelDelay(true)}>Pause delay</button>}
         </section>
