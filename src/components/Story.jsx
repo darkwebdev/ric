@@ -174,10 +174,13 @@ export const Story = () => {
             <button className="dialog-button" onClick={gotoPrevScene}>Previous</button>
             <button className="dialog-button" onClick={gotoNext10Scene}>+10</button>
             <button className="dialog-button" onClick={gotoNextOp}>Next Operation</button>
-            <button className="dialog-button" onClick={() => {togglePlayPause(); console.log('Unmuting', src)}}>{isPlaying ? 'Mute' : isLoading ? '...' : 'Unmute'}</button>
-            <button className="dialog-button" onClick={() => setPlayerVolume(1)}>{`Vol: ${playerVolume}`}</button>
+            <button className="dialog-button" onClick={() => {togglePlayPause(); console.log('Unmuting', src)}}>{isPlaying ? `Mute (${playerVolume})` : isLoading ? '...' : 'Unmute'}</button>
             <button className="dialog-button" onClick={clearCache}>Clear cache</button>
             {isDebug && <button className="dialog-button" onClick={() => setCancelDelay(true)}>Pause delay</button>}
+        </section>
+
+        <section className="debug-info">
+            <p>Music playing: [{isPlaying ? src.split('/').slice(-1) : ''}]</p>
         </section>
     </>;
 }
