@@ -4,25 +4,25 @@ import { useAudioPlayerContext } from 'react-use-audio-player';
 
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { useCountdown } from '../hooks/useCountdown.js';
-import { useWindowFocus } from '../hooks/useWindowFocus';
 import { scenesFromText } from '../scenes.js';
 import { storyLoader } from '../network.js';
 import { storyByPath } from '../data-utils';
 import { StorySlider } from './StorySlider';
-import { musicSrc } from '../asset-sources';
-import { DefaultMusicVolume } from '../const';
+import { useMusic } from '../hooks/useMusic';
 
 export const Story = () => {
     const [match, params] = useRoute("*/story/*");
     const [searchParams, setSearchParams] = useSearchParams();
     const [location, setLocation] = useLocation();
-    const [storyData, setStoryData] = useLocalStorage('storyData');
-    const [musicPlayerSettings, setMusicPlayerSettings] = useLocalStorage('musicPlayer');
-    const { src, load, stop, fade, isLoading, isPlaying, togglePlayPause, volume: playerVolume, setVolume: setPlayerVolume } = useAudioPlayerContext();
-    const windowFocused = useWindowFocus();
+    const [storyData, saveStoryData] = useLocalStorage('storyData');
+    const [musicPlayerSettings, saveMusicPlayerSettings] = useLocalStorage('musicPlayer');
+    const [readingProgress, saveReadingProgress] = useLocalStorage('readingProgress');
+    const { src, isLoading, isPlaying, togglePlayPause, volume: playerVolume } = useAudioPlayerContext();
+
     const [scenes, setScenes] = useState();
     const [delay, setDelay] = useState();
     const [cancelDelay, setCancelDelay] = useState();
+
     const delayCountdown = useCountdown({ countStart: delay, interval: 100 });
     const sceneIndex = parseInt(searchParams.get('scene')) || 0;
     const isDebug = searchParams.get('debug') !== null;
@@ -36,6 +36,8 @@ export const Story = () => {
     const storyTag = storyOp?.avgTag?.replace(' Operation', '');
     const index = datas?.findIndex(op => op.storyTxt === path);
     const nextOp = index >= 0 ? datas[index + 1] : undefined
+
+    useMusic({ scene: scenes?.[sceneIndex], storyData });
 
     useEffect(() => {
         if (storyId) {
@@ -72,81 +74,6 @@ export const Story = () => {
         }
     }, [scenes, sceneIndex, cancelDelay]);
 
-    useEffect(() => {
-        const currentScene = scenes?.[sceneIndex] || [];
-        const playMusicLine = currentScene.find(line => line.fn.toLowerCase() === 'playmusic');
-        const stopMusicLine = currentScene.find(line => line.fn.toLowerCase() === 'stopmusic');
-        const setMusicVolumeLine = currentScene.find(line => line.fn.toLowerCase() === 'musicvolume');
-
-        console.log('useEffect: play music', playMusicLine);
-        if (playMusicLine) {
-            const { intro, key, volume=DefaultMusicVolume, crossfade } = playMusicLine;
-            console.log('Playing music for scene', sceneIndex, intro, key, storyData?.storyVariables);
-            const introPath = storyData?.storyVariables[intro?.replace('$', '')];
-            const keyPath = storyData?.storyVariables[key?.replace('$', '')];
-            const keyOptions = {
-                autoplay: !musicPlayerSettings.mute,
-                loop: true,
-                onplay: () => {
-                    console.log('Key playing:', keyPath, volume);
-                    setPlayerVolume(volume);
-                },
-            };
-            if (introPath) {
-                console.log('Loading intro', introPath, playerVolume);
-                load(musicSrc(introPath), {
-                    autoplay: !musicPlayerSettings.mute,
-                    onplay: () => {
-                        console.log('Intro playing:', introPath, volume);
-                        setPlayerVolume(volume);
-                    },
-                    onend: () => {
-                        console.log('Intro ended:', introPath);
-                        if (keyPath) {
-                            console.log('Loading key', keyPath, playerVolume);
-                            load(musicSrc(keyPath), keyOptions);
-                        }
-                    }
-                });
-            } else if (keyPath) {
-                console.log('Loading key', keyPath, playerVolume);
-                load(musicSrc(keyPath), keyOptions);
-            }
-        } else if (stopMusicLine) {
-            const { fadetime=0 } = stopMusicLine;
-            console.log('Stopping music with fade', fadetime);
-            fade(playerVolume, 0, fadetime*1000);
-            setTimeout(() => {
-                console.log('Stop music.');
-                stop();
-            }, fadetime*1000);
-        } else if (setMusicVolumeLine) {
-            const { volume = playerVolume, fadetime = 0 } = setMusicVolumeLine;
-            console.log('Setting music volume', volume, fadetime);
-            fade(playerVolume, volume, fadetime*1000);
-        }
-    }, [scenes, sceneIndex, storyData])
-
-    useEffect(() => {
-        if (!windowFocused && isPlaying) {
-            console.log('Window lost focus, muting music...');
-            setMusicPlayerSettings({
-                ...musicPlayerSettings,
-                volume: playerVolume,
-                mute: true
-            });
-            togglePlayPause();
-        } else if (windowFocused && musicPlayerSettings.mute) {
-            console.log('Window focused, restoring music...', musicPlayerSettings);
-            setPlayerVolume(musicPlayerSettings.volume || DefaultMusicVolume);
-            setMusicPlayerSettings({
-                ...musicPlayerSettings,
-                mute: false
-            });
-            togglePlayPause();
-        }
-    }, [windowFocused])
-
     const gotoNextScene = e => {
         isDebug && console.log(`gotoNextScene: ${sceneIndex} -> ${sceneIndex + 1}`, e);
         gotoScene(Math.min(scenes.length - 1, sceneIndex + 1));
@@ -173,13 +100,13 @@ export const Story = () => {
 
     const clearCache = () => {
         console.log('Clearing story cache');
-        setStoryData(undefined);
+        saveStoryData(undefined);
         setLocation('/ric/');
     }
 
     const toggleMute = () => {
         console.log(isPlaying ? 'Mute' : 'Unmute', src);
-        setMusicPlayerSettings({
+        saveMusicPlayerSettings({
             ...musicPlayerSettings,
             volume: playerVolume,
             mute: isPlaying
