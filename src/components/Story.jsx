@@ -4,18 +4,22 @@ import { useAudioPlayerContext } from 'react-use-audio-player';
 
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { useCountdown } from '../hooks/useCountdown.js';
+import { useWindowFocus } from '../hooks/useWindowFocus';
 import { scenesFromText } from '../scenes.js';
 import { storyLoader } from '../network.js';
 import { storyByPath } from '../data-utils';
 import { StorySlider } from './StorySlider';
 import { musicSrc } from '../asset-sources';
+import { DefaultMusicVolume } from '../const';
 
 export const Story = () => {
     const [match, params] = useRoute("*/story/*");
     const [searchParams, setSearchParams] = useSearchParams();
     const [location, setLocation] = useLocation();
     const [storyData, setStoryData] = useLocalStorage('storyData');
+    const [musicPlayerSettings, setMusicPlayerSettings] = useLocalStorage('musicPlayer');
     const { src, load, stop, fade, isLoading, isPlaying, togglePlayPause, volume: playerVolume, setVolume: setPlayerVolume } = useAudioPlayerContext();
+    const windowFocused = useWindowFocus();
     const [scenes, setScenes] = useState();
     const [delay, setDelay] = useState();
     const [cancelDelay, setCancelDelay] = useState();
@@ -76,12 +80,12 @@ export const Story = () => {
 
         console.log('useEffect: play music', playMusicLine);
         if (playMusicLine) {
-            const { intro, key, volume=1, crossfade } = playMusicLine;
+            const { intro, key, volume=DefaultMusicVolume, crossfade } = playMusicLine;
             console.log('Playing music for scene', sceneIndex, intro, key, storyData?.storyVariables);
             const introPath = storyData?.storyVariables[intro?.replace('$', '')];
             const keyPath = storyData?.storyVariables[key?.replace('$', '')];
             const keyOptions = {
-                autoplay: true,
+                autoplay: !musicPlayerSettings.mute,
                 loop: true,
                 onplay: () => {
                     console.log('Key playing:', keyPath, volume);
@@ -91,7 +95,7 @@ export const Story = () => {
             if (introPath) {
                 console.log('Loading intro', introPath, playerVolume);
                 load(musicSrc(introPath), {
-                    autoplay: true,
+                    autoplay: !musicPlayerSettings.mute,
                     onplay: () => {
                         console.log('Intro playing:', introPath, volume);
                         setPlayerVolume(volume);
@@ -123,6 +127,26 @@ export const Story = () => {
         }
     }, [scenes, sceneIndex, storyData])
 
+    useEffect(() => {
+        if (!windowFocused && isPlaying) {
+            console.log('Window lost focus, muting music...');
+            setMusicPlayerSettings({
+                ...musicPlayerSettings,
+                volume: playerVolume,
+                mute: true
+            });
+            togglePlayPause();
+        } else if (windowFocused && musicPlayerSettings.mute) {
+            console.log('Window focused, restoring music...', musicPlayerSettings);
+            setPlayerVolume(musicPlayerSettings.volume || DefaultMusicVolume);
+            setMusicPlayerSettings({
+                ...musicPlayerSettings,
+                mute: false
+            });
+            togglePlayPause();
+        }
+    }, [windowFocused])
+
     const gotoNextScene = e => {
         isDebug && console.log(`gotoNextScene: ${sceneIndex} -> ${sceneIndex + 1}`, e);
         gotoScene(Math.min(scenes.length - 1, sceneIndex + 1));
@@ -153,6 +177,16 @@ export const Story = () => {
         setLocation('/ric/');
     }
 
+    const toggleMute = () => {
+        console.log(isPlaying ? 'Mute' : 'Unmute', src);
+        setMusicPlayerSettings({
+            ...musicPlayerSettings,
+            volume: playerVolume,
+            mute: isPlaying
+        });
+        togglePlayPause();
+    }
+
     return scenes && <>
         <h1 className="story-title">
             {storyName}
@@ -174,13 +208,13 @@ export const Story = () => {
             <button className="dialog-button" onClick={gotoPrevScene}>Previous</button>
             <button className="dialog-button" onClick={gotoNext10Scene}>+10</button>
             <button className="dialog-button" onClick={gotoNextOp}>Next Operation</button>
-            <button className="dialog-button" onClick={() => {togglePlayPause(); console.log('Unmuting', src)}}>{isPlaying ? `Mute (${playerVolume})` : isLoading ? '...' : 'Unmute'}</button>
+            <button className="dialog-button" onClick={toggleMute}>{isPlaying ? `Mute (${playerVolume})` : isLoading ? '...' : 'Unmute'}</button>
             <button className="dialog-button" onClick={clearCache}>Clear cache</button>
             {isDebug && <button className="dialog-button" onClick={() => setCancelDelay(true)}>Pause delay</button>}
         </section>
 
         <section className="debug-info">
-            <p>Music playing: [{isPlaying ? src.split('/').slice(-1) : ''}]</p>
+            <p>Music {isLoading? 'loading' : (isPlaying ? 'playing' : (src ? 'loaded' : '')) }: [{src?.split('/')?.slice(-1)}]</p>
         </section>
     </>;
 }

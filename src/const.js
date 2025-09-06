@@ -65,3 +65,5 @@ export const AssetSrc = {
 };
 
 export const BlockingFns = ['Blocker', 'Text', 'Subtitle', 'Decision', 'Delay', ];
+
+export const DefaultMusicVolume = 0.6;
