@@ -15,9 +15,9 @@ export const Story = () => {
     const [match, params] = useRoute("*/story/*");
     const [searchParams, setSearchParams] = useSearchParams();
     const [location, setLocation] = useLocation();
-    const [storyData, saveStoryData] = useLocalStorage('storyData');
+    const [storyData, saveStoryData] = useLocalStorage('storyData', {});
     const [musicPlayerSettings, saveMusicPlayerSettings] = useLocalStorage('musicPlayer');
-    const [readingProgress, saveReadingProgress] = useLocalStorage('readingProgress');
+    const [readingProgress, saveReadingProgress] = useLocalStorage('readingProgress', {});
     const { src, isLoading, isPlaying, togglePlayPause, volume: playerVolume } = useAudioPlayerContext();
     const traffic = useTraffic();
 
@@ -56,7 +56,7 @@ export const Story = () => {
     useEffect(() => {
         saveReadingProgress({
             ...readingProgress,
-            [path]: Math.max(sceneIndex, readingProgress?.[path] || 0)
+            [path]: Math.max(sceneIndex, readingProgress[path] || 0)
         });
 
         const sceneDelay = scenes?.[sceneIndex]?.reduce((result, line) => ({

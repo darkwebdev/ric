@@ -8,7 +8,7 @@ import { musicSrc } from '../asset-sources';
 export const useMusic = ({ scene=[], storyData }) => {
     const windowFocused = useWindowFocus();
     const { src, load, stop, fade, isLoading, isPlaying, togglePlayPause, volume: playerVolume, setVolume: setPlayerVolume } = useAudioPlayerContext();
-    const [musicPlayerSettings, saveMusicPlayerSettings] = useLocalStorage('musicPlayer');
+    const [musicPlayerSettings, saveMusicPlayerSettings] = useLocalStorage('musicPlayer', {});
 
     useEffect(() => {
         if (!windowFocused && isPlaying) {
