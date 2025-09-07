@@ -9,6 +9,7 @@ import { storyLoader } from '../network.js';
 import { storyByPath } from '../data-utils';
 import { StorySlider } from './StorySlider';
 import { useMusic } from '../hooks/useMusic';
+import { useTraffic } from '../hooks/useTraffic';
 
 export const Story = () => {
     const [match, params] = useRoute("*/story/*");
@@ -18,6 +19,7 @@ export const Story = () => {
     const [musicPlayerSettings, saveMusicPlayerSettings] = useLocalStorage('musicPlayer');
     const [readingProgress, saveReadingProgress] = useLocalStorage('readingProgress');
     const { src, isLoading, isPlaying, togglePlayPause, volume: playerVolume } = useAudioPlayerContext();
+    const traffic = useTraffic();
 
     const [scenes, setScenes] = useState();
     const [delay, setDelay] = useState();
@@ -52,6 +54,11 @@ export const Story = () => {
     }, [storyOp]);
 
     useEffect(() => {
+        saveReadingProgress({
+            ...readingProgress,
+            [path]: Math.max(sceneIndex, readingProgress?.[path] || 0)
+        });
+
         const sceneDelay = scenes?.[sceneIndex]?.reduce((result, line) => ({
             Delay: line.time * 1000,
             Blocker: line.fadetime * 1000,
@@ -142,6 +149,7 @@ export const Story = () => {
 
         <section className="debug-info">
             <p>Music {isLoading? 'loading' : (isPlaying ? 'playing' : (src ? 'loaded' : '')) }: [{src?.split('/')?.slice(-1)}]</p>
+            <p>Traffic: {(traffic / 1024 / 1024).toFixed(2)} Mb</p>
         </section>
     </>;
 }
