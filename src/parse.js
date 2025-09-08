@@ -4,15 +4,14 @@ export function parseContent(content = '') {
     // const nbsp_sub_before = /(\s+)(<\/?\w+>)/gm;
     // const nbsp_sub_after = /(<\/?\w+>)(\s+)/gm;
 
-    // content = content.replaceAll("{@nickname}", this.doctor);
+    return content
+        .replaceAll('\\n', '<br/>')
+        .replaceAll("{@nickname}", 'Doctah')
+        .replaceAll(color_re, color_sub);
     // content = content.replace(/(?:\r\n|\r|\n|\\n|\\r)/g, "<br>");
-    content = content.replace(/\n/g, '<br/>');
-    content = content.replace(color_re, color_sub);
     // content = content.replace("#000000","white");
     // content = content.replace(nbsp_sub_before, "&nbsp;$2");
     // content = content.replace(nbsp_sub_after, "$1&nbsp;");
-
-    return content;
 }
 
 export function dialogsFromText(text) {

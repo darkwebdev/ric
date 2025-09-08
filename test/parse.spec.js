@@ -118,7 +118,7 @@ describe('Parsing story dialogs', () => {
             expect(parseContent(content)).toEqual(expected);
         });
         it('should transform special characters', () => {
-            const content = 'This is a\nline break.\nAnd another one.';
+            const content = 'This is a\\nline break.\\nAnd another one.';
             const expected = 'This is a<br/>line break.<br/>And another one.';
 
             expect(parseContent(content)).toEqual(expected);
