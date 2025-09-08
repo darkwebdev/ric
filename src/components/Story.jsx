@@ -10,6 +10,7 @@ import { storyByPath } from '../data-utils';
 import { StorySlider } from './StorySlider';
 import { useMusic } from '../hooks/useMusic';
 import { useTraffic } from '../hooks/useTraffic';
+import { useTitle } from '../hooks/useTitle';
 
 export const Story = () => {
     const [match, params] = useRoute("*/story/*");
@@ -38,6 +39,10 @@ export const Story = () => {
     const storyTag = storyOp?.avgTag?.replace(' Operation', '');
     const index = datas?.findIndex(op => op.storyTxt === path);
     const nextOp = index >= 0 ? datas[index + 1] : undefined
+
+    if (storyName && storyOp) {
+        useTitle(`${storyName}: ${storyOp.storyName} [Rhodes Island Chronicles]`);
+    }
 
     useMusic({ scene: scenes?.[sceneIndex], storyData });
 
