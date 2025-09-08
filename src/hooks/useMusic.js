@@ -19,7 +19,7 @@ export const useMusic = ({ scene=[], storyData }) => {
                 mute: true
             });
             togglePlayPause();
-        } else if (windowFocused && musicPlayerSettings.mute) {
+        } else if (windowFocused && !musicPlayerSettings.mute) {
             console.log('Window focused, restoring music...', musicPlayerSettings);
             setPlayerVolume(musicPlayerSettings.volume || DefaultMusicVolume);
             saveMusicPlayerSettings({
