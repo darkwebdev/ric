@@ -1,0 +1,7094 @@
+{
+  "level_a001_01_beg": {
+    "words": 984,
+    "minutes": 7
+  },
+  "level_a001_01_end": {
+    "words": 467,
+    "minutes": 4
+  },
+  "level_a001_02_beg": {
+    "words": 533,
+    "minutes": 4
+  },
+  "level_a001_02_end": {
+    "words": 918,
+    "minutes": 6
+  },
+  "level_a001_03_beg": {
+    "words": 472,
+    "minutes": 4
+  },
+  "level_a001_03_end": {
+    "words": 231,
+    "minutes": 3
+  },
+  "level_a001_04_beg": {
+    "words": 996,
+    "minutes": 6
+  },
+  "level_a001_04_end": {
+    "words": 283,
+    "minutes": 3
+  },
+  "level_a001_05_beg": {
+    "words": 413,
+    "minutes": 4
+  },
+  "level_a001_05_end": {
+    "words": 505,
+    "minutes": 5
+  },
+  "level_a001_06_beg": {
+    "words": 846,
+    "minutes": 7
+  },
+  "level_a001_06_end": {
+    "words": 821,
+    "minutes": 7
+  },
+  "level_a001_ex01_end": {
+    "words": 262,
+    "minutes": 3
+  },
+  "level_a001_ex03_end": {
+    "words": 526,
+    "minutes": 4
+  },
+  "level_a001_ex04_end": {
+    "words": 214,
+    "minutes": 3
+  },
+  "level_a001_ex06_end": {
+    "words": 429,
+    "minutes": 4
+  },
+  "level_act10d0_st01": {
+    "words": 34,
+    "minutes": 1
+  },
+  "level_act10d0_st02": {
+    "words": 31,
+    "minutes": 1
+  },
+  "level_act10d0_st03": {
+    "words": 18,
+    "minutes": 1
+  },
+  "level_act10d0_st04": {
+    "words": 39,
+    "minutes": 1
+  },
+  "level_act10d0_st05": {
+    "words": 28,
+    "minutes": 1
+  },
+  "level_act10d0_st06": {
+    "words": 44,
+    "minutes": 1
+  },
+  "level_act10d0_st07": {
+    "words": 42,
+    "minutes": 1
+  },
+  "level_act10d5_st01": {
+    "words": 2581,
+    "minutes": 16
+  },
+  "level_act10d5_st02": {
+    "words": 4127,
+    "minutes": 23
+  },
+  "level_act10d5_st03": {
+    "words": 3871,
+    "minutes": 23
+  },
+  "level_act10d5_st04": {
+    "words": 4439,
+    "minutes": 25
+  },
+  "level_act10d5_st05": {
+    "words": 3111,
+    "minutes": 19
+  },
+  "level_act10d5_st06": {
+    "words": 2592,
+    "minutes": 15
+  },
+  "level_act10d5_st07": {
+    "words": 4152,
+    "minutes": 24
+  },
+  "level_act10mini_st01": {
+    "words": 5683,
+    "minutes": 32
+  },
+  "level_act10mini_st02": {
+    "words": 3230,
+    "minutes": 22
+  },
+  "level_act10mini_st03": {
+    "words": 3899,
+    "minutes": 23
+  },
+  "level_act10mini_st04": {
+    "words": 3509,
+    "minutes": 22
+  },
+  "level_act10mini_st05": {
+    "words": 5531,
+    "minutes": 86
+  },
+  "level_act10mini_st06": {
+    "words": 3658,
+    "minutes": 21
+  },
+  "level_act11d0_01_beg": {
+    "words": 1328,
+    "minutes": 9
+  },
+  "level_act11d0_01_end": {
+    "words": 1948,
+    "minutes": 11
+  },
+  "level_act11d0_02_beg": {
+    "words": 816,
+    "minutes": 6
+  },
+  "level_act11d0_02_end": {
+    "words": 1490,
+    "minutes": 9
+  },
+  "level_act11d0_03_beg": {
+    "words": 895,
+    "minutes": 6
+  },
+  "level_act11d0_03_end": {
+    "words": 1080,
+    "minutes": 7
+  },
+  "level_act11d0_04_beg": {
+    "words": 1380,
+    "minutes": 9
+  },
+  "level_act11d0_04_end": {
+    "words": 2003,
+    "minutes": 13
+  },
+  "level_act11d0_05_beg": {
+    "words": 975,
+    "minutes": 6
+  },
+  "level_act11d0_05_end": {
+    "words": 730,
+    "minutes": 5
+  },
+  "level_act11d0_06_beg": {
+    "words": 1233,
+    "minutes": 8
+  },
+  "level_act11d0_06_end": {
+    "words": 1567,
+    "minutes": 10
+  },
+  "level_act11d0_07_beg": {
+    "words": 1448,
+    "minutes": 10
+  },
+  "level_act11d0_07_end": {
+    "words": 1489,
+    "minutes": 9
+  },
+  "level_act11d0_08_beg": {
+    "words": 1063,
+    "minutes": 8
+  },
+  "level_act11d0_08_end": {
+    "words": 1842,
+    "minutes": 13
+  },
+  "level_act11d0_st01": {
+    "words": 1421,
+    "minutes": 9
+  },
+  "level_act11d0_st02": {
+    "words": 1699,
+    "minutes": 10
+  },
+  "level_act11d0_sub-1-1": {
+    "words": 24,
+    "minutes": 1
+  },
+  "level_act11d0_sub-1-1_end": {
+    "words": 2112,
+    "minutes": 12
+  },
+  "level_act11d0_sub-1-2": {
+    "words": 27,
+    "minutes": 1
+  },
+  "level_act11d0_sub-1-2_end": {
+    "words": 1506,
+    "minutes": 9
+  },
+  "level_act11d7_st01": {
+    "words": 4740,
+    "minutes": 26
+  },
+  "level_act11mini_st01": {
+    "words": 3334,
+    "minutes": 21
+  },
+  "level_act11mini_st02": {
+    "words": 2695,
+    "minutes": 16
+  },
+  "level_act11mini_st03": {
+    "words": 3581,
+    "minutes": 22
+  },
+  "level_act11mini_st04": {
+    "words": 3930,
+    "minutes": 22
+  },
+  "level_act11mini_st05": {
+    "words": 3386,
+    "minutes": 19
+  },
+  "level_act11mini_st06": {
+    "words": 3720,
+    "minutes": 24
+  },
+  "level_act12d0_01_beg": {
+    "words": 1275,
+    "minutes": 8
+  },
+  "level_act12d0_01_end": {
+    "words": 1967,
+    "minutes": 11
+  },
+  "level_act12d0_02_beg": {
+    "words": 1353,
+    "minutes": 9
+  },
+  "level_act12d0_02_end": {
+    "words": 1027,
+    "minutes": 7
+  },
+  "level_act12d0_03_beg": {
+    "words": 662,
+    "minutes": 5
+  },
+  "level_act12d0_03_end": {
+    "words": 641,
+    "minutes": 5
+  },
+  "level_act12d0_04_beg": {
+    "words": 1006,
+    "minutes": 7
+  },
+  "level_act12d0_04_end": {
+    "words": 578,
+    "minutes": 4
+  },
+  "level_act12d0_05_beg": {
+    "words": 1460,
+    "minutes": 9
+  },
+  "level_act12d0_05_end": {
+    "words": 1091,
+    "minutes": 7
+  },
+  "level_act12d0_06_beg": {
+    "words": 1205,
+    "minutes": 8
+  },
+  "level_act12d0_06_end": {
+    "words": 532,
+    "minutes": 4
+  },
+  "level_act12d0_07_beg": {
+    "words": 441,
+    "minutes": 4
+  },
+  "level_act12d0_07_end": {
+    "words": 685,
+    "minutes": 5
+  },
+  "level_act12d0_08_beg": {
+    "words": 1275,
+    "minutes": 9
+  },
+  "level_act12d0_08_end": {
+    "words": 573,
+    "minutes": 4
+  },
+  "level_act12d0_09_beg": {
+    "words": 511,
+    "minutes": 4
+  },
+  "level_act12d0_09_end": {
+    "words": 1975,
+    "minutes": 11
+  },
+  "level_act12d0_ex01_end": {
+    "words": 1592,
+    "minutes": 10
+  },
+  "level_act12d0_st01": {
+    "words": 1475,
+    "minutes": 9
+  },
+  "level_act12d0_st02": {
+    "words": 1473,
+    "minutes": 10
+  },
+  "level_act12mini_st01": {
+    "words": 3444,
+    "minutes": 20
+  },
+  "level_act12mini_st02": {
+    "words": 4535,
+    "minutes": 25
+  },
+  "level_act12mini_st03": {
+    "words": 3894,
+    "minutes": 22
+  },
+  "level_act12mini_st04": {
+    "words": 3666,
+    "minutes": 23
+  },
+  "level_act12mini_st05": {
+    "words": 2869,
+    "minutes": 18
+  },
+  "level_act12mini_st06": {
+    "words": 3677,
+    "minutes": 24
+  },
+  "level_act12mini_st07": {
+    "words": 3416,
+    "minutes": 20
+  },
+  "level_act12side_01_beg": {
+    "words": 1434,
+    "minutes": 14
+  },
+  "level_act12side_01_end": {
+    "words": 3293,
+    "minutes": 19
+  },
+  "level_act12side_02_beg": {
+    "words": 1243,
+    "minutes": 8
+  },
+  "level_act12side_02_end": {
+    "words": 893,
+    "minutes": 6
+  },
+  "level_act12side_03_beg": {
+    "words": 1369,
+    "minutes": 9
+  },
+  "level_act12side_03_end": {
+    "words": 871,
+    "minutes": 6
+  },
+  "level_act12side_04_beg": {
+    "words": 775,
+    "minutes": 5
+  },
+  "level_act12side_04_end": {
+    "words": 1017,
+    "minutes": 7
+  },
+  "level_act12side_05_beg": {
+    "words": 474,
+    "minutes": 4
+  },
+  "level_act12side_05_end": {
+    "words": 850,
+    "minutes": 6
+  },
+  "level_act12side_06_beg": {
+    "words": 509,
+    "minutes": 4
+  },
+  "level_act12side_06_end": {
+    "words": 577,
+    "minutes": 4
+  },
+  "level_act12side_07_beg": {
+    "words": 1102,
+    "minutes": 8
+  },
+  "level_act12side_08_end": {
+    "words": 1336,
+    "minutes": 9
+  },
+  "level_act12side_09_beg": {
+    "words": 1799,
+    "minutes": 11
+  },
+  "level_act12side_09_end": {
+    "words": 1423,
+    "minutes": 9
+  },
+  "level_act12side_st01": {
+    "words": 4009,
+    "minutes": 25
+  },
+  "level_act12side_st02": {
+    "words": 3642,
+    "minutes": 22
+  },
+  "level_act12side_st03": {
+    "words": 1493,
+    "minutes": 9
+  },
+  "level_act12side_st04": {
+    "words": 2223,
+    "minutes": 14
+  },
+  "level_act13d0_st01": {
+    "words": 1997,
+    "minutes": 13
+  },
+  "level_act13d0_st02": {
+    "words": 3313,
+    "minutes": 19
+  },
+  "level_act13d0_st03": {
+    "words": 2765,
+    "minutes": 15
+  },
+  "level_act13d0_st04": {
+    "words": 2881,
+    "minutes": 18
+  },
+  "level_act13d0_st05": {
+    "words": 2954,
+    "minutes": 16
+  },
+  "level_act13d0_st06": {
+    "words": 3682,
+    "minutes": 23
+  },
+  "level_act13d0_st07": {
+    "words": 4230,
+    "minutes": 26
+  },
+  "level_act13d5_01_beg": {
+    "words": 1581,
+    "minutes": 9
+  },
+  "level_act13d5_01_end": {
+    "words": 1777,
+    "minutes": 12
+  },
+  "level_act13d5_02_beg": {
+    "words": 1889,
+    "minutes": 11
+  },
+  "level_act13d5_02_end": {
+    "words": 2060,
+    "minutes": 14
+  },
+  "level_act13d5_03_beg": {
+    "words": 2662,
+    "minutes": 15
+  },
+  "level_act13d5_03_end": {
+    "words": 1306,
+    "minutes": 9
+  },
+  "level_act13d5_04_beg": {
+    "words": 1561,
+    "minutes": 9
+  },
+  "level_act13d5_04_end": {
+    "words": 1520,
+    "minutes": 10
+  },
+  "level_act13d5_05_beg": {
+    "words": 1602,
+    "minutes": 10
+  },
+  "level_act13d5_05_end": {
+    "words": 1878,
+    "minutes": 11
+  },
+  "level_act13d5_06_beg": {
+    "words": 1556,
+    "minutes": 9
+  },
+  "level_act13d5_06_end": {
+    "words": 1461,
+    "minutes": 10
+  },
+  "level_act13d5_07_beg": {
+    "words": 1170,
+    "minutes": 8
+  },
+  "level_act13d5_07_end": {
+    "words": 2163,
+    "minutes": 14
+  },
+  "level_act13d5_08_beg": {
+    "words": 2938,
+    "minutes": 18
+  },
+  "level_act13d5_08_end": {
+    "words": 2726,
+    "minutes": 19
+  },
+  "level_act13d5_st01": {
+    "words": 941,
+    "minutes": 6
+  },
+  "level_act13d5_st02": {
+    "words": 1788,
+    "minutes": 11
+  },
+  "level_act13d5_st03": {
+    "words": 1996,
+    "minutes": 11
+  },
+  "level_act13side_01_beg": {
+    "words": 2253,
+    "minutes": 13
+  },
+  "level_act13side_01_end": {
+    "words": 1403,
+    "minutes": 9
+  },
+  "level_act13side_02_beg": {
+    "words": 2924,
+    "minutes": 21
+  },
+  "level_act13side_02_end": {
+    "words": 3668,
+    "minutes": 22
+  },
+  "level_act13side_03_beg": {
+    "words": 3009,
+    "minutes": 18
+  },
+  "level_act13side_03_end": {
+    "words": 4197,
+    "minutes": 24
+  },
+  "level_act13side_04_beg": {
+    "words": 5624,
+    "minutes": 32
+  },
+  "level_act13side_04_end": {
+    "words": 4071,
+    "minutes": 28
+  },
+  "level_act13side_05_beg": {
+    "words": 1975,
+    "minutes": 13
+  },
+  "level_act13side_05_end": {
+    "words": 2433,
+    "minutes": 15
+  },
+  "level_act13side_06_beg": {
+    "words": 1792,
+    "minutes": 14
+  },
+  "level_act13side_06_end": {
+    "words": 1770,
+    "minutes": 13
+  },
+  "level_act13side_07_beg": {
+    "words": 2577,
+    "minutes": 17
+  },
+  "level_act13side_07_end": {
+    "words": 3220,
+    "minutes": 21
+  },
+  "level_act13side_08_beg": {
+    "words": 2037,
+    "minutes": 13
+  },
+  "level_act13side_08_end": {
+    "words": 2186,
+    "minutes": 15
+  },
+  "level_act13side_09_beg": {
+    "words": 3275,
+    "minutes": 22
+  },
+  "level_act13side_09_end": {
+    "words": 2020,
+    "minutes": 13
+  },
+  "level_act13side_10_beg": {
+    "words": 3882,
+    "minutes": 25
+  },
+  "level_act13side_10_end": {
+    "words": 5536,
+    "minutes": 38
+  },
+  "level_act13side_hidden_st01": {
+    "words": 2839,
+    "minutes": 20
+  },
+  "level_act13side_hidden_st02": {
+    "words": 2323,
+    "minutes": 14
+  },
+  "level_act13side_hidden_st03": {
+    "words": 2640,
+    "minutes": 16
+  },
+  "level_act13side_st01": {
+    "words": 3376,
+    "minutes": 19
+  },
+  "level_act13side_st02": {
+    "words": 2186,
+    "minutes": 14
+  },
+  "level_act13side_st03": {
+    "words": 3453,
+    "minutes": 23
+  },
+  "level_act13side_st04": {
+    "words": 2577,
+    "minutes": 15
+  },
+  "level_act14mini_st01": {
+    "words": 4481,
+    "minutes": 27
+  },
+  "level_act14mini_st02": {
+    "words": 3549,
+    "minutes": 22
+  },
+  "level_act14mini_st03": {
+    "words": 4212,
+    "minutes": 26
+  },
+  "level_act14mini_st04": {
+    "words": 4444,
+    "minutes": 29
+  },
+  "level_act14mini_st05": {
+    "words": 6248,
+    "minutes": 37
+  },
+  "level_act14mini_st06": {
+    "words": 3725,
+    "minutes": 22
+  },
+  "level_act14side_01_beg": {
+    "words": 1737,
+    "minutes": 13
+  },
+  "level_act14side_01_end": {
+    "words": 4644,
+    "minutes": 29
+  },
+  "level_act14side_02_beg": {
+    "words": 2841,
+    "minutes": 17
+  },
+  "level_act14side_02_end": {
+    "words": 2317,
+    "minutes": 14
+  },
+  "level_act14side_03_beg": {
+    "words": 1375,
+    "minutes": 9
+  },
+  "level_act14side_03_end": {
+    "words": 1320,
+    "minutes": 8
+  },
+  "level_act14side_04_beg": {
+    "words": 1535,
+    "minutes": 9
+  },
+  "level_act14side_04_end": {
+    "words": 1326,
+    "minutes": 9
+  },
+  "level_act14side_05_beg": {
+    "words": 2181,
+    "minutes": 13
+  },
+  "level_act14side_05_end": {
+    "words": 1721,
+    "minutes": 12
+  },
+  "level_act14side_06_beg": {
+    "words": 4686,
+    "minutes": 29
+  },
+  "level_act14side_06_end": {
+    "words": 3075,
+    "minutes": 20
+  },
+  "level_act14side_07_beg": {
+    "words": 2176,
+    "minutes": 12
+  },
+  "level_act14side_07_end": {
+    "words": 2465,
+    "minutes": 15
+  },
+  "level_act14side_08_beg": {
+    "words": 2579,
+    "minutes": 19
+  },
+  "level_act14side_08_end": {
+    "words": 3656,
+    "minutes": 31
+  },
+  "level_act14side_st01": {
+    "words": 5313,
+    "minutes": 31
+  },
+  "level_act14side_st02": {
+    "words": 1715,
+    "minutes": 12
+  },
+  "level_act14side_st03": {
+    "words": 4969,
+    "minutes": 34
+  },
+  "level_act14side_st04": {
+    "words": 3030,
+    "minutes": 21
+  },
+  "level_act15d0_01_beg": {
+    "words": 2324,
+    "minutes": 15
+  },
+  "level_act15d0_01_end": {
+    "words": 1099,
+    "minutes": 8
+  },
+  "level_act15d0_02_beg": {
+    "words": 1118,
+    "minutes": 8
+  },
+  "level_act15d0_02_end": {
+    "words": 1400,
+    "minutes": 9
+  },
+  "level_act15d0_03_beg": {
+    "words": 2074,
+    "minutes": 13
+  },
+  "level_act15d0_03_end": {
+    "words": 1643,
+    "minutes": 12
+  },
+  "level_act15d0_04_beg": {
+    "words": 1959,
+    "minutes": 11
+  },
+  "level_act15d0_04_end": {
+    "words": 1014,
+    "minutes": 7
+  },
+  "level_act15d0_05_beg": {
+    "words": 658,
+    "minutes": 5
+  },
+  "level_act15d0_05_end": {
+    "words": 1389,
+    "minutes": 8
+  },
+  "level_act15d0_06_beg": {
+    "words": 1056,
+    "minutes": 7
+  },
+  "level_act15d0_06_end": {
+    "words": 1295,
+    "minutes": 9
+  },
+  "level_act15d0_07_beg": {
+    "words": 598,
+    "minutes": 6
+  },
+  "level_act15d0_07_end": {
+    "words": 1157,
+    "minutes": 34
+  },
+  "level_act15d0_08_beg": {
+    "words": 1663,
+    "minutes": 20
+  },
+  "level_act15d0_08_end": {
+    "words": 1306,
+    "minutes": 16
+  },
+  "level_act15d0_st01": {
+    "words": 1811,
+    "minutes": 11
+  },
+  "level_act15d0_st02": {
+    "words": 2892,
+    "minutes": 17
+  },
+  "level_act15d5_st01": {
+    "words": 2935,
+    "minutes": 17
+  },
+  "level_act15d5_st02": {
+    "words": 3326,
+    "minutes": 19
+  },
+  "level_act15d5_st03": {
+    "words": 4267,
+    "minutes": 24
+  },
+  "level_act15d5_st04": {
+    "words": 3962,
+    "minutes": 23
+  },
+  "level_act15d5_st05": {
+    "words": 4275,
+    "minutes": 24
+  },
+  "level_act15d5_st06": {
+    "words": 3152,
+    "minutes": 18
+  },
+  "level_act15d5_st07": {
+    "words": 3757,
+    "minutes": 20
+  },
+  "level_act15mini_st01": {
+    "words": 3741,
+    "minutes": 26
+  },
+  "level_act15mini_st02": {
+    "words": 3660,
+    "minutes": 24
+  },
+  "level_act15mini_st03": {
+    "words": 4489,
+    "minutes": 31
+  },
+  "level_act15mini_st04": {
+    "words": 3321,
+    "minutes": 23
+  },
+  "level_act15mini_st05": {
+    "words": 3514,
+    "minutes": 23
+  },
+  "level_act15mini_st06": {
+    "words": 4684,
+    "minutes": 28
+  },
+  "level_act15mini_st07": {
+    "words": 3408,
+    "minutes": 20
+  },
+  "level_act15side_01_beg": {
+    "words": 2043,
+    "minutes": 15
+  },
+  "level_act15side_01_end": {
+    "words": 1421,
+    "minutes": 11
+  },
+  "level_act15side_02_beg": {
+    "words": 4201,
+    "minutes": 26
+  },
+  "level_act15side_02_end": {
+    "words": 1341,
+    "minutes": 9
+  },
+  "level_act15side_03_beg": {
+    "words": 2612,
+    "minutes": 16
+  },
+  "level_act15side_03_end": {
+    "words": 2946,
+    "minutes": 17
+  },
+  "level_act15side_04_beg": {
+    "words": 2293,
+    "minutes": 15
+  },
+  "level_act15side_04_end": {
+    "words": 3307,
+    "minutes": 19
+  },
+  "level_act15side_05_beg": {
+    "words": 1384,
+    "minutes": 8
+  },
+  "level_act15side_05_end": {
+    "words": 1213,
+    "minutes": 9
+  },
+  "level_act15side_06_beg": {
+    "words": 1968,
+    "minutes": 12
+  },
+  "level_act15side_06_end": {
+    "words": 1444,
+    "minutes": 10
+  },
+  "level_act15side_07_beg": {
+    "words": 1942,
+    "minutes": 12
+  },
+  "level_act15side_07_end": {
+    "words": 1642,
+    "minutes": 12
+  },
+  "level_act15side_09_beg": {
+    "words": 3790,
+    "minutes": 25
+  },
+  "level_act15side_09_end": {
+    "words": 3659,
+    "minutes": 23
+  },
+  "level_act15side_st01": {
+    "words": 1652,
+    "minutes": 12
+  },
+  "level_act15side_st02": {
+    "words": 2602,
+    "minutes": 18
+  },
+  "level_act15side_st03": {
+    "words": 3301,
+    "minutes": 20
+  },
+  "level_act16d5_01_beg": {
+    "words": 2317,
+    "minutes": 15
+  },
+  "level_act16d5_01_end": {
+    "words": 826,
+    "minutes": 6
+  },
+  "level_act16d5_02_beg": {
+    "words": 1837,
+    "minutes": 12
+  },
+  "level_act16d5_02_end": {
+    "words": 1906,
+    "minutes": 12
+  },
+  "level_act16d5_04_beg": {
+    "words": 1234,
+    "minutes": 10
+  },
+  "level_act16d5_04_end": {
+    "words": 683,
+    "minutes": 7
+  },
+  "level_act16d5_05_beg": {
+    "words": 1901,
+    "minutes": 12
+  },
+  "level_act16d5_05_end": {
+    "words": 986,
+    "minutes": 9
+  },
+  "level_act16d5_06_beg": {
+    "words": 1637,
+    "minutes": 11
+  },
+  "level_act16d5_06_end": {
+    "words": 2224,
+    "minutes": 13
+  },
+  "level_act16d5_08_beg": {
+    "words": 1107,
+    "minutes": 8
+  },
+  "level_act16d5_08_end": {
+    "words": 2240,
+    "minutes": 14
+  },
+  "level_act16d5_10_beg": {
+    "words": 3289,
+    "minutes": 23
+  },
+  "level_act16d5_10_end": {
+    "words": 2309,
+    "minutes": 14
+  },
+  "level_act16d5_st01": {
+    "words": 2813,
+    "minutes": 17
+  },
+  "level_act16d5_st02": {
+    "words": 1188,
+    "minutes": 7
+  },
+  "level_act16d5_st03": {
+    "words": 1146,
+    "minutes": 7
+  },
+  "level_act16mini_st01": {
+    "words": 4876,
+    "minutes": 28
+  },
+  "level_act16mini_st02": {
+    "words": 3453,
+    "minutes": 22
+  },
+  "level_act16mini_st03": {
+    "words": 5843,
+    "minutes": 35
+  },
+  "level_act16mini_st04": {
+    "words": 5553,
+    "minutes": 33
+  },
+  "level_act16mini_st05": {
+    "words": 4442,
+    "minutes": 30
+  },
+  "level_act16mini_st06": {
+    "words": 3481,
+    "minutes": 21
+  },
+  "level_act16side_01_beg": {
+    "words": 1906,
+    "minutes": 12
+  },
+  "level_act16side_01_end": {
+    "words": 1700,
+    "minutes": 12
+  },
+  "level_act16side_02_beg": {
+    "words": 2701,
+    "minutes": 17
+  },
+  "level_act16side_02_end": {
+    "words": 1661,
+    "minutes": 11
+  },
+  "level_act16side_03_beg": {
+    "words": 2159,
+    "minutes": 13
+  },
+  "level_act16side_03_end": {
+    "words": 1648,
+    "minutes": 11
+  },
+  "level_act16side_04_beg": {
+    "words": 1915,
+    "minutes": 12
+  },
+  "level_act16side_04_end": {
+    "words": 1809,
+    "minutes": 12
+  },
+  "level_act16side_05_beg": {
+    "words": 1284,
+    "minutes": 9
+  },
+  "level_act16side_05_end": {
+    "words": 2725,
+    "minutes": 16
+  },
+  "level_act16side_06_beg": {
+    "words": 1603,
+    "minutes": 12
+  },
+  "level_act16side_06_end": {
+    "words": 1793,
+    "minutes": 12
+  },
+  "level_act16side_07_beg": {
+    "words": 1519,
+    "minutes": 10
+  },
+  "level_act16side_07_end": {
+    "words": 2802,
+    "minutes": 19
+  },
+  "level_act16side_08_beg": {
+    "words": 1816,
+    "minutes": 14
+  },
+  "level_act16side_08_end": {
+    "words": 1264,
+    "minutes": 9
+  },
+  "level_act16side_st01": {
+    "words": 2924,
+    "minutes": 24
+  },
+  "level_act16side_st02": {
+    "words": 2268,
+    "minutes": 14
+  },
+  "level_act17d0_01_beg": {
+    "words": 1545,
+    "minutes": 9
+  },
+  "level_act17d0_01_end": {
+    "words": 1724,
+    "minutes": 10
+  },
+  "level_act17d0_02_beg": {
+    "words": 2888,
+    "minutes": 17
+  },
+  "level_act17d0_02_end": {
+    "words": 1361,
+    "minutes": 9
+  },
+  "level_act17d0_03_beg": {
+    "words": 2449,
+    "minutes": 15
+  },
+  "level_act17d0_03_end": {
+    "words": 1583,
+    "minutes": 10
+  },
+  "level_act17d0_05_beg": {
+    "words": 959,
+    "minutes": 6
+  },
+  "level_act17d0_05_end": {
+    "words": 1296,
+    "minutes": 10
+  },
+  "level_act17d0_06_beg": {
+    "words": 1715,
+    "minutes": 13
+  },
+  "level_act17d0_06_end": {
+    "words": 489,
+    "minutes": 4
+  },
+  "level_act17d0_07_beg": {
+    "words": 1125,
+    "minutes": 8
+  },
+  "level_act17d0_07_end": {
+    "words": 568,
+    "minutes": 5
+  },
+  "level_act17d0_08_beg": {
+    "words": 1097,
+    "minutes": 9
+  },
+  "level_act17d0_08_end": {
+    "words": 469,
+    "minutes": 5
+  },
+  "level_act17d0_st01": {
+    "words": 1814,
+    "minutes": 48
+  },
+  "level_act17d0_st02": {
+    "words": 2098,
+    "minutes": 13
+  },
+  "level_act17d0_st03": {
+    "words": 465,
+    "minutes": 4
+  },
+  "level_act17d1_entry": {
+    "words": 921,
+    "minutes": 7
+  },
+  "level_act17mini_st01": {
+    "words": 4677,
+    "minutes": 32
+  },
+  "level_act17mini_st02": {
+    "words": 4770,
+    "minutes": 28
+  },
+  "level_act17mini_st03": {
+    "words": 4139,
+    "minutes": 25
+  },
+  "level_act17mini_st04": {
+    "words": 4185,
+    "minutes": 26
+  },
+  "level_act17mini_st05": {
+    "words": 3921,
+    "minutes": 24
+  },
+  "level_act17mini_st06": {
+    "words": 3739,
+    "minutes": 22
+  },
+  "level_act17side_01_beg": {
+    "words": 1771,
+    "minutes": 12
+  },
+  "level_act17side_01_end": {
+    "words": 3066,
+    "minutes": 19
+  },
+  "level_act17side_02_end": {
+    "words": 1446,
+    "minutes": 11
+  },
+  "level_act17side_03_end": {
+    "words": 2241,
+    "minutes": 15
+  },
+  "level_act17side_04_end": {
+    "words": 2288,
+    "minutes": 16
+  },
+  "level_act17side_05_beg": {
+    "words": 2577,
+    "minutes": 17
+  },
+  "level_act17side_05_end": {
+    "words": 2290,
+    "minutes": 15
+  },
+  "level_act17side_06_beg": {
+    "words": 2330,
+    "minutes": 17
+  },
+  "level_act17side_07_end": {
+    "words": 2681,
+    "minutes": 18
+  },
+  "level_act17side_08_end": {
+    "words": 2245,
+    "minutes": 16
+  },
+  "level_act17side_10_beg": {
+    "words": 4373,
+    "minutes": 28
+  },
+  "level_act17side_10_end": {
+    "words": 3536,
+    "minutes": 25
+  },
+  "level_act17side_st01": {
+    "words": 4326,
+    "minutes": 26
+  },
+  "level_act17side_st02": {
+    "words": 2368,
+    "minutes": 15
+  },
+  "level_act17side_st03": {
+    "words": 1229,
+    "minutes": 10
+  },
+  "level_act17side_st04": {
+    "words": 3039,
+    "minutes": 19
+  },
+  "level_act17side_st05": {
+    "words": 2092,
+    "minutes": 15
+  },
+  "level_act17side_st06": {
+    "words": 1761,
+    "minutes": 13
+  },
+  "level_act17side_st07": {
+    "words": 2156,
+    "minutes": 13
+  },
+  "level_act17side_st08": {
+    "words": 3045,
+    "minutes": 20
+  },
+  "level_act17side_st09": {
+    "words": 1453,
+    "minutes": 11
+  },
+  "level_act17side_st10": {
+    "words": 1976,
+    "minutes": 13
+  },
+  "level_act17side_st11": {
+    "words": 2846,
+    "minutes": 20
+  },
+  "level_act17side_st12": {
+    "words": 2666,
+    "minutes": 17
+  },
+  "level_act18d0_01_beg": {
+    "words": 2362,
+    "minutes": 15
+  },
+  "level_act18d0_01_end": {
+    "words": 3160,
+    "minutes": 19
+  },
+  "level_act18d0_02_beg": {
+    "words": 2691,
+    "minutes": 15
+  },
+  "level_act18d0_02_end": {
+    "words": 1968,
+    "minutes": 11
+  },
+  "level_act18d0_03_beg": {
+    "words": 1183,
+    "minutes": 7
+  },
+  "level_act18d0_03_end": {
+    "words": 3106,
+    "minutes": 17
+  },
+  "level_act18d0_05_beg": {
+    "words": 1479,
+    "minutes": 9
+  },
+  "level_act18d0_05_end": {
+    "words": 1541,
+    "minutes": 10
+  },
+  "level_act18d0_07_beg": {
+    "words": 1907,
+    "minutes": 12
+  },
+  "level_act18d0_07_end": {
+    "words": 4712,
+    "minutes": 28
+  },
+  "level_act18d0_08_beg": {
+    "words": 2369,
+    "minutes": 15
+  },
+  "level_act18d0_08_end": {
+    "words": 3306,
+    "minutes": 19
+  },
+  "level_act18d0_st01": {
+    "words": 3942,
+    "minutes": 24
+  },
+  "level_act18d0_st02": {
+    "words": 1479,
+    "minutes": 10
+  },
+  "level_act18d3_01_beg": {
+    "words": 2118,
+    "minutes": 13
+  },
+  "level_act18d3_01_end": {
+    "words": 1839,
+    "minutes": 12
+  },
+  "level_act18d3_02_beg": {
+    "words": 614,
+    "minutes": 6
+  },
+  "level_act18d3_02_end": {
+    "words": 2798,
+    "minutes": 17
+  },
+  "level_act18d3_03_beg": {
+    "words": 2698,
+    "minutes": 16
+  },
+  "level_act18d3_03_end": {
+    "words": 3888,
+    "minutes": 24
+  },
+  "level_act18d3_04_beg": {
+    "words": 1856,
+    "minutes": 13
+  },
+  "level_act18d3_05_end": {
+    "words": 2766,
+    "minutes": 16
+  },
+  "level_act18d3_06_beg": {
+    "words": 2386,
+    "minutes": 14
+  },
+  "level_act18d3_06_end": {
+    "words": 1520,
+    "minutes": 11
+  },
+  "level_act18d3_07_beg": {
+    "words": 2843,
+    "minutes": 18
+  },
+  "level_act18d3_07_end": {
+    "words": 927,
+    "minutes": 6
+  },
+  "level_act18d3_08_beg": {
+    "words": 597,
+    "minutes": 4
+  },
+  "level_act18d3_08_end": {
+    "words": 443,
+    "minutes": 4
+  },
+  "level_act18d3_09_beg": {
+    "words": 2826,
+    "minutes": 18
+  },
+  "level_act18d3_09_end": {
+    "words": 1035,
+    "minutes": 8
+  },
+  "level_act18d3_st01": {
+    "words": 4279,
+    "minutes": 26
+  },
+  "level_act18d3_st02": {
+    "words": 3079,
+    "minutes": 18
+  },
+  "level_act18mini_st01": {
+    "words": 3019,
+    "minutes": 21
+  },
+  "level_act18mini_st02": {
+    "words": 4407,
+    "minutes": 27
+  },
+  "level_act18mini_st03": {
+    "words": 3829,
+    "minutes": 25
+  },
+  "level_act18mini_st04": {
+    "words": 4477,
+    "minutes": 28
+  },
+  "level_act18mini_st05": {
+    "words": 5556,
+    "minutes": 37
+  },
+  "level_act18mini_st06": {
+    "words": 3988,
+    "minutes": 28
+  },
+  "level_act18side_01_beg": {
+    "words": 2046,
+    "minutes": 13
+  },
+  "level_act18side_01_end": {
+    "words": 1781,
+    "minutes": 12
+  },
+  "level_act18side_02_beg": {
+    "words": 1754,
+    "minutes": 11
+  },
+  "level_act18side_02_end": {
+    "words": 1572,
+    "minutes": 10
+  },
+  "level_act18side_03_beg": {
+    "words": 1923,
+    "minutes": 12
+  },
+  "level_act18side_03_end": {
+    "words": 2082,
+    "minutes": 14
+  },
+  "level_act18side_04_beg": {
+    "words": 1686,
+    "minutes": 11
+  },
+  "level_act18side_04_end": {
+    "words": 2092,
+    "minutes": 17
+  },
+  "level_act18side_05_beg": {
+    "words": 1016,
+    "minutes": 9
+  },
+  "level_act18side_05_end": {
+    "words": 1839,
+    "minutes": 11
+  },
+  "level_act18side_06_beg": {
+    "words": 1485,
+    "minutes": 11
+  },
+  "level_act18side_06_end": {
+    "words": 1826,
+    "minutes": 12
+  },
+  "level_act18side_07_beg": {
+    "words": 1900,
+    "minutes": 12
+  },
+  "level_act18side_07_end": {
+    "words": 4652,
+    "minutes": 29
+  },
+  "level_act18side_08_beg": {
+    "words": 6795,
+    "minutes": 42
+  },
+  "level_act18side_08_end": {
+    "words": 1102,
+    "minutes": 9
+  },
+  "level_act18side_st01": {
+    "words": 2908,
+    "minutes": 20
+  },
+  "level_act18side_st02": {
+    "words": 1727,
+    "minutes": 11
+  },
+  "level_act18side_st03": {
+    "words": 1996,
+    "minutes": 15
+  },
+  "level_act19side_01_beg": {
+    "words": 2336,
+    "minutes": 15
+  },
+  "level_act19side_01_end": {
+    "words": 2014,
+    "minutes": 15
+  },
+  "level_act19side_02_beg": {
+    "words": 2102,
+    "minutes": 14
+  },
+  "level_act19side_02_end": {
+    "words": 1849,
+    "minutes": 13
+  },
+  "level_act19side_03_beg": {
+    "words": 2026,
+    "minutes": 14
+  },
+  "level_act19side_03_end": {
+    "words": 2158,
+    "minutes": 13
+  },
+  "level_act19side_04_beg": {
+    "words": 2386,
+    "minutes": 17
+  },
+  "level_act19side_04_end": {
+    "words": 1436,
+    "minutes": 11
+  },
+  "level_act19side_05_beg": {
+    "words": 1616,
+    "minutes": 11
+  },
+  "level_act19side_05_end": {
+    "words": 2106,
+    "minutes": 15
+  },
+  "level_act19side_06_beg": {
+    "words": 1774,
+    "minutes": 11
+  },
+  "level_act19side_06_end": {
+    "words": 1535,
+    "minutes": 10
+  },
+  "level_act19side_07_beg": {
+    "words": 2171,
+    "minutes": 16
+  },
+  "level_act19side_07_end": {
+    "words": 1960,
+    "minutes": 14
+  },
+  "level_act19side_08_beg": {
+    "words": 3203,
+    "minutes": 21
+  },
+  "level_act19side_08_end": {
+    "words": 2958,
+    "minutes": 19
+  },
+  "level_act19side_st01": {
+    "words": 2430,
+    "minutes": 16
+  },
+  "level_act19side_st02": {
+    "words": 2250,
+    "minutes": 16
+  },
+  "level_act20side_01_beg": {
+    "words": 2145,
+    "minutes": 15
+  },
+  "level_act20side_01_end": {
+    "words": 2185,
+    "minutes": 13
+  },
+  "level_act20side_02_beg": {
+    "words": 2900,
+    "minutes": 19
+  },
+  "level_act20side_02_end": {
+    "words": 2080,
+    "minutes": 13
+  },
+  "level_act20side_03_beg": {
+    "words": 2509,
+    "minutes": 15
+  },
+  "level_act20side_03_end": {
+    "words": 2233,
+    "minutes": 15
+  },
+  "level_act20side_04_beg": {
+    "words": 1656,
+    "minutes": 10
+  },
+  "level_act20side_04_end": {
+    "words": 1564,
+    "minutes": 11
+  },
+  "level_act20side_05_beg": {
+    "words": 1572,
+    "minutes": 11
+  },
+  "level_act20side_05_end": {
+    "words": 1184,
+    "minutes": 7
+  },
+  "level_act20side_06_beg": {
+    "words": 1669,
+    "minutes": 11
+  },
+  "level_act20side_06_end": {
+    "words": 2674,
+    "minutes": 17
+  },
+  "level_act20side_07_beg": {
+    "words": 2030,
+    "minutes": 13
+  },
+  "level_act20side_07_end": {
+    "words": 2722,
+    "minutes": 16
+  },
+  "level_act20side_08_beg": {
+    "words": 1772,
+    "minutes": 12
+  },
+  "level_act20side_09_end": {
+    "words": 3237,
+    "minutes": 21
+  },
+  "level_act20side_st01": {
+    "words": 2055,
+    "minutes": 13
+  },
+  "level_act20side_st02": {
+    "words": 2066,
+    "minutes": 14
+  },
+  "level_act21side_01_beg": {
+    "words": 3435,
+    "minutes": 20
+  },
+  "level_act21side_01_end": {
+    "words": 3239,
+    "minutes": 20
+  },
+  "level_act21side_02_beg": {
+    "words": 2305,
+    "minutes": 18
+  },
+  "level_act21side_02_end": {
+    "words": 2574,
+    "minutes": 15
+  },
+  "level_act21side_03_beg": {
+    "words": 4079,
+    "minutes": 24
+  },
+  "level_act21side_03_end": {
+    "words": 1816,
+    "minutes": 11
+  },
+  "level_act21side_04_beg": {
+    "words": 1714,
+    "minutes": 11
+  },
+  "level_act21side_04_end": {
+    "words": 2435,
+    "minutes": 16
+  },
+  "level_act21side_05_beg": {
+    "words": 1959,
+    "minutes": 12
+  },
+  "level_act21side_05_end": {
+    "words": 2047,
+    "minutes": 15
+  },
+  "level_act21side_06_beg": {
+    "words": 1696,
+    "minutes": 13
+  },
+  "level_act21side_06_end": {
+    "words": 1410,
+    "minutes": 14
+  },
+  "level_act21side_07_beg": {
+    "words": 1879,
+    "minutes": 12
+  },
+  "level_act21side_07_end": {
+    "words": 1624,
+    "minutes": 12
+  },
+  "level_act21side_08_beg": {
+    "words": 3108,
+    "minutes": 19
+  },
+  "level_act21side_08_end": {
+    "words": 2039,
+    "minutes": 13
+  },
+  "level_act21side_09_beg": {
+    "words": 3446,
+    "minutes": 23
+  },
+  "level_act21side_09_end": {
+    "words": 3741,
+    "minutes": 24
+  },
+  "level_act21side_10_beg": {
+    "words": 2776,
+    "minutes": 18
+  },
+  "level_act21side_10_end": {
+    "words": 3342,
+    "minutes": 24
+  },
+  "level_act21side_st01": {
+    "words": 5711,
+    "minutes": 36
+  },
+  "level_act21side_st02": {
+    "words": 2435,
+    "minutes": 18
+  },
+  "level_act21side_st03": {
+    "words": 3632,
+    "minutes": 23
+  },
+  "level_act21side_st04": {
+    "words": 1980,
+    "minutes": 15
+  },
+  "level_act22side_01_beg": {
+    "words": 1022,
+    "minutes": 7
+  },
+  "level_act22side_01_end": {
+    "words": 2214,
+    "minutes": 14
+  },
+  "level_act22side_02_beg": {
+    "words": 1605,
+    "minutes": 11
+  },
+  "level_act22side_02_end": {
+    "words": 1887,
+    "minutes": 12
+  },
+  "level_act22side_03_beg": {
+    "words": 1909,
+    "minutes": 12
+  },
+  "level_act22side_03_end": {
+    "words": 2405,
+    "minutes": 15
+  },
+  "level_act22side_04_beg": {
+    "words": 2513,
+    "minutes": 16
+  },
+  "level_act22side_04_end": {
+    "words": 1867,
+    "minutes": 13
+  },
+  "level_act22side_05_beg": {
+    "words": 2351,
+    "minutes": 16
+  },
+  "level_act22side_05_end": {
+    "words": 1798,
+    "minutes": 11
+  },
+  "level_act22side_06_end": {
+    "words": 2049,
+    "minutes": 16
+  },
+  "level_act22side_07_beg": {
+    "words": 2346,
+    "minutes": 18
+  },
+  "level_act22side_07_end": {
+    "words": 1660,
+    "minutes": 12
+  },
+  "level_act22side_08_beg": {
+    "words": 2131,
+    "minutes": 14
+  },
+  "level_act22side_08_end": {
+    "words": 2604,
+    "minutes": 20
+  },
+  "level_act22side_st01": {
+    "words": 2445,
+    "minutes": 16
+  },
+  "level_act22side_st02": {
+    "words": 2144,
+    "minutes": 13
+  },
+  "level_act22side_st03": {
+    "words": 1392,
+    "minutes": 9
+  },
+  "level_act23side_01_beg": {
+    "words": 3317,
+    "minutes": 23
+  },
+  "level_act23side_01_end": {
+    "words": 3067,
+    "minutes": 20
+  },
+  "level_act23side_02_beg": {
+    "words": 1977,
+    "minutes": 13
+  },
+  "level_act23side_02_end": {
+    "words": 1377,
+    "minutes": 10
+  },
+  "level_act23side_03_beg": {
+    "words": 3050,
+    "minutes": 19
+  },
+  "level_act23side_03_end": {
+    "words": 2619,
+    "minutes": 16
+  },
+  "level_act23side_04_beg": {
+    "words": 1811,
+    "minutes": 13
+  },
+  "level_act23side_04_end": {
+    "words": 1921,
+    "minutes": 13
+  },
+  "level_act23side_05_beg": {
+    "words": 1567,
+    "minutes": 10
+  },
+  "level_act23side_06_end": {
+    "words": 1894,
+    "minutes": 12
+  },
+  "level_act23side_07_beg": {
+    "words": 2650,
+    "minutes": 18
+  },
+  "level_act23side_07_end": {
+    "words": 2052,
+    "minutes": 15
+  },
+  "level_act23side_08_beg": {
+    "words": 2457,
+    "minutes": 17
+  },
+  "level_act23side_08_end": {
+    "words": 3140,
+    "minutes": 25
+  },
+  "level_act23side_09_beg": {
+    "words": 2743,
+    "minutes": 18
+  },
+  "level_act23side_09_end": {
+    "words": 1663,
+    "minutes": 12
+  },
+  "level_act23side_st01": {
+    "words": 3524,
+    "minutes": 22
+  },
+  "level_act23side_st02": {
+    "words": 2342,
+    "minutes": 14
+  },
+  "level_act23side_st03": {
+    "words": 2248,
+    "minutes": 16
+  },
+  "level_act24side_02_beg": {
+    "words": 4784,
+    "minutes": 28
+  },
+  "level_act24side_02_end": {
+    "words": 1177,
+    "minutes": 8
+  },
+  "level_act24side_03_beg": {
+    "words": 1303,
+    "minutes": 10
+  },
+  "level_act24side_04_end": {
+    "words": 930,
+    "minutes": 7
+  },
+  "level_act24side_05_beg": {
+    "words": 1210,
+    "minutes": 9
+  },
+  "level_act24side_05_end": {
+    "words": 933,
+    "minutes": 8
+  },
+  "level_act24side_06_beg": {
+    "words": 2020,
+    "minutes": 12
+  },
+  "level_act24side_06_end": {
+    "words": 2321,
+    "minutes": 13
+  },
+  "level_act24side_07_beg": {
+    "words": 4039,
+    "minutes": 25
+  },
+  "level_act24side_07_end": {
+    "words": 2752,
+    "minutes": 17
+  },
+  "level_act24side_08_beg": {
+    "words": 1861,
+    "minutes": 11
+  },
+  "level_act24side_08_end": {
+    "words": 1062,
+    "minutes": 8
+  },
+  "level_act24side_09_beg": {
+    "words": 653,
+    "minutes": 7
+  },
+  "level_act24side_09_end": {
+    "words": 2273,
+    "minutes": 18
+  },
+  "level_act24side_st01": {
+    "words": 1066,
+    "minutes": 8
+  },
+  "level_act24side_st02": {
+    "words": 2550,
+    "minutes": 18
+  },
+  "level_act24side_st03": {
+    "words": 1248,
+    "minutes": 9
+  },
+  "level_act24side_tr01_beg": {
+    "words": 1120,
+    "minutes": 9
+  },
+  "level_act24side_tr01_end": {
+    "words": 3481,
+    "minutes": 24
+  },
+  "level_act25side_01_beg": {
+    "words": 2425,
+    "minutes": 18
+  },
+  "level_act25side_01_end": {
+    "words": 2993,
+    "minutes": 18
+  },
+  "level_act25side_02_beg": {
+    "words": 3502,
+    "minutes": 21
+  },
+  "level_act25side_02_end": {
+    "words": 3155,
+    "minutes": 19
+  },
+  "level_act25side_03_beg": {
+    "words": 2733,
+    "minutes": 18
+  },
+  "level_act25side_03_end": {
+    "words": 1663,
+    "minutes": 11
+  },
+  "level_act25side_04_beg": {
+    "words": 2869,
+    "minutes": 17
+  },
+  "level_act25side_04_end": {
+    "words": 4502,
+    "minutes": 27
+  },
+  "level_act25side_05_beg": {
+    "words": 3944,
+    "minutes": 23
+  },
+  "level_act25side_05_end": {
+    "words": 2659,
+    "minutes": 18
+  },
+  "level_act25side_06_beg": {
+    "words": 2507,
+    "minutes": 18
+  },
+  "level_act25side_06_end": {
+    "words": 2271,
+    "minutes": 17
+  },
+  "level_act25side_07_beg": {
+    "words": 2775,
+    "minutes": 17
+  },
+  "level_act25side_07_end": {
+    "words": 3167,
+    "minutes": 20
+  },
+  "level_act25side_08_beg": {
+    "words": 3095,
+    "minutes": 21
+  },
+  "level_act25side_08_end": {
+    "words": 2402,
+    "minutes": 16
+  },
+  "level_act25side_09_beg": {
+    "words": 2721,
+    "minutes": 17
+  },
+  "level_act25side_09_end": {
+    "words": 3893,
+    "minutes": 24
+  },
+  "level_act25side_10_beg": {
+    "words": 2608,
+    "minutes": 18
+  },
+  "level_act25side_10_end": {
+    "words": 5097,
+    "minutes": 32
+  },
+  "level_act25side_st01": {
+    "words": 4494,
+    "minutes": 28
+  },
+  "level_act25side_st02": {
+    "words": 3847,
+    "minutes": 23
+  },
+  "level_act25side_st03": {
+    "words": 9012,
+    "minutes": 53
+  },
+  "level_act25side_st04": {
+    "words": 2960,
+    "minutes": 21
+  },
+  "level_act26side_01_beg": {
+    "words": 1778,
+    "minutes": 11
+  },
+  "level_act26side_01_end": {
+    "words": 1845,
+    "minutes": 12
+  },
+  "level_act26side_02_beg": {
+    "words": 3530,
+    "minutes": 21
+  },
+  "level_act26side_02_end": {
+    "words": 3077,
+    "minutes": 20
+  },
+  "level_act26side_03_beg": {
+    "words": 2007,
+    "minutes": 13
+  },
+  "level_act26side_03_end": {
+    "words": 1676,
+    "minutes": 12
+  },
+  "level_act26side_04_beg": {
+    "words": 1389,
+    "minutes": 9
+  },
+  "level_act26side_04_end": {
+    "words": 1418,
+    "minutes": 11
+  },
+  "level_act26side_05_beg": {
+    "words": 2068,
+    "minutes": 16
+  },
+  "level_act26side_05_end": {
+    "words": 2055,
+    "minutes": 13
+  },
+  "level_act26side_06_beg": {
+    "words": 2177,
+    "minutes": 13
+  },
+  "level_act26side_06_end": {
+    "words": 1668,
+    "minutes": 11
+  },
+  "level_act26side_07_beg": {
+    "words": 1752,
+    "minutes": 12
+  },
+  "level_act26side_07_end": {
+    "words": 1130,
+    "minutes": 9
+  },
+  "level_act26side_08_beg": {
+    "words": 1980,
+    "minutes": 13
+  },
+  "level_act26side_08_end": {
+    "words": 2117,
+    "minutes": 15
+  },
+  "level_act26side_st01": {
+    "words": 3074,
+    "minutes": 21
+  },
+  "level_act26side_st02": {
+    "words": 1684,
+    "minutes": 11
+  },
+  "level_act26side_st03": {
+    "words": 2367,
+    "minutes": 14
+  },
+  "level_act27side_01_beg": {
+    "words": 2684,
+    "minutes": 17
+  },
+  "level_act27side_01_end": {
+    "words": 2237,
+    "minutes": 15
+  },
+  "level_act27side_02_beg": {
+    "words": 1867,
+    "minutes": 14
+  },
+  "level_act27side_02_end": {
+    "words": 1723,
+    "minutes": 13
+  },
+  "level_act27side_03_beg": {
+    "words": 3192,
+    "minutes": 20
+  },
+  "level_act27side_03_end": {
+    "words": 917,
+    "minutes": 7
+  },
+  "level_act27side_04_beg": {
+    "words": 2988,
+    "minutes": 19
+  },
+  "level_act27side_04_end": {
+    "words": 2203,
+    "minutes": 16
+  },
+  "level_act27side_05_beg": {
+    "words": 3101,
+    "minutes": 20
+  },
+  "level_act27side_05_end": {
+    "words": 2210,
+    "minutes": 16
+  },
+  "level_act27side_06_beg": {
+    "words": 2913,
+    "minutes": 18
+  },
+  "level_act27side_06_end": {
+    "words": 2144,
+    "minutes": 13
+  },
+  "level_act27side_07_beg": {
+    "words": 2892,
+    "minutes": 19
+  },
+  "level_act27side_07_end": {
+    "words": 3359,
+    "minutes": 20
+  },
+  "level_act27side_08_beg": {
+    "words": 2300,
+    "minutes": 15
+  },
+  "level_act27side_08_end": {
+    "words": 2908,
+    "minutes": 21
+  },
+  "level_act27side_st01": {
+    "words": 4913,
+    "minutes": 33
+  },
+  "level_act27side_st02": {
+    "words": 2174,
+    "minutes": 14
+  },
+  "level_act27side_st03": {
+    "words": 2769,
+    "minutes": 18
+  },
+  "level_act28side_01_beg": {
+    "words": 1502,
+    "minutes": 12
+  },
+  "level_act28side_01_end": {
+    "words": 2212,
+    "minutes": 15
+  },
+  "level_act28side_02_beg": {
+    "words": 2151,
+    "minutes": 15
+  },
+  "level_act28side_02_end": {
+    "words": 1968,
+    "minutes": 14
+  },
+  "level_act28side_03_beg": {
+    "words": 2490,
+    "minutes": 17
+  },
+  "level_act28side_03_end": {
+    "words": 2640,
+    "minutes": 18
+  },
+  "level_act28side_04_beg": {
+    "words": 2851,
+    "minutes": 18
+  },
+  "level_act28side_04_end": {
+    "words": 2895,
+    "minutes": 19
+  },
+  "level_act28side_05_beg": {
+    "words": 2426,
+    "minutes": 16
+  },
+  "level_act28side_05_end": {
+    "words": 2332,
+    "minutes": 15
+  },
+  "level_act28side_06_beg": {
+    "words": 2684,
+    "minutes": 18
+  },
+  "level_act28side_06_end": {
+    "words": 1998,
+    "minutes": 12
+  },
+  "level_act28side_07_beg": {
+    "words": 2605,
+    "minutes": 17
+  },
+  "level_act28side_07_end": {
+    "words": 2909,
+    "minutes": 19
+  },
+  "level_act28side_08_beg": {
+    "words": 3119,
+    "minutes": 22
+  },
+  "level_act28side_08_end": {
+    "words": 4048,
+    "minutes": 26
+  },
+  "level_act28side_st01": {
+    "words": 2513,
+    "minutes": 17
+  },
+  "level_act28side_st02": {
+    "words": 1971,
+    "minutes": 17
+  },
+  "level_act28side_st03": {
+    "words": 2479,
+    "minutes": 16
+  },
+  "level_act29side_01_beg": {
+    "words": 3109,
+    "minutes": 21
+  },
+  "level_act29side_01_end": {
+    "words": 3740,
+    "minutes": 22
+  },
+  "level_act29side_02_beg": {
+    "words": 2649,
+    "minutes": 17
+  },
+  "level_act29side_02_end": {
+    "words": 2580,
+    "minutes": 17
+  },
+  "level_act29side_03_beg": {
+    "words": 2992,
+    "minutes": 19
+  },
+  "level_act29side_03_end": {
+    "words": 2334,
+    "minutes": 15
+  },
+  "level_act29side_04_beg": {
+    "words": 3073,
+    "minutes": 19
+  },
+  "level_act29side_04_end": {
+    "words": 4425,
+    "minutes": 27
+  },
+  "level_act29side_05_beg": {
+    "words": 4719,
+    "minutes": 31
+  },
+  "level_act29side_05_end": {
+    "words": 3602,
+    "minutes": 23
+  },
+  "level_act29side_06_beg": {
+    "words": 4813,
+    "minutes": 32
+  },
+  "level_act29side_06_end": {
+    "words": 3991,
+    "minutes": 25
+  },
+  "level_act29side_07_beg": {
+    "words": 3027,
+    "minutes": 22
+  },
+  "level_act29side_07_end": {
+    "words": 1853,
+    "minutes": 13
+  },
+  "level_act29side_08_beg": {
+    "words": 2253,
+    "minutes": 15
+  },
+  "level_act29side_08_end": {
+    "words": 3135,
+    "minutes": 21
+  },
+  "level_act29side_09_beg": {
+    "words": 2334,
+    "minutes": 17
+  },
+  "level_act29side_09_end": {
+    "words": 4492,
+    "minutes": 29
+  },
+  "level_act29side_10_beg": {
+    "words": 5368,
+    "minutes": 34
+  },
+  "level_act29side_10_end": {
+    "words": 6387,
+    "minutes": 49
+  },
+  "level_act29side_st01": {
+    "words": 3823,
+    "minutes": 24
+  },
+  "level_act29side_st02": {
+    "words": 3699,
+    "minutes": 22
+  },
+  "level_act29side_st03": {
+    "words": 4744,
+    "minutes": 33
+  },
+  "level_act30side_01_beg": {
+    "words": 1229,
+    "minutes": 10
+  },
+  "level_act30side_01_end": {
+    "words": 1719,
+    "minutes": 12
+  },
+  "level_act30side_02_beg": {
+    "words": 1609,
+    "minutes": 11
+  },
+  "level_act30side_02_end": {
+    "words": 1238,
+    "minutes": 10
+  },
+  "level_act30side_03_beg": {
+    "words": 2038,
+    "minutes": 14
+  },
+  "level_act30side_03_end": {
+    "words": 1836,
+    "minutes": 12
+  },
+  "level_act30side_04_beg": {
+    "words": 2529,
+    "minutes": 16
+  },
+  "level_act30side_04_end": {
+    "words": 4050,
+    "minutes": 24
+  },
+  "level_act30side_05_beg": {
+    "words": 2756,
+    "minutes": 18
+  },
+  "level_act30side_05_end": {
+    "words": 1443,
+    "minutes": 10
+  },
+  "level_act30side_06_beg": {
+    "words": 1753,
+    "minutes": 13
+  },
+  "level_act30side_06_end": {
+    "words": 3799,
+    "minutes": 23
+  },
+  "level_act30side_07_beg": {
+    "words": 2378,
+    "minutes": 17
+  },
+  "level_act30side_07_end": {
+    "words": 3698,
+    "minutes": 23
+  },
+  "level_act30side_08_beg": {
+    "words": 5944,
+    "minutes": 35
+  },
+  "level_act30side_08_end": {
+    "words": 5077,
+    "minutes": 31
+  },
+  "level_act30side_st01": {
+    "words": 3308,
+    "minutes": 22
+  },
+  "level_act30side_st02": {
+    "words": 4865,
+    "minutes": 30
+  },
+  "level_act30side_st03": {
+    "words": 4583,
+    "minutes": 28
+  },
+  "level_act31side_01_beg": {
+    "words": 2632,
+    "minutes": 17
+  },
+  "level_act31side_01_end": {
+    "words": 3110,
+    "minutes": 19
+  },
+  "level_act31side_02_beg": {
+    "words": 2507,
+    "minutes": 16
+  },
+  "level_act31side_02_end": {
+    "words": 2524,
+    "minutes": 19
+  },
+  "level_act31side_03_beg": {
+    "words": 2590,
+    "minutes": 16
+  },
+  "level_act31side_03_end": {
+    "words": 2333,
+    "minutes": 15
+  },
+  "level_act31side_04_beg": {
+    "words": 2356,
+    "minutes": 15
+  },
+  "level_act31side_04_end": {
+    "words": 2314,
+    "minutes": 14
+  },
+  "level_act31side_05_beg": {
+    "words": 2197,
+    "minutes": 13
+  },
+  "level_act31side_05_end": {
+    "words": 1627,
+    "minutes": 13
+  },
+  "level_act31side_06_beg": {
+    "words": 2493,
+    "minutes": 18
+  },
+  "level_act31side_07_end": {
+    "words": 1443,
+    "minutes": 11
+  },
+  "level_act31side_08_beg": {
+    "words": 1789,
+    "minutes": 12
+  },
+  "level_act31side_08_end": {
+    "words": 1820,
+    "minutes": 16
+  },
+  "level_act31side_09_beg": {
+    "words": 1865,
+    "minutes": 12
+  },
+  "level_act31side_09_end": {
+    "words": 3226,
+    "minutes": 21
+  },
+  "level_act31side_st01": {
+    "words": 3584,
+    "minutes": 23
+  },
+  "level_act31side_st02": {
+    "words": 1342,
+    "minutes": 10
+  },
+  "level_act31side_st03": {
+    "words": 2092,
+    "minutes": 15
+  },
+  "level_act32side_01_beg": {
+    "words": 1650,
+    "minutes": 11
+  },
+  "level_act32side_01_end": {
+    "words": 1913,
+    "minutes": 16
+  },
+  "level_act32side_02_beg": {
+    "words": 1343,
+    "minutes": 11
+  },
+  "level_act32side_02_end": {
+    "words": 1463,
+    "minutes": 11
+  },
+  "level_act32side_03_beg": {
+    "words": 1762,
+    "minutes": 14
+  },
+  "level_act32side_03_end": {
+    "words": 1709,
+    "minutes": 11
+  },
+  "level_act32side_04_beg": {
+    "words": 2264,
+    "minutes": 15
+  },
+  "level_act32side_04_end": {
+    "words": 1593,
+    "minutes": 11
+  },
+  "level_act32side_05_beg": {
+    "words": 1811,
+    "minutes": 13
+  },
+  "level_act32side_05_end": {
+    "words": 2144,
+    "minutes": 14
+  },
+  "level_act32side_06_beg": {
+    "words": 2037,
+    "minutes": 16
+  },
+  "level_act32side_06_end": {
+    "words": 2097,
+    "minutes": 16
+  },
+  "level_act32side_07_beg": {
+    "words": 1831,
+    "minutes": 13
+  },
+  "level_act32side_07_end": {
+    "words": 2897,
+    "minutes": 20
+  },
+  "level_act32side_08_beg": {
+    "words": 2650,
+    "minutes": 18
+  },
+  "level_act32side_08_end": {
+    "words": 3115,
+    "minutes": 19
+  },
+  "level_act32side_st01": {
+    "words": 1985,
+    "minutes": 17
+  },
+  "level_act32side_st02": {
+    "words": 1998,
+    "minutes": 13
+  },
+  "level_act32side_st03": {
+    "words": 1791,
+    "minutes": 11
+  },
+  "level_act33side_01_beg": {
+    "words": 3481,
+    "minutes": 22
+  },
+  "level_act33side_01_end": {
+    "words": 3600,
+    "minutes": 22
+  },
+  "level_act33side_02_beg": {
+    "words": 1980,
+    "minutes": 12
+  },
+  "level_act33side_02_end": {
+    "words": 2538,
+    "minutes": 17
+  },
+  "level_act33side_03_beg": {
+    "words": 2348,
+    "minutes": 16
+  },
+  "level_act33side_03_end": {
+    "words": 2389,
+    "minutes": 16
+  },
+  "level_act33side_04_beg": {
+    "words": 2490,
+    "minutes": 16
+  },
+  "level_act33side_04_end": {
+    "words": 2113,
+    "minutes": 14
+  },
+  "level_act33side_05_beg": {
+    "words": 3024,
+    "minutes": 20
+  },
+  "level_act33side_05_end": {
+    "words": 2157,
+    "minutes": 13
+  },
+  "level_act33side_06_beg": {
+    "words": 2268,
+    "minutes": 16
+  },
+  "level_act33side_06_end": {
+    "words": 1780,
+    "minutes": 13
+  },
+  "level_act33side_07_beg": {
+    "words": 2914,
+    "minutes": 18
+  },
+  "level_act33side_07_end": {
+    "words": 1566,
+    "minutes": 10
+  },
+  "level_act33side_08_beg": {
+    "words": 2721,
+    "minutes": 17
+  },
+  "level_act33side_08_end": {
+    "words": 2471,
+    "minutes": 18
+  },
+  "level_act33side_09_beg": {
+    "words": 1196,
+    "minutes": 9
+  },
+  "level_act33side_09_end": {
+    "words": 930,
+    "minutes": 7
+  },
+  "level_act33side_10_beg": {
+    "words": 694,
+    "minutes": 9
+  },
+  "level_act33side_10_end": {
+    "words": 2035,
+    "minutes": 18
+  },
+  "level_act33side_st01": {
+    "words": 1422,
+    "minutes": 13
+  },
+  "level_act33side_st02": {
+    "words": 3646,
+    "minutes": 23
+  },
+  "level_act33side_st03": {
+    "words": 1204,
+    "minutes": 11
+  },
+  "level_act34side_01_beg": {
+    "words": 2857,
+    "minutes": 17
+  },
+  "level_act34side_01_end": {
+    "words": 2181,
+    "minutes": 14
+  },
+  "level_act34side_02_beg": {
+    "words": 2101,
+    "minutes": 14
+  },
+  "level_act34side_02_end": {
+    "words": 2236,
+    "minutes": 17
+  },
+  "level_act34side_03_beg": {
+    "words": 2844,
+    "minutes": 18
+  },
+  "level_act34side_03_end": {
+    "words": 2132,
+    "minutes": 15
+  },
+  "level_act34side_04_beg": {
+    "words": 2933,
+    "minutes": 17
+  },
+  "level_act34side_04_end": {
+    "words": 2933,
+    "minutes": 17
+  },
+  "level_act34side_05_beg": {
+    "words": 3027,
+    "minutes": 18
+  },
+  "level_act34side_05_end": {
+    "words": 1540,
+    "minutes": 9
+  },
+  "level_act34side_06_beg": {
+    "words": 2004,
+    "minutes": 15
+  },
+  "level_act34side_06_end": {
+    "words": 2664,
+    "minutes": 17
+  },
+  "level_act34side_07_beg": {
+    "words": 2585,
+    "minutes": 18
+  },
+  "level_act34side_07_end": {
+    "words": 4607,
+    "minutes": 31
+  },
+  "level_act34side_08_beg": {
+    "words": 4418,
+    "minutes": 31
+  },
+  "level_act34side_08_end": {
+    "words": 3996,
+    "minutes": 24
+  },
+  "level_act34side_st01": {
+    "words": 2798,
+    "minutes": 18
+  },
+  "level_act34side_st02": {
+    "words": 1827,
+    "minutes": 14
+  },
+  "level_act34side_st03": {
+    "words": 3069,
+    "minutes": 21
+  },
+  "level_act35side_01_beg": {
+    "words": 2071,
+    "minutes": 16
+  },
+  "level_act35side_01_end": {
+    "words": 1538,
+    "minutes": 11
+  },
+  "level_act35side_02_beg": {
+    "words": 1750,
+    "minutes": 12
+  },
+  "level_act35side_02_end": {
+    "words": 1879,
+    "minutes": 13
+  },
+  "level_act35side_03_beg": {
+    "words": 2445,
+    "minutes": 17
+  },
+  "level_act35side_03_end": {
+    "words": 2327,
+    "minutes": 14
+  },
+  "level_act35side_04_beg": {
+    "words": 2413,
+    "minutes": 16
+  },
+  "level_act35side_04_end": {
+    "words": 1861,
+    "minutes": 12
+  },
+  "level_act35side_05_beg": {
+    "words": 3491,
+    "minutes": 22
+  },
+  "level_act35side_05_end": {
+    "words": 1150,
+    "minutes": 8
+  },
+  "level_act35side_06_beg": {
+    "words": 1913,
+    "minutes": 14
+  },
+  "level_act35side_07_end": {
+    "words": 1483,
+    "minutes": 14
+  },
+  "level_act35side_08_beg": {
+    "words": 2108,
+    "minutes": 15
+  },
+  "level_act35side_08_end": {
+    "words": 2624,
+    "minutes": 17
+  },
+  "level_act35side_09_beg": {
+    "words": 3074,
+    "minutes": 24
+  },
+  "level_act35side_09_end": {
+    "words": 1857,
+    "minutes": 18
+  },
+  "level_act35side_st01": {
+    "words": 3592,
+    "minutes": 23
+  },
+  "level_act35side_st02": {
+    "words": 1452,
+    "minutes": 10
+  },
+  "level_act35side_st03": {
+    "words": 1979,
+    "minutes": 14
+  },
+  "level_act36side_01_beg": {
+    "words": 1182,
+    "minutes": 11
+  },
+  "level_act36side_01_end": {
+    "words": 2061,
+    "minutes": 14
+  },
+  "level_act36side_02_beg": {
+    "words": 1041,
+    "minutes": 9
+  },
+  "level_act36side_02_end": {
+    "words": 1635,
+    "minutes": 14
+  },
+  "level_act36side_03_beg": {
+    "words": 1641,
+    "minutes": 12
+  },
+  "level_act36side_03_end": {
+    "words": 1638,
+    "minutes": 13
+  },
+  "level_act36side_04_beg": {
+    "words": 2039,
+    "minutes": 13
+  },
+  "level_act36side_04_end": {
+    "words": 1587,
+    "minutes": 11
+  },
+  "level_act36side_05_beg": {
+    "words": 1045,
+    "minutes": 9
+  },
+  "level_act36side_05_end": {
+    "words": 2865,
+    "minutes": 20
+  },
+  "level_act36side_06_beg": {
+    "words": 1502,
+    "minutes": 10
+  },
+  "level_act36side_06_end": {
+    "words": 1784,
+    "minutes": 13
+  },
+  "level_act36side_07_beg": {
+    "words": 1100,
+    "minutes": 10
+  },
+  "level_act36side_07_end": {
+    "words": 2252,
+    "minutes": 18
+  },
+  "level_act36side_08_beg": {
+    "words": 1443,
+    "minutes": 11
+  },
+  "level_act36side_08_end": {
+    "words": 2187,
+    "minutes": 16
+  },
+  "level_act37side_01_beg": {
+    "words": 3010,
+    "minutes": 20
+  },
+  "level_act37side_01_end": {
+    "words": 3231,
+    "minutes": 20
+  },
+  "level_act37side_02_beg": {
+    "words": 2961,
+    "minutes": 21
+  },
+  "level_act37side_02_end": {
+    "words": 2462,
+    "minutes": 16
+  },
+  "level_act37side_03_beg": {
+    "words": 2065,
+    "minutes": 15
+  },
+  "level_act37side_03_end": {
+    "words": 2172,
+    "minutes": 15
+  },
+  "level_act37side_04_beg": {
+    "words": 2471,
+    "minutes": 16
+  },
+  "level_act37side_04_end": {
+    "words": 1946,
+    "minutes": 12
+  },
+  "level_act37side_05_beg": {
+    "words": 2509,
+    "minutes": 15
+  },
+  "level_act37side_05_end": {
+    "words": 2042,
+    "minutes": 16
+  },
+  "level_act37side_06_beg": {
+    "words": 2816,
+    "minutes": 21
+  },
+  "level_act37side_07_end": {
+    "words": 2668,
+    "minutes": 17
+  },
+  "level_act37side_08_beg": {
+    "words": 2503,
+    "minutes": 20
+  },
+  "level_act37side_08_end": {
+    "words": 2831,
+    "minutes": 19
+  },
+  "level_act37side_09_beg": {
+    "words": 2036,
+    "minutes": 14
+  },
+  "level_act37side_09_end": {
+    "words": 3877,
+    "minutes": 28
+  },
+  "level_act37side_st01": {
+    "words": 4133,
+    "minutes": 27
+  },
+  "level_act37side_st02": {
+    "words": 3386,
+    "minutes": 26
+  },
+  "level_act38side_01_beg": {
+    "words": 2246,
+    "minutes": 15
+  },
+  "level_act38side_01_end": {
+    "words": 1996,
+    "minutes": 12
+  },
+  "level_act38side_02_beg": {
+    "words": 1997,
+    "minutes": 14
+  },
+  "level_act38side_02_end": {
+    "words": 2543,
+    "minutes": 18
+  },
+  "level_act38side_03_beg": {
+    "words": 2718,
+    "minutes": 18
+  },
+  "level_act38side_03_end": {
+    "words": 3330,
+    "minutes": 24
+  },
+  "level_act38side_04_beg": {
+    "words": 3343,
+    "minutes": 20
+  },
+  "level_act38side_04_end": {
+    "words": 2636,
+    "minutes": 19
+  },
+  "level_act38side_05_beg": {
+    "words": 1968,
+    "minutes": 15
+  },
+  "level_act38side_05_end": {
+    "words": 2587,
+    "minutes": 17
+  },
+  "level_act38side_06_beg": {
+    "words": 1660,
+    "minutes": 13
+  },
+  "level_act38side_06_end": {
+    "words": 1693,
+    "minutes": 12
+  },
+  "level_act38side_07_beg": {
+    "words": 2968,
+    "minutes": 20
+  },
+  "level_act38side_07_end": {
+    "words": 4329,
+    "minutes": 28
+  },
+  "level_act38side_08_beg": {
+    "words": 1770,
+    "minutes": 11
+  },
+  "level_act38side_08_end": {
+    "words": 2016,
+    "minutes": 12
+  },
+  "level_act38side_09_beg": {
+    "words": 3007,
+    "minutes": 22
+  },
+  "level_act38side_09_end": {
+    "words": 4438,
+    "minutes": 31
+  },
+  "level_act38side_10_beg": {
+    "words": 4379,
+    "minutes": 29
+  },
+  "level_act38side_10_end": {
+    "words": 3337,
+    "minutes": 24
+  },
+  "level_act38side_st01": {
+    "words": 3594,
+    "minutes": 26
+  },
+  "level_act38side_st02": {
+    "words": 2281,
+    "minutes": 16
+  },
+  "level_act38side_st03": {
+    "words": 2306,
+    "minutes": 14
+  },
+  "level_act38side_st04": {
+    "words": 3745,
+    "minutes": 26
+  },
+  "level_act39side_01_beg": {
+    "words": 3270,
+    "minutes": 23
+  },
+  "level_act39side_01_end": {
+    "words": 2921,
+    "minutes": 22
+  },
+  "level_act39side_02_beg": {
+    "words": 2782,
+    "minutes": 17
+  },
+  "level_act39side_02_end": {
+    "words": 2188,
+    "minutes": 16
+  },
+  "level_act39side_03_beg": {
+    "words": 2412,
+    "minutes": 17
+  },
+  "level_act39side_03_end": {
+    "words": 1970,
+    "minutes": 14
+  },
+  "level_act39side_04_beg": {
+    "words": 2889,
+    "minutes": 20
+  },
+  "level_act39side_04_end": {
+    "words": 1808,
+    "minutes": 14
+  },
+  "level_act39side_05_beg": {
+    "words": 2091,
+    "minutes": 15
+  },
+  "level_act39side_05_end": {
+    "words": 2178,
+    "minutes": 15
+  },
+  "level_act39side_06_beg": {
+    "words": 1272,
+    "minutes": 11
+  },
+  "level_act39side_06_end": {
+    "words": 1738,
+    "minutes": 14
+  },
+  "level_act39side_07_beg": {
+    "words": 2510,
+    "minutes": 17
+  },
+  "level_act39side_07_end": {
+    "words": 3200,
+    "minutes": 22
+  },
+  "level_act39side_08_beg": {
+    "words": 1543,
+    "minutes": 12
+  },
+  "level_act39side_08_end": {
+    "words": 2381,
+    "minutes": 17
+  },
+  "level_act39side_st01": {
+    "words": 3452,
+    "minutes": 24
+  },
+  "level_act39side_st02": {
+    "words": 1987,
+    "minutes": 12
+  },
+  "level_act39side_st03": {
+    "words": 1710,
+    "minutes": 13
+  },
+  "level_act3d0_01_beg": {
+    "words": 496,
+    "minutes": 4
+  },
+  "level_act3d0_01_end": {
+    "words": 645,
+    "minutes": 5
+  },
+  "level_act3d0_02_beg": {
+    "words": 1097,
+    "minutes": 7
+  },
+  "level_act3d0_02_end": {
+    "words": 101,
+    "minutes": 2
+  },
+  "level_act3d0_03_beg": {
+    "words": 185,
+    "minutes": 2
+  },
+  "level_act3d0_03_end": {
+    "words": 217,
+    "minutes": 3
+  },
+  "level_act3d0_04_beg": {
+    "words": 185,
+    "minutes": 2
+  },
+  "level_act3d0_04_end": {
+    "words": 575,
+    "minutes": 4
+  },
+  "level_act3d0_05_beg": {
+    "words": 646,
+    "minutes": 5
+  },
+  "level_act3d0_05_end": {
+    "words": 551,
+    "minutes": 4
+  },
+  "level_act3d0_06_beg": {
+    "words": 962,
+    "minutes": 6
+  },
+  "level_act3d0_06_end": {
+    "words": 459,
+    "minutes": 4
+  },
+  "level_act3d0_07_beg": {
+    "words": 346,
+    "minutes": 3
+  },
+  "level_act3d0_07_end": {
+    "words": 481,
+    "minutes": 4
+  },
+  "level_act3d0_08_beg": {
+    "words": 783,
+    "minutes": 5
+  },
+  "level_act3d0_08_end": {
+    "words": 279,
+    "minutes": 3
+  },
+  "level_act3d0_ex01_end": {
+    "words": 693,
+    "minutes": 5
+  },
+  "level_act3d0_ex03_end": {
+    "words": 855,
+    "minutes": 6
+  },
+  "level_act3d0_ex06_end": {
+    "words": 1018,
+    "minutes": 7
+  },
+  "level_act3d0_st01": {
+    "words": 2482,
+    "minutes": 17
+  },
+  "level_act3d0_st02": {
+    "words": 787,
+    "minutes": 5
+  },
+  "level_act3d0_st03": {
+    "words": 876,
+    "minutes": 6
+  },
+  "level_act3d0_st04": {
+    "words": 844,
+    "minutes": 6
+  },
+  "level_act3d0_st05": {
+    "words": 1388,
+    "minutes": 8
+  },
+  "level_act40side_01_beg": {
+    "words": 2971,
+    "minutes": 19
+  },
+  "level_act40side_01_end": {
+    "words": 5263,
+    "minutes": 32
+  },
+  "level_act40side_02_beg": {
+    "words": 3990,
+    "minutes": 23
+  },
+  "level_act40side_02_end": {
+    "words": 2992,
+    "minutes": 17
+  },
+  "level_act40side_03_beg": {
+    "words": 3985,
+    "minutes": 24
+  },
+  "level_act40side_03_end": {
+    "words": 2219,
+    "minutes": 14
+  },
+  "level_act40side_04_beg": {
+    "words": 2375,
+    "minutes": 15
+  },
+  "level_act40side_04_end": {
+    "words": 1558,
+    "minutes": 10
+  },
+  "level_act40side_06_beg": {
+    "words": 3150,
+    "minutes": 19
+  },
+  "level_act40side_06_end": {
+    "words": 2068,
+    "minutes": 14
+  },
+  "level_act40side_07_beg": {
+    "words": 3143,
+    "minutes": 22
+  },
+  "level_act40side_07_end": {
+    "words": 1989,
+    "minutes": 16
+  },
+  "level_act40side_08_beg": {
+    "words": 3582,
+    "minutes": 22
+  },
+  "level_act40side_08_end": {
+    "words": 2384,
+    "minutes": 15
+  },
+  "level_act40side_09_beg": {
+    "words": 1926,
+    "minutes": 14
+  },
+  "level_act40side_09_end": {
+    "words": 5746,
+    "minutes": 40
+  },
+  "level_act40side_st01": {
+    "words": 1343,
+    "minutes": 10
+  },
+  "level_act40side_st02": {
+    "words": 3507,
+    "minutes": 22
+  },
+  "level_act40side_st03": {
+    "words": 2071,
+    "minutes": 17
+  },
+  "level_act41side_01_beg": {
+    "words": 3539,
+    "minutes": 21
+  },
+  "level_act41side_01_end": {
+    "words": 1976,
+    "minutes": 13
+  },
+  "level_act41side_02_beg": {
+    "words": 1269,
+    "minutes": 9
+  },
+  "level_act41side_02_end": {
+    "words": 2358,
+    "minutes": 15
+  },
+  "level_act41side_03_beg": {
+    "words": 1542,
+    "minutes": 11
+  },
+  "level_act41side_03_end": {
+    "words": 1579,
+    "minutes": 10
+  },
+  "level_act41side_04_beg": {
+    "words": 2823,
+    "minutes": 20
+  },
+  "level_act41side_04_end": {
+    "words": 2102,
+    "minutes": 14
+  },
+  "level_act41side_05_beg": {
+    "words": 1322,
+    "minutes": 9
+  },
+  "level_act41side_05_end": {
+    "words": 1981,
+    "minutes": 15
+  },
+  "level_act41side_06_beg": {
+    "words": 2425,
+    "minutes": 18
+  },
+  "level_act41side_06_end": {
+    "words": 1569,
+    "minutes": 10
+  },
+  "level_act41side_07_beg": {
+    "words": 1410,
+    "minutes": 10
+  },
+  "level_act41side_07_end": {
+    "words": 1549,
+    "minutes": 10
+  },
+  "level_act41side_08_beg": {
+    "words": 3216,
+    "minutes": 22
+  },
+  "level_act41side_08_end": {
+    "words": 3030,
+    "minutes": 22
+  },
+  "level_act41side_st01": {
+    "words": 3434,
+    "minutes": 22
+  },
+  "level_act41side_st02": {
+    "words": 2025,
+    "minutes": 13
+  },
+  "level_act41side_st03": {
+    "words": 3880,
+    "minutes": 24
+  },
+  "level_act4d0_st01": {
+    "words": 3869,
+    "minutes": 23
+  },
+  "level_act4d0_st02": {
+    "words": 2034,
+    "minutes": 13
+  },
+  "level_act4d0_st03": {
+    "words": 1313,
+    "minutes": 8
+  },
+  "level_act4d0_st04": {
+    "words": 1833,
+    "minutes": 12
+  },
+  "level_act4d0_st05": {
+    "words": 2326,
+    "minutes": 14
+  },
+  "level_act4d0_st06": {
+    "words": 2779,
+    "minutes": 15
+  },
+  "level_act4d0_st07": {
+    "words": 1644,
+    "minutes": 10
+  },
+  "level_act5d0_01_beg": {
+    "words": 1029,
+    "minutes": 9
+  },
+  "level_act5d0_01_end": {
+    "words": 936,
+    "minutes": 6
+  },
+  "level_act5d0_02_beg": {
+    "words": 475,
+    "minutes": 4
+  },
+  "level_act5d0_02_end": {
+    "words": 637,
+    "minutes": 6
+  },
+  "level_act5d0_03_beg": {
+    "words": 706,
+    "minutes": 5
+  },
+  "level_act5d0_03_end": {
+    "words": 1238,
+    "minutes": 8
+  },
+  "level_act5d0_04_beg": {
+    "words": 936,
+    "minutes": 6
+  },
+  "level_act5d0_04_end": {
+    "words": 707,
+    "minutes": 5
+  },
+  "level_act5d0_05_beg": {
+    "words": 343,
+    "minutes": 3
+  },
+  "level_act5d0_05_end": {
+    "words": 600,
+    "minutes": 4
+  },
+  "level_act5d0_06_beg": {
+    "words": 954,
+    "minutes": 6
+  },
+  "level_act5d0_06_end": {
+    "words": 1365,
+    "minutes": 9
+  },
+  "level_act5d0_07_beg": {
+    "words": 1346,
+    "minutes": 9
+  },
+  "level_act5d0_07_end": {
+    "words": 735,
+    "minutes": 7
+  },
+  "level_act5d0_08_beg": {
+    "words": 850,
+    "minutes": 6
+  },
+  "level_act5d0_08_end": {
+    "words": 1293,
+    "minutes": 8
+  },
+  "level_act5d0_09_beg": {
+    "words": 1500,
+    "minutes": 10
+  },
+  "level_act5d0_09_end": {
+    "words": 944,
+    "minutes": 7
+  },
+  "level_act5d0_10_beg": {
+    "words": 1322,
+    "minutes": 9
+  },
+  "level_act5d0_10_end": {
+    "words": 1932,
+    "minutes": 13
+  },
+  "level_act5d0_ex01_end": {
+    "words": 1820,
+    "minutes": 11
+  },
+  "level_act5d0_ex02_end": {
+    "words": 631,
+    "minutes": 5
+  },
+  "level_act5d0_ex03_end": {
+    "words": 441,
+    "minutes": 4
+  },
+  "level_act5d0_st01": {
+    "words": 2735,
+    "minutes": 16
+  },
+  "level_act5d0_st02": {
+    "words": 1489,
+    "minutes": 10
+  },
+  "level_act5d0_st03": {
+    "words": 2446,
+    "minutes": 18
+  },
+  "level_act6d5_st01": {
+    "words": 3519,
+    "minutes": 26
+  },
+  "level_act6d5_st02": {
+    "words": 4759,
+    "minutes": 27
+  },
+  "level_act6d5_st03": {
+    "words": 5238,
+    "minutes": 33
+  },
+  "level_act7d5_st01": {
+    "words": 4018,
+    "minutes": 22
+  },
+  "level_act7d5_st02": {
+    "words": 3065,
+    "minutes": 18
+  },
+  "level_act7d5_st03": {
+    "words": 2427,
+    "minutes": 15
+  },
+  "level_act7d5_st04": {
+    "words": 3313,
+    "minutes": 18
+  },
+  "level_act7d5_st05": {
+    "words": 4002,
+    "minutes": 23
+  },
+  "level_act7d5_st06": {
+    "words": 2993,
+    "minutes": 16
+  },
+  "level_act7mini_st01": {
+    "words": 3735,
+    "minutes": 21
+  },
+  "level_act7mini_st02": {
+    "words": 4597,
+    "minutes": 25
+  },
+  "level_act7mini_st03": {
+    "words": 3429,
+    "minutes": 21
+  },
+  "level_act7mini_st04": {
+    "words": 4104,
+    "minutes": 23
+  },
+  "level_act7mini_st05": {
+    "words": 3964,
+    "minutes": 23
+  },
+  "level_act7mini_st06": {
+    "words": 3579,
+    "minutes": 20
+  },
+  "level_act8mini_st01": {
+    "words": 6507,
+    "minutes": 36
+  },
+  "level_act8mini_st02": {
+    "words": 4429,
+    "minutes": 27
+  },
+  "level_act8mini_st03": {
+    "words": 3848,
+    "minutes": 23
+  },
+  "level_act8mini_st04": {
+    "words": 3003,
+    "minutes": 18
+  },
+  "level_act8mini_st05": {
+    "words": 2783,
+    "minutes": 20
+  },
+  "level_act8mini_st06": {
+    "words": 3446,
+    "minutes": 19
+  },
+  "level_act9d0_01_beg": {
+    "words": 1030,
+    "minutes": 7
+  },
+  "level_act9d0_01_end": {
+    "words": 1794,
+    "minutes": 11
+  },
+  "level_act9d0_02_beg": {
+    "words": 1314,
+    "minutes": 9
+  },
+  "level_act9d0_02_end": {
+    "words": 2085,
+    "minutes": 13
+  },
+  "level_act9d0_03_beg": {
+    "words": 1569,
+    "minutes": 10
+  },
+  "level_act9d0_03_end": {
+    "words": 1986,
+    "minutes": 11
+  },
+  "level_act9d0_04_beg": {
+    "words": 2065,
+    "minutes": 13
+  },
+  "level_act9d0_04_end": {
+    "words": 870,
+    "minutes": 6
+  },
+  "level_act9d0_05_beg": {
+    "words": 1174,
+    "minutes": 8
+  },
+  "level_act9d0_05_end": {
+    "words": 801,
+    "minutes": 6
+  },
+  "level_act9d0_06_beg": {
+    "words": 2578,
+    "minutes": 14
+  },
+  "level_act9d0_06_end": {
+    "words": 1402,
+    "minutes": 9
+  },
+  "level_act9d0_st01": {
+    "words": 1667,
+    "minutes": 10
+  },
+  "level_act9mini_st01": {
+    "words": 2842,
+    "minutes": 18
+  },
+  "level_act9mini_st02": {
+    "words": 2943,
+    "minutes": 18
+  },
+  "level_act9mini_st03": {
+    "words": 3794,
+    "minutes": 22
+  },
+  "level_act9mini_st04": {
+    "words": 2309,
+    "minutes": 14
+  },
+  "level_act9mini_st05": {
+    "words": 3188,
+    "minutes": 19
+  },
+  "level_act9mini_st06": {
+    "words": 2030,
+    "minutes": 13
+  },
+  "level_act9mini_st07": {
+    "words": 3745,
+    "minutes": 22
+  },
+  "level_main_00-01_beg": {
+    "words": 422,
+    "minutes": 4
+  },
+  "level_main_00-01_end": {
+    "words": 669,
+    "minutes": 5
+  },
+  "level_main_00-02_beg": {
+    "words": 523,
+    "minutes": 4
+  },
+  "level_main_00-02_end": {
+    "words": 310,
+    "minutes": 3
+  },
+  "level_main_00-04_beg": {
+    "words": 402,
+    "minutes": 4
+  },
+  "level_main_00-06_end": {
+    "words": 206,
+    "minutes": 3
+  },
+  "level_main_00-07_beg": {
+    "words": 617,
+    "minutes": 5
+  },
+  "level_main_00-07_end": {
+    "words": 252,
+    "minutes": 3
+  },
+  "level_main_00-08_beg": {
+    "words": 666,
+    "minutes": 5
+  },
+  "level_main_00-09_end": {
+    "words": 370,
+    "minutes": 3
+  },
+  "level_main_00-10_beg": {
+    "words": 409,
+    "minutes": 4
+  },
+  "level_main_00-11_end": {
+    "words": 650,
+    "minutes": 5
+  },
+  "level_main_01-01_beg": {
+    "words": 321,
+    "minutes": 3
+  },
+  "level_main_01-01_end": {
+    "words": 584,
+    "minutes": 4
+  },
+  "level_main_01-03_beg": {
+    "words": 426,
+    "minutes": 4
+  },
+  "level_main_01-03_end": {
+    "words": 49,
+    "minutes": 2
+  },
+  "level_main_01-04_beg": {
+    "words": 226,
+    "minutes": 3
+  },
+  "level_main_01-06_beg": {
+    "words": 409,
+    "minutes": 5
+  },
+  "level_main_01-07_beg": {
+    "words": 374,
+    "minutes": 3
+  },
+  "level_main_01-07_end": {
+    "words": 403,
+    "minutes": 4
+  },
+  "level_main_01-08_beg": {
+    "words": 771,
+    "minutes": 8
+  },
+  "level_main_01-10_end": {
+    "words": 297,
+    "minutes": 3
+  },
+  "level_main_01-12_beg": {
+    "words": 380,
+    "minutes": 3
+  },
+  "level_main_01-12_end": {
+    "words": 461,
+    "minutes": 4
+  },
+  "level_main_02-01_beg": {
+    "words": 422,
+    "minutes": 4
+  },
+  "level_main_02-01_end": {
+    "words": 436,
+    "minutes": 4
+  },
+  "level_main_02-02_beg": {
+    "words": 589,
+    "minutes": 4
+  },
+  "level_main_02-02_end": {
+    "words": 823,
+    "minutes": 6
+  },
+  "level_main_02-03_beg": {
+    "words": 565,
+    "minutes": 4
+  },
+  "level_main_02-03_end": {
+    "words": 451,
+    "minutes": 4
+  },
+  "level_main_02-04_beg": {
+    "words": 499,
+    "minutes": 4
+  },
+  "level_main_02-04_end": {
+    "words": 388,
+    "minutes": 3
+  },
+  "level_main_02-05_beg": {
+    "words": 301,
+    "minutes": 3
+  },
+  "level_main_02-05_end": {
+    "words": 269,
+    "minutes": 3
+  },
+  "level_main_02-06_beg": {
+    "words": 205,
+    "minutes": 3
+  },
+  "level_main_02-06_end": {
+    "words": 141,
+    "minutes": 2
+  },
+  "level_main_02-07_beg": {
+    "words": 446,
+    "minutes": 4
+  },
+  "level_main_02-07_end": {
+    "words": 228,
+    "minutes": 3
+  },
+  "level_main_02-08_beg": {
+    "words": 330,
+    "minutes": 3
+  },
+  "level_main_02-08_end": {
+    "words": 444,
+    "minutes": 4
+  },
+  "level_main_02-09_beg": {
+    "words": 232,
+    "minutes": 3
+  },
+  "level_main_02-09_end": {
+    "words": 330,
+    "minutes": 3
+  },
+  "level_main_02-10_beg": {
+    "words": 292,
+    "minutes": 3
+  },
+  "level_main_02-10_end": {
+    "words": 199,
+    "minutes": 2
+  },
+  "level_main_03-01_beg": {
+    "words": 573,
+    "minutes": 4
+  },
+  "level_main_03-01_end": {
+    "words": 361,
+    "minutes": 3
+  },
+  "level_main_03-02_beg": {
+    "words": 267,
+    "minutes": 3
+  },
+  "level_main_03-02_end": {
+    "words": 801,
+    "minutes": 6
+  },
+  "level_main_03-03_beg": {
+    "words": 302,
+    "minutes": 3
+  },
+  "level_main_03-03_end": {
+    "words": 562,
+    "minutes": 4
+  },
+  "level_main_03-04_beg": {
+    "words": 559,
+    "minutes": 4
+  },
+  "level_main_03-04_end": {
+    "words": 264,
+    "minutes": 4
+  },
+  "level_main_03-05_beg": {
+    "words": 569,
+    "minutes": 4
+  },
+  "level_main_03-05_end": {
+    "words": 855,
+    "minutes": 6
+  },
+  "level_main_03-06_beg": {
+    "words": 407,
+    "minutes": 4
+  },
+  "level_main_03-06_end": {
+    "words": 455,
+    "minutes": 4
+  },
+  "level_main_03-07_beg": {
+    "words": 374,
+    "minutes": 3
+  },
+  "level_main_03-07_end": {
+    "words": 384,
+    "minutes": 4
+  },
+  "level_main_03-08_beg": {
+    "words": 426,
+    "minutes": 4
+  },
+  "level_main_03-08_end": {
+    "words": 610,
+    "minutes": 5
+  },
+  "level_main_04-01_beg": {
+    "words": 630,
+    "minutes": 5
+  },
+  "level_main_04-01_end": {
+    "words": 561,
+    "minutes": 4
+  },
+  "level_main_04-02_beg": {
+    "words": 566,
+    "minutes": 4
+  },
+  "level_main_04-02_end": {
+    "words": 522,
+    "minutes": 5
+  },
+  "level_main_04-03_beg": {
+    "words": 404,
+    "minutes": 4
+  },
+  "level_main_04-03_end": {
+    "words": 602,
+    "minutes": 5
+  },
+  "level_main_04-04_beg": {
+    "words": 577,
+    "minutes": 4
+  },
+  "level_main_04-04_end": {
+    "words": 229,
+    "minutes": 3
+  },
+  "level_main_04-05_beg": {
+    "words": 166,
+    "minutes": 2
+  },
+  "level_main_04-05_end": {
+    "words": 236,
+    "minutes": 3
+  },
+  "level_main_04-06_beg": {
+    "words": 287,
+    "minutes": 3
+  },
+  "level_main_04-06_end": {
+    "words": 242,
+    "minutes": 3
+  },
+  "level_main_04-07_beg": {
+    "words": 267,
+    "minutes": 3
+  },
+  "level_main_04-07_end": {
+    "words": 304,
+    "minutes": 3
+  },
+  "level_main_04-08_beg": {
+    "words": 439,
+    "minutes": 4
+  },
+  "level_main_04-08_end": {
+    "words": 329,
+    "minutes": 3
+  },
+  "level_main_04-09_beg": {
+    "words": 549,
+    "minutes": 5
+  },
+  "level_main_04-09_end": {
+    "words": 355,
+    "minutes": 4
+  },
+  "level_main_04-10_beg": {
+    "words": 497,
+    "minutes": 4
+  },
+  "level_main_04-10_end": {
+    "words": 852,
+    "minutes": 8
+  },
+  "level_main_05-01_beg": {
+    "words": 318,
+    "minutes": 3
+  },
+  "level_main_05-01_end": {
+    "words": 406,
+    "minutes": 4
+  },
+  "level_main_05-02_beg": {
+    "words": 926,
+    "minutes": 6
+  },
+  "level_main_05-02_end": {
+    "words": 844,
+    "minutes": 6
+  },
+  "level_main_05-03_beg": {
+    "words": 268,
+    "minutes": 3
+  },
+  "level_main_05-03_end": {
+    "words": 925,
+    "minutes": 6
+  },
+  "level_main_05-04_beg": {
+    "words": 448,
+    "minutes": 4
+  },
+  "level_main_05-04_end": {
+    "words": 641,
+    "minutes": 6
+  },
+  "level_main_05-06_beg": {
+    "words": 617,
+    "minutes": 5
+  },
+  "level_main_05-06_end": {
+    "words": 459,
+    "minutes": 4
+  },
+  "level_main_05-07_beg": {
+    "words": 559,
+    "minutes": 4
+  },
+  "level_main_05-07_end": {
+    "words": 1033,
+    "minutes": 7
+  },
+  "level_main_05-09_beg": {
+    "words": 654,
+    "minutes": 5
+  },
+  "level_main_05-09_end": {
+    "words": 1176,
+    "minutes": 8
+  },
+  "level_main_05-10_beg": {
+    "words": 2469,
+    "minutes": 17
+  },
+  "level_main_05-10_end": {
+    "words": 1311,
+    "minutes": 10
+  },
+  "level_main_06-01_beg": {
+    "words": 942,
+    "minutes": 8
+  },
+  "level_main_06-01_end": {
+    "words": 1563,
+    "minutes": 9
+  },
+  "level_main_06-02_beg": {
+    "words": 1031,
+    "minutes": 7
+  },
+  "level_main_06-02_end": {
+    "words": 432,
+    "minutes": 4
+  },
+  "level_main_06-03_beg": {
+    "words": 812,
+    "minutes": 7
+  },
+  "level_main_06-03_end": {
+    "words": 578,
+    "minutes": 4
+  },
+  "level_main_06-04_beg": {
+    "words": 967,
+    "minutes": 7
+  },
+  "level_main_06-04_end": {
+    "words": 783,
+    "minutes": 5
+  },
+  "level_main_06-05_beg": {
+    "words": 1082,
+    "minutes": 7
+  },
+  "level_main_06-05_end": {
+    "words": 972,
+    "minutes": 6
+  },
+  "level_main_06-06_beg": {
+    "words": 1296,
+    "minutes": 8
+  },
+  "level_main_06-06_end": {
+    "words": 844,
+    "minutes": 6
+  },
+  "level_main_06-07_beg": {
+    "words": 836,
+    "minutes": 7
+  },
+  "level_main_06-07_end": {
+    "words": 709,
+    "minutes": 6
+  },
+  "level_main_06-08_beg": {
+    "words": 1173,
+    "minutes": 7
+  },
+  "level_main_06-09_end": {
+    "words": 1021,
+    "minutes": 7
+  },
+  "level_main_06-10_beg": {
+    "words": 1067,
+    "minutes": 7
+  },
+  "level_main_06-10_end": {
+    "words": 1833,
+    "minutes": 11
+  },
+  "level_main_06-11_beg": {
+    "words": 1457,
+    "minutes": 9
+  },
+  "level_main_06-12_end": {
+    "words": 1358,
+    "minutes": 8
+  },
+  "level_main_06-13_beg": {
+    "words": 429,
+    "minutes": 4
+  },
+  "level_main_06-13_end": {
+    "words": 1392,
+    "minutes": 8
+  },
+  "level_main_06-14_beg": {
+    "words": 2895,
+    "minutes": 18
+  },
+  "level_main_06-15_end": {
+    "words": 955,
+    "minutes": 6
+  },
+  "level_main_07-01_beg": {
+    "words": 836,
+    "minutes": 6
+  },
+  "level_main_07-01_end": {
+    "words": 3438,
+    "minutes": 20
+  },
+  "level_main_07-02_beg": {
+    "words": 2431,
+    "minutes": 17
+  },
+  "level_main_07-02_end": {
+    "words": 2208,
+    "minutes": 14
+  },
+  "level_main_07-03_beg": {
+    "words": 3062,
+    "minutes": 18
+  },
+  "level_main_07-04_end": {
+    "words": 1886,
+    "minutes": 13
+  },
+  "level_main_07-05_beg": {
+    "words": 1413,
+    "minutes": 9
+  },
+  "level_main_07-05_end": {
+    "words": 1959,
+    "minutes": 11
+  },
+  "level_main_07-06_beg": {
+    "words": 1926,
+    "minutes": 11
+  },
+  "level_main_07-07_end": {
+    "words": 554,
+    "minutes": 4
+  },
+  "level_main_07-08_beg": {
+    "words": 1330,
+    "minutes": 8
+  },
+  "level_main_07-08_end": {
+    "words": 3379,
+    "minutes": 18
+  },
+  "level_main_07-11_beg": {
+    "words": 2780,
+    "minutes": 15
+  },
+  "level_main_07-15_end": {
+    "words": 1328,
+    "minutes": 8
+  },
+  "level_main_07-16_beg": {
+    "words": 2147,
+    "minutes": 12
+  },
+  "level_main_07-16_end": {
+    "words": 3250,
+    "minutes": 20
+  },
+  "level_main_08-01_beg": {
+    "words": 1613,
+    "minutes": 11
+  },
+  "level_main_08-01_end": {
+    "words": 245,
+    "minutes": 3
+  },
+  "level_main_08-03_beg": {
+    "words": 815,
+    "minutes": 6
+  },
+  "level_main_08-03_end": {
+    "words": 485,
+    "minutes": 4
+  },
+  "level_main_08-04_beg": {
+    "words": 710,
+    "minutes": 5
+  },
+  "level_main_08-04_end": {
+    "words": 714,
+    "minutes": 5
+  },
+  "level_main_08-05_beg": {
+    "words": 1863,
+    "minutes": 11
+  },
+  "level_main_08-05_end": {
+    "words": 4695,
+    "minutes": 26
+  },
+  "level_main_08-06_beg": {
+    "words": 2350,
+    "minutes": 14
+  },
+  "level_main_08-06_end": {
+    "words": 3175,
+    "minutes": 18
+  },
+  "level_main_08-08_beg": {
+    "words": 1758,
+    "minutes": 10
+  },
+  "level_main_08-08_end": {
+    "words": 1248,
+    "minutes": 8
+  },
+  "level_main_08-09_beg": {
+    "words": 615,
+    "minutes": 5
+  },
+  "level_main_08-09_end": {
+    "words": 1400,
+    "minutes": 8
+  },
+  "level_main_08-10_beg": {
+    "words": 1613,
+    "minutes": 10
+  },
+  "level_main_08-10_end": {
+    "words": 1296,
+    "minutes": 10
+  },
+  "level_main_08-12_beg": {
+    "words": 1715,
+    "minutes": 10
+  },
+  "level_main_08-12_end": {
+    "words": 1031,
+    "minutes": 7
+  },
+  "level_main_08-13_beg": {
+    "words": 2119,
+    "minutes": 13
+  },
+  "level_main_08-13_end": {
+    "words": 2504,
+    "minutes": 15
+  },
+  "level_main_08-14_beg": {
+    "words": 1932,
+    "minutes": 13
+  },
+  "level_main_08-14_end": {
+    "words": 7479,
+    "minutes": 42
+  },
+  "level_main_08-15_beg": {
+    "words": 1556,
+    "minutes": 12
+  },
+  "level_main_08-15_end": {
+    "words": 147,
+    "minutes": 3
+  },
+  "level_main_08-16_beg": {
+    "words": 2998,
+    "minutes": 17
+  },
+  "level_main_08-16_end": {
+    "words": 3416,
+    "minutes": 22
+  },
+  "level_main_08-17_beg": {
+    "words": 2567,
+    "minutes": 14
+  },
+  "level_main_08-17_end": {
+    "words": 4184,
+    "minutes": 25
+  },
+  "level_main_09-01_beg": {
+    "words": 2191,
+    "minutes": 13
+  },
+  "level_main_09-02_end": {
+    "words": 2096,
+    "minutes": 14
+  },
+  "level_main_09-03_beg": {
+    "words": 1683,
+    "minutes": 11
+  },
+  "level_main_09-03_end": {
+    "words": 2073,
+    "minutes": 12
+  },
+  "level_main_09-04_beg": {
+    "words": 2397,
+    "minutes": 14
+  },
+  "level_main_09-04_end": {
+    "words": 2513,
+    "minutes": 15
+  },
+  "level_main_09-05_beg": {
+    "words": 2127,
+    "minutes": 13
+  },
+  "level_main_09-06_end": {
+    "words": 1796,
+    "minutes": 12
+  },
+  "level_main_09-07_beg": {
+    "words": 2189,
+    "minutes": 14
+  },
+  "level_main_09-08_end": {
+    "words": 1698,
+    "minutes": 11
+  },
+  "level_main_09-10_beg": {
+    "words": 1370,
+    "minutes": 8
+  },
+  "level_main_09-11_end": {
+    "words": 2627,
+    "minutes": 15
+  },
+  "level_main_09-12_beg": {
+    "words": 2680,
+    "minutes": 16
+  },
+  "level_main_09-16_end": {
+    "words": 2132,
+    "minutes": 15
+  },
+  "level_main_09-17_beg": {
+    "words": 2396,
+    "minutes": 15
+  },
+  "level_main_09-17_end": {
+    "words": 2452,
+    "minutes": 17
+  },
+  "level_main_10-01_beg": {
+    "words": 1238,
+    "minutes": 9
+  },
+  "level_main_10-01_end": {
+    "words": 3599,
+    "minutes": 21
+  },
+  "level_main_10-02_beg": {
+    "words": 1837,
+    "minutes": 12
+  },
+  "level_main_10-02_end": {
+    "words": 1812,
+    "minutes": 12
+  },
+  "level_main_10-03_beg": {
+    "words": 2196,
+    "minutes": 15
+  },
+  "level_main_10-03_end": {
+    "words": 1844,
+    "minutes": 13
+  },
+  "level_main_10-04_beg": {
+    "words": 2584,
+    "minutes": 15
+  },
+  "level_main_10-04_end": {
+    "words": 2575,
+    "minutes": 14
+  },
+  "level_main_10-05_beg": {
+    "words": 2298,
+    "minutes": 15
+  },
+  "level_main_10-05_end": {
+    "words": 2419,
+    "minutes": 15
+  },
+  "level_main_10-06_beg": {
+    "words": 2958,
+    "minutes": 18
+  },
+  "level_main_10-07_end": {
+    "words": 1615,
+    "minutes": 10
+  },
+  "level_main_10-08_beg": {
+    "words": 2445,
+    "minutes": 16
+  },
+  "level_main_10-08_end": {
+    "words": 2590,
+    "minutes": 18
+  },
+  "level_main_10-09_beg": {
+    "words": 2103,
+    "minutes": 15
+  },
+  "level_main_10-09_end": {
+    "words": 1593,
+    "minutes": 12
+  },
+  "level_main_10-10_beg": {
+    "words": 1590,
+    "minutes": 10
+  },
+  "level_main_10-11_end": {
+    "words": 1808,
+    "minutes": 14
+  },
+  "level_main_10-12_beg": {
+    "words": 2251,
+    "minutes": 15
+  },
+  "level_main_10-12_end": {
+    "words": 1918,
+    "minutes": 12
+  },
+  "level_main_10-13_beg": {
+    "words": 2229,
+    "minutes": 15
+  },
+  "level_main_10-14_end": {
+    "words": 1693,
+    "minutes": 12
+  },
+  "level_main_10-15_beg": {
+    "words": 2370,
+    "minutes": 19
+  },
+  "level_main_10-15_end": {
+    "words": 3732,
+    "minutes": 35
+  },
+  "level_main_11-01_beg": {
+    "words": 2683,
+    "minutes": 16
+  },
+  "level_main_11-01_end": {
+    "words": 1383,
+    "minutes": 10
+  },
+  "level_main_11-02_beg": {
+    "words": 2256,
+    "minutes": 14
+  },
+  "level_main_11-02_end": {
+    "words": 1009,
+    "minutes": 8
+  },
+  "level_main_11-03_beg": {
+    "words": 1274,
+    "minutes": 8
+  },
+  "level_main_11-03_end": {
+    "words": 1119,
+    "minutes": 8
+  },
+  "level_main_11-04_beg": {
+    "words": 1646,
+    "minutes": 12
+  },
+  "level_main_11-04_end": {
+    "words": 1354,
+    "minutes": 10
+  },
+  "level_main_11-05_beg": {
+    "words": 1566,
+    "minutes": 11
+  },
+  "level_main_11-06_end": {
+    "words": 1982,
+    "minutes": 12
+  },
+  "level_main_11-07_beg": {
+    "words": 1533,
+    "minutes": 10
+  },
+  "level_main_11-07_end": {
+    "words": 2251,
+    "minutes": 17
+  },
+  "level_main_11-08_beg": {
+    "words": 1941,
+    "minutes": 13
+  },
+  "level_main_11-08_end": {
+    "words": 1373,
+    "minutes": 10
+  },
+  "level_main_11-09_beg": {
+    "words": 961,
+    "minutes": 7
+  },
+  "level_main_11-10_end": {
+    "words": 1381,
+    "minutes": 9
+  },
+  "level_main_11-12_beg": {
+    "words": 1656,
+    "minutes": 12
+  },
+  "level_main_11-12_end": {
+    "words": 1571,
+    "minutes": 10
+  },
+  "level_main_11-13_beg": {
+    "words": 2315,
+    "minutes": 18
+  },
+  "level_main_11-14_end": {
+    "words": 1942,
+    "minutes": 14
+  },
+  "level_main_11-15_beg": {
+    "words": 1805,
+    "minutes": 15
+  },
+  "level_main_11-15_end": {
+    "words": 1339,
+    "minutes": 10
+  },
+  "level_main_11-17_beg": {
+    "words": 1129,
+    "minutes": 11
+  },
+  "level_main_11-17_end": {
+    "words": 1497,
+    "minutes": 12
+  },
+  "level_main_12-01_beg": {
+    "words": 2166,
+    "minutes": 13
+  },
+  "level_main_12-01_end": {
+    "words": 2111,
+    "minutes": 13
+  },
+  "level_main_12-02_beg": {
+    "words": 1876,
+    "minutes": 11
+  },
+  "level_main_12-02_end": {
+    "words": 2172,
+    "minutes": 14
+  },
+  "level_main_12-03_beg": {
+    "words": 1717,
+    "minutes": 11
+  },
+  "level_main_12-03_end": {
+    "words": 2215,
+    "minutes": 13
+  },
+  "level_main_12-04_beg": {
+    "words": 2206,
+    "minutes": 14
+  },
+  "level_main_12-05_end": {
+    "words": 1883,
+    "minutes": 13
+  },
+  "level_main_12-06_beg": {
+    "words": 1948,
+    "minutes": 12
+  },
+  "level_main_12-07_end": {
+    "words": 1789,
+    "minutes": 11
+  },
+  "level_main_12-08_beg": {
+    "words": 1928,
+    "minutes": 12
+  },
+  "level_main_12-09_end": {
+    "words": 1872,
+    "minutes": 12
+  },
+  "level_main_12-10_beg": {
+    "words": 2235,
+    "minutes": 14
+  },
+  "level_main_12-11_end": {
+    "words": 1997,
+    "minutes": 11
+  },
+  "level_main_12-12_beg": {
+    "words": 2112,
+    "minutes": 13
+  },
+  "level_main_12-12_end": {
+    "words": 1831,
+    "minutes": 12
+  },
+  "level_main_12-13_beg": {
+    "words": 1620,
+    "minutes": 10
+  },
+  "level_main_12-13_end": {
+    "words": 1094,
+    "minutes": 7
+  },
+  "level_main_12-14_beg": {
+    "words": 1549,
+    "minutes": 12
+  },
+  "level_main_12-15_end": {
+    "words": 2600,
+    "minutes": 15
+  },
+  "level_main_12-16_beg": {
+    "words": 1268,
+    "minutes": 9
+  },
+  "level_main_12-17_end": {
+    "words": 1517,
+    "minutes": 10
+  },
+  "level_main_12-18_beg": {
+    "words": 2205,
+    "minutes": 13
+  },
+  "level_main_12-18_end": {
+    "words": 1581,
+    "minutes": 10
+  },
+  "level_main_13-01_beg": {
+    "words": 2180,
+    "minutes": 14
+  },
+  "level_main_13-01_end": {
+    "words": 3026,
+    "minutes": 19
+  },
+  "level_main_13-02_beg": {
+    "words": 4310,
+    "minutes": 31
+  },
+  "level_main_13-02_end": {
+    "words": 2842,
+    "minutes": 21
+  },
+  "level_main_13-03_beg": {
+    "words": 2533,
+    "minutes": 17
+  },
+  "level_main_13-03_end": {
+    "words": 1697,
+    "minutes": 11
+  },
+  "level_main_13-04_beg": {
+    "words": 2101,
+    "minutes": 15
+  },
+  "level_main_13-04_end": {
+    "words": 3138,
+    "minutes": 20
+  },
+  "level_main_13-05_beg": {
+    "words": 2928,
+    "minutes": 22
+  },
+  "level_main_13-05_end": {
+    "words": 3094,
+    "minutes": 21
+  },
+  "level_main_13-06_beg": {
+    "words": 2191,
+    "minutes": 16
+  },
+  "level_main_13-07_end": {
+    "words": 2204,
+    "minutes": 17
+  },
+  "level_main_13-08_end": {
+    "words": 1937,
+    "minutes": 15
+  },
+  "level_main_13-09_beg": {
+    "words": 2670,
+    "minutes": 17
+  },
+  "level_main_13-10_beg": {
+    "words": 1567,
+    "minutes": 11
+  },
+  "level_main_13-12_end": {
+    "words": 2029,
+    "minutes": 17
+  },
+  "level_main_13-13_end": {
+    "words": 3177,
+    "minutes": 19
+  },
+  "level_main_13-14_beg": {
+    "words": 3260,
+    "minutes": 22
+  },
+  "level_main_13-14_end": {
+    "words": 2542,
+    "minutes": 16
+  },
+  "level_main_13-15_beg": {
+    "words": 2199,
+    "minutes": 14
+  },
+  "level_main_13-16_end": {
+    "words": 2542,
+    "minutes": 16
+  },
+  "level_main_13-18_end": {
+    "words": 2437,
+    "minutes": 17
+  },
+  "level_main_13-19_beg": {
+    "words": 2837,
+    "minutes": 22
+  },
+  "level_main_13-19_end": {
+    "words": 3293,
+    "minutes": 23
+  },
+  "level_main_14-01_beg": {
+    "words": 2609,
+    "minutes": 19
+  },
+  "level_main_14-01_end": {
+    "words": 2469,
+    "minutes": 14
+  },
+  "level_main_14-02_beg": {
+    "words": 3198,
+    "minutes": 20
+  },
+  "level_main_14-02_end": {
+    "words": 2045,
+    "minutes": 15
+  },
+  "level_main_14-03_beg": {
+    "words": 2001,
+    "minutes": 14
+  },
+  "level_main_14-03_end": {
+    "words": 2412,
+    "minutes": 17
+  },
+  "level_main_14-04_beg": {
+    "words": 1245,
+    "minutes": 9
+  },
+  "level_main_14-04_end": {
+    "words": 1708,
+    "minutes": 14
+  },
+  "level_main_14-05_beg": {
+    "words": 1819,
+    "minutes": 13
+  },
+  "level_main_14-05_end": {
+    "words": 1647,
+    "minutes": 12
+  },
+  "level_main_14-06_beg": {
+    "words": 1617,
+    "minutes": 15
+  },
+  "level_main_14-06_end": {
+    "words": 2603,
+    "minutes": 17
+  },
+  "level_main_14-07_beg": {
+    "words": 2866,
+    "minutes": 20
+  },
+  "level_main_14-07_end": {
+    "words": 2697,
+    "minutes": 18
+  },
+  "level_main_14-08_beg": {
+    "words": 2663,
+    "minutes": 17
+  },
+  "level_main_14-08_end": {
+    "words": 1869,
+    "minutes": 13
+  },
+  "level_main_14-09_beg": {
+    "words": 3375,
+    "minutes": 21
+  },
+  "level_main_14-09_end": {
+    "words": 2199,
+    "minutes": 14
+  },
+  "level_main_14-10_beg": {
+    "words": 1818,
+    "minutes": 15
+  },
+  "level_main_14-10_end": {
+    "words": 1686,
+    "minutes": 14
+  },
+  "level_main_14-11_beg": {
+    "words": 2725,
+    "minutes": 18
+  },
+  "level_main_14-11_end": {
+    "words": 2163,
+    "minutes": 16
+  },
+  "level_main_14-12_beg": {
+    "words": 1652,
+    "minutes": 12
+  },
+  "level_main_14-13_end": {
+    "words": 1549,
+    "minutes": 12
+  },
+  "level_main_14-14_beg": {
+    "words": 1655,
+    "minutes": 12
+  },
+  "level_main_14-14_end": {
+    "words": 1820,
+    "minutes": 14
+  },
+  "level_main_14-15_beg": {
+    "words": 2128,
+    "minutes": 18
+  },
+  "level_main_14-16_beg": {
+    "words": 2950,
+    "minutes": 21
+  },
+  "level_main_14-16_end": {
+    "words": 2062,
+    "minutes": 16
+  },
+  "level_main_14-17_beg": {
+    "words": 1981,
+    "minutes": 13
+  },
+  "level_main_14-17_end": {
+    "words": 2155,
+    "minutes": 15
+  },
+  "level_main_14-18_beg": {
+    "words": 2283,
+    "minutes": 16
+  },
+  "level_main_14-18_end": {
+    "words": 2301,
+    "minutes": 15
+  },
+  "level_main_14-19_beg": {
+    "words": 2218,
+    "minutes": 14
+  },
+  "level_main_14-19_end": {
+    "words": 3911,
+    "minutes": 25
+  },
+  "level_main_14-20_end": {
+    "words": 6009,
+    "minutes": 38
+  },
+  "level_spst_08-01": {
+    "words": 740,
+    "minutes": 5
+  },
+  "level_spst_08-02": {
+    "words": 731,
+    "minutes": 5
+  },
+  "level_spst_08-03": {
+    "words": 903,
+    "minutes": 6
+  },
+  "level_spst_08-04": {
+    "words": 992,
+    "minutes": 6
+  },
+  "level_spst_08-05": {
+    "words": 1468,
+    "minutes": 9
+  },
+  "level_spst_14-01": {
+    "words": 1943,
+    "minutes": 13
+  },
+  "level_st_05-01": {
+    "words": 1248,
+    "minutes": 8
+  },
+  "level_st_06-01": {
+    "words": 1527,
+    "minutes": 9
+  },
+  "level_st_06-02": {
+    "words": 3862,
+    "minutes": 21
+  },
+  "level_st_06-03": {
+    "words": 3112,
+    "minutes": 18
+  },
+  "level_st_07-01": {
+    "words": 3815,
+    "minutes": 23
+  },
+  "level_st_07-02": {
+    "words": 1530,
+    "minutes": 9
+  },
+  "level_st_07-03": {
+    "words": 5425,
+    "minutes": 32
+  },
+  "level_st_07-04": {
+    "words": 683,
+    "minutes": 5
+  },
+  "level_st_08-01": {
+    "words": 2426,
+    "minutes": 15
+  },
+  "level_st_08-02": {
+    "words": 2108,
+    "minutes": 13
+  },
+  "level_st_08-03": {
+    "words": 1902,
+    "minutes": 11
+  },
+  "level_st_08-04": {
+    "words": 2678,
+    "minutes": 16
+  },
+  "level_st_08-05": {
+    "words": 1529,
+    "minutes": 9
+  },
+  "level_st_08-06": {
+    "words": 7422,
+    "minutes": 45
+  },
+  "level_st_09-01": {
+    "words": 1092,
+    "minutes": 8
+  },
+  "level_st_09-02": {
+    "words": 1746,
+    "minutes": 10
+  },
+  "level_st_09-03": {
+    "words": 2675,
+    "minutes": 17
+  },
+  "level_st_09-04": {
+    "words": 4830,
+    "minutes": 34
+  },
+  "level_st_10-01": {
+    "words": 2172,
+    "minutes": 16
+  },
+  "level_st_10-02": {
+    "words": 2344,
+    "minutes": 16
+  },
+  "level_st_10-03": {
+    "words": 2322,
+    "minutes": 14
+  },
+  "level_st_10-04": {
+    "words": 2887,
+    "minutes": 17
+  },
+  "level_st_11-01": {
+    "words": 3860,
+    "minutes": 21
+  },
+  "level_st_11-02": {
+    "words": 3406,
+    "minutes": 24
+  },
+  "level_st_11-03": {
+    "words": 1940,
+    "minutes": 16
+  },
+  "level_st_12-01": {
+    "words": 2386,
+    "minutes": 14
+  },
+  "level_st_12-02": {
+    "words": 1728,
+    "minutes": 11
+  },
+  "level_st_12-03": {
+    "words": 1902,
+    "minutes": 12
+  },
+  "level_st_13-01": {
+    "words": 3470,
+    "minutes": 21
+  },
+  "level_st_13-02": {
+    "words": 4179,
+    "minutes": 26
+  },
+  "level_st_13-03": {
+    "words": 6336,
+    "minutes": 39
+  },
+  "level_st_14-01": {
+    "words": 4779,
+    "minutes": 29
+  },
+  "level_st_14-02": {
+    "words": 3039,
+    "minutes": 24
+  },
+  "level_st_14-03": {
+    "words": 5777,
+    "minutes": 38
+  },
+  "story_12fce_1_1": {
+    "words": 1445,
+    "minutes": 9
+  },
+  "story_absin_1_1": {
+    "words": 3221,
+    "minutes": 20
+  },
+  "story_acdrop_1_1": {
+    "words": 3421,
+    "minutes": 23
+  },
+  "story_aglina_1_1": {
+    "words": 2258,
+    "minutes": 13
+  },
+  "story_aglina_1_2": {
+    "words": 1844,
+    "minutes": 11
+  },
+  "story_agoat2_1_1": {
+    "words": 4059,
+    "minutes": 26
+  },
+  "story_akafyu_1_1": {
+    "words": 2499,
+    "minutes": 15
+  },
+  "story_almond_1_1": {
+    "words": 2404,
+    "minutes": 15
+  },
+  "story_amgoat_1_1": {
+    "words": 2562,
+    "minutes": 14
+  },
+  "story_amgoat_2_1": {
+    "words": 2463,
+    "minutes": 14
+  },
+  "story_angel_1_1": {
+    "words": 2571,
+    "minutes": 15
+  },
+  "story_angel_2_1": {
+    "words": 3235,
+    "minutes": 20
+  },
+  "story_ansel_1_1": {
+    "words": 2908,
+    "minutes": 18
+  },
+  "story_aosta_1_1": {
+    "words": 1832,
+    "minutes": 13
+  },
+  "story_aprl_1_1": {
+    "words": 2984,
+    "minutes": 18
+  },
+  "story_aprot2_1_1": {
+    "words": 1231,
+    "minutes": 10
+  },
+  "story_archet_1_1": {
+    "words": 2596,
+    "minutes": 16
+  },
+  "story_ardign_1_1": {
+    "words": 2723,
+    "minutes": 17
+  },
+  "story_aroma_1_1": {
+    "words": 2953,
+    "minutes": 18
+  },
+  "story_asbest_1_1": {
+    "words": 1817,
+    "minutes": 15
+  },
+  "story_ascln_1_1": {
+    "words": 2231,
+    "minutes": 14
+  },
+  "story_ash_1_1": {
+    "words": 2511,
+    "minutes": 16
+  },
+  "story_astesi_1_1": {
+    "words": 3212,
+    "minutes": 21
+  },
+  "story_astesi_2_1": {
+    "words": 3254,
+    "minutes": 20
+  },
+  "story_aurora_1_1": {
+    "words": 2280,
+    "minutes": 15
+  },
+  "story_ayer_1_1": {
+    "words": 3115,
+    "minutes": 19
+  },
+  "story_baslin_1_1": {
+    "words": 1814,
+    "minutes": 12
+  },
+  "story_bdhkgt_1_1": {
+    "words": 1802,
+    "minutes": 12
+  },
+  "story_beewax_1_1": {
+    "words": 2847,
+    "minutes": 18
+  },
+  "story_bena_1_1": {
+    "words": 2817,
+    "minutes": 20
+  },
+  "story_bgsnow_1_1": {
+    "words": 3071,
+    "minutes": 19
+  },
+  "story_bibeak_1_1": {
+    "words": 2474,
+    "minutes": 16
+  },
+  "story_bibeak_2_1": {
+    "words": 3074,
+    "minutes": 19
+  },
+  "story_billro_1_1": {
+    "words": 2581,
+    "minutes": 16
+  },
+  "story_bison_1_1": {
+    "words": 2657,
+    "minutes": 21
+  },
+  "story_blackd_1_1": {
+    "words": 3232,
+    "minutes": 21
+  },
+  "story_blackd_2_1": {
+    "words": 3171,
+    "minutes": 18
+  },
+  "story_bldsk_1_1": {
+    "words": 2140,
+    "minutes": 12
+  },
+  "story_bldsk_2_1": {
+    "words": 3312,
+    "minutes": 19
+  },
+  "story_blemsh_1_1": {
+    "words": 4036,
+    "minutes": 29
+  },
+  "story_blitz_1_1": {
+    "words": 2355,
+    "minutes": 14
+  },
+  "story_blkngt_1_1": {
+    "words": 2904,
+    "minutes": 20
+  },
+  "story_bluep_1_1": {
+    "words": 2251,
+    "minutes": 14
+  },
+  "story_bpipe_1_1": {
+    "words": 2336,
+    "minutes": 13
+  },
+  "story_breeze_1_1": {
+    "words": 4285,
+    "minutes": 25
+  },
+  "story_breeze_2_1": {
+    "words": 3461,
+    "minutes": 23
+  },
+  "story_brigid_1_1": {
+    "words": 2453,
+    "minutes": 15
+  },
+  "story_broca_1_1": {
+    "words": 1300,
+    "minutes": 9
+  },
+  "story_brownb_1_1": {
+    "words": 2259,
+    "minutes": 15
+  },
+  "story_bryota_1_1": {
+    "words": 3792,
+    "minutes": 22
+  },
+  "story_bstalk_1_1": {
+    "words": 2399,
+    "minutes": 17
+  },
+  "story_bubble_1_1": {
+    "words": 2972,
+    "minutes": 18
+  },
+  "story_buildr_1_1": {
+    "words": 2767,
+    "minutes": 16
+  },
+  "story_cammou_1_1": {
+    "words": 3471,
+    "minutes": 22
+  },
+  "story_caper_1_1": {
+    "words": 3088,
+    "minutes": 20
+  },
+  "story_cast3_1_1": {
+    "words": 2927,
+    "minutes": 18
+  },
+  "story_catap_1_1": {
+    "words": 2363,
+    "minutes": 15
+  },
+  "story_catap_2_1": {
+    "words": 2865,
+    "minutes": 18
+  },
+  "story_cello_1_1": {
+    "words": 3111,
+    "minutes": 19
+  },
+  "story_cement_1_1": {
+    "words": 3145,
+    "minutes": 18
+  },
+  "story_cerber_1_1": {
+    "words": 2140,
+    "minutes": 14
+  },
+  "story_ceylon_1_1": {
+    "words": 2711,
+    "minutes": 16
+  },
+  "story_ceylon_2_1": {
+    "words": 2742,
+    "minutes": 16
+  },
+  "story_cgbird_1_1": {
+    "words": 2465,
+    "minutes": 15
+  },
+  "story_chen2_1_1": {
+    "words": 2860,
+    "minutes": 17
+  },
+  "story_chen2_2_1": {
+    "words": 3168,
+    "minutes": 19
+  },
+  "story_chen_1_1": {
+    "words": 4369,
+    "minutes": 27
+  },
+  "story_chiave_1_1": {
+    "words": 3482,
+    "minutes": 29
+  },
+  "story_chimes_1_1": {
+    "words": 3526,
+    "minutes": 23
+  },
+  "story_chnut_1_1": {
+    "words": 3239,
+    "minutes": 20
+  },
+  "story_chyue_1_1": {
+    "words": 3786,
+    "minutes": 22
+  },
+  "story_clour_1_1": {
+    "words": 3239,
+    "minutes": 20
+  },
+  "story_coldst_1_1": {
+    "words": 2654,
+    "minutes": 17
+  },
+  "story_crow_1_1": {
+    "words": 3438,
+    "minutes": 22
+  },
+  "story_ctable_1_1": {
+    "words": 3484,
+    "minutes": 21
+  },
+  "story_cutter_1_1": {
+    "words": 2671,
+    "minutes": 17
+  },
+  "story_dagda_1_1": {
+    "words": 4006,
+    "minutes": 24
+  },
+  "story_deepcl_1_1": {
+    "words": 2131,
+    "minutes": 13
+  },
+  "story_deepcl_2_1": {
+    "words": 1914,
+    "minutes": 15
+  },
+  "story_doroth_1_1": {
+    "words": 3074,
+    "minutes": 20
+  },
+  "story_durin_1_1": {
+    "words": 2165,
+    "minutes": 13
+  },
+  "story_durnar_1_1": {
+    "words": 2448,
+    "minutes": 16
+  },
+  "story_durnar_2_1": {
+    "words": 2526,
+    "minutes": 15
+  },
+  "story_dusk_1_1": {
+    "words": 4594,
+    "minutes": 29
+  },
+  "story_ebnhlz_1_1": {
+    "words": 3836,
+    "minutes": 24
+  },
+  "story_ela_1_1": {
+    "words": 3140,
+    "minutes": 21
+  },
+  "story_elysm_1_1": {
+    "words": 2894,
+    "minutes": 19
+  },
+  "story_erato_1_1": {
+    "words": 3456,
+    "minutes": 22
+  },
+  "story_estell_1_1": {
+    "words": 2758,
+    "minutes": 18
+  },
+  "story_ethan_1_1": {
+    "words": 2610,
+    "minutes": 16
+  },
+  "story_excu2_1_1": {
+    "words": 2858,
+    "minutes": 19
+  },
+  "story_excu_1_1": {
+    "words": 2014,
+    "minutes": 12
+  },
+  "story_excu_2_1": {
+    "words": 4002,
+    "minutes": 24
+  },
+  "story_f12yin_1_1": {
+    "words": 2548,
+    "minutes": 16
+  },
+  "story_f12yin_2_1": {
+    "words": 2384,
+    "minutes": 15
+  },
+  "story_falco_1_1": {
+    "words": 2459,
+    "minutes": 16
+  },
+  "story_fang_1_1": {
+    "words": 3131,
+    "minutes": 19
+  },
+  "story_fartth_1_1": {
+    "words": 2408,
+    "minutes": 18
+  },
+  "story_finlpp_1_1": {
+    "words": 3479,
+    "minutes": 21
+  },
+  "story_firwhl_1_1": {
+    "words": 3557,
+    "minutes": 20
+  },
+  "story_flint_1_1": {
+    "words": 3153,
+    "minutes": 19
+  },
+  "story_flower_1_1": {
+    "words": 3130,
+    "minutes": 18
+  },
+  "story_flower_2_1": {
+    "words": 3767,
+    "minutes": 22
+  },
+  "story_fmout_1_1": {
+    "words": 2274,
+    "minutes": 14
+  },
+  "story_folivo_1_1": {
+    "words": 2923,
+    "minutes": 20
+  },
+  "story_forcer_1_1": {
+    "words": 2366,
+    "minutes": 14
+  },
+  "story_franka_1_1": {
+    "words": 1996,
+    "minutes": 15
+  },
+  "story_franka_2_1": {
+    "words": 3085,
+    "minutes": 20
+  },
+  "story_frncat_1_1": {
+    "words": 2482,
+    "minutes": 16
+  },
+  "story_frostl_1_1": {
+    "words": 3295,
+    "minutes": 20
+  },
+  "story_fuze_1_1": {
+    "words": 3108,
+    "minutes": 20
+  },
+  "story_gdglow_1_1": {
+    "words": 3577,
+    "minutes": 21
+  },
+  "story_ghost2_1_1": {
+    "words": 2686,
+    "minutes": 16
+  },
+  "story_ghost_1_1": {
+    "words": 3120,
+    "minutes": 18
+  },
+  "story_ghost_2_1": {
+    "words": 5038,
+    "minutes": 29
+  },
+  "story_glacus_1_1": {
+    "words": 3594,
+    "minutes": 21
+  },
+  "story_glady_1_1": {
+    "words": 2184,
+    "minutes": 13
+  },
+  "story_glassb_1_1": {
+    "words": 3122,
+    "minutes": 21
+  },
+  "story_glassb_2_1": {
+    "words": 3478,
+    "minutes": 20
+  },
+  "story_glaze_1_1": {
+    "words": 2508,
+    "minutes": 16
+  },
+  "story_glider_1_1": {
+    "words": 3410,
+    "minutes": 23
+  },
+  "story_gnosis_1_1": {
+    "words": 3163,
+    "minutes": 20
+  },
+  "story_grabds_1_1": {
+    "words": 2432,
+    "minutes": 15
+  },
+  "story_grani_1_1": {
+    "words": 3741,
+    "minutes": 22
+  },
+  "story_gravel_1_1": {
+    "words": 2632,
+    "minutes": 16
+  },
+  "story_greyy2_1_1": {
+    "words": 3199,
+    "minutes": 19
+  },
+  "story_greyy_1_1": {
+    "words": 2333,
+    "minutes": 15
+  },
+  "story_gvial2_1_1": {
+    "words": 4028,
+    "minutes": 26
+  },
+  "story_haak_1_1": {
+    "words": 3366,
+    "minutes": 21
+  },
+  "story_haini_1_1": {
+    "words": 3282,
+    "minutes": 21
+  },
+  "story_halo_1_1": {
+    "words": 2504,
+    "minutes": 15
+  },
+  "story_hamoni_1_1": {
+    "words": 2558,
+    "minutes": 15
+  },
+  "story_harold_1_1": {
+    "words": 3106,
+    "minutes": 18
+  },
+  "story_hbisc2_1_1": {
+    "words": 2598,
+    "minutes": 16
+  },
+  "story_headbr_1_1": {
+    "words": 3070,
+    "minutes": 18
+  },
+  "story_headbr_2_1": {
+    "words": 3323,
+    "minutes": 21
+  },
+  "story_heidi_1_1": {
+    "words": 3635,
+    "minutes": 23
+  },
+  "story_helage_1_1": {
+    "words": 2438,
+    "minutes": 15
+  },
+  "story_hibisc_1_1": {
+    "words": 3215,
+    "minutes": 19
+  },
+  "story_hmau_1_1": {
+    "words": 2317,
+    "minutes": 16
+  },
+  "story_horn_1_1": {
+    "words": 3281,
+    "minutes": 21
+  },
+  "story_hpsts_1_1": {
+    "words": 2156,
+    "minutes": 14
+  },
+  "story_huang_1_1": {
+    "words": 2953,
+    "minutes": 18
+  },
+  "story_humus_1_1": {
+    "words": 2594,
+    "minutes": 15
+  },
+  "story_iana_1_1": {
+    "words": 2829,
+    "minutes": 18
+  },
+  "story_ifrit_1_1": {
+    "words": 2876,
+    "minutes": 19
+  },
+  "story_indigo_1_1": {
+    "words": 2578,
+    "minutes": 15
+  },
+  "story_inside_1_1": {
+    "words": 1846,
+    "minutes": 14
+  },
+  "story_irene_1_1": {
+    "words": 2283,
+    "minutes": 15
+  },
+  "story_iris_1_1": {
+    "words": 3524,
+    "minutes": 26
+  },
+  "story_ironmn_1_1": {
+    "words": 3712,
+    "minutes": 24
+  },
+  "story_jaksel_1_1": {
+    "words": 2677,
+    "minutes": 17
+  },
+  "story_jesca2_1_1": {
+    "words": 2607,
+    "minutes": 17
+  },
+  "story_jesica_1_1": {
+    "words": 2932,
+    "minutes": 17
+  },
+  "story_jnight_1_1": {
+    "words": 2160,
+    "minutes": 14
+  },
+  "story_judge_1_1": {
+    "words": 2995,
+    "minutes": 18
+  },
+  "story_kafka_1_1": {
+    "words": 3368,
+    "minutes": 19
+  },
+  "story_kaitou_1_1": {
+    "words": 2905,
+    "minutes": 17
+  },
+  "story_kazema_1_1": {
+    "words": 3064,
+    "minutes": 20
+  },
+  "story_kirara_1_1": {
+    "words": 3364,
+    "minutes": 21
+  },
+  "story_kirara_2_1": {
+    "words": 3250,
+    "minutes": 22
+  },
+  "story_kjera_1_1": {
+    "words": 3095,
+    "minutes": 19
+  },
+  "story_kroos_1_1": {
+    "words": 2188,
+    "minutes": 16
+  },
+  "story_lasher_1_1": {
+    "words": 2804,
+    "minutes": 19
+  },
+  "story_lava_1_1": {
+    "words": 2471,
+    "minutes": 15
+  },
+  "story_lava_2_1": {
+    "words": 2468,
+    "minutes": 16
+  },
+  "story_leizi_1_1": {
+    "words": 2321,
+    "minutes": 14
+  },
+  "story_lessng_1_1": {
+    "words": 2802,
+    "minutes": 18
+  },
+  "story_leto_1_1": {
+    "words": 2458,
+    "minutes": 16
+  },
+  "story_lin_1_1": {
+    "words": 3741,
+    "minutes": 23
+  },
+  "story_ling_1_1": {
+    "words": 3243,
+    "minutes": 19
+  },
+  "story_lionhd_1_1": {
+    "words": 2694,
+    "minutes": 17
+  },
+  "story_liskam_1_1": {
+    "words": 3301,
+    "minutes": 19
+  },
+  "story_liskam_2_1": {
+    "words": 3102,
+    "minutes": 17
+  },
+  "story_lmlee_1_1": {
+    "words": 3670,
+    "minutes": 21
+  },
+  "story_lolxh_1_1": {
+    "words": 3180,
+    "minutes": 22
+  },
+  "story_lumen_1_1": {
+    "words": 2436,
+    "minutes": 17
+  },
+  "story_lunacu_1_1": {
+    "words": 3841,
+    "minutes": 25
+  },
+  "story_luton_1_1": {
+    "words": 3517,
+    "minutes": 22
+  },
+  "story_malist_1_1": {
+    "words": 3386,
+    "minutes": 20
+  },
+  "story_mantic_1_1": {
+    "words": 2914,
+    "minutes": 17
+  },
+  "story_mberry_1_1": {
+    "words": 2870,
+    "minutes": 18
+  },
+  "story_medic2_1_1": {
+    "words": 2491,
+    "minutes": 15
+  },
+  "story_melan_1_1": {
+    "words": 1998,
+    "minutes": 12
+  },
+  "story_melnte_1_1": {
+    "words": 3109,
+    "minutes": 19
+  },
+  "story_meteo_1_1": {
+    "words": 2610,
+    "minutes": 17
+  },
+  "story_mgllan_1_1": {
+    "words": 2946,
+    "minutes": 19
+  },
+  "story_midn_1_1": {
+    "words": 3241,
+    "minutes": 20
+  },
+  "story_milu_1_1": {
+    "words": 1874,
+    "minutes": 12
+  },
+  "story_mint_1_1": {
+    "words": 2758,
+    "minutes": 18
+  },
+  "story_mitm_1_1": {
+    "words": 2243,
+    "minutes": 15
+  },
+  "story_mizuki_1_1": {
+    "words": 3406,
+    "minutes": 21
+  },
+  "story_mlyss_1_1": {
+    "words": 2717,
+    "minutes": 16
+  },
+  "story_mm_1_1": {
+    "words": 2488,
+    "minutes": 16
+  },
+  "story_moeshd_1_1": {
+    "words": 2158,
+    "minutes": 13
+  },
+  "story_morgan_1_1": {
+    "words": 2602,
+    "minutes": 17
+  },
+  "story_mostma_1_1": {
+    "words": 2409,
+    "minutes": 14
+  },
+  "story_mudrok_1_1": {
+    "words": 3113,
+    "minutes": 19
+  },
+  "story_myrrh_1_1": {
+    "words": 2431,
+    "minutes": 15
+  },
+  "story_myrtle_1_1": {
+    "words": 2549,
+    "minutes": 15
+  },
+  "story_nblade_1_1": {
+    "words": 3151,
+    "minutes": 19
+  },
+  "story_ncdeer_1_1": {
+    "words": 2460,
+    "minutes": 17
+  },
+  "story_nearl2_1_1": {
+    "words": 2662,
+    "minutes": 16
+  },
+  "story_nian_1_1": {
+    "words": 3306,
+    "minutes": 20
+  },
+  "story_nights_1_1": {
+    "words": 1941,
+    "minutes": 12
+  },
+  "story_noirc_1_1": {
+    "words": 2762,
+    "minutes": 15
+  },
+  "story_nothin_1_1": {
+    "words": 3769,
+    "minutes": 22
+  },
+  "story_orchid_1_1": {
+    "words": 2752,
+    "minutes": 17
+  },
+  "story_otter_1_1": {
+    "words": 1914,
+    "minutes": 12
+  },
+  "story_otter_2_1": {
+    "words": 2509,
+    "minutes": 17
+  },
+  "story_panda_1_1": {
+    "words": 2726,
+    "minutes": 16
+  },
+  "story_papyrs_1_1": {
+    "words": 3141,
+    "minutes": 19
+  },
+  "story_peper_1_1": {
+    "words": 2360,
+    "minutes": 15
+  },
+  "story_phatom_1_1": {
+    "words": 1858,
+    "minutes": 12
+  },
+  "story_phenxi_1_1": {
+    "words": 2408,
+    "minutes": 15
+  },
+  "story_pianst_1_1": {
+    "words": 3159,
+    "minutes": 19
+  },
+  "story_pianst_2_1": {
+    "words": 3542,
+    "minutes": 21
+  },
+  "story_pinecn_1_1": {
+    "words": 2839,
+    "minutes": 18
+  },
+  "story_platnm_1_1": {
+    "words": 1982,
+    "minutes": 13
+  },
+  "story_plosis_1_1": {
+    "words": 2837,
+    "minutes": 17
+  },
+  "story_poca_1_1": {
+    "words": 3001,
+    "minutes": 18
+  },
+  "story_podego_1_1": {
+    "words": 2921,
+    "minutes": 18
+  },
+  "story_popka_1_1": {
+    "words": 1813,
+    "minutes": 13
+  },
+  "story_prove_1_1": {
+    "words": 2406,
+    "minutes": 15
+  },
+  "story_prove_2_1": {
+    "words": 3641,
+    "minutes": 23
+  },
+  "story_provs_1_1": {
+    "words": 3308,
+    "minutes": 20
+  },
+  "story_pudd_1_1": {
+    "words": 3477,
+    "minutes": 22
+  },
+  "story_puzzle_1_1": {
+    "words": 3207,
+    "minutes": 21
+  },
+  "story_qanik_1_1": {
+    "words": 3425,
+    "minutes": 22
+  },
+  "story_qiubai_1_1": {
+    "words": 3847,
+    "minutes": 23
+  },
+  "story_quartz_1_1": {
+    "words": 3539,
+    "minutes": 24
+  },
+  "story_quercu_1_1": {
+    "words": 3560,
+    "minutes": 24
+  },
+  "story_quercu_2_1": {
+    "words": 3449,
+    "minutes": 22
+  },
+  "story_rdoc_1_1": {
+    "words": 3539,
+    "minutes": 22
+  },
+  "story_rfrost_1_1": {
+    "words": 2146,
+    "minutes": 13
+  },
+  "story_robrta_1_1": {
+    "words": 2478,
+    "minutes": 15
+  },
+  "story_rockr_1_1": {
+    "words": 2532,
+    "minutes": 17
+  },
+  "story_rope_1_1": {
+    "words": 528,
+    "minutes": 4
+  },
+  "story_rope_1_2": {
+    "words": 2264,
+    "minutes": 13
+  },
+  "story_rosesa_1_1": {
+    "words": 2700,
+    "minutes": 16
+  },
+  "story_savage_1_1": {
+    "words": 3404,
+    "minutes": 21
+  },
+  "story_savage_2_1": {
+    "words": 2213,
+    "minutes": 13
+  },
+  "story_savage_2_2": {
+    "words": 2695,
+    "minutes": 15
+  },
+  "story_scave_1_1": {
+    "words": 2104,
+    "minutes": 13
+  },
+  "story_sddrag_1_1": {
+    "words": 3424,
+    "minutes": 23
+  },
+  "story_serum_1_1": {
+    "words": 2656,
+    "minutes": 18
+  },
+  "story_sesa_1_1": {
+    "words": 2534,
+    "minutes": 17
+  },
+  "story_shining_1_1": {
+    "words": 2467,
+    "minutes": 17
+  },
+  "story_shotst_1_1": {
+    "words": 2472,
+    "minutes": 15
+  },
+  "story_shotst_2_1": {
+    "words": 2851,
+    "minutes": 19
+  },
+  "story_shu_1_1": {
+    "words": 2882,
+    "minutes": 17
+  },
+  "story_shwaz_1_1": {
+    "words": 2836,
+    "minutes": 16
+  },
+  "story_shwaz_2_1": {
+    "words": 2742,
+    "minutes": 17
+  },
+  "story_sidero_1_1": {
+    "words": 2499,
+    "minutes": 21
+  },
+  "story_siege_1_1": {
+    "words": 2870,
+    "minutes": 20
+  },
+  "story_silent_1_1": {
+    "words": 2851,
+    "minutes": 18
+  },
+  "story_skadi_1_1": {
+    "words": 1748,
+    "minutes": 13
+  },
+  "story_skfire_1_1": {
+    "words": 2863,
+    "minutes": 18
+  },
+  "story_skgoat_1_1": {
+    "words": 2672,
+    "minutes": 15
+  },
+  "story_skgoat_2_1": {
+    "words": 3278,
+    "minutes": 21
+  },
+  "story_slbell_1_1": {
+    "words": 2951,
+    "minutes": 17
+  },
+  "story_slchan_1_1": {
+    "words": 3141,
+    "minutes": 20
+  },
+  "story_slchan_2_1": {
+    "words": 3218,
+    "minutes": 21
+  },
+  "story_sleach_1_1": {
+    "words": 3264,
+    "minutes": 21
+  },
+  "story_sleach_2_1": {
+    "words": 3073,
+    "minutes": 20
+  },
+  "story_snakek_1_1": {
+    "words": 2644,
+    "minutes": 18
+  },
+  "story_snsant_1_1": {
+    "words": 3793,
+    "minutes": 24
+  },
+  "story_sntlla_1_1": {
+    "words": 3776,
+    "minutes": 25
+  },
+  "story_sophia_1_1": {
+    "words": 2779,
+    "minutes": 17
+  },
+  "story_sora_1_1": {
+    "words": 1782,
+    "minutes": 12
+  },
+  "story_sora_2_1": {
+    "words": 3779,
+    "minutes": 22
+  },
+  "story_spot_1_1": {
+    "words": 3240,
+    "minutes": 21
+  },
+  "story_spuria_1_1": {
+    "words": 2912,
+    "minutes": 18
+  },
+  "story_sqrrel_1_1": {
+    "words": 1845,
+    "minutes": 12
+  },
+  "story_sqrrel_2_1": {
+    "words": 2241,
+    "minutes": 16
+  },
+  "story_strong_1_1": {
+    "words": 3636,
+    "minutes": 23
+  },
+  "story_strong_2_1": {
+    "words": 4134,
+    "minutes": 26
+  },
+  "story_sunbr_1_1": {
+    "words": 2890,
+    "minutes": 18
+  },
+  "story_sunbr_2_1": {
+    "words": 2538,
+    "minutes": 17
+  },
+  "story_susuro_1_1": {
+    "words": 2889,
+    "minutes": 19
+  },
+  "story_svrash_1_1": {
+    "words": 4502,
+    "minutes": 26
+  },
+  "story_svrash_2_1": {
+    "words": 6455,
+    "minutes": 36
+  },
+  "story_swire_1_1": {
+    "words": 3394,
+    "minutes": 19
+  },
+  "story_swllow_1_1": {
+    "words": 2997,
+    "minutes": 18
+  },
+  "story_tachak_1_1": {
+    "words": 2009,
+    "minutes": 14
+  },
+  "story_takila_1_1": {
+    "words": 2809,
+    "minutes": 17
+  },
+  "story_tecno_1_1": {
+    "words": 3182,
+    "minutes": 20
+  },
+  "story_texas_1_1": {
+    "words": 2614,
+    "minutes": 17
+  },
+  "story_therex_1_1": {
+    "words": 2832,
+    "minutes": 17
+  },
+  "story_thorns_1_1": {
+    "words": 2186,
+    "minutes": 13
+  },
+  "story_tiger_1_1": {
+    "words": 2670,
+    "minutes": 17
+  },
+  "story_tknogi_1_1": {
+    "words": 3315,
+    "minutes": 21
+  },
+  "story_toddi_1_1": {
+    "words": 2418,
+    "minutes": 17
+  },
+  "story_tomimi_1_1": {
+    "words": 3053,
+    "minutes": 20
+  },
+  "story_totter_1_1": {
+    "words": 2285,
+    "minutes": 16
+  },
+  "story_totter_2_1": {
+    "words": 2232,
+    "minutes": 14
+  },
+  "story_tuye_1_1": {
+    "words": 2884,
+    "minutes": 19
+  },
+  "story_utage_1_1": {
+    "words": 3549,
+    "minutes": 20
+  },
+  "story_vigil_1_1": {
+    "words": 2920,
+    "minutes": 17
+  },
+  "story_vigil_2_1": {
+    "words": 3106,
+    "minutes": 19
+  },
+  "story_vigna_1_1": {
+    "words": 1483,
+    "minutes": 10
+  },
+  "story_vodfox_1_1": {
+    "words": 3553,
+    "minutes": 24
+  },
+  "story_vrdant_1_1": {
+    "words": 3303,
+    "minutes": 21
+  },
+  "story_waaifu_1_1": {
+    "words": 3743,
+    "minutes": 22
+  },
+  "story_wanqin_1_1": {
+    "words": 2843,
+    "minutes": 19
+  },
+  "story_warmy_1_1": {
+    "words": 2454,
+    "minutes": 15
+  },
+  "story_weedy_1_1": {
+    "words": 2502,
+    "minutes": 17
+  },
+  "story_whispr_1_1": {
+    "words": 2857,
+    "minutes": 17
+  },
+  "story_wildmn_1_1": {
+    "words": 3235,
+    "minutes": 21
+  },
+  "story_windft_1_1": {
+    "words": 2696,
+    "minutes": 17
+  },
+  "story_wyvern_1_1": {
+    "words": 3438,
+    "minutes": 22
+  },
+  "story_yak_1_1": {
+    "words": 2532,
+    "minutes": 15
+  },
+  "story_yu_1_1": {
+    "words": 3882,
+    "minutes": 24
+  },
+  "story_yuki_1_1": {
+    "words": 1335,
+    "minutes": 10
+  },
+  "story_zebra_1_1": {
+    "words": 3716,
+    "minutes": 24
+  },
+  "story_zumama_1_1": {
+    "words": 2946,
+    "minutes": 19
+  },
+  "level_rogue1_ending_1": {
+    "words": 246,
+    "minutes": 4
+  },
+  "level_rogue1_ending_2": {
+    "words": 331,
+    "minutes": 4
+  },
+  "level_rogue1_ending_3": {
+    "words": 429,
+    "minutes": 4
+  },
+  "level_rogue1_ending_4": {
+    "words": 377,
+    "minutes": 4
+  },
+  "level_rogue2_ending_1": {
+    "words": 801,
+    "minutes": 8
+  },
+  "level_rogue2_ending_2": {
+    "words": 415,
+    "minutes": 5
+  },
+  "level_rogue2_ending_3": {
+    "words": 454,
+    "minutes": 5
+  },
+  "level_rogue2_ending_4": {
+    "words": 335,
+    "minutes": 4
+  },
+  "level_act12d6_ending_1": {
+    "words": 299,
+    "minutes": 3
+  },
+  "level_act12d6_ending_2": {
+    "words": 318,
+    "minutes": 3
+  },
+  "level_act12d6_ending_3": {
+    "words": 316,
+    "minutes": 3
+  },
+  "level_act12d6_entry": {
+    "words": 73,
+    "minutes": 2
+  },
+  "level_act12side_tr01_end": {
+    "words": 226,
+    "minutes": 3
+  },
+  "level_act15side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act17d7_01_end": {
+    "words": 323,
+    "minutes": 3
+  },
+  "level_act17d7_entry": {
+    "words": 1096,
+    "minutes": 7
+  },
+  "level_act17side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act1lock_entry": {
+    "words": 890,
+    "minutes": 6
+  },
+  "level_act1lock_st01": {
+    "words": 974,
+    "minutes": 6
+  },
+  "level_act1lock_st02": {
+    "words": 489,
+    "minutes": 4
+  },
+  "level_act1sandbox_ending_1": {
+    "words": 413,
+    "minutes": 4
+  },
+  "level_act1sandbox_ending_2": {
+    "words": 453,
+    "minutes": 5
+  },
+  "level_act1sandbox_ending_3": {
+    "words": 599,
+    "minutes": 5
+  },
+  "level_act1sandbox_entry": {
+    "words": 143,
+    "minutes": 3
+  },
+  "level_act1vautochess_entry": {
+    "words": 699,
+    "minutes": 6
+  },
+  "level_act20side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act21side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act23side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act25side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act27side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act29side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act31side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act35side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act37side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act38side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act3fun_03_end": {
+    "words": 407,
+    "minutes": 4
+  },
+  "level_act3fun_entry": {
+    "words": 1104,
+    "minutes": 7
+  },
+  "level_act40side_entry": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_act4fun_01_end": {
+    "words": 1050,
+    "minutes": 7
+  },
+  "level_act4fun_02_end": {
+    "words": 694,
+    "minutes": 5
+  },
+  "level_act4fun_03_end": {
+    "words": 1128,
+    "minutes": 8
+  },
+  "level_act4fun_04_end": {
+    "words": 1248,
+    "minutes": 8
+  },
+  "level_act4fun_05_end": {
+    "words": 952,
+    "minutes": 6
+  },
+  "level_act4fun_06_end": {
+    "words": 950,
+    "minutes": 6
+  },
+  "level_act4fun_07_end": {
+    "words": 1264,
+    "minutes": 9
+  },
+  "level_act4fun_entry": {
+    "words": 824,
+    "minutes": 6
+  },
+  "level_act5fun_01_end": {
+    "words": 151,
+    "minutes": 2
+  },
+  "level_act5fun_entry": {
+    "words": 376,
+    "minutes": 3
+  },
+  "level_main_14-20_beg": {
+    "words": 0,
+    "minutes": 1
+  },
+  "level_main_9_chapter_recap": {
+    "words": 1457,
+    "minutes": 20
+  },
+  "level_rogue1_entry": {
+    "words": 95,
+    "minutes": 2
+  },
+  "level_rogue2_entry": {
+    "words": 105,
+    "minutes": 2
+  },
+  "level_rogue3_ending_1": {
+    "words": 623,
+    "minutes": 7
+  },
+  "level_rogue3_ending_2": {
+    "words": 432,
+    "minutes": 5
+  },
+  "level_rogue3_ending_3": {
+    "words": 806,
+    "minutes": 7
+  },
+  "level_rogue3_ending_4": {
+    "words": 591,
+    "minutes": 6
+  },
+  "level_rogue3_entry": {
+    "words": 234,
+    "minutes": 3
+  },
+  "level_rogue4_ending_1": {
+    "words": 984,
+    "minutes": 7
+  },
+  "level_rogue4_ending_2": {
+    "words": 536,
+    "minutes": 6
+  },
+  "level_rogue4_ending_3": {
+    "words": 315,
+    "minutes": 6
+  },
+  "level_rogue4_ending_4": {
+    "words": 577,
+    "minutes": 7
+  },
+  "level_rogue4_ending_5": {
+    "words": 676,
+    "minutes": 6
+  },
+  "level_rogue4_entry": {
+    "words": 201,
+    "minutes": 3
+  },
+  "level_sandbox1_tr01": {
+    "words": 123,
+    "minutes": 2
+  },
+  "level_sandbox1_tr02": {
+    "words": 158,
+    "minutes": 2
+  },
+  "level_sandbox1_tr03": {
+    "words": 132,
+    "minutes": 2
+  },
+  "level_sandbox1_tr03_2": {
+    "words": 73,
+    "minutes": 2
+  },
+  "level_sandbox1_tr_catch": {
+    "words": 141,
+    "minutes": 2
+  },
+  "level_sandbox1_tr_home": {
+    "words": 74,
+    "minutes": 2
+  },
+  "level_sandbox1_tr_race_a": {
+    "words": 51,
+    "minutes": 1
+  },
+  "level_sandbox1_tr_race_b": {
+    "words": 183,
+    "minutes": 1
+  },
+  "level_sandbox1_tr_race_c": {
+    "words": 116,
+    "minutes": 1
+  },
+  "level_a001": {
+    "words": 8900,
+    "minutes": 74
+  },
+  "level_act10d0": {
+    "words": 236,
+    "minutes": 7
+  },
+  "level_act10d5": {
+    "words": 24873,
+    "minutes": 145
+  },
+  "level_act10mini": {
+    "words": 25510,
+    "minutes": 206
+  },
+  "level_act11d0": {
+    "words": 28076,
+    "minutes": 181
+  },
+  "level_act11d7": {
+    "words": 4740,
+    "minutes": 26
+  },
+  "level_act11mini": {
+    "words": 20646,
+    "minutes": 124
+  },
+  "level_act12d0": {
+    "words": 22797,
+    "minutes": 150
+  },
+  "level_act12mini": {
+    "words": 25501,
+    "minutes": 152
+  },
+  "level_act12side": {
+    "words": 30558,
+    "minutes": 202
+  },
+  "level_act13d0": {
+    "words": 21822,
+    "minutes": 130
+  },
+  "level_act13d5": {
+    "words": 34575,
+    "minutes": 216
+  },
+  "level_act13side": {
+    "words": 79246,
+    "minutes": 507
+  },
+  "level_act14mini": {
+    "words": 26659,
+    "minutes": 163
+  },
+  "level_act14side": {
+    "words": 54661,
+    "minutes": 357
+  },
+  "level_act15d0": {
+    "words": 26456,
+    "minutes": 216
+  },
+  "level_act15d5": {
+    "words": 25674,
+    "minutes": 145
+  },
+  "level_act15mini": {
+    "words": 26817,
+    "minutes": 175
+  },
+  "level_act15side": {
+    "words": 44761,
+    "minutes": 290
+  },
+  "level_act16d5": {
+    "words": 29643,
+    "minutes": 197
+  },
+  "level_act16mini": {
+    "words": 27648,
+    "minutes": 169
+  },
+  "level_act16side": {
+    "words": 35497,
+    "minutes": 239
+  },
+  "level_act17d0": {
+    "words": 23645,
+    "minutes": 195
+  },
+  "level_act17d1": {
+    "words": 921,
+    "minutes": 7
+  },
+  "level_act17mini": {
+    "words": 25431,
+    "minutes": 157
+  },
+  "level_act17side": {
+    "words": 59801,
+    "minutes": 402
+  },
+  "level_act18d0": {
+    "words": 35205,
+    "minutes": 211
+  },
+  "level_act18d3": {
+    "words": 38512,
+    "minutes": 244
+  },
+  "level_act18mini": {
+    "words": 25276,
+    "minutes": 166
+  },
+  "level_act18side": {
+    "words": 42182,
+    "minutes": 281
+  },
+  "level_act19side": {
+    "words": 38310,
+    "minutes": 261
+  },
+  "level_act20side": {
+    "words": 38253,
+    "minutes": 247
+  },
+  "level_act21side": {
+    "words": 64422,
+    "minutes": 427
+  },
+  "level_act22side": {
+    "words": 36342,
+    "minutes": 245
+  },
+  "level_act23side": {
+    "words": 45419,
+    "minutes": 307
+  },
+  "level_act24side": {
+    "words": 36783,
+    "minutes": 249
+  },
+  "level_act25side": {
+    "words": 81294,
+    "minutes": 516
+  },
+  "level_act26side": {
+    "words": 38792,
+    "minutes": 257
+  },
+  "level_act27side": {
+    "words": 49494,
+    "minutes": 329
+  },
+  "level_act28side": {
+    "words": 47793,
+    "minutes": 323
+  },
+  "level_act29side": {
+    "words": 83142,
+    "minutes": 548
+  },
+  "level_act30side": {
+    "words": 55852,
+    "minutes": 359
+  },
+  "level_act31side": {
+    "words": 43844,
+    "minutes": 296
+  },
+  "level_act32side": {
+    "words": 38053,
+    "minutes": 270
+  },
+  "level_act33side": {
+    "words": 50967,
+    "minutes": 350
+  },
+  "level_act34side": {
+    "words": 52752,
+    "minutes": 345
+  },
+  "level_act35side": {
+    "words": 41007,
+    "minutes": 291
+  },
+  "level_act36side": {
+    "words": 27002,
+    "minutes": 204
+  },
+  "level_act37side": {
+    "words": 49119,
+    "minutes": 339
+  },
+  "level_act38side": {
+    "words": 66887,
+    "minutes": 457
+  },
+  "level_act39side": {
+    "words": 44302,
+    "minutes": 315
+  },
+  "level_act3d0": {
+    "words": 16951,
+    "minutes": 123
+  },
+  "level_act40side": {
+    "words": 56262,
+    "minutes": 366
+  },
+  "level_act41side": {
+    "words": 43029,
+    "minutes": 288
+  },
+  "level_act4d0": {
+    "words": 15798,
+    "minutes": 95
+  },
+  "level_act5d0": {
+    "words": 29410,
+    "minutes": 204
+  },
+  "level_act6d5": {
+    "words": 13516,
+    "minutes": 86
+  },
+  "level_act7d5": {
+    "words": 19818,
+    "minutes": 112
+  },
+  "level_act7mini": {
+    "words": 23408,
+    "minutes": 133
+  },
+  "level_act8mini": {
+    "words": 24016,
+    "minutes": 143
+  },
+  "level_act9d0": {
+    "words": 20335,
+    "minutes": 127
+  },
+  "level_act9mini": {
+    "words": 20851,
+    "minutes": 126
+  },
+  "level_main_00": {
+    "words": 5496,
+    "minutes": 48
+  },
+  "level_main_01": {
+    "words": 4701,
+    "minutes": 46
+  },
+  "level_main_02": {
+    "words": 7590,
+    "minutes": 69
+  },
+  "level_main_03": {
+    "words": 7769,
+    "minutes": 65
+  },
+  "level_main_04": {
+    "words": 8614,
+    "minutes": 79
+  },
+  "level_main_05": {
+    "words": 13054,
+    "minutes": 98
+  },
+  "level_main_06": {
+    "words": 26427,
+    "minutes": 176
+  },
+  "level_main_07": {
+    "words": 33927,
+    "minutes": 204
+  },
+  "level_main_08": {
+    "words": 56243,
+    "minutes": 347
+  },
+  "level_main_09": {
+    "words": 34420,
+    "minutes": 215
+  },
+  "level_main_10": {
+    "words": 53297,
+    "minutes": 362
+  },
+  "level_main_11": {
+    "words": 38966,
+    "minutes": 277
+  },
+  "level_main_12": {
+    "words": 45492,
+    "minutes": 285
+  },
+  "level_main_13": {
+    "words": 62734,
+    "minutes": 433
+  },
+  "level_main_14": {
+    "words": 84108,
+    "minutes": 587
+  },
+  "level_spst": {
+    "words": 6777,
+    "minutes": 44
+  },
+  "level_st": {
+    "words": 102137,
+    "minutes": 641
+  },
+  "level_rogue1": {
+    "words": 1478,
+    "minutes": 18
+  },
+  "level_rogue2": {
+    "words": 2110,
+    "minutes": 24
+  },
+  "level_act12d6": {
+    "words": 1006,
+    "minutes": 11
+  },
+  "level_act17d7": {
+    "words": 1419,
+    "minutes": 10
+  },
+  "level_act1lock": {
+    "words": 2353,
+    "minutes": 16
+  },
+  "level_act1sandbox": {
+    "words": 1608,
+    "minutes": 17
+  },
+  "level_act1vautochess": {
+    "words": 699,
+    "minutes": 6
+  },
+  "level_act3fun": {
+    "words": 1511,
+    "minutes": 11
+  },
+  "level_act4fun": {
+    "words": 8110,
+    "minutes": 55
+  },
+  "level_act5fun": {
+    "words": 527,
+    "minutes": 5
+  },
+  "level_main_9": {
+    "words": 1457,
+    "minutes": 20
+  },
+  "level_rogue3": {
+    "words": 2686,
+    "minutes": 28
+  },
+  "level_rogue4": {
+    "words": 3289,
+    "minutes": 35
+  },
+  "level_sandbox1": {
+    "words": 1051,
+    "minutes": 15
+  }
+}
