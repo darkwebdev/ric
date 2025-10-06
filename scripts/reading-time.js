@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 const fs = require('fs');
 const path = require('path');
 
@@ -10,15 +12,9 @@ if (!inputDir) {
 }
 
 const storySizes = storySizesFromFiles(inputDir);
-const levelSummaries = summarizeLevels(storySizes);
-const resultWithSummaries = {
-    ...storySizes,
-    ...levelSummaries
-};
 
-fs.writeFileSync(outputFile, JSON.stringify(resultWithSummaries, null, 2));
+fs.writeFileSync(outputFile, JSON.stringify(storySizes, null, 2));
 console.log(`Reading times written to ${outputFile}`);
-console.log(`Added ${Object.keys(levelSummaries).length} level summaries`);
 
 
 function storySizesFromFiles(dir) {
@@ -33,36 +29,20 @@ function storySizesFromFiles(dir) {
             };
         }
         if (stat.isFile() && file.endsWith('.txt')) {
-            const storyFile = file.replace('.txt', '');
-            if (storyFile.startsWith('level') || storyFile.startsWith('story')) {
+            const relativePath = path.relative(inputDir, filePath);
+            const storyTxt = relativePath.replace('.txt', '');
+            if (relativePath.startsWith('activities') || relativePath.startsWith('obt')) {
                 const text = fs.readFileSync(filePath, 'utf8');
                 const { words, minutes, textTime, durationTime } = calculateStoryReadingTime(text);
-                console.log(`Processing ${filePath}`);
+                console.log(`Processing ${relativePath}`);
                 console.log(`Estimated reading time: ${words} words, ${minutes} minutes (${textTime} text + ${durationTime} timing)\n`);
                 return {
                     ...result,
-                    [storyFile]: { words, minutes, }
+                    [storyTxt]: { words, minutes, }
                 };
             }
         }
         return result;
-    }, {});
-}
-
-function summarizeLevels(result) {
-    return Object.entries(result).reduce((summaries, [fileName, { words, minutes }]) => {
-        const match = fileName.match(/^((level_main_\d+)|(level_act\d+[a-z]*\d*)|(level_[^_]+))/);
-        if (match) {
-            const storyPrefix = match[1];
-            return {
-                ...summaries,
-                [storyPrefix]: {
-                    words: (summaries[storyPrefix]?.words || 0) + words,
-                    minutes: (summaries[storyPrefix]?.minutes || 0) + minutes,
-                },
-            };
-        }
-        return summaries;
     }, {});
 }
 

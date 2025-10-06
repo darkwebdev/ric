@@ -3,8 +3,6 @@ import {
     categorizeStories,
     operationById,
     operationsByStoryId,
-    operatorByVignette,
-    storyNameById
 } from '../../data-utils.js';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { loadStoryData } from '../../network.js';
@@ -12,7 +10,6 @@ import { StoryTypeEntry } from './StoryTypeEntry.jsx';
 import { StoryEntry } from './StoryEntry.jsx';
 import { OperationEntry } from './OperationEntry.jsx';
 import './style.css';
-import { StoryTypeKeys } from '../../const';
 
 export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
     const [storyData, setStoryData] = useState();
@@ -75,6 +72,7 @@ export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
                             <OperationEntry
                                 key={op.storyId}
                                 op={op}
+                                opSize={storyData.storySize[op.storyTxt]}
                                 isAfterStory={op.storyCode && op.storyCode === ops[i - 1]?.storyCode}
                                 storyPath={operationById(storyData, storyId, op.storyId).storyTxt}
                             />

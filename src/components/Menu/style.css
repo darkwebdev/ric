@@ -289,6 +289,9 @@
             font-size: 20px;
         }
     }
+    .op-time {
+        font-size: 1em;
+    }
 }
 
 @keyframes grow-right {

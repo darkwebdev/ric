@@ -75,6 +75,33 @@ export function storyNameById(storyData, storyId) {
     return storyData.storyReview[storyId].name;
 }
 
+export function storyReadingStats(storyData, storyId) {
+    const infos = storyData.storyReview[storyId]?.infoUnlockDatas;
+    if (!infos || !infos.length) {
+        console.error(`No 'infoUnlockDatas' for storyId=${storyId}`);
+        return;
+    }
+
+    const sizes = storyData.storySize || {};
+
+    return infos.reduce((acc, { storyTxt }) => {
+        if (!acc || !storyTxt) return acc;
+
+        const size = sizes[storyTxt];
+        if (size) {
+            acc.words += size.words;
+            acc.minutes += size.minutes;
+            return acc;
+        } else {
+            console.warn(`No reading-time entry for ${storyTxt}`);
+            return acc;
+        }
+    }, {
+        words: 0,
+        minutes: 0,
+    });
+}
+
 export function storyByPath(storyData, operationPath) {
     return Object.values(storyData.storyReview).find(({ infoUnlockDatas }) =>
       infoUnlockDatas.some(({ storyTxt }) => storyTxt === operationPath)

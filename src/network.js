@@ -14,7 +14,7 @@ export async function storyLoader(path) {
   });
 }
 
-function minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables }) {
+function minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables, storySize }) {
   return {
     moduleStory: {
       charEquip: moduleStory.charEquip,
@@ -31,22 +31,24 @@ function minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyRevie
     storyReview: Object.fromEntries(Object.values(storyReview).map(({ id, name, entryType, infoUnlockDatas }) =>
       ([ id, { id, name, entryType, infoUnlockDatas, } ]))
     ),
-    storyVariables
+    storyVariables,
+    storySize,
   };
 }
 
 export async function loadStoryData() {
   console.log('Loading stories metadata...');
   try {
-    const [moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables] = await Promise.all([
+    const [moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables, storySize] = await Promise.all([
       fetchData(`${DataSrcEn}/gamedata/excel/uniequip_table.json`),
       fetchData(`${DataSrcEn}/gamedata/excel/story_table.json`),
       fetchData(`${DataSrcEn}/gamedata/excel/story_review_meta_table.json`),
       fetchData(`${DataSrcEn}/gamedata/excel/story_review_table.json`),
       fetchData(`${DataSrcEn}/gamedata/story/story_variables.json`),
+      import('../data/reading-time.json').then(data => data.default),
     ]);
 
-    const storyData = minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables });
+    const storyData = minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables, storySize });
     console.log('Story data loaded', storyData);
 
     return storyData;
@@ -72,28 +74,6 @@ export async function fetchOperators({ source = DataSrcCn } = {}) {
       parseJson(await fetch(`${DataSrcCn}/gamedata/excel/skin_table.json`)),
       parseJson(await fetch(`${DataSrcEn}/gamedata/excel/charword_table.json`)),
     ]);
-
-    // let patch = await parseJson(await fetch(`${DataSrcEn}/gamedata/excel/char_patch_table.json`));
-    //     updateJSON(json, patch.patchChars);
-
-    // Object.keys(json).forEach((op) => {
-    //     json[op].profession =
-    //         ClassNames[json[op].profession] || json[op].profession;
-    //     // rename amiya forms to prevent conflict
-    //     if (op.includes("_amiya"))
-    //         json[op].name = `${json[op].name} (${json[op].profession})`;
-    // });
-    // for (var key in json) {
-    //         charIdMap[json[key].name] = key;
-    //         if (json[key].appellation) charIdMap[json[key].appellation] = key;
-    //         json[key].charId = key;
-    //         // remap "rarity" field (AK 2.0)
-    //         json[key].rarity = RARITY_MAP[json[key].rarity] ?? json[key].rarity;
-    // }
-    // for (const [k, v] of Object.entries(CN_ID_MAP)) {
-    //     if (!(k in charIdMap)) charIdMap[k] = charIdMap[v];
-    // }
-
 
     console.log('Operators loaded:', json, skinsFull.charSkins, skinsEn.charSkins, quotes.charWords);
 
