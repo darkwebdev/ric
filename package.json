@@ -35,6 +35,7 @@
     "clean": "rm -rf dist",
     "dev": "vite",
     "test": "vitest run",
+    "fetch-remote": "node ./scripts/fetch-remote-data.js",
     "lint": "eslint src",
     "build": "vite build",
     "storybook": "storybook dev -p 6006",

@@ -71,3 +71,6 @@ jspm_packages/
 
 *storybook.log
 dist/
+.DS_Store
+venv/
+tmp/

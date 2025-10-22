@@ -1,9 +1,29 @@
 import { DataSrcCn, DataSrcEn, Rarities } from './const.js';
 import { backgroundSrc, charImageSrc, imageSrc } from './asset-sources';
 
+// Local cache base (committed by daily GitHub Action)
+const LocalDataBase = '/data/remote';
+
+function localizeUrl(url) {
+  if (url.startsWith(DataSrcEn)) return `${LocalDataBase}/en_US${url.slice(DataSrcEn.length)}`;
+  if (url.startsWith(DataSrcCn)) return `${LocalDataBase}/zh_CN${url.slice(DataSrcCn.length)}`;
+  return url;
+}
+
+async function fetchPreferLocal(url, opts) {
+  const localUrl = localizeUrl(url);
+  try {
+    const res = await fetch(localUrl, opts);
+    if (res && res.ok) return res;
+  } catch (e) {
+    // ignore and fallback
+  }
+  return fetch(url, opts);
+}
+
 export async function storyLoader(path) {
   console.log('Loading story text...', path);
-  const res = await fetch(`${DataSrcEn}/gamedata/story/${path}.txt`);
+  const res = await fetchPreferLocal(`${DataSrcEn}/gamedata/story/${path}.txt`);
   console.log('Story text loaded.');
 
   if (!res.ok) return null;
@@ -68,11 +88,11 @@ export async function fetchOperators({ source = DataSrcCn } = {}) {
     // const storyVariables = await fetchData(`${DATA_BASE[serverString]}/gamedata/story/story_variables.json`);
     // eslint-disable-next-line no-unused-vars
     const [json, /*patch,*/ skinsEn, skinsFull, quotes] = await Promise.all([
-      parseJson(await fetch(`${source}/gamedata/excel/character_table.json`)),
+      parseJson(await fetchPreferLocal(`${source}/gamedata/excel/character_table.json`)),
       // parseJson(await fetch(`${source}/gamedata/excel/char_patch_table.json`)),
-      parseJson(await fetch(`${DataSrcEn}/gamedata/excel/skin_table.json`)),
-      parseJson(await fetch(`${DataSrcCn}/gamedata/excel/skin_table.json`)),
-      parseJson(await fetch(`${DataSrcEn}/gamedata/excel/charword_table.json`)),
+      parseJson(await fetchPreferLocal(`${DataSrcEn}/gamedata/excel/skin_table.json`)),
+      parseJson(await fetchPreferLocal(`${DataSrcCn}/gamedata/excel/skin_table.json`)),
+      parseJson(await fetchPreferLocal(`${DataSrcEn}/gamedata/excel/charword_table.json`)),
     ]);
 
     console.log('Operators loaded:', json, skinsFull.charSkins, skinsEn.charSkins, quotes.charWords);
@@ -138,7 +158,7 @@ function updateJSON(dest, src, existingOnly = false) {
 
 export async function loadStoryText(key) {
   console.log('Loading story text...');
-  const res = await fetch(`${DataSrcEn}/gamedata/story/${key}.txt`);
+  const res = await fetchPreferLocal(`${DataSrcEn}/gamedata/story/${key}.txt`);
   console.log('Story text loaded.');
 
   return res.ok ? res.text() : null;
@@ -146,7 +166,7 @@ export async function loadStoryText(key) {
 
 
 async function fetchData(url) {
-  const res = await fetch(url);
+  const res = await fetchPreferLocal(url);
   return res.json();
 }
 
