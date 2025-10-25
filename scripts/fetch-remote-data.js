@@ -71,8 +71,10 @@ function download(url, dest) {
           }
         }
       }
-      const stories = Array.from(storyTxts).slice(0, 100); // limit to first 100 to avoid huge downloads
+      const stories = Array.from(storyTxts);
+      let downloadCount = 0;
       for (const story of stories) {
+        if (downloadCount >= 100) break; // limit to 100 downloads
         const src = `${DataSrcEn}/gamedata/story/${story}.txt`;
         const dst = path.join(outDir, 'en_US/gamedata/story', `${story}.txt`);
         if (fs.existsSync(dst)) {
@@ -82,6 +84,7 @@ function download(url, dest) {
         try {
           console.log('Downloading story', story);
           await download(src, dst);
+          downloadCount++;
         } catch (e) {
           console.warn('Failed to download story', story, e.message);
         }
