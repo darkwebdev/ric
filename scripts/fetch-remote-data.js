@@ -57,7 +57,36 @@ function download(url, dest) {
       await download(src, dst);
     }
 
-    // Skipping .txt story files for now to avoid large downloads and repo bloat.
+    // Download story .txt files based on story_review_table.json
+    const storyReviewPath = path.join(outDir, 'en_US/gamedata/excel/story_review_table.json');
+    if (fs.existsSync(storyReviewPath)) {
+      const storyReview = JSON.parse(fs.readFileSync(storyReviewPath, 'utf8'));
+      const storyTxts = new Set();
+      for (const act of Object.values(storyReview)) {
+        if (act.infoUnlockDatas) {
+          for (const unlock of act.infoUnlockDatas) {
+            if (unlock.storyTxt && (unlock.storyTxt.startsWith('activities/') || unlock.storyTxt.startsWith('obt/'))) {
+              storyTxts.add(unlock.storyTxt);
+            }
+          }
+        }
+      }
+      const stories = Array.from(storyTxts).slice(0, 100); // limit to first 100 to avoid huge downloads
+      for (const story of stories) {
+        const src = `${DataSrcEn}/gamedata/story/${story}.txt`;
+        const dst = path.join(outDir, 'en_US/gamedata/story', `${story}.txt`);
+        if (fs.existsSync(dst)) {
+          console.log('Story already exists, skipping', story);
+          continue;
+        }
+        try {
+          console.log('Downloading story', story);
+          await download(src, dst);
+        } catch (e) {
+          console.warn('Failed to download story', story, e.message);
+        }
+      }
+    }
 
     console.log('All files downloaded.');
     process.exit(0);

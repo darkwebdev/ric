@@ -1,4 +1,8 @@
 {
+  "activities/act42side/level_act42side_st04": {
+    "words": 500,
+    "minutes": 4
+  },
   "activities/a001/level_a001_01_beg": {
     "words": 984,
     "minutes": 7
@@ -8023,94 +8027,6 @@
     "words": 6009,
     "minutes": 38
   },
-  "obt/main/level_main_15-01_beg": {
-    "words": 297,
-    "minutes": 3
-  },
-  "obt/main/level_main_15-01_end": {
-    "words": 3414,
-    "minutes": 24
-  },
-  "obt/main/level_main_15-02_beg": {
-    "words": 4151,
-    "minutes": 29
-  },
-  "obt/main/level_main_15-03_end": {
-    "words": 3505,
-    "minutes": 22
-  },
-  "obt/main/level_main_15-04_beg": {
-    "words": 2556,
-    "minutes": 17
-  },
-  "obt/main/level_main_15-05_end": {
-    "words": 1322,
-    "minutes": 9
-  },
-  "obt/main/level_main_15-06_beg": {
-    "words": 2241,
-    "minutes": 15
-  },
-  "obt/main/level_main_15-06_end": {
-    "words": 2296,
-    "minutes": 16
-  },
-  "obt/main/level_main_15-07_beg": {
-    "words": 1574,
-    "minutes": 12
-  },
-  "obt/main/level_main_15-08_end": {
-    "words": 2407,
-    "minutes": 18
-  },
-  "obt/main/level_main_15-10_beg": {
-    "words": 1174,
-    "minutes": 10
-  },
-  "obt/main/level_main_15-10_end": {
-    "words": 2194,
-    "minutes": 16
-  },
-  "obt/main/level_main_15-11_beg": {
-    "words": 1961,
-    "minutes": 16
-  },
-  "obt/main/level_main_15-12_end": {
-    "words": 2572,
-    "minutes": 20
-  },
-  "obt/main/level_main_15-13_beg": {
-    "words": 1368,
-    "minutes": 10
-  },
-  "obt/main/level_main_15-14_end": {
-    "words": 2047,
-    "minutes": 18
-  },
-  "obt/main/level_main_15-15_beg": {
-    "words": 2153,
-    "minutes": 16
-  },
-  "obt/main/level_main_15-15_end": {
-    "words": 1158,
-    "minutes": 11
-  },
-  "obt/main/level_main_15-15_end_variation01": {
-    "words": 1580,
-    "minutes": 13
-  },
-  "obt/main/level_main_15-15_end_variation02": {
-    "words": 1779,
-    "minutes": 14
-  },
-  "obt/main/level_main_15-16_beg": {
-    "words": 1413,
-    "minutes": 14
-  },
-  "obt/main/level_main_15-18_end": {
-    "words": 4120,
-    "minutes": 30
-  },
   "obt/main/level_main_9_chapter_recap": {
     "words": 1457,
     "minutes": 20
@@ -8275,18 +8191,6 @@
     "words": 5777,
     "minutes": 38
   },
-  "obt/main/level_st_15-01": {
-    "words": 1869,
-    "minutes": 16
-  },
-  "obt/main/level_st_15-02": {
-    "words": 2238,
-    "minutes": 21
-  },
-  "obt/main/level_st_15-03": {
-    "words": 2116,
-    "minutes": 15
-  },
   "obt/main/main_10_zone_enter": {
     "words": 0,
     "minutes": 1
@@ -8310,10 +8214,6 @@
   "obt/memory/story_acdrop_1_1": {
     "words": 3421,
     "minutes": 23
-  },
-  "obt/memory/story_adnach_1_1": {
-    "words": 3161,
-    "minutes": 19
   },
   "obt/memory/story_aglina_1_1": {
     "words": 2258,
@@ -8534,10 +8434,6 @@
   "obt/memory/story_catap_2_1": {
     "words": 2865,
     "minutes": 18
-  },
-  "obt/memory/story_ccheal_1_1": {
-    "words": 2431,
-    "minutes": 15
   },
   "obt/memory/story_cello_1_1": {
     "words": 3111,
@@ -8939,10 +8835,6 @@
     "words": 2905,
     "minutes": 17
   },
-  "obt/memory/story_kalts_1_1": {
-    "words": 3230,
-    "minutes": 19
-  },
   "obt/memory/story_kazema_1_1": {
     "words": 3064,
     "minutes": 20
@@ -9250,10 +9142,6 @@
   "obt/memory/story_rfrost_1_1": {
     "words": 2146,
     "minutes": 13
-  },
-  "obt/memory/story_robin_1_1": {
-    "words": 3127,
-    "minutes": 20
   },
   "obt/memory/story_robrta_1_1": {
     "words": 2478,
@@ -11123,58 +11011,6 @@
     "words": 310,
     "minutes": 5
   },
-  "obt/tutorial/level/main_15-17_a": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/level/main_15-17_b": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/level/main_15-17_c": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/level/main_15-17_d": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/level/main_15-17_e": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/level/main_15-17_f": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/level/main_15-17_g": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/level/main_15-17_h": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/level/main_15-17_i": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/level/main_15-17_j": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/level/main_15-17_k": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/level/main_15-17_l": {
-    "words": 13,
-    "minutes": 2
-  },
-  "obt/tutorial/level/main_15-17_m": {
-    "words": 20,
-    "minutes": 2
-  },
   "obt/tutorial/level/main_15-1_a": {
     "words": 0,
     "minutes": 1
@@ -11186,10 +11022,6 @@
   "obt/tutorial/level/main_15-1_c": {
     "words": 0,
     "minutes": 1
-  },
-  "obt/tutorial/level/main_15_01_avg": {
-    "words": 143,
-    "minutes": 2
   },
   "obt/tutorial/level/sub_02-03": {
     "words": 0,
@@ -11577,50 +11409,6 @@
   },
   "obt/tutorial/training/training_25_d": {
     "words": 38,
-    "minutes": 1
-  },
-  "obt/tutorial/training/training_26_a": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/training/training_26_b": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/training/training_26_c": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/training/training_26_d": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/training/training_26_e": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/training/training_26_f": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/training/training_26_g": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/training/training_26_h": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/training/training_26_i": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/training/training_26_j": {
-    "words": 0,
-    "minutes": 1
-  },
-  "obt/tutorial/training/training_26_k": {
-    "words": 0,
     "minutes": 1
   },
   "obt/tutorial/training/training_2_a": {
