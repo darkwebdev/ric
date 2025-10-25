@@ -7,24 +7,24 @@ const root = path.resolve(__dirname, '..');
 // Serve these files statically by placing them under public
 const outDir = path.join(root, 'public', 'data', 'remote');
 
-const DataSrc = 'https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master';
-const DataSrcYostar = 'https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main';
+const DataSrcCn = 'https://raw.githubusercontent.com/ArknightsAssets/ArknightsGameData/master/cn';
+const DataSrcEn = 'https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/en';
 const urls = [
   // Prefetch core story metadata and tables
-  { src: `${DataSrcYostar}/en_US/gamedata/excel/uniequip_table.json`, dest: 'en_US/gamedata/excel/uniequip_table.json' },
-  { src: `${DataSrcYostar}/en_US/gamedata/excel/story_table.json`, dest: 'en_US/gamedata/excel/story_table.json' },
-  { src: `${DataSrcYostar}/en_US/gamedata/excel/story_review_meta_table.json`, dest: 'en_US/gamedata/excel/story_review_meta_table.json' },
-  { src: `${DataSrcYostar}/en_US/gamedata/excel/story_review_table.json`, dest: 'en_US/gamedata/excel/story_review_table.json' },
-  { src: `${DataSrcYostar}/en_US/gamedata/story/story_variables.json`, dest: 'en_US/gamedata/story/story_variables.json' },
-  { src: `${DataSrcYostar}/en_US/gamedata/excel/uniequip_table.json`, dest: 'en_US/gamedata/excel/uniequip_table.json' },
-  { src: `${DataSrcYostar}/en_US/gamedata/excel/story_table.json`, dest: 'en_US/gamedata/excel/story_table.json' },
-  { src: `${DataSrcYostar}/en_US/gamedata/excel/story_review_meta_table.json`, dest: 'en_US/gamedata/excel/story_review_meta_table.json' },
-  { src: `${DataSrcYostar}/en_US/gamedata/excel/story_review_table.json`, dest: 'en_US/gamedata/excel/story_review_table.json' },
-  { src: `${DataSrcYostar}/en_US/gamedata/story/story_variables.json`, dest: 'en_US/gamedata/story/story_variables.json' },
-  { src: `${DataSrcYostar}/en_US/gamedata/excel/skin_table.json`, dest: 'en_US/gamedata/excel/skin_table.json' },
-  { src: `${DataSrc}/zh_CN/gamedata/excel/skin_table.json`, dest: 'zh_CN/gamedata/excel/skin_table.json' },
-  { src: `${DataSrcYostar}/en_US/gamedata/excel/charword_table.json`, dest: 'en_US/gamedata/excel/charword_table.json' },
-  { src: `${DataSrc}/zh_CN/gamedata/excel/character_table.json`, dest: 'zh_CN/gamedata/excel/character_table.json' },
+  { src: `${DataSrcEn}/gamedata/excel/uniequip_table.json`, dest: 'en_US/gamedata/excel/uniequip_table.json' },
+  { src: `${DataSrcEn}/gamedata/excel/story_table.json`, dest: 'en_US/gamedata/excel/story_table.json' },
+  { src: `${DataSrcEn}/gamedata/excel/story_review_meta_table.json`, dest: 'en_US/gamedata/excel/story_review_meta_table.json' },
+  { src: `${DataSrcEn}/gamedata/excel/story_review_table.json`, dest: 'en_US/gamedata/excel/story_review_table.json' },
+  { src: `${DataSrcEn}/gamedata/story/story_variables.json`, dest: 'en_US/gamedata/story/story_variables.json' },
+  { src: `${DataSrcEn}/gamedata/excel/uniequip_table.json`, dest: 'en_US/gamedata/excel/uniequip_table.json' },
+  { src: `${DataSrcEn}/gamedata/excel/story_table.json`, dest: 'en_US/gamedata/excel/story_table.json' },
+  { src: `${DataSrcEn}/gamedata/excel/story_review_meta_table.json`, dest: 'en_US/gamedata/excel/story_review_meta_table.json' },
+  { src: `${DataSrcEn}/gamedata/excel/story_review_table.json`, dest: 'en_US/gamedata/excel/story_review_table.json' },
+  { src: `${DataSrcEn}/gamedata/story/story_variables.json`, dest: 'en_US/gamedata/story/story_variables.json' },
+  { src: `${DataSrcEn}/gamedata/excel/skin_table.json`, dest: 'en_US/gamedata/excel/skin_table.json' },
+  { src: `${DataSrcCn}/gamedata/excel/skin_table.json`, dest: 'zh_CN/gamedata/excel/skin_table.json' },
+  { src: `${DataSrcEn}/gamedata/excel/charword_table.json`, dest: 'en_US/gamedata/excel/charword_table.json' },
+  { src: `${DataSrcCn}/gamedata/excel/character_table.json`, dest: 'zh_CN/gamedata/excel/character_table.json' },
 ];
 
 function mkdirp(p) {

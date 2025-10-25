@@ -51,10 +51,9 @@ export const TalkTitles = [
     'Talk 3',
 ];
 
-const DataSrc = 'https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master';
-const DataSrcYostar = 'https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main';
-export const DataSrcCn = `${DataSrc}/zh_CN`;
-export const DataSrcEn = `${DataSrcYostar}/en_US`;
+const DataSrc = 'https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master';
+export const DataSrcCn = `${DataSrc}/cn`;
+export const DataSrcEn = `${DataSrc}/en`;
 
 export const AssetSrc = {
     akgcc: 'https://raw.githubusercontent.com/akgcc/arkdata/main/assets',

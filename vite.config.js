@@ -18,6 +18,9 @@ export default defineConfig(async () => {
                 ]
             }),
         ],
+        server: {
+            port: 5183
+        },
         test: {
             /* for example, use global to avoid globals imports (describe, test, expect): */
             globals: true,

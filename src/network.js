@@ -2,7 +2,8 @@ import { DataSrcCn, DataSrcEn, Rarities } from './const.js';
 import { backgroundSrc, charImageSrc, imageSrc } from './asset-sources';
 
 // Local cache base (committed by daily GitHub Action)
-const LocalDataBase = '/data/remote';
+const appBase = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.BASE_URL) ? import.meta.env.BASE_URL : '/';
+const LocalDataBase = `${appBase}data/remote`;
 
 function localizeUrl(url) {
   if (url.startsWith(DataSrcEn)) return `${LocalDataBase}/en_US${url.slice(DataSrcEn.length)}`;
