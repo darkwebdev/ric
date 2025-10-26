@@ -5835,6 +5835,102 @@
     "words": 0,
     "minutes": 1
   },
+  "activities/act42side/level_act42side_01_beg": {
+    "words": 1695,
+    "minutes": 12
+  },
+  "activities/act42side/level_act42side_01_end": {
+    "words": 2155,
+    "minutes": 15
+  },
+  "activities/act42side/level_act42side_02_beg": {
+    "words": 2377,
+    "minutes": 15
+  },
+  "activities/act42side/level_act42side_02_end": {
+    "words": 3375,
+    "minutes": 22
+  },
+  "activities/act42side/level_act42side_03_beg": {
+    "words": 2278,
+    "minutes": 17
+  },
+  "activities/act42side/level_act42side_03_end": {
+    "words": 1837,
+    "minutes": 13
+  },
+  "activities/act42side/level_act42side_04_beg": {
+    "words": 1736,
+    "minutes": 13
+  },
+  "activities/act42side/level_act42side_04_end": {
+    "words": 2698,
+    "minutes": 19
+  },
+  "activities/act42side/level_act42side_05_beg": {
+    "words": 1897,
+    "minutes": 13
+  },
+  "activities/act42side/level_act42side_05_end": {
+    "words": 1522,
+    "minutes": 11
+  },
+  "activities/act42side/level_act42side_06_beg": {
+    "words": 2617,
+    "minutes": 19
+  },
+  "activities/act42side/level_act42side_06_end": {
+    "words": 2498,
+    "minutes": 16
+  },
+  "activities/act42side/level_act42side_07_beg": {
+    "words": 1692,
+    "minutes": 11
+  },
+  "activities/act42side/level_act42side_07_end": {
+    "words": 2538,
+    "minutes": 16
+  },
+  "activities/act42side/level_act42side_08_beg": {
+    "words": 4642,
+    "minutes": 31
+  },
+  "activities/act42side/level_act42side_08_end": {
+    "words": 4464,
+    "minutes": 28
+  },
+  "activities/act42side/level_act42side_09_beg": {
+    "words": 4409,
+    "minutes": 29
+  },
+  "activities/act42side/level_act42side_09_end": {
+    "words": 2286,
+    "minutes": 16
+  },
+  "activities/act42side/level_act42side_10_beg": {
+    "words": 4508,
+    "minutes": 28
+  },
+  "activities/act42side/level_act42side_10_end": {
+    "words": 7196,
+    "minutes": 46
+  },
+  "activities/act42side/level_act42side_st01": {
+    "words": 2544,
+    "minutes": 19
+  },
+  "activities/act42side/level_act42side_st02": {
+    "words": 2830,
+    "minutes": 22
+  },
+  "activities/act42side/level_act42side_st03": {
+    "words": 3438,
+    "minutes": 24
+  },
+  "activities/act42side/level_act42side_st04": {
+    "words": 3085,
+    "minutes": 20
+  },
   "activities/act4d0/level_act4d0_st01": {
     "words": 3869,
     "minutes": 23
@@ -8023,6 +8119,94 @@
     "words": 6009,
     "minutes": 38
   },
+  "obt/main/level_main_15-01_beg": {
+    "words": 297,
+    "minutes": 3
+  },
+  "obt/main/level_main_15-01_end": {
+    "words": 3414,
+    "minutes": 24
+  },
+  "obt/main/level_main_15-02_beg": {
+    "words": 4151,
+    "minutes": 29
+  },
+  "obt/main/level_main_15-03_end": {
+    "words": 3505,
+    "minutes": 22
+  },
+  "obt/main/level_main_15-04_beg": {
+    "words": 2556,
+    "minutes": 17
+  },
+  "obt/main/level_main_15-05_end": {
+    "words": 1322,
+    "minutes": 9
+  },
+  "obt/main/level_main_15-06_beg": {
+    "words": 2241,
+    "minutes": 15
+  },
+  "obt/main/level_main_15-06_end": {
+    "words": 2296,
+    "minutes": 16
+  },
+  "obt/main/level_main_15-07_beg": {
+    "words": 1574,
+    "minutes": 12
+  },
+  "obt/main/level_main_15-08_end": {
+    "words": 2407,
+    "minutes": 18
+  },
+  "obt/main/level_main_15-10_beg": {
+    "words": 1174,
+    "minutes": 10
+  },
+  "obt/main/level_main_15-10_end": {
+    "words": 2194,
+    "minutes": 16
+  },
+  "obt/main/level_main_15-11_beg": {
+    "words": 1961,
+    "minutes": 16
+  },
+  "obt/main/level_main_15-12_end": {
+    "words": 2572,
+    "minutes": 20
+  },
+  "obt/main/level_main_15-13_beg": {
+    "words": 1368,
+    "minutes": 10
+  },
+  "obt/main/level_main_15-14_end": {
+    "words": 2048,
+    "minutes": 18
+  },
+  "obt/main/level_main_15-15_beg": {
+    "words": 2153,
+    "minutes": 16
+  },
+  "obt/main/level_main_15-15_end": {
+    "words": 1158,
+    "minutes": 11
+  },
+  "obt/main/level_main_15-15_end_variation01": {
+    "words": 1580,
+    "minutes": 13
+  },
+  "obt/main/level_main_15-15_end_variation02": {
+    "words": 1779,
+    "minutes": 14
+  },
+  "obt/main/level_main_15-16_beg": {
+    "words": 1413,
+    "minutes": 14
+  },
+  "obt/main/level_main_15-18_end": {
+    "words": 4120,
+    "minutes": 30
+  },
   "obt/main/level_main_9_chapter_recap": {
     "words": 1457,
     "minutes": 20
@@ -8187,6 +8371,18 @@
     "words": 5777,
     "minutes": 38
   },
+  "obt/main/level_st_15-01": {
+    "words": 1869,
+    "minutes": 16
+  },
+  "obt/main/level_st_15-02": {
+    "words": 2238,
+    "minutes": 21
+  },
+  "obt/main/level_st_15-03": {
+    "words": 2116,
+    "minutes": 15
+  },
   "obt/main/main_10_zone_enter": {
     "words": 0,
     "minutes": 1
@@ -8211,6 +8407,10 @@
     "words": 3421,
     "minutes": 23
   },
+  "obt/memory/story_adnach_1_1": {
+    "words": 3161,
+    "minutes": 19
+  },
   "obt/memory/story_aglina_1_1": {
     "words": 2258,
     "minutes": 13
@@ -8226,6 +8426,10 @@
   "obt/memory/story_akafyu_1_1": {
     "words": 2499,
     "minutes": 15
+  },
+  "obt/memory/story_alanna_1_1": {
+    "words": 3356,
+    "minutes": 20
   },
   "obt/memory/story_almond_1_1": {
     "words": 2404,
@@ -8391,6 +8595,10 @@
     "words": 1300,
     "minutes": 9
   },
+  "obt/memory/story_broca_2_1": {
+    "words": 2092,
+    "minutes": 14
+  },
   "obt/memory/story_brownb_1_1": {
     "words": 2259,
     "minutes": 15
@@ -8430,6 +8638,10 @@
   "obt/memory/story_catap_2_1": {
     "words": 2865,
     "minutes": 18
+  },
+  "obt/memory/story_ccheal_1_1": {
+    "words": 2431,
+    "minutes": 15
   },
   "obt/memory/story_cello_1_1": {
     "words": 3111,
@@ -8831,6 +9043,10 @@
     "words": 2905,
     "minutes": 17
   },
+  "obt/memory/story_kalts_1_1": {
+    "words": 3230,
+    "minutes": 19
+  },
   "obt/memory/story_kazema_1_1": {
     "words": 3064,
     "minutes": 20
@@ -8987,6 +9203,10 @@
     "words": 2409,
     "minutes": 14
   },
+  "obt/memory/story_mostma_2_1": {
+    "words": 2749,
+    "minutes": 17
+  },
   "obt/memory/story_mudrok_1_1": {
     "words": 3113,
     "minutes": 19
@@ -9026,6 +9246,10 @@
   "obt/memory/story_nothin_1_1": {
     "words": 3769,
     "minutes": 22
+  },
+  "obt/memory/story_nowell_1_1": {
+    "words": 2748,
+    "minutes": 16
   },
   "obt/memory/story_orchid_1_1": {
     "words": 2752,
@@ -9138,6 +9362,10 @@
   "obt/memory/story_rfrost_1_1": {
     "words": 2146,
     "minutes": 13
+  },
+  "obt/memory/story_robin_1_1": {
+    "words": 3127,
+    "minutes": 20
   },
   "obt/memory/story_robrta_1_1": {
     "words": 2478,
@@ -9282,6 +9510,10 @@
   "obt/memory/story_sora_2_1": {
     "words": 3779,
     "minutes": 22
+  },
+  "obt/memory/story_spikes_1_1": {
+    "words": 3217,
+    "minutes": 21
   },
   "obt/memory/story_spot_1_1": {
     "words": 3240,
