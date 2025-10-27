@@ -5,7 +5,7 @@ import {
     operationsByStoryId,
 } from '../../data-utils.js';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
-import { loadStoryData } from '../../network.js';
+import { loadStoryData, checkForDataUpdates } from '../../network.js';
 import { StoryTypeEntry } from './StoryTypeEntry.jsx';
 import { StoryEntry } from './StoryEntry.jsx';
 import { OperationEntry } from './OperationEntry.jsx';
@@ -17,12 +17,23 @@ export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
     const [storyTypeIds, setStoryTypeIds] = useState();
     const [storyId, setStoryId] = useState();
     const [storedStoryData, storeStoryData] = useLocalStorage('storyData');
+    const [forceReload, setForceReload] = useState(0); // Used to force re-render after data update
 
     useEffect(() => {
         (async () => {
+            // Check for data updates first
+            const dataUpdated = await checkForDataUpdates();
+            
+            if (dataUpdated) {
+                // Force a re-render by updating the forceReload state
+                // This will cause the useLocalStorage hook to re-read from localStorage
+                setForceReload(prev => prev + 1);
+                return; // Exit early, the effect will run again due to forceReload change
+            }
+            
             const data = storedStoryData || await loadStoryData();
             if (data) {
-                console.log('Metadata loaded', storedStoryData ? 'from local storage.' : 'from network.');
+                console.log('Metadata loaded', storedStoryData ? 'from local storage.' : 'from network.', dataUpdated ? '(updated)' : '');
                 setStoryData(data);
                 if (!storedStoryData) {
                     storeStoryData(data);
@@ -34,7 +45,7 @@ export const Menu = ({ opened, onLoad = () => {}, onOpen = () => {} }) => {
             }
             onLoad();
         })()
-    }, []);
+    }, [storedStoryData, storeStoryData, forceReload, onLoad]);
 
     const updateStoryType = type => {
         onOpen();

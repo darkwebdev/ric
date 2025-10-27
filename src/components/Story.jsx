@@ -11,6 +11,7 @@ import { StorySlider } from './StorySlider';
 import { useMusic } from '../hooks/useMusic';
 import { useTraffic } from '../hooks/useTraffic';
 import { useTitle } from '../hooks/useTitle';
+import { minutesToHoursMinutes, calculateReadingTimeLeft } from '../time';
 
 export const Story = () => {
     const [match, params] = useRoute("*/story/*");
@@ -39,6 +40,8 @@ export const Story = () => {
     const storyTag = storyOp?.avgTag?.replace(' Operation', '');
     const index = datas?.findIndex(op => op.storyTxt === path);
     const nextOp = index >= 0 ? datas[index + 1] : undefined
+    const readingTime = storyData?.storySize?.[path];
+    const readingTimeLeft = calculateReadingTimeLeft(readingProgress[path] || 0, path, scenes, readingTime);
 
     if (storyName && storyOp) {
         useTitle(`${storyName}: ${storyOp.storyName} [Rhodes Island Chronicles]`);
@@ -130,6 +133,7 @@ export const Story = () => {
         <h1 className="story-title">
             {storyName}
             {storyOp && <span className="story-op-title">{storyOp.storyName}{storyTag ? `: ${storyTag}` : ''}</span>}
+            {readingTime && <span className="reading-time"> [{minutesToHoursMinutes(readingTimeLeft)} / {minutesToHoursMinutes(readingTime.minutes)}]</span>}
         </h1>
 
         <StorySlider

@@ -1,5 +1,6 @@
 import { DataSrcCn, DataSrcEn, Rarities } from './const.js';
 import { backgroundSrc, charImageSrc, imageSrc } from './asset-sources';
+import readingTimeData from '../data/reading-time.json';
 
 // Local cache base (committed by daily GitHub Action)
 const appBase = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.BASE_URL) ? import.meta.env.BASE_URL : '/';
@@ -35,6 +36,34 @@ export async function storyLoader(path) {
   });
 }
 
+// Check if remote data has been updated and clear localStorage if needed
+export async function checkForDataUpdates() {
+  try {
+    const versionUrl = `${LocalDataBase}/version.json`;
+    const res = await fetch(versionUrl);
+    
+    if (!res.ok) {
+      console.log('No version file found, skipping update check');
+      return false;
+    }
+    
+    const remoteVersion = await res.json();
+    const storedVersion = localStorage.getItem('storyDataVersion');
+    
+    if (!storedVersion || parseInt(storedVersion) < remoteVersion.version) {
+      console.log('New story data available, clearing localStorage cache');
+      localStorage.removeItem('storyData');
+      localStorage.setItem('storyDataVersion', remoteVersion.version.toString());
+      return true; // Data was updated
+    }
+    
+    return false; // No update needed
+  } catch (e) {
+    console.log('Failed to check for data updates:', e);
+    return false;
+  }
+}
+
 function minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables, storySize }) {
   return {
     moduleStory: {
@@ -60,16 +89,15 @@ function minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyRevie
 export async function loadStoryData() {
   console.log('Loading stories metadata...');
   try {
-    const [moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables, storySize] = await Promise.all([
+    const [moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables] = await Promise.all([
       fetchData(`${DataSrcEn}/gamedata/excel/uniequip_table.json`),
       fetchData(`${DataSrcEn}/gamedata/excel/story_table.json`),
       fetchData(`${DataSrcEn}/gamedata/excel/story_review_meta_table.json`),
       fetchData(`${DataSrcEn}/gamedata/excel/story_review_table.json`),
       fetchData(`${DataSrcEn}/gamedata/story/story_variables.json`),
-      import('../data/reading-time.json').then(data => data.default),
     ]);
 
-    const storyData = minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables, storySize });
+    const storyData = minimalStoryData({ moduleStory, storyTable, storyReviewMeta, storyReview, storyVariables, storySize: readingTimeData });
     console.log('Story data loaded', storyData);
 
     return storyData;

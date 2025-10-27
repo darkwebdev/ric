@@ -21,7 +21,7 @@ jobs:
         run: corepack enable && corepack prepare yarn@1 --activate && yarn install --immutable
 
       - name: Run script to generate JSON
-        run: node scripts/reading-time.js public/data/remote/en_US/gamedata/story
+        run: yarn reading-time
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5

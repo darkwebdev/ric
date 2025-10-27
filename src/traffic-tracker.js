@@ -38,7 +38,7 @@ const trackMediaElement = el => {
                 countedUrls.add(url);
                 console.log('Tracking media element', url?.split('/')?.slice(-1)[0]);
             }
-        } catch {}
+        } catch { /* ignore */ }
     };
     el.addEventListener('loadedmetadata', handler, { once: true });
     el.addEventListener('load', handler, { once: true });

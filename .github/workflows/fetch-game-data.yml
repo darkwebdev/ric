@@ -19,7 +19,7 @@ jobs:
       - name: Install deps
         run: yarn install --frozen-lockfile
       - name: Run fetch script
-        run: node ./scripts/fetch-remote-data.js
+        run: node ./scripts/fetch-game-data.js
       - name: Commit changes
         run: |
           git config user.name github-actions
