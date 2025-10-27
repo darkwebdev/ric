@@ -124,7 +124,7 @@ export async function fetchOperators({ source = DataSrcCn } = {}) {
       parseJson(await fetchPreferLocal(`${DataSrcEn}/gamedata/excel/charword_table.json`)),
     ]);
 
-    console.log('Operators loaded:', json, skinsFull.charSkins, skinsEn.charSkins, quotes.charWords);
+    // console.log('Operators loaded:', json, skinsFull.charSkins, skinsEn.charSkins, quotes.charWords);
 
     const mergedSkins = charId =>
       Object.values(skinsFull.charSkins)
