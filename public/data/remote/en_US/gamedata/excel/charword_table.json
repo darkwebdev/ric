@@ -229023,6 +229023,1869 @@
             "placeType": "ANNIVERSARY",
             "voiceAsset": "char_4194_rmixer/CN_044"
         },
+        "char_1042_phatm2_CN_001": {
+            "charWordId": "char_1042_phatm2_CN_001",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_001",
+            "voiceText": "Doctor, I've brought myself here in the flesh. You may stop watching my videotapes.",
+            "voiceTitle": "Appointed as Assistant",
+            "voiceIndex": 1,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_PLACE",
+            "voiceAsset": "char_1042_phatm2/CN_001"
+        },
+        "char_1042_phatm2_CN_002": {
+            "charWordId": "char_1042_phatm2_CN_002",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_002",
+            "voiceText": "Ever since doing away with the suppressor on my throat, Miss.Christine has deigned to lead my vocal training, teaching me how to sing unto people's minds <i>without</i> damaging their psyches. You'd like to hear the results? Hm. You did once request a lullaby, which... isn't my forte. I'll need practice still.",
+            "voiceTitle": "Talk 1",
+            "voiceIndex": 2,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_1042_phatm2/CN_002"
+        },
+        "char_1042_phatm2_CN_003": {
+            "charWordId": "char_1042_phatm2_CN_003",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_003",
+            "voiceText": "It never struck the Crimson Troupe just how their rejection of critique, their scorn of video, laid bare their cowardice and mediocrity. I used to avoid watching anything I performed in, such was my disgust... But perhaps it's time for a better seat. I see you holding those film tickets, Doctor; you needn't hide them. I accept your invitation.",
+            "voiceTitle": "Talk 2",
+            "voiceIndex": 3,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_1042_phatm2/CN_003"
+        },
+        "char_1042_phatm2_CN_004": {
+            "charWordId": "char_1042_phatm2_CN_004",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_004",
+            "voiceText": "There are people after me. They are disenchanted and voracious, screaming in chaos, dying to find the maker for their crazèd flock. For how could Tragodia truly die? He is but one of countless graven images to fall on the steps—He and all his kind are wholes made of shards, idols formed from syncretism. As it was with that mad and lonely stage director, snobbish soul, old friend of mine.",
+            "voiceTitle": "Talk 3",
+            "voiceIndex": 4,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_1042_phatm2/CN_004"
+        },
+        "char_1042_phatm2_CN_005": {
+            "charWordId": "char_1042_phatm2_CN_005",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_005",
+            "voiceText": "I've read that evaluation report; Dr. Folinic is suggesting I exit from the frontline for the time being. I can't maintain <i>constant</i> sobriety, that much is true; after years with these hallucinations for company, they are among the few friends I can count on my fingers. But I remain your assassin... Call me, and let me see to the work I know best.",
+            "voiceTitle": "Talk after Promotion 1",
+            "voiceIndex": 5,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_1042_phatm2/CN_005"
+        },
+        "char_1042_phatm2_CN_006": {
+            "charWordId": "char_1042_phatm2_CN_006",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_006",
+            "voiceText": "Upon his followers, the troupe leader bestowed masks. Before long, I will set out in companionship to find those followers, one and all. Abandon reason and surrender to violence as they may, I will simply create, perform, and weave their dreams. Till they awaken from despair, till they can reexamine their souls in the mirror, wretched yet free, for better and for worse.",
+            "voiceTitle": "Talk after Promotion 2",
+            "voiceIndex": 6,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 2
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_1042_phatm2/CN_006"
+        },
+        "char_1042_phatm2_CN_007": {
+            "charWordId": "char_1042_phatm2_CN_007",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_007",
+            "voiceText": "Some unfamiliar operators invited me to a 'movie night' after I reboarded, and the Vampire madame from Engineering seems somewhat soft on me too. So generous is the drama, it bathes its actors in halo even outside of the silver screen. Pardon? Rhodes Island's operators trust me on principle...? Mmm. They ought to be a little warier than that.",
+            "voiceTitle": "Talk after Trust Increase 1",
+            "voiceIndex": 7,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "FAVOR",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 40
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_1042_phatm2/CN_007"
+        },
+        "char_1042_phatm2_CN_008": {
+            "charWordId": "char_1042_phatm2_CN_008",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_008",
+            "voiceText": "It is harder to resist destroying beauty than demonstrating it. It's a notion I try to stifle, but is it so simple to shake my bloodstained creative impulses? They were the one excuse in the troupe to touch on love and hate; they were a poison to tempt the audience; they are an inextricable yet unwordable part of me.",
+            "voiceTitle": "Talk after Trust Increase 2",
+            "voiceIndex": 8,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "FAVOR",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 100
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_1042_phatm2/CN_008"
+        },
+        "char_1042_phatm2_CN_009": {
+            "charWordId": "char_1042_phatm2_CN_009",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_009",
+            "voiceText": "I must recall—the conspiracy, the slaughter, the false performances. Does creation break me free of the shadows about me, or does it bring me closer to them? Perhaps my thirst, reignited by death, will one day finally catch fire and rage. Doctor... Witness it. Grasp it. Endorse or reject it. Do not stop it.",
+            "voiceTitle": "Talk after Trust Increase 3",
+            "voiceIndex": 9,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "FAVOR",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 200
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_1042_phatm2/CN_009"
+        },
+        "char_1042_phatm2_CN_010": {
+            "charWordId": "char_1042_phatm2_CN_010",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_010",
+            "voiceText": "Close your eyes. The dark of night now shrouds your consciousness; the sharp discomfort fades. So tell me, what is it you long to see... a ship, a sea of flowers, and us... That is all you want?",
+            "voiceTitle": "Idle",
+            "voiceIndex": 10,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_WAIT",
+            "voiceAsset": "char_1042_phatm2/CN_010"
+        },
+        "char_1042_phatm2_CN_011": {
+            "charWordId": "char_1042_phatm2_CN_011",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_011",
+            "voiceText": "Permit me to shirk our operators' curious gazes for a spell. The curtain has finally fallen on the longest play, and I need some time to reorganize my thoughts. I'm sure you understand, Doctor... Pardon? I have to sign the returnee ledger with my Wrankwood autograph?",
+            "voiceTitle": "Onboard",
+            "voiceIndex": 11,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "GACHA",
+            "voiceAsset": "char_1042_phatm2/CN_011"
+        },
+        "char_1042_phatm2_CN_012": {
+            "charWordId": "char_1042_phatm2_CN_012",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_012",
+            "voiceText": "Would that they could break free of the slaver that is Hate, what then would they do...",
+            "voiceTitle": "Watching Battle Record",
+            "voiceIndex": 12,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "LEVEL_UP",
+            "voiceAsset": "char_1042_phatm2/CN_012"
+        },
+        "char_1042_phatm2_CN_013": {
+            "charWordId": "char_1042_phatm2_CN_013",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_013",
+            "voiceText": "I've woken from a nightmare, yet I still am in the night. Would you journey with me even then, dear Doctor?",
+            "voiceTitle": "Promotion 1",
+            "voiceIndex": 13,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "EVOLVE_ONE",
+            "voiceAsset": "char_1042_phatm2/CN_013"
+        },
+        "char_1042_phatm2_CN_014": {
+            "charWordId": "char_1042_phatm2_CN_014",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_014",
+            "voiceText": "The symbol of a troupe member's honor was a medal bearing Tragodia—a sentencing to days with thought and taste imprisoned, a painful past I tried again and again to cut away. But you give me a present to delight... and I will cherish it.",
+            "voiceTitle": "Promotion 2",
+            "voiceIndex": 14,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 2
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "EVOLVE_TWO",
+            "voiceAsset": "char_1042_phatm2/CN_014"
+        },
+        "char_1042_phatm2_CN_017": {
+            "charWordId": "char_1042_phatm2_CN_017",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_017",
+            "voiceText": "The stage is set.",
+            "voiceTitle": "Added to Squad",
+            "voiceIndex": 17,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "SQUAD",
+            "voiceAsset": "char_1042_phatm2/CN_017"
+        },
+        "char_1042_phatm2_CN_018": {
+            "charWordId": "char_1042_phatm2_CN_018",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_018",
+            "voiceText": "To lead or to dominate—they are but a hair apart.",
+            "voiceTitle": "Appointed as Squad Leader",
+            "voiceIndex": 18,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "SQUAD_FIRST",
+            "voiceAsset": "char_1042_phatm2/CN_018"
+        },
+        "char_1042_phatm2_CN_019": {
+            "charWordId": "char_1042_phatm2_CN_019",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_019",
+            "voiceText": "Alas, the scent of strife; I know it well.",
+            "voiceTitle": "Depart",
+            "voiceIndex": 19,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_START",
+            "voiceAsset": "char_1042_phatm2/CN_019"
+        },
+        "char_1042_phatm2_CN_020": {
+            "charWordId": "char_1042_phatm2_CN_020",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_020",
+            "voiceText": "Below the stage stirs not a soul.",
+            "voiceTitle": "Begin Operation",
+            "voiceIndex": 20,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_FACE_ENEMY",
+            "voiceAsset": "char_1042_phatm2/CN_020"
+        },
+        "char_1042_phatm2_CN_021": {
+            "charWordId": "char_1042_phatm2_CN_021",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_021",
+            "voiceText": "Here I perform as me.",
+            "voiceTitle": "Selecting Operator 1",
+            "voiceIndex": 21,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SELECT",
+            "voiceAsset": "char_1042_phatm2/CN_021"
+        },
+        "char_1042_phatm2_CN_022": {
+            "charWordId": "char_1042_phatm2_CN_022",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_022",
+            "voiceText": "The apron and the wings are but the same.",
+            "voiceTitle": "Selecting Operator 2",
+            "voiceIndex": 22,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SELECT",
+            "voiceAsset": "char_1042_phatm2/CN_022"
+        },
+        "char_1042_phatm2_CN_023": {
+            "charWordId": "char_1042_phatm2_CN_023",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_023",
+            "voiceText": "I am everywhere.",
+            "voiceTitle": "Deployment 1",
+            "voiceIndex": 23,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_PLACE",
+            "voiceAsset": "char_1042_phatm2/CN_023"
+        },
+        "char_1042_phatm2_CN_024": {
+            "charWordId": "char_1042_phatm2_CN_024",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_024",
+            "voiceText": "The shadow beneath your feet is not your own.",
+            "voiceTitle": "Deployment 2",
+            "voiceIndex": 24,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_PLACE",
+            "voiceAsset": "char_1042_phatm2/CN_024"
+        },
+        "char_1042_phatm2_CN_025": {
+            "charWordId": "char_1042_phatm2_CN_025",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_025",
+            "voiceText": "The killing urge doth seize your flesh.",
+            "voiceTitle": "In Battle 1",
+            "voiceIndex": 25,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_1",
+            "voiceAsset": "char_1042_phatm2/CN_025"
+        },
+        "char_1042_phatm2_CN_026": {
+            "charWordId": "char_1042_phatm2_CN_026",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_026",
+            "voiceText": "The burning hate doth speak your minds.",
+            "voiceTitle": "In Battle 2",
+            "voiceIndex": 26,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_2",
+            "voiceAsset": "char_1042_phatm2/CN_026"
+        },
+        "char_1042_phatm2_CN_027": {
+            "charWordId": "char_1042_phatm2_CN_027",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_027",
+            "voiceText": "Resist me not; come to my song.",
+            "voiceTitle": "In Battle 3",
+            "voiceIndex": 27,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_3",
+            "voiceAsset": "char_1042_phatm2/CN_027"
+        },
+        "char_1042_phatm2_CN_028": {
+            "charWordId": "char_1042_phatm2_CN_028",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_028",
+            "voiceText": "Shh... Listen.",
+            "voiceTitle": "In Battle 4",
+            "voiceIndex": 28,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_4",
+            "voiceAsset": "char_1042_phatm2/CN_028"
+        },
+        "char_1042_phatm2_CN_029": {
+            "charWordId": "char_1042_phatm2_CN_029",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_029",
+            "voiceText": "Heeding your direction always leads so simply to ideal results. I ought to be on guard...",
+            "voiceTitle": "4-star Result",
+            "voiceIndex": 29,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "FOUR_STAR",
+            "voiceAsset": "char_1042_phatm2/CN_029"
+        },
+        "char_1042_phatm2_CN_030": {
+            "charWordId": "char_1042_phatm2_CN_030",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_030",
+            "voiceText": "Stay the curtain call... the time is not yet come.",
+            "voiceTitle": "3-star Result",
+            "voiceIndex": 30,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "THREE_STAR",
+            "voiceAsset": "char_1042_phatm2/CN_030"
+        },
+        "char_1042_phatm2_CN_031": {
+            "charWordId": "char_1042_phatm2_CN_031",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_031",
+            "voiceText": "Flee... until your nightmares catch up to you again.",
+            "voiceTitle": "Sub 3-star Result",
+            "voiceIndex": 31,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "TWO_STAR",
+            "voiceAsset": "char_1042_phatm2/CN_031"
+        },
+        "char_1042_phatm2_CN_032": {
+            "charWordId": "char_1042_phatm2_CN_032",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_032",
+            "voiceText": "If this is not the ending in your heart, then rewrite it.",
+            "voiceTitle": "Operation Failure",
+            "voiceIndex": 32,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "LOSE",
+            "voiceAsset": "char_1042_phatm2/CN_032"
+        },
+        "char_1042_phatm2_CN_033": {
+            "charWordId": "char_1042_phatm2_CN_033",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_033",
+            "voiceText": "...Could you take some of those film posters off the walls?",
+            "voiceTitle": "Assigned to Facility",
+            "voiceIndex": 33,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BUILDING_PLACE",
+            "voiceAsset": "char_1042_phatm2/CN_033"
+        },
+        "char_1042_phatm2_CN_034": {
+            "charWordId": "char_1042_phatm2_CN_034",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_034",
+            "voiceText": "Yes, this attire is too formal.",
+            "voiceTitle": "Tap",
+            "voiceIndex": 34,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BUILDING_TOUCHING",
+            "voiceAsset": "char_1042_phatm2/CN_034"
+        },
+        "char_1042_phatm2_CN_036": {
+            "charWordId": "char_1042_phatm2_CN_036",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_036",
+            "voiceText": "Once this one-act play is... roughly ready, would you like to be the first to watch?",
+            "voiceTitle": "Trust Tap",
+            "voiceIndex": 36,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BUILDING_FAVOR_BUBBLE",
+            "voiceAsset": "char_1042_phatm2/CN_036"
+        },
+        "char_1042_phatm2_CN_037": {
+            "charWordId": "char_1042_phatm2_CN_037",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_037",
+            "voiceText": "Arknights.",
+            "voiceTitle": "Title",
+            "voiceIndex": 37,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "LOADING_PANEL",
+            "voiceAsset": "char_1042_phatm2/CN_037"
+        },
+        "char_1042_phatm2_CN_038": {
+            "charWordId": "char_1042_phatm2_CN_038",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_038",
+            "voiceText": "On and on do new days come, yet shadows squat in the crevices of bygone days, so loath to leave. Doctor, be careful, please. Don't wallow too deeply in feelings of regret, in cursing fate. Accept failure, unease, fear... and then carry on walking.",
+            "voiceTitle": "New Year's blessing",
+            "voiceIndex": 38,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "NEW_YEAR",
+            "voiceAsset": "char_1042_phatm2/CN_038"
+        },
+        "char_1042_phatm2_CN_042": {
+            "charWordId": "char_1042_phatm2_CN_042",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_042",
+            "voiceText": "History and murders aside, Wrankwood is a fine vacation spot.",
+            "voiceTitle": "Greeting",
+            "voiceIndex": 42,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "GREETING",
+            "voiceAsset": "char_1042_phatm2/CN_042"
+        },
+        "char_1042_phatm2_CN_043": {
+            "charWordId": "char_1042_phatm2_CN_043",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_043",
+            "voiceText": "Pierced by Originium crystal, this larynx of mine is a ruthless weapon, and proof of how the arts intoxicate me. Now that I've finally recovered my singing technique, I wonder, would you mind if... As you wish, then. Allow me to dedicate this long-overdue ballad to you. Happy birthday, Doctor.",
+            "voiceTitle": "Birthday",
+            "voiceIndex": 43,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BIRTHDAY",
+            "voiceAsset": "char_1042_phatm2/CN_043"
+        },
+        "char_1042_phatm2_CN_044": {
+            "charWordId": "char_1042_phatm2_CN_044",
+            "wordKey": "char_1042_phatm2",
+            "charId": "char_1042_phatm2",
+            "voiceId": "CN_044",
+            "voiceText": "Perhaps this sailing ship we stand on is a clear glass reflection, and Rhodes Island is but a fantasy woven by you... Yet oneiric emotions can move just as deeply as waking ones; if you believe this is all one beautiful dream, don't wake so soon.",
+            "voiceTitle": "Anniversary Celebration",
+            "voiceIndex": 44,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "ANNIVERSARY",
+            "voiceAsset": "char_1042_phatm2/CN_044"
+        },
+        "char_4191_tippi_CN_001": {
+            "charWordId": "char_4191_tippi_CN_001",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_001",
+            "voiceText": "Omigosh, a close-up chance to watch the Doctor at work. Finally, I'll get a glimpse of Rhodes Island's secrets! Huh? You just want me to tell you a scary story to keep you up? Seriously? Fine, two choices then: The Headless Burdenbeastman of the Barrens, or The Thousand-Year Curse of the Sargonian Tomb. Which one, Doc?",
+            "voiceTitle": "Appointed as Assistant",
+            "voiceIndex": 1,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_PLACE",
+            "voiceAsset": "char_4191_tippi/CN_001"
+        },
+        "char_4191_tippi_CN_002": {
+            "charWordId": "char_4191_tippi_CN_002",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_002",
+            "voiceText": "I never imagined I'd see two familiar faces from Wrankwood here. Nah, I'm not that interested in them personally, just curious on how they ended up on a pharma company's landship. They must have some kinda angle here!",
+            "voiceTitle": "Talk 1",
+            "voiceIndex": 2,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4191_tippi/CN_002"
+        },
+        "char_4191_tippi_CN_003": {
+            "charWordId": "char_4191_tippi_CN_003",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_003",
+            "voiceText": "What am I looking at, standing here on the bridge? Uh, I was just thinking how Rhodes Island's such a great place. Look, sealed spaces, high mobility, destinations unknown, everyone's using code names... doesn't it feel like a survival-slasher horror flick?!",
+            "voiceTitle": "Talk 2",
+            "voiceIndex": 3,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4191_tippi/CN_003"
+        },
+        "char_4191_tippi_CN_004": {
+            "charWordId": "char_4191_tippi_CN_004",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_004",
+            "voiceText": "I tried doodling a 'Slenderburdenbeastman' symbol on this corner of the corridor here, but no one's reacting to it when they walk by. Why? Not enough Columbians onboard? Nobody knows the legend?—Relax, I'll clean it up once my experiment's done.",
+            "voiceTitle": "Talk 3",
+            "voiceIndex": 4,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4191_tippi/CN_004"
+        },
+        "char_4191_tippi_CN_005": {
+            "charWordId": "char_4191_tippi_CN_005",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_005",
+            "voiceText": "The device on my back's made of suspension cables and hover units, and I'm the only one with anything like it in Wrankwood. I met my master who taught me how to retrofit it on a little production. He spent whole days there with a jetpack on his back. Dunno where he went after production wrapped. Omigosh, you might have seen him in Sargon?",
+            "voiceTitle": "Talk after Promotion 1",
+            "voiceIndex": 5,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4191_tippi/CN_005"
+        },
+        "char_4191_tippi_CN_006": {
+            "charWordId": "char_4191_tippi_CN_006",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_006",
+            "voiceText": "Look! Timestamp three-seventeen, see how the vapor turns the smile in the makeup mirror into a spooky face—this clip's one of my best! I tried it at home once when I was a kid. All these people came by to talk about how great my drawings were, only to get a nasty shock. I just knew it was gonna be super effective.",
+            "voiceTitle": "Talk after Promotion 2",
+            "voiceIndex": 6,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 2
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4191_tippi/CN_006"
+        },
+        "char_4191_tippi_CN_007": {
+            "charWordId": "char_4191_tippi_CN_007",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_007",
+            "voiceText": "I joined Greta's crew because she promised me artistic freedom, but that was another load of crap! Meeting Miss.Christine and Lucian gave me a lot of inspiration though. Don't you think it'd be fun to make a horror flick about a storm-cloudbeast exorcist?",
+            "voiceTitle": "Talk after Trust Increase 1",
+            "voiceIndex": 7,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "FAVOR",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 40
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4191_tippi/CN_007"
+        },
+        "char_4191_tippi_CN_008": {
+            "charWordId": "char_4191_tippi_CN_008",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_008",
+            "voiceText": "Nah, I don't butt heads with my parents that much, I just don't like how stiff their pictures are. And I didn't like the path they laid out for me either. But... I guess I've got a long way to go before the skills and resources needed to put together a real spectacular movie.",
+            "voiceTitle": "Talk after Trust Increase 2",
+            "voiceIndex": 8,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "FAVOR",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 100
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4191_tippi/CN_008"
+        },
+        "char_4191_tippi_CN_009": {
+            "charWordId": "char_4191_tippi_CN_009",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_009",
+            "voiceText": "When I was starting out, I joined some little production crews, hoping to meet interesting people, but I ended up so busy I couldn't get a convo in... These days, at least I got you to lend me an ear whenever I come back onboard, Doctor.",
+            "voiceTitle": "Talk after Trust Increase 3",
+            "voiceIndex": 9,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "FAVOR",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 200
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4191_tippi/CN_009"
+        },
+        "char_4191_tippi_CN_010": {
+            "charWordId": "char_4191_tippi_CN_010",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_010",
+            "voiceText": "Doctor? Oh, busy? Suits me, Tippi can take care of herself. Let's see if there's anything new to watch... Omigosh, an nonconformist Lungmen horror comedy... let's do this one!",
+            "voiceTitle": "Idle",
+            "voiceIndex": 10,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_WAIT",
+            "voiceAsset": "char_4191_tippi/CN_010"
+        },
+        "char_4191_tippi_CN_011": {
+            "charWordId": "char_4191_tippi_CN_011",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_011",
+            "voiceText": "Live long and prosper! Tippi 'Skyriftwalker' Booker reporting for duty! Who, Doctor? Oh, Skyriftwalker's the code name I thought up for myself! Uh, that's not how you do code names here?",
+            "voiceTitle": "Onboard",
+            "voiceIndex": 11,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "GACHA",
+            "voiceAsset": "char_4191_tippi/CN_011"
+        },
+        "char_4191_tippi_CN_012": {
+            "charWordId": "char_4191_tippi_CN_012",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_012",
+            "voiceText": "The protag gets a videotape everyday, describing her life bit by bit, until one day the video shows her killing people... don't you think that fits the vibes in this recording? No? For reals?",
+            "voiceTitle": "Watching Battle Record",
+            "voiceIndex": 12,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "LEVEL_UP",
+            "voiceAsset": "char_4191_tippi/CN_012"
+        },
+        "char_4191_tippi_CN_013": {
+            "charWordId": "char_4191_tippi_CN_013",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_013",
+            "voiceText": "That's it? Pretty mid ceremony. No test or anything like that?",
+            "voiceTitle": "Promotion 1",
+            "voiceIndex": 13,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "EVOLVE_ONE",
+            "voiceAsset": "char_4191_tippi/CN_013"
+        },
+        "char_4191_tippi_CN_014": {
+            "charWordId": "char_4191_tippi_CN_014",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_014",
+            "voiceText": "I get another promotion? Does this mean I can go some places I wasn't allowed before?",
+            "voiceTitle": "Promotion 2",
+            "voiceIndex": 14,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 2
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "EVOLVE_TWO",
+            "voiceAsset": "char_4191_tippi/CN_014"
+        },
+        "char_4191_tippi_CN_017": {
+            "charWordId": "char_4191_tippi_CN_017",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_017",
+            "voiceText": "Omigosh, this a co-op mission? I'll get along <i>real nice</i> with everybody.",
+            "voiceTitle": "Added to Squad",
+            "voiceIndex": 17,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "SQUAD",
+            "voiceAsset": "char_4191_tippi/CN_017"
+        },
+        "char_4191_tippi_CN_018": {
+            "charWordId": "char_4191_tippi_CN_018",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_018",
+            "voiceText": "Ooh, just got a new idea! Let's try it out!",
+            "voiceTitle": "Appointed as Squad Leader",
+            "voiceIndex": 18,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "SQUAD_FIRST",
+            "voiceAsset": "char_4191_tippi/CN_018"
+        },
+        "char_4191_tippi_CN_019": {
+            "charWordId": "char_4191_tippi_CN_019",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_019",
+            "voiceText": "C'mon! Let's go see the wonderful sights waiting for us out there.",
+            "voiceTitle": "Depart",
+            "voiceIndex": 19,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_START",
+            "voiceAsset": "char_4191_tippi/CN_019"
+        },
+        "char_4191_tippi_CN_020": {
+            "charWordId": "char_4191_tippi_CN_020",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_020",
+            "voiceText": "An extra special spot we got here.",
+            "voiceTitle": "Begin Operation",
+            "voiceIndex": 20,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_FACE_ENEMY",
+            "voiceAsset": "char_4191_tippi/CN_020"
+        },
+        "char_4191_tippi_CN_021": {
+            "charWordId": "char_4191_tippi_CN_021",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_021",
+            "voiceText": "Finally my turn to make a move? I'm in a good spot!",
+            "voiceTitle": "Selecting Operator 1",
+            "voiceIndex": 21,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SELECT",
+            "voiceAsset": "char_4191_tippi/CN_021"
+        },
+        "char_4191_tippi_CN_022": {
+            "charWordId": "char_4191_tippi_CN_022",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_022",
+            "voiceText": "Spray gun and hover unit ready.",
+            "voiceTitle": "Selecting Operator 2",
+            "voiceIndex": 22,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SELECT",
+            "voiceAsset": "char_4191_tippi/CN_022"
+        },
+        "char_4191_tippi_CN_023": {
+            "charWordId": "char_4191_tippi_CN_023",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_023",
+            "voiceText": "Let's set the rigging!",
+            "voiceTitle": "Deployment 1",
+            "voiceIndex": 23,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_PLACE",
+            "voiceAsset": "char_4191_tippi/CN_023"
+        },
+        "char_4191_tippi_CN_024": {
+            "charWordId": "char_4191_tippi_CN_024",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_024",
+            "voiceText": "I've almost finished this piece. Just a sec!",
+            "voiceTitle": "Deployment 2",
+            "voiceIndex": 24,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_PLACE",
+            "voiceAsset": "char_4191_tippi/CN_024"
+        },
+        "char_4191_tippi_CN_025": {
+            "charWordId": "char_4191_tippi_CN_025",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_025",
+            "voiceText": "Some deep purple for a sense of mystery.",
+            "voiceTitle": "In Battle 1",
+            "voiceIndex": 25,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_1",
+            "voiceAsset": "char_4191_tippi/CN_025"
+        },
+        "char_4191_tippi_CN_026": {
+            "charWordId": "char_4191_tippi_CN_026",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_026",
+            "voiceText": "Bit of dark red to get your heart pumping.",
+            "voiceTitle": "In Battle 2",
+            "voiceIndex": 26,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_2",
+            "voiceAsset": "char_4191_tippi/CN_026"
+        },
+        "char_4191_tippi_CN_027": {
+            "charWordId": "char_4191_tippi_CN_027",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_027",
+            "voiceText": "A little lime green for a weird rotten vibe.",
+            "voiceTitle": "In Battle 3",
+            "voiceIndex": 27,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_3",
+            "voiceAsset": "char_4191_tippi/CN_027"
+        },
+        "char_4191_tippi_CN_028": {
+            "charWordId": "char_4191_tippi_CN_028",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_028",
+            "voiceText": "The stage's set, now let's see how everyone performs!",
+            "voiceTitle": "In Battle 4",
+            "voiceIndex": 28,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_4",
+            "voiceAsset": "char_4191_tippi/CN_028"
+        },
+        "char_4191_tippi_CN_029": {
+            "charWordId": "char_4191_tippi_CN_029",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_029",
+            "voiceText": "Now this is a perfect work of art! Lemme just tag my name in the corner here real quick.",
+            "voiceTitle": "4-star Result",
+            "voiceIndex": 29,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "FOUR_STAR",
+            "voiceAsset": "char_4191_tippi/CN_029"
+        },
+        "char_4191_tippi_CN_030": {
+            "charWordId": "char_4191_tippi_CN_030",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_030",
+            "voiceText": "So much for Wrankwood war movies.",
+            "voiceTitle": "3-star Result",
+            "voiceIndex": 30,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "THREE_STAR",
+            "voiceAsset": "char_4191_tippi/CN_030"
+        },
+        "char_4191_tippi_CN_031": {
+            "charWordId": "char_4191_tippi_CN_031",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_031",
+            "voiceText": "That was an epic experience!",
+            "voiceTitle": "Sub 3-star Result",
+            "voiceIndex": 31,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "TWO_STAR",
+            "voiceAsset": "char_4191_tippi/CN_031"
+        },
+        "char_4191_tippi_CN_032": {
+            "charWordId": "char_4191_tippi_CN_032",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_032",
+            "voiceText": "Let me edit that op's recording. I might just come up with a new kind of horror flick.",
+            "voiceTitle": "Operation Failure",
+            "voiceIndex": 32,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "LOSE",
+            "voiceAsset": "char_4191_tippi/CN_032"
+        },
+        "char_4191_tippi_CN_033": {
+            "charWordId": "char_4191_tippi_CN_033",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_033",
+            "voiceText": "So I can't tag the corridors, but can I spraypaint my own dorm walls?",
+            "voiceTitle": "Assigned to Facility",
+            "voiceIndex": 33,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BUILDING_PLACE",
+            "voiceAsset": "char_4191_tippi/CN_033"
+        },
+        "char_4191_tippi_CN_034": {
+            "charWordId": "char_4191_tippi_CN_034",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_034",
+            "voiceText": "Keep on tapping the device on my back, and something scary just might pop out.",
+            "voiceTitle": "Tap",
+            "voiceIndex": 34,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BUILDING_TOUCHING",
+            "voiceAsset": "char_4191_tippi/CN_034"
+        },
+        "char_4191_tippi_CN_036": {
+            "charWordId": "char_4191_tippi_CN_036",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_036",
+            "voiceText": "Don't worry about me, if you're tied up. I can keep myself busy. Oh, you're done? Wanna watch a movie together?",
+            "voiceTitle": "Trust Tap",
+            "voiceIndex": 36,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BUILDING_FAVOR_BUBBLE",
+            "voiceAsset": "char_4191_tippi/CN_036"
+        },
+        "char_4191_tippi_CN_037": {
+            "charWordId": "char_4191_tippi_CN_037",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_037",
+            "voiceText": "Arknights.",
+            "voiceTitle": "Title",
+            "voiceIndex": 37,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "LOADING_PANEL",
+            "voiceAsset": "char_4191_tippi/CN_037"
+        },
+        "char_4191_tippi_CN_038": {
+            "charWordId": "char_4191_tippi_CN_038",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_038",
+            "voiceText": "Watch a New Year's blockbuster together? Sure—'Famous Columbian husband-and-wife producer-director duo collabs on joint production for war film...' Okay, Doctor, I don't mind going with you, but don't blame me if I fall asleep halfway in.",
+            "voiceTitle": "New Year's blessing",
+            "voiceIndex": 38,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "NEW_YEAR",
+            "voiceAsset": "char_4191_tippi/CN_038"
+        },
+        "char_4191_tippi_CN_042": {
+            "charWordId": "char_4191_tippi_CN_042",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_042",
+            "voiceText": "Want me to spray some colors around to liven up the place and brighten your mood?",
+            "voiceTitle": "Greeting",
+            "voiceIndex": 42,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "GREETING",
+            "voiceAsset": "char_4191_tippi/CN_042"
+        },
+        "char_4191_tippi_CN_043": {
+            "charWordId": "char_4191_tippi_CN_043",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_043",
+            "voiceText": "I always had big parties as a kid. The adults would use them as an excuse to socialize, like with totally zero thought to what the birthday girl wanted. Wasn't the biggest fan. So for <i>your</i> birthday, I redecorated your room based on your favorite movies this year. What'cha think?",
+            "voiceTitle": "Birthday",
+            "voiceIndex": 43,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BIRTHDAY",
+            "voiceAsset": "char_4191_tippi/CN_043"
+        },
+        "char_4191_tippi_CN_044": {
+            "charWordId": "char_4191_tippi_CN_044",
+            "wordKey": "char_4191_tippi",
+            "charId": "char_4191_tippi",
+            "voiceId": "CN_044",
+            "voiceText": "Rhodes Island's a proper pharma company, I've seen that with my own eyes—too bad it doesn't have the stories I got up here in my head. But Doc, you're full of mysteries, so I <i>have</i> to keep watching you for reference material. And who knows, you might even star in your own horror movie one day.",
+            "voiceTitle": "Anniversary Celebration",
+            "voiceIndex": 44,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "ANNIVERSARY",
+            "voiceAsset": "char_4191_tippi/CN_044"
+        },
+        "char_4198_christ_CN_001": {
+            "charWordId": "char_4198_christ_CN_001",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_001",
+            "voiceText": "It's fine enough in this office, but it's not much of a dalliance if we're stuck with work for days on end, you know... Unless, say, you'd let me lap at your emotions a bit?",
+            "voiceTitle": "Appointed as Assistant",
+            "voiceIndex": 1,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_PLACE",
+            "voiceAsset": "char_4198_christ/CN_001"
+        },
+        "char_4198_christ_CN_002": {
+            "charWordId": "char_4198_christ_CN_002",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_002",
+            "voiceText": "I hear you calling for me, I'm just not obliged to heed. Oh, don't startle the little pink ones, I worked ever so hard to train them as cushions. They were cajoling me into lava surfing before that. So uncouth—you might as well subject me to rap or put me in one of those smoking mechs.",
+            "voiceTitle": "Talk 1",
+            "voiceIndex": 2,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4198_christ/CN_002"
+        },
+        "char_4198_christ_CN_003": {
+            "charWordId": "char_4198_christ_CN_003",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_003",
+            "voiceText": "Listen to <i>that.</i> The little operators are rehearsing? I met Lucian when he was around their age. So vexed by all the emotions he had to portray—such a tasty little snack. I chose him. He sates my appetite. He's been fun to spend time with... Mm? Odd. When did he go and grow so big?",
+            "voiceTitle": "Talk 2",
+            "voiceIndex": 3,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4198_christ/CN_003"
+        },
+        "char_4198_christ_CN_004": {
+            "charWordId": "char_4198_christ_CN_004",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_004",
+            "voiceText": "Of all the places to run into <i>this</i> menagerie. Mine? Don't lump me in with these debased louts—Zaaro, stay. You there, little silver wolf, are you their pack leader? Make Zaaro shush, and by the way, you have special permission to scritch my chin.",
+            "voiceTitle": "Talk 3",
+            "voiceIndex": 4,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4198_christ/CN_004"
+        },
+        "char_4198_christ_CN_005": {
+            "charWordId": "char_4198_christ_CN_005",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_005",
+            "voiceText": "The femme fatale of Wrankwood? The Durin clockwork curiosity? The shadowy priest of Sargon? Those were little pastimes of mine. Put on a different look, and people shower you in fresh delights. Little games like that are never more fun than when they've just begun.",
+            "voiceTitle": "Talk after Promotion 1",
+            "voiceIndex": 5,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4198_christ/CN_005"
+        },
+        "char_4198_christ_CN_006": {
+            "charWordId": "char_4198_christ_CN_006",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_006",
+            "voiceText": "Why stop playing? Because after long enough, no one shows me anything I haven't seen before. Emotions and words on repeat, it bores me like nothing else, and I <i>hate</i> boredom. Hm? Insolence! You haven't earned the right to scratch my belly yet, Doctor.",
+            "voiceTitle": "Talk after Promotion 2",
+            "voiceIndex": 6,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 2
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4198_christ/CN_006"
+        },
+        "char_4198_christ_CN_007": {
+            "charWordId": "char_4198_christ_CN_007",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_007",
+            "voiceText": "Doctor, over here one moment? I'm off to try that multimedia escape room. Tell me, which one looks better on me, the ruby lavallière, or the sapphire? —*HISS*!!! ...Excuse me, my true form was meant to <i>frighten</i> you just as it does everyone else. Typical, I didn't even get a taste...",
+            "voiceTitle": "Talk after Trust Increase 1",
+            "voiceIndex": 7,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "FAVOR",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 40
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4198_christ/CN_007"
+        },
+        "char_4198_christ_CN_008": {
+            "charWordId": "char_4198_christ_CN_008",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_008",
+            "voiceText": "What a fine lavallière, this scrumptious mix of bashfulness and timidity... did your operators make this? I do quite love them... I'd love a taste of each of them. Pft, don't fret, only the special kind of emotion interests me. For example, that <i>nervousness</i> you just flashed in front of me, at long last. Oh, I like that.",
+            "voiceTitle": "Talk after Trust Increase 2",
+            "voiceIndex": 8,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "FAVOR",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 100
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4198_christ/CN_008"
+        },
+        "char_4198_christ_CN_009": {
+            "charWordId": "char_4198_christ_CN_009",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_009",
+            "voiceText": "Here, let me have a look under your hood—don't hide, do you think that stops me seeing? You know, you <i>swallow up</i> your operators' emotions too, don't you, Doctor? How your presence puts them at ease. *yawn* Move over, I'll have a catnap here myself.",
+            "voiceTitle": "Talk after Trust Increase 3",
+            "voiceIndex": 9,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "FAVOR",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 200
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "HOME_SHOW",
+            "voiceAsset": "char_4198_christ/CN_009"
+        },
+        "char_4198_christ_CN_010": {
+            "charWordId": "char_4198_christ_CN_010",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_010",
+            "voiceText": "...Mrm... prrr... mrrow...",
+            "voiceTitle": "Idle",
+            "voiceIndex": 10,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "HOME_WAIT",
+            "voiceAsset": "char_4198_christ/CN_010"
+        },
+        "char_4198_christ_CN_011": {
+            "charWordId": "char_4198_christ_CN_011",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_011",
+            "voiceText": "Eyes down here, Doctor. Cat got your tongue? You can hear my voice now. Long time no see. You can pet me more than last time, I permit it.",
+            "voiceTitle": "Onboard",
+            "voiceIndex": 11,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "GACHA",
+            "voiceAsset": "char_4198_christ/CN_011"
+        },
+        "char_4198_christ_CN_012": {
+            "charWordId": "char_4198_christ_CN_012",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_012",
+            "voiceText": "*yawn*",
+            "voiceTitle": "Watching Battle Record",
+            "voiceIndex": 12,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "LEVEL_UP",
+            "voiceAsset": "char_4198_christ/CN_012"
+        },
+        "char_4198_christ_CN_013": {
+            "charWordId": "char_4198_christ_CN_013",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_013",
+            "voiceText": "Doctor, I can trouble you to set this in that red lavallière for me, yes? It'll look better on me that way.",
+            "voiceTitle": "Promotion 1",
+            "voiceIndex": 13,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "EVOLVE_ONE",
+            "voiceAsset": "char_4198_christ/CN_013"
+        },
+        "char_4198_christ_CN_014": {
+            "charWordId": "char_4198_christ_CN_014",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_014",
+            "voiceText": "Are you done with the photoshoot? Let me see... Hm? You'll have this framed and put up in the middle of the dormitories? Very well, I do like these shots. I'll allow it.",
+            "voiceTitle": "Promotion 2",
+            "voiceIndex": 14,
+            "voiceType": "ONLY_TEXT",
+            "unlockType": "AWAKE",
+            "unlockParam": [
+                {
+                    "valueStr": null,
+                    "valueInt": 2
+                },
+                {
+                    "valueStr": null,
+                    "valueInt": 1
+                }
+            ],
+            "lockDescription": null,
+            "placeType": "EVOLVE_TWO",
+            "voiceAsset": "char_4198_christ/CN_014"
+        },
+        "char_4198_christ_CN_017": {
+            "charWordId": "char_4198_christ_CN_017",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_017",
+            "voiceText": "Let me see. Are you in trouble of some sort?",
+            "voiceTitle": "Added to Squad",
+            "voiceIndex": 17,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "SQUAD",
+            "voiceAsset": "char_4198_christ/CN_017"
+        },
+        "char_4198_christ_CN_018": {
+            "charWordId": "char_4198_christ_CN_018",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_018",
+            "voiceText": "Be good. Stay put.",
+            "voiceTitle": "Appointed as Squad Leader",
+            "voiceIndex": 18,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "SQUAD_FIRST",
+            "voiceAsset": "char_4198_christ/CN_018"
+        },
+        "char_4198_christ_CN_019": {
+            "charWordId": "char_4198_christ_CN_019",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_019",
+            "voiceText": "Any moods out here to pique my interest?",
+            "voiceTitle": "Depart",
+            "voiceIndex": 19,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_START",
+            "voiceAsset": "char_4198_christ/CN_019"
+        },
+        "char_4198_christ_CN_020": {
+            "charWordId": "char_4198_christ_CN_020",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_020",
+            "voiceText": "Let emotion engulf this place.",
+            "voiceTitle": "Begin Operation",
+            "voiceIndex": 20,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_FACE_ENEMY",
+            "voiceAsset": "char_4198_christ/CN_020"
+        },
+        "char_4198_christ_CN_021": {
+            "charWordId": "char_4198_christ_CN_021",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_021",
+            "voiceText": "I'm here, in the shadows.",
+            "voiceTitle": "Selecting Operator 1",
+            "voiceIndex": 21,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SELECT",
+            "voiceAsset": "char_4198_christ/CN_021"
+        },
+        "char_4198_christ_CN_022": {
+            "charWordId": "char_4198_christ_CN_022",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_022",
+            "voiceText": "Petting a cat on the battlefield? That'll be one petting voucher.",
+            "voiceTitle": "Selecting Operator 2",
+            "voiceIndex": 22,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SELECT",
+            "voiceAsset": "char_4198_christ/CN_022"
+        },
+        "char_4198_christ_CN_023": {
+            "charWordId": "char_4198_christ_CN_023",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_023",
+            "voiceText": "(The lady looks around, elegantly swishing her two tails.)",
+            "voiceTitle": "Deployment 1",
+            "voiceIndex": 23,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_PLACE",
+            "voiceAsset": "char_4198_christ/CN_023"
+        },
+        "char_4198_christ_CN_024": {
+            "charWordId": "char_4198_christ_CN_024",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_024",
+            "voiceText": "(The lady stretches out, seemingly very at ease.)",
+            "voiceTitle": "Deployment 2",
+            "voiceIndex": 24,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_PLACE",
+            "voiceAsset": "char_4198_christ/CN_024"
+        },
+        "char_4198_christ_CN_025": {
+            "charWordId": "char_4198_christ_CN_025",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_025",
+            "voiceText": "Emotion-deprived puppets. Bland little spirits.",
+            "voiceTitle": "In Battle 1",
+            "voiceIndex": 25,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_1",
+            "voiceAsset": "char_4198_christ/CN_025"
+        },
+        "char_4198_christ_CN_026": {
+            "charWordId": "char_4198_christ_CN_026",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_026",
+            "voiceText": "Despair, excitement, yearning... the emotions here are delectable.",
+            "voiceTitle": "In Battle 2",
+            "voiceIndex": 26,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_2",
+            "voiceAsset": "char_4198_christ/CN_026"
+        },
+        "char_4198_christ_CN_027": {
+            "charWordId": "char_4198_christ_CN_027",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_027",
+            "voiceText": "What other knotty emotions could there be?",
+            "voiceTitle": "In Battle 3",
+            "voiceIndex": 27,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_3",
+            "voiceAsset": "char_4198_christ/CN_027"
+        },
+        "char_4198_christ_CN_028": {
+            "charWordId": "char_4198_christ_CN_028",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_028",
+            "voiceText": "Mrow?",
+            "voiceTitle": "In Battle 4",
+            "voiceIndex": 28,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BATTLE_SKILL_4",
+            "voiceAsset": "char_4198_christ/CN_028"
+        },
+        "char_4198_christ_CN_029": {
+            "charWordId": "char_4198_christ_CN_029",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_029",
+            "voiceText": "Flavors fit for a gastronome. Thank you for entertaining me.",
+            "voiceTitle": "4-star Result",
+            "voiceIndex": 29,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "FOUR_STAR",
+            "voiceAsset": "char_4198_christ/CN_029"
+        },
+        "char_4198_christ_CN_030": {
+            "charWordId": "char_4198_christ_CN_030",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_030",
+            "voiceText": "A fine snack. I'm satisfied. When's the next?",
+            "voiceTitle": "3-star Result",
+            "voiceIndex": 30,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "THREE_STAR",
+            "voiceAsset": "char_4198_christ/CN_030"
+        },
+        "char_4198_christ_CN_031": {
+            "charWordId": "char_4198_christ_CN_031",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_031",
+            "voiceText": "Oh my, there goes the afternoon tea.",
+            "voiceTitle": "Sub 3-star Result",
+            "voiceIndex": 31,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "TWO_STAR",
+            "voiceAsset": "char_4198_christ/CN_031"
+        },
+        "char_4198_christ_CN_032": {
+            "charWordId": "char_4198_christ_CN_032",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_032",
+            "voiceText": "Stay on my tail, Doctor, don't let emotion's whirl suck you in.",
+            "voiceTitle": "Operation Failure",
+            "voiceIndex": 32,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "LOSE",
+            "voiceAsset": "char_4198_christ/CN_032"
+        },
+        "char_4198_christ_CN_033": {
+            "charWordId": "char_4198_christ_CN_033",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_033",
+            "voiceText": "Do I get a room?",
+            "voiceTitle": "Assigned to Facility",
+            "voiceIndex": 33,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BUILDING_PLACE",
+            "voiceAsset": "char_4198_christ/CN_033"
+        },
+        "char_4198_christ_CN_034": {
+            "charWordId": "char_4198_christ_CN_034",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_034",
+            "voiceText": "Insolence.",
+            "voiceTitle": "Tap",
+            "voiceIndex": 34,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BUILDING_TOUCHING",
+            "voiceAsset": "char_4198_christ/CN_034"
+        },
+        "char_4198_christ_CN_036": {
+            "charWordId": "char_4198_christ_CN_036",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_036",
+            "voiceText": "...Hrmm... prrr...",
+            "voiceTitle": "Trust Tap",
+            "voiceIndex": 36,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BUILDING_FAVOR_BUBBLE",
+            "voiceAsset": "char_4198_christ/CN_036"
+        },
+        "char_4198_christ_CN_037": {
+            "charWordId": "char_4198_christ_CN_037",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_037",
+            "voiceText": "Arknights.",
+            "voiceTitle": "Title",
+            "voiceIndex": 37,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "LOADING_PANEL",
+            "voiceAsset": "char_4198_christ/CN_037"
+        },
+        "char_4198_christ_CN_038": {
+            "charWordId": "char_4198_christ_CN_038",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_038",
+            "voiceText": "Ah-choo! Not even you're free of all these... sickly sweet emotions... oh, I almost feel dizzy... Doctor, come, we're finding Lucian. I want to see how these feelings look on his face.",
+            "voiceTitle": "New Year's blessing",
+            "voiceIndex": 38,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "NEW_YEAR",
+            "voiceAsset": "char_4198_christ/CN_038"
+        },
+        "char_4198_christ_CN_042": {
+            "charWordId": "char_4198_christ_CN_042",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_042",
+            "voiceText": "I smell a note of <i>delight,</i> Doctor.",
+            "voiceTitle": "Greeting",
+            "voiceIndex": 42,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "GREETING",
+            "voiceAsset": "char_4198_christ/CN_042"
+        },
+        "char_4198_christ_CN_043": {
+            "charWordId": "char_4198_christ_CN_043",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_043",
+            "voiceText": "(The lady has left a dew-slicked rose on your desk. You look down, only to find that unbeknownst to you, a warm fuzzball with its four paws tucked in has nestled within your lap.)",
+            "voiceTitle": "Birthday",
+            "voiceIndex": 43,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "BIRTHDAY",
+            "voiceAsset": "char_4198_christ/CN_043"
+        },
+        "char_4198_christ_CN_044": {
+            "charWordId": "char_4198_christ_CN_044",
+            "wordKey": "char_4198_christ",
+            "charId": "char_4198_christ",
+            "voiceId": "CN_044",
+            "voiceText": "Your operators really want to see me do this, do they? ...Oh, fine, special permission just for today. You can rest me on your shoulder while you go round the landship.",
+            "voiceTitle": "Anniversary Celebration",
+            "voiceIndex": 44,
+            "voiceType": "ENUM",
+            "unlockType": "DIRECT",
+            "unlockParam": {},
+            "lockDescription": null,
+            "placeType": "ANNIVERSARY",
+            "voiceAsset": "char_4198_christ/CN_044"
+        },
         "char_113_cqbw_epoque#7_CN_001": {
             "charWordId": "char_113_cqbw_epoque#7_CN_001",
             "wordKey": "char_113_cqbw_epoque#7",
@@ -258294,6 +260157,14 @@
                         "Choi Ha-ri"
                     ],
                     "voicePath": null
+                },
+                "EN": {
+                    "wordkey": "char_337_utage",
+                    "voiceLangType": "EN",
+                    "cvName": [
+                        "Ayaka Kyo"
+                    ],
+                    "voicePath": null
                 }
             }
         },
@@ -260049,6 +261920,14 @@
                         "Kim Yul"
                     ],
                     "voicePath": null
+                },
+                "EN": {
+                    "wordkey": "char_475_akafyu",
+                    "voiceLangType": "EN",
+                    "cvName": [
+                        "Reiko Narao"
+                    ],
+                    "voicePath": null
                 }
             }
         },
@@ -260719,6 +262598,14 @@
                     "voiceLangType": "KR",
                     "cvName": [
                         "Kim Yeon-woo"
+                    ],
+                    "voicePath": null
+                },
+                "EN": {
+                    "wordkey": "char_344_beewax",
+                    "voiceLangType": "EN",
+                    "cvName": [
+                        "Natasha Atherton"
                     ],
                     "voicePath": null
                 }
@@ -261901,6 +263788,14 @@
                         "Hong Soo-jung"
                     ],
                     "voicePath": null
+                },
+                "EN": {
+                    "wordkey": "char_218_cuttle",
+                    "voiceLangType": "EN",
+                    "cvName": [
+                        "Laura Carrero"
+                    ],
+                    "voicePath": null
                 }
             }
         },
@@ -263064,6 +264959,14 @@
                         "Park Seon-young"
                     ],
                     "voicePath": null
+                },
+                "EN": {
+                    "wordkey": "char_213_mostma",
+                    "voiceLangType": "EN",
+                    "cvName": [
+                        "Kira Buckland"
+                    ],
+                    "voicePath": null
                 }
             }
         },
@@ -263263,6 +265166,14 @@
                     "voiceLangType": "KR",
                     "cvName": [
                         "Park Seen-hee"
+                    ],
+                    "voicePath": null
+                },
+                "EN": {
+                    "wordkey": "char_426_billro",
+                    "voiceLangType": "EN",
+                    "cvName": [
+                        "Sara Masry"
                     ],
                     "voicePath": null
                 }
@@ -264066,6 +265977,14 @@
                     "voiceLangType": "KR",
                     "cvName": [
                         "Sung Wan-kyung"
+                    ],
+                    "voicePath": null
+                },
+                "EN": {
+                    "wordkey": "char_264_f12yin",
+                    "voiceLangType": "EN",
+                    "cvName": [
+                        "Blake Kubena"
                     ],
                     "voicePath": null
                 }
@@ -265549,6 +267468,14 @@
                     "voiceLangType": "KR",
                     "cvName": [
                         "Kim Yun-chae"
+                    ],
+                    "voicePath": null
+                },
+                "EN": {
+                    "wordkey": "char_4043_erato",
+                    "voiceLangType": "EN",
+                    "cvName": [
+                        "Anthea Greco"
                     ],
                     "voicePath": null
                 }
@@ -271143,6 +273070,134 @@
                 }
             }
         },
+        "char_1042_phatm2": {
+            "wordkeys": [
+                "char_1042_phatm2"
+            ],
+            "charId": "char_1042_phatm2",
+            "dict": {
+                "CN_MANDARIN": {
+                    "wordkey": "char_1042_phatm2",
+                    "voiceLangType": "CN_MANDARIN",
+                    "cvName": [
+                        "Zhaokun Liu"
+                    ],
+                    "voicePath": null
+                },
+                "JP": {
+                    "wordkey": "char_1042_phatm2",
+                    "voiceLangType": "JP",
+                    "cvName": [
+                        "Akira Ishida"
+                    ],
+                    "voicePath": null
+                },
+                "KR": {
+                    "wordkey": "char_1042_phatm2",
+                    "voiceLangType": "KR",
+                    "cvName": [
+                        "Pyo Young-jae"
+                    ],
+                    "voicePath": null
+                },
+                "EN": {
+                    "wordkey": "char_1042_phatm2",
+                    "voiceLangType": "EN",
+                    "cvName": [
+                        "Ben Cura"
+                    ],
+                    "voicePath": null
+                },
+                "FRE": {
+                    "wordkey": "char_1042_phatm2",
+                    "voiceLangType": "FRE",
+                    "cvName": [
+                        "Vincent Bonnasseau"
+                    ],
+                    "voicePath": null
+                }
+            }
+        },
+        "char_4191_tippi": {
+            "wordkeys": [
+                "char_4191_tippi"
+            ],
+            "charId": "char_4191_tippi",
+            "dict": {
+                "CN_MANDARIN": {
+                    "wordkey": "char_4191_tippi",
+                    "voiceLangType": "CN_MANDARIN",
+                    "cvName": [
+                        "Yue Wang"
+                    ],
+                    "voicePath": null
+                },
+                "JP": {
+                    "wordkey": "char_4191_tippi",
+                    "voiceLangType": "JP",
+                    "cvName": [
+                        "Erina Koga"
+                    ],
+                    "voicePath": null
+                },
+                "KR": {
+                    "wordkey": "char_4191_tippi",
+                    "voiceLangType": "KR",
+                    "cvName": [
+                        "Soo-hyun"
+                    ],
+                    "voicePath": null
+                },
+                "EN": {
+                    "wordkey": "char_4191_tippi",
+                    "voiceLangType": "EN",
+                    "cvName": [
+                        "Emelia Lonnon"
+                    ],
+                    "voicePath": null
+                }
+            }
+        },
+        "char_4198_christ": {
+            "wordkeys": [
+                "char_4198_christ"
+            ],
+            "charId": "char_4198_christ",
+            "dict": {
+                "CN_MANDARIN": {
+                    "wordkey": "char_4198_christ",
+                    "voiceLangType": "CN_MANDARIN",
+                    "cvName": [
+                        "-"
+                    ],
+                    "voicePath": null
+                },
+                "JP": {
+                    "wordkey": "char_4198_christ",
+                    "voiceLangType": "JP",
+                    "cvName": [
+                        "-"
+                    ],
+                    "voicePath": null
+                },
+                "KR": {
+                    "wordkey": "char_4198_christ",
+                    "voiceLangType": "KR",
+                    "cvName": [
+                        "-"
+                    ],
+                    "voicePath": null
+                },
+                "EN": {
+                    "wordkey": "char_4198_christ",
+                    "voiceLangType": "EN",
+                    "cvName": [
+                        "-"
+                    ],
+                    "voicePath": null
+                }
+            }
+        },
         "char_311_mudrok#1": {
             "wordkeys": [
                 "char_311_mudrok#1"
@@ -271650,7 +273705,10 @@
         "char_4193_lemuen",
         "char_4194_rmixer",
         "char_4187_graceb",
-        "char_4188_confes"
+        "char_4188_confes",
+        "char_1042_phatm2",
+        "char_4191_tippi",
+        "char_4198_christ"
     ],
     "voiceLangTypeDict": {
         "CN_MANDARIN": {
@@ -272113,7 +274171,10 @@
         "char_4193_lemuen": "JP",
         "char_4194_rmixer": "JP",
         "char_4187_graceb": "JP",
-        "char_4188_confes": "JP"
+        "char_4188_confes": "JP",
+        "char_1042_phatm2": "JP",
+        "char_4191_tippi": "JP",
+        "char_4198_christ": "JP"
     },
     "startTimeWithTypeDict": {
         "CN_TOPOLECT": [
@@ -272177,7 +274238,11 @@
         "KR": [
             {
                 "timestamp": 1763046000,
-                "charSet": {}
+                "charSet": [
+                    "char_1042_phatm2",
+                    "char_4191_tippi",
+                    "char_4198_christ"
+                ]
             },
             {
                 "timestamp": 1760443200,
@@ -272760,7 +274825,19 @@
         "EN": [
             {
                 "timestamp": 1763046000,
-                "charSet": {}
+                "charSet": [
+                    "char_337_utage",
+                    "char_475_akafyu",
+                    "char_344_beewax",
+                    "char_218_cuttle",
+                    "char_213_mostma",
+                    "char_426_billro",
+                    "char_264_f12yin",
+                    "char_4043_erato",
+                    "char_1042_phatm2",
+                    "char_4191_tippi",
+                    "char_4198_christ"
+                ]
             },
             {
                 "timestamp": 1760443200,
@@ -273369,7 +275446,8 @@
             {
                 "timestamp": 1763046000,
                 "charSet": [
-                    "char_250_phatom"
+                    "char_250_phatom",
+                    "char_1042_phatm2"
                 ]
             }
         ],
